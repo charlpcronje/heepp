@@ -1,0 +1,112 @@
+<root>
+    <canvasIcons>
+        <includes>
+            <css     
+                src="canvasIcons/css/canvasIcons.css"
+                description="Canvas Icons CSS Include"/>
+        </includes>
+    </canvasIcons>
+      
+    <devicons>
+        <includes>
+            <css     
+                src="devicons/css/devicons.css"
+                description="Devicons (DEV Icons) CSS Include"/>
+        </includes>
+    </devicons>
+    
+    <entypo>
+        <includes>
+            <css     
+                src="entypo/css/entypo.css"
+                description="Entypo Icons"/>
+        </includes>        
+    </entypo>
+    
+    <etline>
+        <includes>
+            <css     
+                src="etline/css/etline.css"
+                description="ERLine Icons"/>
+        </includes>        
+    </etline>
+    
+    <flatIcon>
+        <includes>
+            <css     
+                src="flatIcon/flaticon.css"
+                description="Flat Icons"/>
+        </includes>
+    </flatIcon>
+
+    <fontAwesome>
+        <includes>
+            <css     
+                src="fontAwesome/v4/css/font-awesome.min.css"
+                description="Font Awesome Icons"/>
+        </includes>        
+    </fontAwesome>
+    
+    <fontAwesomeSVG-5>
+        <includes>
+            <jscript
+                crossorigin="anonymous"
+                integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+"
+                defer="defer"
+                cdn="https://use.fontawesome.com/releases/v5.0.10/js/all.js"
+                src="fontAwesome/v5/svg-with-js/js/fontawesome-all.min.js"
+                description="Font Awesome 5 Icons"/>
+        </includes>        
+    </fontAwesomeSVG-5>
+
+    <fontAwesome-5>
+        <includes>
+            <css
+                crossorigin="anonymous"
+                integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg"
+                cdn="https://use.fontawesome.com/releases/v5.0.10/css/all.css"
+                src="fontAwesome/v5/web-fonts-with-css/css/fontawesome-all.min.css"
+                description="Font Awesome Icons"/>
+        </includes>
+    </fontAwesome-5>
+    
+    <iconic>
+        <includes>
+            <css     
+                src="iconic/css/ionicons.min.css"
+                description="Material Design Iconic Font 1.0.1"/>
+        </includes>
+    </iconic>
+    
+    <ionIcons>
+        <includes>
+            <css     
+                src="ionIcons/css/ionicons.min.css"
+                description="Ion Icons"/>
+        </includes>
+    </ionIcons>
+    
+    <materialIcons>
+        <includes>
+            <css     
+                src="materialIcons/css/materialIcons.min.css"
+                description="Material Icons"/>
+        </includes>
+    </materialIcons>
+    
+    <pictoIcons>
+        <includes>
+            <css     
+                src="pictoIcons/css/pictoIcons.min.css"
+                description="Picto Icons"/>
+        </includes>
+    </pictoIcons>
+    
+    <summernote>
+        <includes>
+            <css     
+                src="summernote/css/summernote.min.css"
+                description="Summernote Icons"/>
+        </includes>
+    </summernote>
+</root>

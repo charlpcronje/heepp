@@ -1,0 +1,9 @@
+**/logs
+**/nbproject
+**/sessions
+**/molds
+**/storage
+**/uiConstants.js
+**/projects/*/uploads
+**/.idea
+**/codealike.json

@@ -1,0 +1,47 @@
+<root>
+    <animate>
+        <includes>
+            <css
+                src="animate/css/animate.css"
+                description="Animate CSS"/>
+        </includes>
+    </animate>
+    
+    <appear>
+        <includes>
+            <jscript
+                src="appear/js/jquery.appear.js"
+                description="jquery appear"/>
+        </includes>
+    </appear>
+
+    <gsa-drag>
+        <includes>
+            <jscript
+                src="greenSock/minified/utils/Draggable.min.js"
+                description="GreenSock Draggable Plugin"/>
+        </includes>
+    </gsa-drag>
+    <gsa-tween>
+        <!--
+           Includes: TweenLite, TweenMax, TimelineLite, TimelineMax, EasePack,
+           CSSPlugin, RoundPropsPlugin, BezierPlugin, AttrPlugin
+         -->
+        <includes>
+            <jscript
+                src="greenSock/minified/TweenMax.min.js"
+                description="GreenSock Tweening Plugin"/>
+        </includes>
+    </gsa-tween>
+
+    <owlCarousel>
+        <includes>
+            <css
+                src="owlCarousel/css/owl.carousel.css"
+                description="Owl Carousel CSS"/>
+            <jscript
+                src="owlCarousel/js/owl.carousel.min.js"
+                description="Owl Carousel Javascript"/>
+        </includes>
+    </owlCarousel>
+</root>

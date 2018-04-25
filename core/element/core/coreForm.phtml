@@ -1,0 +1,12 @@
+<form 
+    method="@{method}" 
+    action="@{action}"
+    id="@{id}"
+    class="@{class}"
+    style="@{style}">
+    @{child}
+</form>
+<script>
+    var form = new core.form('@{id}');
+    form.init();
+</script>

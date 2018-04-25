@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<!-- This is a comment -->
+<root-element>
+	
+	<first-element>first value</first-element>
+	
+	<element-list>
+		<element1>value1</element1>
+		<element2>value2</element2>
+		<!-- commented out tags
+		<element3>value3</element3>
+		-->
+	</element-list>
+	
+	<self-closing-element/>
+	
+	<complex-element attr1="the value" attr2=other_value><![CDATA[
+		Some <a href="#">complex</a> content <b>here</b>
+	]]></complex-element>
+	
+</root-element>

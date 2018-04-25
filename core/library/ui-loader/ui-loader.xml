@@ -1,0 +1,9 @@
+<root>
+    <spin>
+        <includes>
+            <jscript     
+                src="spin/js/spin.min.js"
+                description="spin.js.org, Spin.js dynamically creates spinning activity indicators"/>
+        </includes>
+    </spin>
+</root>

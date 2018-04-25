@@ -1,0 +1,91 @@
+<root>
+    <bootflat>
+        <includes>
+            <css     src="bootflat/css/bootflat.min.css"                description="Bootflat CSS"/>
+            <jscript src="bootflat/js/icheck.min.js"                    description="Bootflat Javascript"/>
+            <jscript src="bootflat/js/jquery.fs.selecter.min.js"        description="Bootflat Javascript"/>
+            <jscript src="bootflat/js/jquery.fs.stepper.min.js"         description="Bootflat Javascript"/>
+        </includes>
+    </bootflat>
+
+    <bootstrap>
+        <includes>
+            <css
+                cdn="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+                src="bootstrap/v3/css/bootstrap.min.css"
+                description="Bootstrap V3.3.7 CSS"/>
+            <jscript
+                cdn="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+                src="bootstrap/v3/js/bootstrap.min.js"
+                description="Bootstrap V3.3.7 Javascript"/>
+        </includes>
+    </bootstrap>
+
+    <bootstrap-4>
+        <includes>
+            <css
+                cdn="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
+                src="bootstrap/v4/css/bootstrap.min.css"
+                description="Bootstrap V4.0.0 CSS"/>
+            <jscript
+                cdn="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"
+                src="bootstrap/v4/js/bootstrap.min.js"
+                description="Bootstrap V4.0.0 Javascript"/>
+        </includes>
+    </bootstrap-4>
+
+    <breakpoints>
+        <includes>
+            <jscript src="breakpoints/breakpoints.js"                   description="Creates handy events for your responsive design breakpoints"/>
+        </includes>
+    </breakpoints>
+
+    <foundation>
+        <includes>
+            <css     src="foundation/css/foundation.min.css"            description="Foundation CSS"/>
+            <jscript src="foundation/js/vendor/what-input.js"           description="Foundation Input JS"/>
+            <jscript src="foundation/js/vendor/foundation.min.js"       description="Foundation Main JS"/>
+            <jscript src="foundation/js/app.js"                         description="Foundation App JS"/>
+        </includes>
+    </foundation>
+
+    <jqueryui>
+        <includes>
+            <css     src="jqueryui/css/jquery-ui.min.css"               description="JQuery UI CSS"/>
+            <jscript src="jqueryui/js/jquery-ui.min.js"                 description="Jquery UI Javascript"/>
+        </includes>
+    </jqueryui>
+
+    <metroui>
+        <includes>
+            <css     src="metroui/css/metro-colors.min.css"             description="Metro UI Colors"/>
+            <css     src="metroui/css/metro-icons.min.css"              description="Metro UI Icons"/>
+            <css     src="metroui/css/metro-responsive.min.css"         description="Metro UI Resonsive"/>
+            <css     src="metroui/css/metro-schemes.min.css"            description="Metro UI Schemes"/>
+            <css     src="metroui/css/metro.min.css"                    description="Metro UI Main CSS"/>
+            <jscript src="metroui/js/metro.min.js"                      description="Metro UI Javascript"/>
+        </includes>
+    </metroui>
+
+    <milligram>
+        <includes>
+            <css     src="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic"/>
+            <css     src="milligram/css/milligram.min.css"           description="Milligram UI CSS"/>
+            <css     src="milligram/css/normalize.css"               description="Milligram UI CSS"/>
+        </includes>
+    </milligram>
+
+    <uikit>
+        <includes>
+            <css     src="uikit/css/uikit.min.css"                     description="uiKit UI CSS"/>
+            <jscript src="uikit/js/uikit.min.js"                       description="uiKit UI Main JS"/>
+            <jscript src="uikit/js/uikit-icons.min.js"                 description="uiKit Ui Icons"/>
+        </includes>
+    </uikit>
+
+    <w3css>
+        <includes>
+            <css    src="w3css/css/w3css.css"                           descrtiption="W3CSS Stylesheet Include"/>
+        </includes>
+    </w3css>
+</root>

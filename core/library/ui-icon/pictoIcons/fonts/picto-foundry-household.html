@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html class="theme-default" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>AdminDash</title>
+
+
+
+    <!-- Prevent the demo from appearing in search engines -->
+    <meta name="robots" content="noindex">
+
+    <!-- Simplebar -->
+    <link type="text/css" href="assets/vendor/simplebar.css" rel="stylesheet">
+
+    <!-- App CSS -->
+    <link type="text/css" href="assets/css/themes/default/app.css" rel="stylesheet">
+    <link type="text/css" href="assets/css/themes/default/app.rtl.css" rel="stylesheet">
+
+    <!-- Preloader CSS -->
+    <link type="text/css" href="assets/css/themes/default/preloader.css" rel="stylesheet">
+    <link type="text/css" href="assets/css/themes/default/preloader.rtl.css" rel="stylesheet">
+
+    <!-- Icons CSS -->
+    <link type="text/css" href="assets/css/themes/default/vendor-material-icons.css" rel="stylesheet">
+    <link type="text/css" href="assets/css/themes/default/vendor-material-icons.rtl.css" rel="stylesheet">
+    <!-- <link type="text/css" href="assets/css/themes/default/vendor-picto-icons.css" rel="stylesheet"> -->
+    <!-- <link type="text/css" href="assets/css/themes/default/vendor-picto-icons.rtl.css" rel="stylesheet"> -->
+
+    <!-- App Settings (Demo) -->
+    <!-- Safe to remove -->
+    <link type="text/css" href="assets/css/themes/default/vendor-fm-app-settings.css" rel="stylesheet">
+    <link type="text/css" href="assets/css/themes/default/vendor-fm-app-settings.rtl.css" rel="stylesheet">
+
+    <!-- Demo Utils -->
+    <!-- Safe to remove -->
+    <link type="text/css" href="assets/css/themes/default/demo.css" rel="stylesheet">
+    <link type="text/css" href="assets/css/themes/default/demo.rtl.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+    <link type="text/css" href="assets/css/themes/default/landing.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="preloader">
+        <div class="sk-double-bounce">
+            <div class="sk-child sk-double-bounce1"></div>
+            <div class="sk-child sk-double-bounce2"></div>
+        </div>
+    </div>
+
+    <div class="bg-white">
+        <div class="text-center spacer-lg">
+            <img src="assets/images/logo-dark.svg" width="45" alt="AdminDash" class="mb-3">
+            <h2 class="display-4 m-0" data-aos="fade-up">AdminDash</h2>
+            <p class="lead" data-aos="fade-up" data-aos-delay="100">Premium Bootstrap Template.</p>
+        </div>
+
+        <div class="container-fluid spacer-lg pt-0">
+            <div class="row" data-aos="fade-up">
+                <div class="col-md-6 col-lg-4">
+                    <div class="card o-hidden">
+                        <a href="shop.html#theme=default"><img class="card-img-top img-fluid" src="assets/images/demo/default.png" alt="default"></a>
+                        <div class="card-block">
+                            <div class="media">
+                                <div class="media-body">
+                                    <h4 class="card-title">Light theme</h4>
+                                    <p>Dark sidebar, colored navbar and light content scheme.</p>
+                                </div>
+                                <a href="shop.html#theme=default" class="btn btn-primary media-right">Demo</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card o-hidden">
+                        <a href="shop.html#theme=dark"><img class="card-img-top img-fluid" src="assets/images/demo/dark.png" alt="dark"></a>
+                        <div class="card-block">
+                            <div class="media">
+                                <div class="media-body">
+                                    <h4 class="card-title">Dark theme</h4>
+                                    <p>Dark sidebar, colored navbar and dark content scheme.</p>
+                                </div>
+                                <a href="shop.html#theme=dark" class="btn btn-primary media-right">Demo</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card o-hidden">
+                        <a href="shop.html#theme=minimal"><img class="card-img-top img-fluid" src="assets/images/demo/minimal-community.png" alt="minimal"></a>
+                        <div class="card-block">
+                            <div class="media">
+                                <div class="media-body">
+                                    <h4 class="card-title">Minimal theme</h4>
+                                    <p>Light sidebar, colored navbar and light content scheme.</p>
+                                </div>
+                                <a href="shop.html#theme=minimal" class="btn btn-primary media-right">Demo</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bg-primary">
+
+        <div class="container">
+            <div class="card-inverse text-center spacer-lg">
+                <h2 class="h1">Layouts</h2>
+                <p>AdminDash provides multiple layout examples such as fluid layout with a visible desktop drawer and a fixed layout variation with centered wrapper and a floating desktop drawer.</p>
+            </div>
+
+            <div class="spacer-lg pt-0 row text-center">
+                <div class="col-lg-6">
+                    <div class="card card-lg border-0" data-aos="fade-up">
+                        <img src="assets/images/demo/fluid.png" width="100" alt="Fluid layout" class="img-fluid card-img">
+                    </div>
+                    <a href="shop.html" class="btn btn-outline-white">View Fluid Layout</a>
+                </div>
+                <div class="col-lg-6">
+                    <div class="card card-lg border-0" data-aos="fade-up" data-aos-delay="100">
+                        <img src="assets/images/demo/fixed.png" width="100" alt="Fluid layout" class="img-fluid card-img">
+                    </div>
+                    <a href="fixed-shop.html" class="btn btn-outline-white">View Fixed Layout</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="bg-inverse">
+
+        <div class="card-inverse spacer-lg media">
+            <img src="assets/images/sass.png" width="100" alt="Built with Sass" class="media-left">
+            <div class="media-body">
+                <h2>Colors</h2>
+                <p class="lead m-0" style="color: inherit;">Built with Sass, the most popular CSS preprocessor.</p>
+                <p>Sass allows you to easily customize the colors.</p>
+            </div>
+        </div>
+
+        <div class="container-fluid spacer-lg pt-0">
+            <div class="row">
+                <div class="col-md-6 col-lg-4">
+                    <div class="card" data-aos="fade-up">
+                        <div class="card-block">
+                            <div class="media align-items-center">
+                                <div class="media-left icon-holder rounded-circle bg-theme--teal text-white">
+                                    <i class="material-icons md-3">settings_input_svideo</i>
+                                </div>
+                                <div class="media-body">
+                                    <h4 class="card-title m-0">Teal theme</h4>
+                                </div>
+                                <a href="shop.html#theme=teal" class="btn btn-secondary media-right">Demo</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="card-block">
+                            <div class="media align-items-center">
+                                <div class="media-left icon-holder rounded-circle bg-theme--red text-white">
+                                    <i class="material-icons md-3">settings_input_svideo</i>
+                                </div>
+                                <div class="media-body">
+                                    <h4 class="card-title m-0">Red theme</h4>
+                                </div>
+                                <a href="shop.html#theme=red" class="btn btn-secondary media-right">Demo</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="card-block">
+                            <div class="media align-items-center">
+                                <div class="media-left icon-holder rounded-circle bg-theme--purple text-white">
+                                    <i class="material-icons md-3">settings_input_svideo</i>
+                                </div>
+                                <div class="media-body">
+                                    <h4 class="card-title m-0">Purple theme</h4>
+                                </div>
+                                <a href="shop.html#theme=purple" class="btn btn-secondary media-right">Demo</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="text-center spacer-lg" data-aos="fade-up">
+        <h2 class="display-4">Features</h2>
+    </div>
+
+    <div class="container-fluid spacer-lg pt-0">
+        <div class="row">
+            <div class="col-md-6 col-lg-4">
+                <div class="card-block" data-aos="fade-up">
+                    <div class="media">
+                        <div class="media-left icon-holder rounded-circle icon-holder--default">
+                            <i class="material-icons md-3">favorite_border</i>
+                        </div>
+                        <div class="media-body">
+                            <h4 class="card-title">Bootstrap Edge</h4>
+                            <p>Give your project super-powers with a stunning and functional template built with the latest and much anticipated Bootstrap 4 - the most popular and strongly supported front-end framework.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card-block" data-aos="fade-up" data-aos-delay="100">
+                    <div class="media">
+                        <div class="media-left icon-holder rounded-circle icon-holder--default">
+                            <i class="material-icons md-3">screen_rotation</i>
+                        </div>
+                        <div class="media-body">
+                            <h4 class="card-title">Fully Responsive</h4>
+                            <p>Efficiently scales your websites and applications from phones to tablets to desktops with CSS media queries. Ensure multi device compatibility and progressive enhancement with a mobile first approach.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card-block" data-aos="fade-up" data-aos-delay="200">
+                    <div class="media">
+                        <div class="media-left icon-holder rounded-circle icon-holder--default">
+                            <i class="material-icons md-3">device_hub</i>
+                        </div>
+                        <div class="media-body">
+                            <h4 class="card-title">Browser Support</h4>
+                            <p>AdminDash works on the last two versions of every major browser. Specifically, we test on Chrome, Firefox, Safari on Mac, Safari on iOS, IE10, IE11 and Edge.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card-block" data-aos="fade-up">
+                    <div class="media">
+                        <div class="media-left icon-holder rounded-circle icon-holder--default">
+                            <i class="material-icons md-3">favorite</i>
+                        </div>
+                        <div class="media-body">
+                            <h4 class="card-title">Interactive Web Components</h4>
+                            <p>Built with Material Design Kit - a set of interactive web components inspired from Material Design using vanilla CSS, JavaScript and HTML helps you create layouts with navigation drawers, headers and other advanced features.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card-block" data-aos="fade-up" data-aos-delay="100">
+                    <div class="media">
+                        <div class="media-left icon-holder rounded-circle icon-holder--default">
+                            <i class="material-icons md-3">swap_horiz</i>
+                        </div>
+                        <div class="media-body">
+                            <h4 class="card-title">Multiple Layouts</h4>
+                            <p>AdminDash provides multiple layout examples such as fluid layout with a visible desktop drawer and a fixed layout variation with centered wrapper and a floating desktop drawer.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card-block" data-aos="fade-up" data-aos-delay="200">
+                    <div class="media">
+                        <div class="media-left icon-holder rounded-circle icon-holder--default">
+                            <i class="material-icons md-3">toll</i>
+                        </div>
+                        <div class="media-body">
+                            <h4 class="card-title">Material Design Icons</h4>
+                            <p>Access over 900 material design system icons, available in a variety of sizes and densities, and as a web font under an open source license. Beautifully crafted and designed by Google.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card-block" data-aos="fade-up">
+                    <div class="media">
+                        <div class="media-left icon-holder rounded-circle icon-holder--default">
+                            <i class="material-icons md-3">toll</i>
+                        </div>
+                        <div class="media-body">
+                            <h4 class="card-title">Picto Icons <span class="text-primary">&dollar;199 value</span></h4>
+                            <p>You get PictoFoundry's full collection of 800+ professional icons, from 13 popular icon categories, including arrows, clothing, emotions, food, household, nature, sports, science, shopping, vehicles and more!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card-block" data-aos="fade-up" data-aos-delay="100">
+                    <div class="media">
+                        <div class="media-left icon-holder rounded-circle icon-holder--default">
+                            <i class="material-icons md-3">insert_chart</i>
+                        </div>
+                        <div class="media-body">
+                            <h4 class="card-title">Charts</h4>
+                            <p>Simple yet flexible JavaScript charting for designers and developers, customized to match the theme for beautiful visual representations of your data. Includes useful chart samples - hourly, daily, weekly or monthly.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card-block" data-aos="fade-up" data-aos-delay="200">
+                    <div class="media">
+                        <div class="media-left icon-holder rounded-circle icon-holder--default">
+                            <i class="material-icons md-3">chrome_reader_mode</i>
+                        </div>
+                        <div class="media-body">
+                            <h4 class="card-title">Navigation Drawer</h4>
+                            <p>A navigation drawer slides from the left or right and contains the navigation destinations for your app. With smart features such as automatic RTL detection and full JavaScript and DOM APIs, it can easily be controlled programatically
+                                or just with HTML attributes.</p>
+
+                            <!-- <p>A drawer slides from the left or right and contains the navigation for your app. With smart features such as RTL detection and a JavaScript API, it can easily be controlled with HTML attributes. Includes a floating drawer, with everything behind it visible but darkened by a scrim, and a permanent drawer, always visible and pinned next to the content.</p> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card-block" data-aos="fade-up">
+                    <div class="media">
+                        <div class="media-left icon-holder rounded-circle icon-holder--default">
+                            <i class="material-icons md-3">chrome_reader_mode</i>
+                        </div>
+                        <div class="media-body">
+                            <h4 class="card-title">Floating Drawer</h4>
+                            <p>A floating navigation drawer spans the height of the screen, with everything behind it visible but darkened by a scrim area. Perfect for applications that require less hierarchy and optimize for screen space, since it has to
+                                be activated in order to be visible. All drawers have built-in screen size detection and close on small screens.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card-block" data-aos="fade-up" data-aos-delay="100">
+                    <div class="media">
+                        <div class="media-left icon-holder rounded-circle icon-holder--default">
+                            <i class="material-icons md-3">chrome_reader_mode</i>
+                        </div>
+                        <div class="media-body">
+                            <h4 class="card-title">Permanent Drawer</h4>
+                            <p>A permanent drawer can also span the full height of the screen but can also be clipped under a top navigation header, but in both cases it's always visible and pinned next to the content. The permanent drawer is the recommended
+                                default for desktop screens.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card-block" data-aos="fade-up" data-aos-delay="200">
+                    <div class="media">
+                        <div class="media-left icon-holder rounded-circle icon-holder--default">
+                            <i class="material-icons md-3">vertical_align_top</i>
+                        </div>
+                        <div class="media-body">
+                            <h4 class="card-title">Header</h4>
+                            <p>A container element for navigation and other content at the top of the screen with visual effects based on scroll position such as parallax and blending background colors. Add common behavior to your top navigation such as
+                                fixed header when scrolling, revealing the header when scrolling up or condensing the header size when scrolling down.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card-block" data-aos="fade-up">
+                    <div class="media">
+                        <div class="media-left icon-holder rounded-circle icon-holder--default">
+                            <i class="material-icons md-3">3d_rotation</i>
+                        </div>
+                        <div class="media-body">
+                            <h4 class="card-title">Parallax</h4>
+                            <p>Specialized components for header and content areas that gives you the ability to create a 3D effect of a background moving at a slower rate to the foreground as you scroll down the page, a trendy web design effect which provides
+                                an extra nice and subtle element of depth. In addition, background color and image blending effects are also available.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card-block" data-aos="fade-up" data-aos-delay="100">
+                    <div class="media">
+                        <div class="media-left icon-holder rounded-circle icon-holder--default">
+                            <i class="material-icons md-3">shopping_cart</i>
+                        </div>
+                        <div class="media-body">
+                            <h4 class="card-title">eCommerce</h4>
+                            <p>Key components and page samples for your online shop management, with beautiful sales and online visitors statistics provided by the shop dashboard, shopping cart views, invoice sample, account, checkout and payment forms,
+                                product and inventory management.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card-block" data-aos="fade-up" data-aos-delay="200">
+                    <div class="media">
+                        <div class="media-left icon-holder rounded-circle icon-holder--default">
+                            <i class="material-icons md-3">assessment</i>
+                        </div>
+                        <div class="media-body">
+                            <h4 class="card-title">Dashboards</h4>
+                            <p>We all love the at-a-glance views of key performance indicators relevant to our business and objectives, provided by dashboards. Well, let your eyes droll on these dashboard samples and imagine those sales and metrics on your
+                                project, whether it's an online shop, a learning management system or a sports team.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card-block" data-aos="fade-up">
+                    <div class="media">
+                        <div class="media-left icon-holder rounded-circle icon-holder--default">
+                            <i class="material-icons md-3">find_in_page</i>
+                        </div>
+                        <div class="media-body">
+                            <h4 class="card-title">Page Examples</h4>
+                            <p>AdminDash is packed with examples showing you how to use various components, layout configurations and specific niche topics such as shopping, learning, community, user profiles and many more which gives you a taste of what's
+                                possible using this product.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card-block" data-aos="fade-up" data-aos-delay="100">
+                    <div class="media">
+                        <div class="media-left icon-holder rounded-circle icon-holder--default">
+                            <i class="material-icons md-3">dashboard</i>
+                        </div>
+                        <div class="media-body">
+                            <h4 class="card-title">UI Components</h4>
+                            <p>Dozens of components for all your needs, from buttons to dropdowns, alerts, modals, cards, tabs, nestable lists, notifications, icons, progress bars, forms, file uploads, loading spinners, tables, charts and more.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card-block" data-aos="fade-up" data-aos-delay="200">
+                    <div class="media">
+                        <div class="media-left icon-holder rounded-circle icon-holder--default">
+                            <i class="material-icons md-3">music_video</i>
+                        </div>
+                        <div class="media-body">
+                            <h4 class="card-title">Media Players</h4>
+                            <p>Suited for apps related to music, artists and musicians, AdminDash features a music kit packed with custom media players, music players, video players, playlists, top song lists and more, hand-crafted to match the theme.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card-block" data-aos="fade-up">
+                    <div class="media">
+                        <div class="media-left icon-holder rounded-circle icon-holder--default">
+                            <i class="material-icons md-3">code</i>
+                        </div>
+                        <div class="media-body">
+                            <h4 class="card-title">Built-in Workflow</h4>
+                            <p>Includes a modern development workflow based on Webpack which compiles Sass, ES6 JavaScript, handles production builds, watchers, CSS themes and more. You can also use other tools such as Gulp.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card-block" data-aos="fade-up" data-aos-delay="100">
+                    <div class="media">
+                        <div class="media-left icon-holder rounded-circle icon-holder--default">
+                            <i class="material-icons md-3">code</i>
+                        </div>
+                        <div class="media-body">
+                            <h4 class="card-title">Code Distribution</h4>
+                            <p>Much of the reusable style and logic is packed into packages easily distributable with highly popular code management tools such as npm and git, which means you can easily install these in your projects.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bg-inverse">
+        <div class="container-fluid p-0">
+            <div class="row m-0">
+                <div class="col-lg-4 d-flex flex-column justify-content-center bg-inverse card-inverse spacer-lg">
+                    <div>
+                        <h2 class="display-4" data-aos="fade-up">Dark Sidebar</h2>
+                        <!-- <p class="lead" data-aos="fade-up" data-aos-delay="100" style="color: inherit;">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p> -->
+                        <a data-aos="fade-up" data-aos-delay="100" href="shop.html#theme=default" class="btn btn-lg btn-primary">Demo</a>
+                    </div>
+                </div>
+                <!-- animated slideInRight -->
+                <div class="col-lg-8 p-0" style="height: 100vh; max-height: 700px;">
+                    <div class="fullbleed" style="transform: scale(.95);">
+                        <div class="fullbleed" data-aos="fade-left" style="background-image: url('assets/images/demo/default-email.png'); background-size: cover;"></div>
+                    </div>
+                    <div class="fullbleed" style="left: 205px; transform: scale(.98);">
+                        <div class="fullbleed" data-aos="fade-left" data-aos-delay="50" style="background-image: url('assets/images/demo/default-calendar.png'); background-size: cover;"></div>
+                    </div>
+                    <div class="fullbleed" data-aos="fade-left" data-aos-delay="100" style="background-image: url('assets/images/demo/default.png'); background-size: cover; left: 410px;">
+                    </div>
+                </div>
+            </div>
+            <br>
+        </div>
+    </div>
+
+    <div class="bg-white" data-aos="fade-up">
+        <div class="container-fluid p-0">
+            <div class="row m-0">
+                <div class="col-lg-4 d-flex flex-column justify-content-center bg-white spacer-lg">
+                    <div>
+                        <h2 class="display-4" data-aos="fade-up">Light Sidebar</h2>
+                        <!-- <p class="lead" data-aos="fade-up" data-aos-delay="100" style="color: inherit;">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p> -->
+                        <a data-aos="fade-up" data-aos-delay="100" href="shop.html#theme=minimal" class="btn btn-lg btn-primary">Demo</a>
+                    </div>
+                </div>
+                <div class="col-lg-8 p-0" style="height: 100vh; max-height: 700px; background-image: url('assets/images/demo/minimal.png'); background-size: cover;"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="assets/vendor/jquery.min.js"></script>
+
+    <!-- Bootstrap -->
+    <script src="assets/vendor/tether.min.js"></script>
+    <script src="assets/vendor/bootstrap.min.js"></script>
+
+    <!-- Simplebar -->
+    <!-- Used for adding a custom scrollbar to the drawer -->
+    <script src="assets/vendor/simplebar.js"></script>
+
+    <!-- DOM Factory -->
+    <!-- MDK and Card Overlay Component dependency -->
+    <script src="assets/vendor/dom-factory.js"></script>
+
+    <!-- MDK -->
+    <script src="assets/vendor/material-design-kit.js"></script>
+
+    <script>
+        (function() {
+            'use strict';
+
+            // Connect button(s) to drawer(s)
+            var sidebarToggle = Array.prototype.slice.call(document.querySelectorAll('[data-toggle="sidebar"]'))
+
+            sidebarToggle.forEach(function(toggle) {
+                toggle.addEventListener('click', function(e) {
+                    var selector = e.currentTarget.getAttribute('data-target') || '#default-drawer'
+                    var drawer = document.querySelector(selector)
+                    if (drawer) {
+                        drawer.mdkDrawer.toggle()
+                    }
+                })
+            })
+
+            var drawerNode = document.querySelector('.mdk-drawer')
+            var headerNode = document.querySelector('.mdk-header')
+            var headerLayoutNode = document.querySelector('.mdk-header-layout')
+
+            if (drawerNode) {
+                drawerNode.addEventListener('mdk-drawer-changed', function() {
+                    headerNode.mdkHeader._reset()
+                })
+            }
+
+            var willShrink = document.querySelectorAll('.will-shrink-to-hidden')
+            var willFade = document.querySelectorAll('.will-fade')
+            var scrollingRegion = [document.querySelector('.mdk-header-layout__content'), window]
+
+            if (headerNode && (willShrink || willFade)) {
+                scrollingRegion.forEach(function(scrollingRegion) {
+                    scrollingRegion.addEventListener('scroll', function() {
+                        var progress = headerNode.mdkHeader.getScrollState().progress
+
+                        Array.prototype.slice.call(willShrink).forEach(function(willShrink) {
+                            willShrink.classList.toggle('shrink-to-hidden', progress > 0.1)
+                        })
+
+                        Array.prototype.slice.call(willFade).forEach(function(willFade) {
+                            willFade.style.opacity = 1 - progress
+                        })
+                    })
+                })
+            }
+
+            // TOOLTIPS
+            $('[data-toggle="tooltip"]').tooltip()
+            $('[data-toggle="popover"]').popover()
+
+            // SIDEBAR COLLAPSE MENUS
+            $('.sidebar .collapse').on('show.bs.collapse', function(e) {
+                $(this).closest('.sidebar-menu').find('.open').find('.collapse').collapse('hide');
+                $(this).closest('li').addClass('open');
+            });
+            $('.sidebar .collapse').on('hidden.bs.collapse', function(e) {
+                $(this).closest('li').removeClass('open');
+            });
+
+            // DISMISSABLE DROPDOWN
+            $('body').on({
+                'shown.bs.dropdown': function() {
+                    this.closable = false
+                },
+                'click': function(e) {
+                    var selectors = ['[data-dismiss="dropdown"]', '[data-toggle="dropdown"]']
+                    selectors.forEach(function(selector) {
+                        if (!this.closable) {
+                            this.closable = $(e.target).is(selector) || $(e.target).closest(selector).length > 0
+                        }
+                    }, this)
+                },
+                'hide.bs.dropdown': function(e) {
+                    var selector = ['[data-toggle="dropdown"]']
+                    if (!this.closable) {
+                        this.closable = $(e.relatedTarget).is(selector) || $(e.relatedTarget).closest(selector).length > 0
+                    }
+                    return this.closable === true
+                }
+            }, '[data-dropdown-dismissable]')
+
+            ///////////////
+            // PRELOADER //
+            ///////////////
+
+            window.addEventListener('load', function() {
+                $('.preloader').fadeOut()
+            })
+
+            //////////////////////////////////////////
+            // BREAK OUT OF ENVATO LIVE DEMO IFRAME //
+            //////////////////////////////////////////
+
+            window.top.location.hostname !== window.location.hostname && (window.top.location = window.location)
+
+        })()
+    </script>
+
+    <!-- Vue.js (safe to remove) -->
+    <!-- Used for App Settings -->
+    <script src="assets/vendor/vue.min.js"></script>
+
+    <!-- Cookies (safe to remove) -->
+    <!-- Used for App Settings -->
+    <script src="assets/vendor/js.cookie.js"></script>
+
+    <!-- App Settings (safe to remove) -->
+    <script src="assets/vendor/fm-app-settings.js"></script>
+
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            easing: 'ease-out-back',
+            duration: 1000
+        });
+    </script>
+
+</body>
+
+</html>

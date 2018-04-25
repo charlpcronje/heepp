@@ -1,0 +1,2 @@
+<condition 
+    loadFunction="this,data,getProperties">${data.value}</condition>

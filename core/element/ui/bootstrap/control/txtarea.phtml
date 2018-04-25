@@ -1,0 +1,17 @@
+<div class="form-group">
+    <if notempty="@{label}">
+        <label for="@{id}">@{label}</label>
+    </if>
+    <textarea 
+        name="@{name}" 
+        id="@{id}" 
+        class="form-control @{class}"
+        style="@{style}" 
+        rows="@{rows}"
+        readonly="@{readonly}"
+        disabled="@{disabled}"
+        placeholder="@{placeholder}"
+        required="@{required}">
+        @{child}
+    </textarea>
+</div>

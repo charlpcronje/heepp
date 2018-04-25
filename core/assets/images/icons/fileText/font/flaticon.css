@@ -1,0 +1,207 @@
+	/*
+  	Flaticon icon font: Flaticon
+  	Creation date: 22/06/2016 15:03
+  	*/
+
+@font-face {
+  font-family: "Flaticon";
+  src: url("./Flaticon.eot");
+  src: url("./Flaticon.eot?#iefix") format("embedded-opentype"),
+       url("./Flaticon.woff") format("woff"),
+       url("./Flaticon.ttf") format("truetype"),
+       url("./Flaticon.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "Flaticon";
+    src: url("./Flaticon.svg#Flaticon") format("svg");
+  }
+}
+
+[class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+[class^="flaticon-"]:after, [class*=" flaticon-"]:after {   
+  font-family: Flaticon;
+        font-size: 20px;
+font-style: normal;
+margin-left: 20px;
+}
+
+.flaticon-3dm-file-format-symbol:before { content: "\f100"; }
+.flaticon-3ds-file-format-extension:before { content: "\f101"; }
+.flaticon-3g2-file-format:before { content: "\f102"; }
+.flaticon-3gp-file-format:before { content: "\f103"; }
+.flaticon-7z-file-format-variant:before { content: "\f104"; }
+.flaticon-aac-file-format-variant:before { content: "\f105"; }
+.flaticon-ai-file-format:before { content: "\f106"; }
+.flaticon-aif-file-symbol:before { content: "\f107"; }
+.flaticon-apk-file-format-symbol:before { content: "\f108"; }
+.flaticon-app-file-symbol:before { content: "\f109"; }
+.flaticon-asf-file-format-symbol:before { content: "\f10a"; }
+.flaticon-asp-file-format-symbol:before { content: "\f10b"; }
+.flaticon-aspx-file-format-symbol:before { content: "\f10c"; }
+.flaticon-asx-file-format-symbol:before { content: "\f10d"; }
+.flaticon-avi-video-file-format-symbol:before { content: "\f10e"; }
+.flaticon-bak-file-format-symbol:before { content: "\f10f"; }
+.flaticon-bat-file-format:before { content: "\f110"; }
+.flaticon-bin-file-format:before { content: "\f111"; }
+.flaticon-bmp-file-format-symbol:before { content: "\f112"; }
+.flaticon-cab-file-format-symbol:before { content: "\f113"; }
+.flaticon-cad-file-format:before { content: "\f114"; }
+.flaticon-cdr-file-format-extension:before { content: "\f115"; }
+.flaticon-cer-file-format-symbol:before { content: "\f116"; }
+.flaticon-cfg-file-format-symbol:before { content: "\f117"; }
+.flaticon-cfm-file-format-symbol:before { content: "\f118"; }
+.flaticon-cgi-file-format-variant:before { content: "\f119"; }
+.flaticon-class-file-format-symbol:before { content: "\f11a"; }
+.flaticon-com-file-format-symbol:before { content: "\f11b"; }
+.flaticon-cpl-file-format:before { content: "\f11c"; }
+.flaticon-cpp-icon-file-format:before { content: "\f11d"; }
+.flaticon-crx-file-format-symbol:before { content: "\f11e"; }
+.flaticon-csr-file-format-variant:before { content: "\f11f"; }
+.flaticon-css-file-format-symbol:before { content: "\f120"; }
+.flaticon-csv-file-format-extension:before { content: "\f121"; }
+.flaticon-cue-file-format-variant:before { content: "\f122"; }
+.flaticon-cur-icon-file-format:before { content: "\f123"; }
+.flaticon-dat-file-format-symbol:before { content: "\f124"; }
+.flaticon-db-file-format-symbol:before { content: "\f125"; }
+.flaticon-dbf-file-format:before { content: "\f126"; }
+.flaticon-dds-icon:before { content: "\f127"; }
+.flaticon-dem-file-format-extension:before { content: "\f128"; }
+.flaticon-dfx-file-format-symbol:before { content: "\f129"; }
+.flaticon-dll-file-format-symbol:before { content: "\f12a"; }
+.flaticon-dmg-file-format-variant:before { content: "\f12b"; }
+.flaticon-dmp-file-format-symbol:before { content: "\f12c"; }
+.flaticon-doc-file-format:before { content: "\f12d"; }
+.flaticon-docx-file-format-symbol:before { content: "\f12e"; }
+.flaticon-drv-file-format-symbol:before { content: "\f12f"; }
+.flaticon-dtd-file-format-symbol:before { content: "\f130"; }
+.flaticon-dwg-file-format-variant:before { content: "\f131"; }
+.flaticon-elf-file-format:before { content: "\f132"; }
+.flaticon-eps-file-format-symbol:before { content: "\f133"; }
+.flaticon-eps-file-format-symbol-1:before { content: "\f134"; }
+.flaticon-exe-file-format-variant:before { content: "\f135"; }
+.flaticon-fla-file-format:before { content: "\f136"; }
+.flaticon-flash-file-format-symbol:before { content: "\f137"; }
+.flaticon-flv-file-format-symbol:before { content: "\f138"; }
+.flaticon-fnt-file-format-symbol:before { content: "\f139"; }
+.flaticon-fon-file-format-variant:before { content: "\f13a"; }
+.flaticon-gam-file-format:before { content: "\f13b"; }
+.flaticon-gbr-file-format:before { content: "\f13c"; }
+.flaticon-ged-icon-file-format:before { content: "\f13d"; }
+.flaticon-gif-file-format-symbol:before { content: "\f13e"; }
+.flaticon-gpx-file-format-symbol:before { content: "\f13f"; }
+.flaticon-gz-file-format-variant:before { content: "\f140"; }
+.flaticon-gzip-file-format-variant:before { content: "\f141"; }
+.flaticon-hqz-file-format-symbol:before { content: "\f142"; }
+.flaticon-html-file-extension-interface-symbol:before { content: "\f143"; }
+.flaticon-ibooks-file-format-symbol:before { content: "\f144"; }
+.flaticon-icns-file-format:before { content: "\f145"; }
+.flaticon-ico-file-format-variant:before { content: "\f146"; }
+.flaticon-ics-file-format:before { content: "\f147"; }
+.flaticon-iff-file-format-symbol:before { content: "\f148"; }
+.flaticon-indd-file-format-symbol:before { content: "\f149"; }
+.flaticon-iso-file-format:before { content: "\f14a"; }
+.flaticon-iso-file-format-variant:before { content: "\f14b"; }
+.flaticon-jar-file-format-symbol:before { content: "\f14c"; }
+.flaticon-jpg-file-format-variant:before { content: "\f14d"; }
+.flaticon-js-file-format-symbol:before { content: "\f14e"; }
+.flaticon-jsp-file-format-variant:before { content: "\f14f"; }
+.flaticon-key-file-format:before { content: "\f150"; }
+.flaticon-kml-file-format-interface:before { content: "\f151"; }
+.flaticon-kmz-file-format-variant:before { content: "\f152"; }
+.flaticon-lnk-file-format:before { content: "\f153"; }
+.flaticon-log-file-format:before { content: "\f154"; }
+.flaticon-lua-file-format-variant:before { content: "\f155"; }
+.flaticon-m3u-file-format-variant:before { content: "\f156"; }
+.flaticon-m4a-file-format-variant:before { content: "\f157"; }
+.flaticon-m4v-file-format:before { content: "\f158"; }
+.flaticon-mach-o-file-format-variant-symbol:before { content: "\f159"; }
+.flaticon-max-file-format-extension:before { content: "\f15a"; }
+.flaticon-mdb-file-format:before { content: "\f15b"; }
+.flaticon-mdf-icon-format:before { content: "\f15c"; }
+.flaticon-mid-file-format-extension:before { content: "\f15d"; }
+.flaticon-mim-file-format-variant:before { content: "\f15e"; }
+.flaticon-mov-file-format:before { content: "\f15f"; }
+.flaticon-mp3-file-format-symbol:before { content: "\f160"; }
+.flaticon-mp4-music-file-format:before { content: "\f161"; }
+.flaticon-mpa-file-format-variant:before { content: "\f162"; }
+.flaticon-mpg-file-format-symbol:before { content: "\f163"; }
+.flaticon-msg-file-format-symbol:before { content: "\f164"; }
+.flaticon-msi-file-format-symbol:before { content: "\f165"; }
+.flaticon-nes-file-format-variant:before { content: "\f166"; }
+.flaticon-obj-file-format-variant:before { content: "\f167"; }
+.flaticon-odb-file-format-variant:before { content: "\f168"; }
+.flaticon-odc-file-format:before { content: "\f169"; }
+.flaticon-odf-file-format:before { content: "\f16a"; }
+.flaticon-odg-file-format-symbol:before { content: "\f16b"; }
+.flaticon-odi-file-format:before { content: "\f16c"; }
+.flaticon-odp-file-format-symbol:before { content: "\f16d"; }
+.flaticon-ods-file-format-symbol:before { content: "\f16e"; }
+.flaticon-odt-file-format-symbol:before { content: "\f16f"; }
+.flaticon-odt-file-format-symbol-1:before { content: "\f170"; }
+.flaticon-odx-file-format-interface:before { content: "\f171"; }
+.flaticon-ogg-file-format-symbol:before { content: "\f172"; }
+.flaticon-otf-file-format-symbol:before { content: "\f173"; }
+.flaticon-otf-file-format-symbol-1:before { content: "\f174"; }
+.flaticon-pages-file-format:before { content: "\f175"; }
+.flaticon-pct-file-format-symbol:before { content: "\f176"; }
+.flaticon-pdb-icon-file-format:before { content: "\f177"; }
+.flaticon-pdf-file-format-symbol:before { content: "\f178"; }
+.flaticon-photoshop-file-format:before { content: "\f179"; }
+.flaticon-pif-file-format-variant:before { content: "\f17a"; }
+.flaticon-pkg-file-format-symbol:before { content: "\f17b"; }
+.flaticon-pl-file-format-variant:before { content: "\f17c"; }
+.flaticon-png-file-format-symbol:before { content: "\f17d"; }
+.flaticon-pps-file-format:before { content: "\f17e"; }
+.flaticon-ppt-business-presentation-file-format-symbol:before { content: "\f17f"; }
+.flaticon-pptx-file-format:before { content: "\f180"; }
+.flaticon-ps-file-format-symbol:before { content: "\f181"; }
+.flaticon-pub-file-format:before { content: "\f182"; }
+.flaticon-py-file-format:before { content: "\f183"; }
+.flaticon-ra-file-symbol:before { content: "\f184"; }
+.flaticon-rar-file-format:before { content: "\f185"; }
+.flaticon-raw-file-format-symbol:before { content: "\f186"; }
+.flaticon-rm-file-format-symbol:before { content: "\f187"; }
+.flaticon-rom-file-format:before { content: "\f188"; }
+.flaticon-rpm-file-format-symbol:before { content: "\f189"; }
+.flaticon-rss-file-format-symbol:before { content: "\f18a"; }
+.flaticon-rtf-file-symbol:before { content: "\f18b"; }
+.flaticon-sav-file-format-symbol:before { content: "\f18c"; }
+.flaticon-sdf-file-format-symbol:before { content: "\f18d"; }
+.flaticon-sitx-file-format:before { content: "\f18e"; }
+.flaticon-sql-file-format:before { content: "\f18f"; }
+.flaticon-sql-file-symbol:before { content: "\f190"; }
+.flaticon-srt-file-format-symbol:before { content: "\f191"; }
+.flaticon-svg-file-format-variant:before { content: "\f192"; }
+.flaticon-swf-file-format-symbol:before { content: "\f193"; }
+.flaticon-sys-file-format-symbol:before { content: "\f194"; }
+.flaticon-tar-file-format-symbol:before { content: "\f195"; }
+.flaticon-tex-file-format-symbol:before { content: "\f196"; }
+.flaticon-tga-file-format:before { content: "\f197"; }
+.flaticon-thm-file-format-symbol:before { content: "\f198"; }
+.flaticon-tiff-file-extension-symbol:before { content: "\f199"; }
+.flaticon-tmp-file-format-variant:before { content: "\f19a"; }
+.flaticon-torrent-symbol-file-format:before { content: "\f19b"; }
+.flaticon-ttf-file-format-symbol:before { content: "\f19c"; }
+.flaticon-txt-file-symbol:before { content: "\f19d"; }
+.flaticon-uue-file-format:before { content: "\f19e"; }
+.flaticon-vb-file-format-symbol:before { content: "\f19f"; }
+.flaticon-vcd-file-format-variant:before { content: "\f1a0"; }
+.flaticon-vcf-file-symbol:before { content: "\f1a1"; }
+.flaticon-vob-file-format-variant:before { content: "\f1a2"; }
+.flaticon-wav-file-format-symbol:before { content: "\f1a3"; }
+.flaticon-wma-file-format-variant:before { content: "\f1a4"; }
+.flaticon-wmv-file-format-symbol:before { content: "\f1a5"; }
+.flaticon-wpd-file-format:before { content: "\f1a6"; }
+.flaticon-wps-file-format-variant:before { content: "\f1a7"; }
+.flaticon-wsf-file-format:before { content: "\f1a8"; }
+.flaticon-xhtml-file-format-variant:before { content: "\f1a9"; }
+.flaticon-xlr-file-format-variant:before { content: "\f1aa"; }
+.flaticon-xls-file-format-symbol:before { content: "\f1ab"; }
+.flaticon-xlsx-file-format-extension:before { content: "\f1ac"; }
+.flaticon-xml-file-format-symbol:before { content: "\f1ad"; }
+.flaticon-yuv-file-format:before { content: "\f1ae"; }
+.flaticon-zip-file-format:before { content: "\f1af"; }

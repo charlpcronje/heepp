@@ -1,0 +1,25 @@
+<lazyload
+    url="${env.project.views.url}console/css/"
+    path="${env.project.views.path}console/css/"
+    file="settings.scss"/>
+
+<lazyload
+    src="views/console/js/settings.js"
+    instantiate="settings"
+    extend="console"
+    callback="core.console.settings.init"
+    context="window"/>
+
+<section id="cc-console-settings">
+    <div class="cc-ws-tab cc-ws-tab-top active">
+        <i uk-icon="icon: settings"/>
+        <span> Settings</span>
+        <i class="cc-ws-tab-close" uk-icon="icon: close"/>
+    </div>
+    <nav>
+        <import src="views/console/settings/nav.phtml"/>
+    </nav>
+    <main>
+        <import src="views/console/settings/core.phtml"/>
+    </main>
+</section>

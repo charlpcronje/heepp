@@ -1,0 +1,168 @@
+<root>
+    <ajaxChimp>
+        <includes>
+            <jscript
+                src="ajaxChimp/js/jquery.ajaxchimp.min.js"
+                description="ajaxChimp Object JS Include"/>
+        </includes>
+    </ajaxChimp>
+    
+    <autosize>
+        <includes>
+            <jscript
+                src="autosize/js/autosize.min.js"
+                description="Autosize 3.0.20"/>
+        </includes>
+    </autosize>
+
+    <cropperjs>
+        <includes>
+            <jscript
+                src="cropperjs/js/cropper.min.js"
+                description="Cropper JS V1.0.0"/>
+            <css
+                src="cropperjs/css/cropper.min.css"
+                description="Cropper CSS V1.0.0"/>
+        </includes>
+    </cropperjs>
+
+    <dotObject>
+        <includes>
+            <jscript
+                src="dotObject/js/dot-object.js"
+                description="DOT Object JS Include"/>
+        </includes>
+    </dotObject>
+
+    <jquery>
+        <includes>
+            <jscript    
+                src="jquery/jquery-1.11.js"
+                description="jQuery Version 1.11"/>
+        </includes>
+    </jquery>
+    
+    <jquery-1>
+        <includes>
+            <jscript
+                cdn="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"
+                src="jquery/jquery-1.11.js"
+                description="jQuery Version 1.11"/>
+        </includes>
+    </jquery-1>
+    
+    <!--
+    <jquery-2>
+        <includes>
+            <jscript
+                cdn="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"
+                src="jquery/jquery-2.1.4.js"
+                description="jQuery Version 2.1.4"/>
+        </includes>
+    </jquery-2>
+    -->
+    
+    <jquery-2>
+        <includes>
+            <jscript
+                src="jquery/jquery-2.1.4.js"
+                description="jQuery Version 2.1.4"/>
+        </includes>
+    </jquery-2>
+    
+    <jquery-3>
+        <includes>
+            <jscript
+                cdn="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"
+                src="jquery/jquery-3.1.0.min.js"
+                description="jQuery Version 3.1.0"/>
+        </includes>
+    </jquery-3>
+    
+    <!-- easypin requires jqueryEasing -->
+    <jqueryEasing>
+        <includes>
+            <jscript
+                cdn="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3.2/jquery.easing.min.js"
+                src="jqueryEasing/js/jquery.easing.min.js"
+                description="jQuery Easing 1.3.2 (https://github.com/atayahmet/jquery.easypin)"/>
+        </includes>
+    </jqueryEasing>
+    
+    <easypin>
+        <includes>
+            <jscript
+                src="easypin/js/jquery.easypin.js"
+                description="jQuery Easy Pin 1.0.9 (https://github.com/atayahmet/jquery.easypin)"/>
+        </includes>
+    </easypin>
+    <!-- easypin requires jqueryEasing -->
+    
+    <jscookie>
+        <includes>
+            <jscript
+                src="jscookue/js/js.cookie.js"
+                description="JS Cookie"/>
+        </includes>
+    </jscookie>
+    
+    <lazyload>
+        <includes>
+            <jscript
+                src="lazyload/js/lazyload.js"
+                description="JS Lazyload"/>
+        </includes>
+    </lazyload>
+
+    <moment>
+        <includes>
+            <jscript
+                src="moment/js/momentjs.js"
+                description="MomentJS"/>
+            <jscript
+                src="moment/js/moment-range.min.js"
+                description="MomentJS Range"/>
+        </includes>
+    </moment>
+
+    <mousetrap>
+        <includes>
+            <jscript
+                cdn="https://cdnjs.cloudflare.com/ajax/libs/mousetrap/1.4.6/mousetrap.min.js"
+                src="mousetrap/js/mousetrap.min.js"
+                description="mousetrap Shortcut keys"/>
+        </includes>
+    </mousetrap>
+
+    <mutationObserver>
+        <includes>
+            <jscript    
+                src="mutationObserver/js/mutationObserver.js"
+                description="mutionObserver Object JS Include"/>
+        </includes>
+    </mutationObserver>
+    
+    <vue>
+        <includes>
+            <jscript    
+                src="vue/js/vue.min.js"
+                description="VUE JS"/>
+        </includes>
+    </vue>
+    
+    <w3data>
+        <includes>
+            <jscript    
+                src="w3data/js/w3data.js"
+                description="W3 Data Object JS Include"/>
+        </includes>
+    </w3data>
+
+    <workbox>
+        <includes>
+            <jscript
+                src="workbox/js/sw.js"
+                description="Workbox is a 'Caching' For Service Workers"/>
+        </includes>
+    </workbox>
+</root>

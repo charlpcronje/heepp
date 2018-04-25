@@ -1,0 +1,5 @@
+{
+    "require": {
+        "jwage/easy-csv": "^0.0.3"
+    }
+}

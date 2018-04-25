@@ -1,0 +1,38 @@
+<div class="news" repeat="messages">
+    <row id="message_${messages.id}">
+        <column size="2">
+            <div>
+                <date format="d F">${messages.created_at}</date>
+            </div>
+            <div>
+                <date format="H:i">${messages.created_at}</date>
+            </div>
+        </column>
+        <column size="10" style="position:relative">
+            <b>${messages.title}</b>
+            <br/>
+            <span>${messages.message}</span>
+            <if empty="${messages.hideButton}">
+                <button
+                    class="btn btn-xs btn-dashboard dismissButton"
+                    rel="${messages.id}"
+                    style="position: absolute; top: 0px; right: 0px">
+                    <i class="fa fa-times"></i>
+                </button>
+            </if>
+        </column>
+    </row>
+</div>
+<row id="messageSpacer" style="height:${spacerHeight}px"/>
+<script>
+    $(".dismissButton").click(function() {
+        var messageId = $(this).attr('rel');
+        $.ajax({
+            url : 'Message/dismissMessage/'+messageId
+        }).done(function() {
+            $("#message_"+messageId).fadeOut('slow',function() {
+                $("#messageSpacer").height($("#messageSpacer").height()+110);
+            });
+        });
+    });
+</script>

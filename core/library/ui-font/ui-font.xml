@@ -1,0 +1,7 @@
+<root>    
+    <openSans>
+        <includes>
+            <css     src="openSans/css/openSans.css"                description="Open Sans CSS Include"/>
+        </includes>
+    </openSans>
+</root>

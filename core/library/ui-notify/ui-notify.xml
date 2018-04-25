@@ -1,0 +1,13 @@
+<root>
+    <spin>
+        <includes>
+            <jscript     
+                src="gritter/js/gritter.min.js"
+                description="jQuery Gritter Notification Plugin JS Include"/>
+            
+            <css
+                src="gritter/css/gritter.css"
+                description="jQuery Gritter Notification Plugin CSS Include"/>
+        </includes>
+    </spin>
+</root>

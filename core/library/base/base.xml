@@ -1,0 +1,358 @@
+<root>
+    <core>
+        <includes>
+            <jscript
+                src="core.js"
+                bundle="core.bundle.js" 
+                minify="false"
+                gzip="false"
+                description="Heepp Object"/>
+
+            <jscript
+                src="core/core.loader.js"
+                bundle="core.bundle.js"
+                minify="false"
+                gzip="false"
+                description="Heepp Loader Object"/>
+
+            <jscript
+                src="core/ajax.js"
+                bundle="core.bundle.js"
+                minify="false"
+                gzip="false"
+                description="core Ajax"/>
+
+            <jscript
+                src="core/core.notify.js"
+                bundle="core.bundle.js"
+                minify="false"
+                gzip="false"
+                description="core Notify Object"/>
+
+            <jscript
+                src="core/core.confirm.js"
+                bundle="core.bundle.js"
+                minify="false"
+                gzip="false"
+                description="core Confirmation Object"/>
+
+            <jscript
+                src="core/core.offcanvas.js"
+                bundle="core.bundle.js"
+                minify="false"
+                gzip="false"
+                description="core Offcanvas Object"/>
+
+            <jscript
+                src="core/core.app.js"
+                bundle="core.bundle.js"
+                minify="false"
+                gzip="false"
+                description="Heepp App Object"/>
+
+            <jscript
+                src="core/core.form.js"
+                bundle="core.bundle.js"
+                minify="false"
+                gzip="false"
+                description="Heepp Form Object"/>
+
+            <jscript
+                src="core/core.html.js"
+                bundle="core.bundle.js"
+                minify="false"
+                gzip="false"
+                description="Heepp HTML Object"/>
+
+            <jscript
+                src="core/core.value.js"
+                bundle="core.bundle.js"
+                minify="false"
+                gzip="false"
+                description="Heepp Value Object"/>
+            
+            <jscript
+                src="core/core.event.js"
+                bundle="core.bundle.js"
+                minify="false"
+                gzip="false"
+                description="Heepp Event Object"/>
+
+            <jscript
+                src="core/core.event.click.js"
+                bundle="core.bundle.js"
+                minify="false"
+                gzip="false"
+                description="Heepp Click Event Object"/>
+
+            <jscript
+                src="core/core.event.ready.js"
+                bundle="core.bundle.js"
+                minify="false"
+                gzip="false"
+                description="Heepp Document Ready Object"/>
+            
+            <jscript
+                src="core/core.date.js"
+                bundle="core.bundle.js"
+                minify="false"
+                gzip="false"
+                description="Heepp Date Object"/>
+
+            <jscript
+                src="core/core.get.js"
+                bundle="core.bundle.js"
+                minify="false"
+                gzip="false"
+                description="Heepp GET Request Object"/>
+
+            <jscript
+                src="core/core.api.js"
+                bundle="core.bundle.js"
+                minify="false"
+                gzip="false"
+                description="Heepp API Object"/>
+            <!--
+            <jscript
+                 src="core/ui/data.js"
+                 bundle="core.bundle.js"
+                 minify="false"
+                 gzip="false"
+                 description="Heepp Datastore"/>
+
+            <jscript
+                 src="core/obj.js"
+                 bundle="core.bundle.js"
+                 minify="false"
+                 gzip="false"
+                 description="Heepp Object"/>
+
+            <jscript
+                 src="core/fn.js"
+                 bundle="core.bundle.js"
+                 minify="false"
+                 gzip="false"
+                 description="Heepp jQuery Selector"/>
+            -->
+
+            <!-- Load Heepp Logger (console.log replacements) -->
+            <!--
+            <jscript
+                 src="core/logger.js"
+                 bundle="core.bundle.js"
+                 minify="false"
+                 gzip="false"
+                 description="Heepp Logger Object Extending Heepp"/>
+            -->
+            <!-- Load Heepp Helper Objects all extending Helper -->
+            <!--
+            <jscript
+                 src="core/helper.js"
+                 bundle="core.bundle.js"
+                 minify="false"
+                 gzip="false"
+                 description="Heepp Helper Object Extending Heepp"/>
+
+            <jscript
+                 src="core/helper/dtime.js"
+                 bundle="core.bundle.js"
+                 minify="false"
+                 gzip="false"
+                 description="Heepp dtime Object Extending Helper"/>
+
+            <jscript
+                 src="core/helper/encode.js"
+                 bundle="core.bundle.js"
+                 minify="false"
+                 gzip="false"
+                 description="Heepp encode Object Extending Helper"/>
+
+            <jscript
+                 src="core/helper/evaluate.js"
+                 bundle="core.bundle.js"
+                 minify="false"
+                 gzip="false"
+                 description="Heepp evaluate Object Extending Helper"/>
+
+            <jscript
+                 src="core/helper/obj.js"
+                 bundle="core.bundle.js"
+                 minify="false"
+                 gzip="false"
+                 description="Heepp Object (Function Helpers) Extending Helper"/>
+
+            <jscript
+                 src="core/helper/format.js"
+                 bundle="core.bundle.js"
+                 minify="false"
+                 gzip="false"
+                 description="Heepp format Object Extending Helper"/>
+
+            <jscript
+                 src="core/helper/math.js"
+                 bundle="core.bundle.js"
+                 minify="false"
+                 gzip="false"
+                 description="Heepp math Object Extending Helper"/>
+
+            <jscript
+                 src="core/helper/string.js"
+                 bundle="core.bundle.js"
+                 minify="false"
+                 gzip="false"
+                 description="Heepp string Object Extending Helper"/>
+
+            <jscript
+                 src="core/helper/zip.js"
+                 bundle="core.bundle.js"
+                 minify="false"
+                 gzip="false"
+                 description="Heepp zip Object Extending Helper"/>
+            -->
+            <!-- Load Heepp Ajax Object -->
+            <!--
+            <jscript
+                 src="core/ajax.js"
+                 bundle="core.bundle.js"
+                 minify="false"
+                 gzip="false"
+                 description="Heepp Ajax Object Extending Heepp"/>
+
+            <jscript
+                 src="core/ajax/setup.js"
+                 bundle="core.bundle.js"
+                 minify="false"
+                 gzip="false"
+                 description="Heepp Ajax Setup Object Extending Ajax"/>
+
+            <jscript
+                 src="core/ajax/load.js"
+                 bundle="core.bundle.js"
+                 minify="false"
+                 gzip="false"
+                 description="Loading Files From Server or External Source"/>
+            -->
+            <!-- Load Heepp SQL Object -->
+            <!--
+            <jscript
+                 src="core/sql.js"
+                 bundle="core.bundle.js"
+                 minify="false"
+                 gzip="false"
+                 description="Heepp SQL JS"/>
+
+            <jscript
+                 src="core/sql/lite.js"
+                 bundle="core.bundle.js"
+                 minify="false"
+                 gzip="false"
+                 description="Heepp SQLite JS"/>
+            -->
+            <!-- Load Heepp Output Object -->
+            <!--
+            <jscript
+                 src="core/output.js"
+                 bundle="core.bundle.js"
+                 minify="false"
+                 gzip="false"
+                 description="Heepp Output JS"/>
+
+            <jscript
+                 src="core/ui.js"
+                 bundle="core.bundle.js"
+                 minify="false"
+                 gzip="false"
+                 description="Heepp UI JS"/>
+
+            <jscript
+                 src="core/ui/tooltip.js"
+                 bundle="core.bundle.js"
+                 minify="false"
+                 gzip="false"
+                 description="Heepp UI Tooltip JS"/>
+
+            <jscript
+                 src="core/ui/form.js"
+                 bundle="core.bundle.js"
+                 minify="false"
+                 gzip="false"
+                 description="Heepp UI Form JS"/>
+
+            <jscript
+                 src="core/ui/form/editor.js"
+                 bundle="core.bundle.js"
+                 minify="false"
+                 gzip="false"
+                 description="Heepp UI Editor JS"/>
+
+            <jscript
+                 src="core/ui/app.js"
+                 bundle="core.bundle.js"
+                 minify="false"
+                 gzip="false"
+                 description="Heepp UI App JS"/>
+
+            <jscript
+                 src="core/ui/preloader.js"
+                 bundle="core.bundle.js"
+                 minify="false"
+                 gzip="false"
+                 description="Heepp UI Preloader JS"/>
+
+            <jscript
+                 src="core/libs.js"
+                 bundle="core.bundle.js"
+                 minify="false"
+                 gzip="false"
+                 description="Heepp Libraries To Vendor Library Mapper JS"/>
+            -->
+        </includes>
+    </core>
+
+    <data>
+        <includes>
+            <jscript
+                 src="data/uiData.js"
+                 description="Heepp UI DataStore"/>
+        </includes>
+    </data>
+
+    <phpjs>
+        <includes>
+            <jscript
+                src="phpjs/phpjs.js"
+                bundle="phpjs.bundle.js"
+                minify="false"
+                gzip="false"
+                description="Declare Object phpJS"/>
+
+            <jscript
+                 src="phpjs/base.js"
+                 bundle="phpjs.bundle.js"
+                 minify="false"
+                 gzip="false"
+                 description="PHP Functions in JS Base"/>
+
+            <jscript
+                 src="phpjs/string.js"
+                 bundle="phpjs.bundle.js"
+                 minify="false"
+                 gzip="false"
+                 description="PHP String Functions in JS"/>
+
+            <jscript
+                 src="phpjs/math.js"
+                 bundle="phpjs.bundle.js"
+                 minify="false"
+                 gzip="false"
+                 description="PHP Math Functions in JS"/>
+
+            <jscript
+                src="phpjs/time.js"
+                bundle="phpjs.bundle.js"
+                minify="false"
+                gzip="false"
+                description="PHP Time Functions in JS"/>
+        </includes>
+    </phpjs>
+</root>

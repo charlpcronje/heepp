@@ -1,0 +1,27 @@
+<root>
+    <noty>
+        <includes>
+            <jscript
+                src="noty/js/jquery.noty.js"
+                description="Noty Alert"/>
+        </includes>
+    </noty>
+
+    <toastedjs>
+        <includes>
+            <css
+                src="toastedjs/css/toasted.min.css"
+                description="Material Font Basic Setup"/>
+            <css
+                src="https://fonts.googleapis.com/icon?family=Material+Icons"
+                cdn="https://fonts.googleapis.com/icon?family=Material+Icons"
+                description="Material Font on Google Fonts"/>
+            <css
+                src="toastedjs/css/material-icons-setup.css"
+                description="Material Font Basic Setup"/>
+            <jscript
+                src="toastedjs/js/toasted.min.js"
+                description="toastedJS Javascript include"/>
+        </includes>
+    </toastedjs>
+</root>

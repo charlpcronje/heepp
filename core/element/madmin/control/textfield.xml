@@ -1,0 +1,41 @@
+<div class="form-group floating-label">
+    <div class="input-group col-sm-12">
+        <if notempty="${prepend|prependicon}">
+            <span class="input-group-addon">
+                <if notempty="${prependicon}">
+                    <i class="fa fa-${prependicon} fa-lg"></i>
+                </if>
+                <if notempty="${prepend}">
+                    ${prepend}
+                </if>
+            </span>
+        </if>
+        <div class="input-group-content">
+            <input
+                type="${type}"
+                class="form-control input-${size} ${class}"
+                style="${style}"
+                id="${id}"
+                placeholder="${placeholder}"
+                readonly="${readonly}"
+                disabled="${disabled}"
+                name="${name}"
+                value="${value}"
+                required="${required}"/>
+            <label for="${id}">${label}</label>
+            <if notempty="${help}">
+                <p class="help-block">${help}</p>
+            </if>
+        </div>
+        <if notempty="${append|appendicon}">
+            <span class="input-group-addon">
+                <if notempty="${appendicon}">
+                    <i class="fa fa-${appendicon} fa-lg"></i>
+                </if>
+                <if notempty="${append}">
+                    ${append}
+                </if>
+            </span>
+        </if>
+    </div>
+</div>

@@ -1,0 +1,73 @@
+<script>
+    function doToastCall(call) {
+        let callback = call.split('.').reduce((o,i) => o[i],window);
+        return callback.call(window);
+    }
+
+    var actionRoute = '${actionRoute}';
+    var actionCall = '${actionCall}';
+    var completeCall = '${completeCall}';
+
+    /* Check if the Toast must be set to the full width */
+    var fullWidth = false;
+    if ('${fullWidth}' !== 'false') {
+        fullWidth = true;
+    }
+
+    /* Check if the Toast must be set to Fit to Screen */
+    var fitToScreen = false;
+    if ('${fitToScreen}' !== 'false') {
+        fitToScreen = true;
+    }
+
+    /* Check if the icon should be added before or after the toast message */
+    var iconAfter = false;
+    if ('${iconPosition}' === 'after') {
+        iconAfter = true;
+    }
+
+    /* Check if a custom icon color was set */
+    var iconColor = null;
+    if ('${iconColor}' !== 'undefined') {
+        iconColor = '${iconColor}';
+    }
+
+    /* Make sure the duration is set io an INT type */
+    var duration = parseInt('${duration}');
+
+    /* Create Toasted Object */
+    var toasted = new Toasted({
+        action : {
+            text : '${actionText}',
+            onClick : (e, toasted) => {
+                /* Call an existing JS function when action is clicked */
+                if (actionCall !== 'undefined') {
+                    doToastCall(actionCall,e,toasted);
+                }
+                /* Load a project route when action is clicked */
+                if (actionRoute !== 'undefined') {
+                    core.get.route(actionRoute);
+                }
+            }
+        },
+        fullWidth : fullWidth,
+        fitToScreen : fitToScreen,
+        position : '${position}',
+        className : '$className',
+        duration : duration,
+        type : '${type}',
+        theme : '${theme}',
+        containerClass : '${containerClass}',
+        icon : {
+            name : '${icon}',
+            after : iconAfter,
+            color : iconColor
+        },
+        onComplete : function() {
+            if (completeCall !== 'undefined') {
+                doToastCall(completeCall);
+            }
+        }
+    });
+    toasted.show('${message}');
+</script>

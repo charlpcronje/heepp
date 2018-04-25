@@ -1,0 +1,27 @@
+<div class="uk-margin">
+    <label class="uk-form-label" for="@{id}">@{label}</label>
+    <div class="uk-form-controls uk-inline" style="width:100%">
+        <if notempty="@{icon}">
+            <a
+                style="line-height: 1.5em"
+                class="uk-form-icon uk-form-icon-flip @{iconclass}"
+                href="#@{iconaction}"
+                id="@{id}-icon"
+                uk-icon="icon: @{icon}"
+                core.event.click.load="@{iconaction}"
+                title="@{icontip}"
+                onclick="@{iconclick}"
+                uk-tooltip="@{icontipposition}"></a>
+        </if>
+        <input
+            class="uk-input @{class}@{size}"
+            id="@{id}"
+            name="@{name}"
+            type="@{type}"
+            value="@{value}"
+            placeholder="@{placeholder}"
+            data-lpignore="@{hidelastpass}"
+            required="@{required}"
+            disabled="@{disabled}"/>
+    </div>
+</div>

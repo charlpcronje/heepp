@@ -1,0 +1,12 @@
+<root>
+    <fluidbox>
+        <includes>
+            <css     
+                src="fluidbox/css/fluidbox.min.css"
+                description="Fluidbox Image Lightbox"/>
+            <jscript
+                src="fluidbox/js/jquery.fluidbox.min.js"
+                description="Fluidbox Image Lightbox"/>
+        </includes>
+    </fluidbox>
+</root>

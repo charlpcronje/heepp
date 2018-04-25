@@ -1,0 +1,18 @@
+<root>
+    <chartjs>
+        <includes>
+            <jscript 
+                cdn="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.bundle.min.js"
+                src="chartjs/js/chartjs.min.js"
+                description="ChartJS JS"/>
+        </includes>
+    </chartjs>
+    
+    <morris>
+        <includes>
+            <css 
+                src="morris/css/morris.css"
+                description="Morris Charts CSS"/>
+        </includes>
+    </morris>
+</root>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- None of the settings in the document is case-sensitive -->
+
+<settings>
+    <!-- ISO data needed to validate some data types ex: string.language -->
+    <data>
+        <import
+            name="countries"
+            src="countries.xml" 
+            key="nodeName"
+            value="attributes.country"/>
+        <import
+            name="languages"
+            src="languages.xml" 
+            key="nodeName"
+            value="attributes.language"/>
+    </data>
+    
+    <!-- Include and save all the dataTypes as stdClass -->
+    <dataTypes>
+        <import
+            name="base"
+            src="base.xml"/>
+        <import
+            name="numerical"
+            src="numerical.xml"/>
+        <import
+            name="string"
+            src="string.xml"/>
+        <import
+            name="dateTime"
+            src="dateTime.xml"/>
+        <import
+            name="misc"
+            src="misc.xml"/>
+        
+        <!-- 
+            custom must be specified last because custom can extend the standard
+            data types
+        -->
+        <import
+            name="custom"
+            src="custom.xml"/>
+    </dataTypes>
+    
+    <!-- Settings when parsing an object -->
+    <object>
+        <!--
+            This is the main XML tag surrounding the Object Properties.
+            You may comma-seperate more than one to include multiple wrapper tags
+        -->
+        <construct>construct,const</construct>
+    
+        <!-- The XML tag to be used to specify an object property -->
+        <property>property,prop</property>
+    
+        <!-- A
+            The default output type of the XMLObject Class (Property: result) 
+            Options: stdClass,anObj,array,json
+        -->
+        <output>stdClass</output>
+    </object>
+
+    <!-- 
+        Variable defaults, indicate in default what type of variable to parse 
+        @constants: variables declared by "define()". Does on include class const
+        @params: objects and arrays added to the params property
+        @globals: $_SERVER,$_GET,$_POST
+        @parseFail: If no variable, array, object or property was found matching the variable:
+            DEFAULT,TYPE_DEFAULT,ORIGINAL or ORIGINAL_NO_WRAPPER,EMPTY
+            You may arrange above in order of values to apply if the parse fails
+    -->
+    <variables outputType="stdClass" parseFail="DEFAULT,TYPE_DEFAULT,EMPTY">
+        <constants 
+            wrapStart="${"
+            wrapEnd="}"
+            parse="true"/>
+        <params
+            wrapStart="${"
+            wrapEnd="}"
+            parse="true"/>
+        <globals
+            wrapStart="${"
+            wrapEnd="}"
+            parse="true"/>
+        <attributes
+            wrapStart="${"
+            wrapEnd="}"
+            parse="true"/>
+        <node
+            wrapStart="${"
+            wrapEnd="}"
+            parse="true"/>
+        <nodeInner
+            wrapStart="${"
+            wrapEnd="}"
+            parse="true"/>
+    </variables>
+</settings>

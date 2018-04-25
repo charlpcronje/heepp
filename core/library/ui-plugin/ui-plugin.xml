@@ -1,0 +1,30 @@
+<root>
+	<acidDom>
+		<includes>
+			<css	  src="acidDom/css/acid_dom.css" 			 decription="Javascript DOM Explorer CSS Include"/>
+			<jscript  src="acidDom/js/acid_dom.js"			 decription="Javascript DOM Explorer JS Include"/>
+		</includes>
+	</acidDom>
+
+    <prettyPhoto>
+        <includes>
+            <css     src="prettyPhoto/css/prettyPhoto.css"       description="Pretty Photo CSS Include"/>
+            <css     src="prettyPhoto/js/jquery.prettyPhoto.js"  description="Pretty Photo JS Include"/>
+        </includes>
+    </prettyPhoto>
+
+    <interact>
+        <includes>
+            <jscript src="interact/js/interact.min.js"           description="Interact JS Include"/>
+        </includes>
+    </interact>
+
+    <selectorGadget>
+        <includes>
+            <css     src="selectorGadget/css/selectorgadget.css" description="selectorGadget CSS Include"/>
+            <jscript src="selectorGadget/js/jquery-include.js"   description="selectorGadget Jquery Combinatio JS Include"/>
+            <jscript src="selectorGadget/js/core/dom.js"         description="selectorGadget DOM JS Include"/>
+            <jscript src="selectorGadget/js/core/core.js"        description="selectorGadget Heepp JS Include"/>
+        </includes>
+    </selectorGadget>
+</root>

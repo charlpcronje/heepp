@@ -1,0 +1,26 @@
+<root>
+    <wysihtml5>
+        <includes>
+            <css        
+                src="wysihtml5/css/bootstrap-wysihtml5-0.0.2.css"      
+                description="Bootstrap Wysihtml5 CSS Include"/>
+            <jscript    
+                src="wysihtml5/js/wysihtml5-0.3.0.min.js"              
+                description="Bootstrap Wysihtml5 JS Include"/>
+            <jscript    
+                src="wysihtml5/js/bootstrap-wysihtml5-0.0.2.js"        
+                description="Bootstrap Wysihtml5 JS Include"/>
+        </includes>
+    </wysihtml5>
+    
+    <summernote>
+        <includes>
+            <css
+                src="summernote/summernote.css"
+                description="Summernote Wysiwig CSS Include"/>
+            <jscript
+                src="summernote/summernote.min.js"
+                description="Summernote Wysiwig Javascript Include"/>
+        </includes>
+    </summernote>
+</root>

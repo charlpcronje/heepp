@@ -1,0 +1,70 @@
+<!-- Load NAV Area JS -->
+<lazyload
+    src="views/partials/nav/js/nav.js"
+    instantiate="nav"
+    extend="console"
+    callback="core.console.nav.init"
+    context="window"/>
+
+<header class="uk-box-shadow-medium uk-box-shadow-hover-large">
+    <aside
+        id="cc.header.left"
+        class="left padding-10 padding-top-15">
+        <import src="views/partials/nav/header/aside/left/index.phtml"/>
+    </aside>
+    <nav
+        id="cc.header.top"
+        class="top">
+        <aside
+            id="cc.header.top.left"
+            class="left">
+            ${nav.header.file}
+        </aside>
+        <main id="cc.header.top.main"/>
+        <aside
+            id="cc.header.top.right"
+            class="right"/>
+    </nav>
+    <nav class="bottom">
+        <aside class="left">
+            <import src="views/partials/nav/header/bottom/aside/left/breadcrumbs.phtml"/>
+        </aside>
+        <main>
+
+        </main>
+        <aside class="right">
+
+        </aside>
+    </nav>
+    <aside class="right">
+        <import src="views/partials/nav/header/aside/right/index.phtml"/>
+    </aside>
+</header>
+<main>
+    <aside class="left">
+        <div class="top">
+            <import src="views/partials/nav/main/aside/left/top/index.phtml"/>
+        </div>
+        <div class="bottom">
+            <import src="views/partials/nav/main/aside/left/bottom/index.phtml"/>
+        </div>
+    </aside>
+    <nav class="left">
+
+    </nav>
+    <main>
+        <import src="views/console/workspace.phtml"/>
+    </main>
+
+    <nav class="right">
+
+    </nav>
+    <aside class="right">
+        <import src="views/partials/nav/main/aside/right/index.phtml"/>
+    </aside>
+</main>
+<footer>
+    <span>Copyright &amp;copy; </span>
+    <date format="Y">${CURRENT_YEAR}</date>
+    <span> FGX Studios</span>
+</footer>

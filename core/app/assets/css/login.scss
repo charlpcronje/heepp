@@ -1,0 +1,38 @@
+#cc {
+    height: 100%;
+    display: grid;
+    grid-gap: 0;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "cc-main";
+    main {
+        height: 100%;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "cc-main-content";
+        #login-form-container {
+            .login-form-header {
+                display: grid;
+                grid-gap: 10px;
+                grid-template-columns: auto 1fr auto;
+                grid-template-rows: 90px;
+                & > aside {
+                    &.left {
+
+                    }
+                    &.right {
+
+                    }
+                }
+                & > main {
+                    h3 {
+                        transition: all 1.3s cubic-bezier(0.25, 0.8, 0.25, 1) 2s;
+                        opacity: 0;
+                        height: 0;
+                        overflow: hidden;
+                    }
+                }
+            }
+        }
+    }
+}

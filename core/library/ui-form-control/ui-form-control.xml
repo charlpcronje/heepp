@@ -1,0 +1,87 @@
+<root>
+    <autoComplete>
+        <includes>
+            <css
+                src="autoComplete/css/auto-complete.css"
+                description="AutoComplete CSS Incude File"/>
+            <jscript
+                src="autoComplete/js/auto-complete.min.js"
+                description="AutoComplete JS Include For text autoCompletion"/>
+
+        </includes>
+    </autoComplete>
+
+    <colorPicker>
+        <includes>
+            <css
+                src="bootstrap/colorPicker/css/bootstrap-colorpicker.css"
+                description="Bootstrap Color Picker CSS Include"/>
+            <jscript
+                src="bootstrap/colorPicker/js/bootstrap-colorpicker.js"
+                description="Bootstrap Color Picker JS Include"/>
+        </includes>
+    </colorPicker>
+
+    <datePicker>
+        <includes>
+            <css
+                src="bootstrap/datePicker/css/datepicker3.css"
+                description="Bootstrap Date Picker CSS Include"/>
+            <jscript
+                src="bootstrap/datePicker/js/bootstrap-datepicker.js"
+                description="Bootstrap Date Picker JS Include"/>
+        </includes>
+    </datePicker>
+
+    <bootstrapSwitch>
+        <includes>
+            <css
+                src="bootstrapSwitch/css/bootstrap-switch.css"
+                description="Bootstrap Switch CSS Include"/>
+            <jscript
+                src="bootstrapSwitch/js/bootstrap-switch.min.js"
+                description="Bootstrap Switch JS Include"/>
+        </includes>
+    </bootstrapSwitch>
+
+    <selectpicker>
+        <includes>
+            <jscript
+                src="bootstrap/selectPicker/js/bootstrap-select.js"
+                description="Bootstrap Select Picker JS Include"/>
+        </includes>
+    </selectpicker>
+
+    <jstree>
+        <includes>
+            <css
+                src="jsTree/css/themes/default/style.css"
+                description="JS Tree CSS Theme"/>
+            <css
+                src="jsTree/css/themes/file-colors.css"
+                description="JS Tree CSS Theme"/>
+            <jscript
+                src="jsTree/js/jstree.min.js"
+                description="JS Tree"/>
+        </includes>
+    </jstree>
+
+    <multiselect>
+        <includes>
+            <css
+                src="multiselect/css/multiselect.css"
+                description="Multiselect (Duel Listbox) CSS Include"/>
+            <jscript
+                src="multiselect/js/multiselect.js"
+                description="Multiselect (Duel Listbox) CSS Include"/>
+        </includes>
+    </multiselect>
+
+    <tagsinput>
+        <includes>
+            <jscript
+                src="tagsInput/js/jquery.tagsinput.min.js"
+                description="Tags Input"/>
+        </includes>
+    </tagsinput>
+</root>

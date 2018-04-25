@@ -1,0 +1,109 @@
+<root>
+    <mscrollbar>
+        <includes>
+            <css     
+                src="mScrollbar/css/jquery.mScrollbar.min.css"
+                description="mCustom Scrollbar CSS Include"/>
+            <jscript 
+                src="mScrollbar/js/jquery.mScrollbar.concat.min.js"
+                description="mCustom Scrollbar JS Include"/>
+        </includes>
+    </mscrollbar>
+
+    <perfectscrollbar>
+        <includes>
+            <css
+                src="perfectScrollbar/css/perfect-scrollbar.css"
+                description="Perfect Scrollbar CSS Include"/>
+            <jscript
+                src="perfectScrollbar/js/perfect-scrollbar.js"
+                description="Perfect Scrollbar JS Include"/>
+        </includes>
+        <wiki>
+            <github
+                src="https://github.com/utatti/perfect-scrollbar"
+                readme="README.md"/>
+            <website
+                src="http://utatti.github.io/perfect-scrollbar/"/>
+            <jsfiddle
+                src="https://jsfiddle.net/utatti/dyvL31r6"/>
+        </wiki>
+        <code>
+            <type-html>
+                <div class="container">
+                    <div class="content">
+                        More markup can go in this tag
+                    </div>
+                </div>
+            </type-html>
+            <type-css>
+                .container {
+                    position: relative;
+                    width: 480px;
+                    height: 320px;
+                    overflow: auto;
+                }
+
+                .container .content {
+                    background-image: url('https://i.imgur.com/nAUUNzH.jpg');
+                    width: 1280px;
+                    height: 720px;
+                }
+            </type-css>
+            <type-js>
+                var ps = new PerfectScrollbar('.container');
+            </type-js>
+        </code>
+    </perfectscrollbar>
+
+    <nanoscroller>
+        <includes>
+            <css     
+                src="nanoscroller/css/nanoscroller.css"
+                description="Nano Scroller CSS Include"/>
+            <jscript 
+                src="nanoscroller/js/nanoscroller.min.js"
+                description="Nano Scroller JS Include"/>
+        </includes>
+    </nanoscroller>
+
+    <nicescroll>
+        <includes>
+            <jscript 
+                src="nicescroll/v3/js/jquery.nicescroll.min.js"
+                description="Nicescroll V3 JS Include"/>
+        </includes>
+    </nicescroll>
+
+    <nicescroll-4>
+        <includes>
+            <jscript
+                src="nicescroll/v4/js/jquery.nicescroll.min.js"
+                description="Nicescroll V4 JS Include"/>
+        </includes>
+    </nicescroll-4>
+
+    <scrollto>
+        <includes>
+            <jscript 
+                src="scrollto/js/jquery.scrollTo-1.4.3.1-min.js"
+                description="ScrollTo JS Include"/>
+        </includes>
+    </scrollto>
+
+    <skrollr>
+        <includes>
+            <jscript 
+                src="skrollr/js/skrollr.min.js"
+                description="Skrollr JS Include"/>
+        </includes>
+    </skrollr>
+
+    <stellar>
+        <includes>
+            <jscript 
+                src="stellar/js/stellar.js"
+                description="Stellar JS Include"/>
+        </includes>
+    </stellar>
+</root>

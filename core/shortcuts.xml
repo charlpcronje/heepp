@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<shortcuts>
+    <!-- Security -->
+    <hasaccess      class="core\element\access\hasAccess"/>
+    <hasAccess      class="core\element\access\hasAccess"/>
+    <noaccess       class="core\element\access\noAccess"/>
+    <noAccess       class="core\element\access\noAccess"/>
+
+    <!-- System -->
+    <memusage       class="core\element\system\memusage"/>
+    <cpuusage       class="core\element\system\cpuusage"/>
+
+    <!-- Debug -->
+    <printr         class="core\element\debug\printr"/>
+
+    <!-- Base -->
+    <image            class="core\element\base\image"/>
+    <import           class="core\element\base\import"/>
+    <bind             class="core\element\base\bind"/>
+    <lazyload         class="core\element\base\lazyload"/>
+    <javascript       class="core\element\base\javascript"/>
+    <jscript          class="core\element\base\javascript"/>
+    <stylesheet       class="core\element\base\stylesheet"/>
+    <css              class="core\element\base\stylesheet"/>
+    <invoke           class="core\element\base\invoke"/>
+    <json.encode      class="core\element\base\jsonEncode"/>
+    <text.render.node class="core\element\base\textNode"/>
+    <lib              class="core\library"/>
+    <core-library  class="core\library"/>
+
+    <!-- Strings -->
+    <ucfirst         class="core\element\text\ucfirst"/>
+    <striptags       class="core\element\text\striptags"/>
+    <strtoupper      class="core\element\text\strtoupper"/>
+    <strtolower      class="core\element\text\strtolower"/>
+    <formatstring    class="core\element\text\formatstring"/>
+    <substr          class="core\element\text\substr"/>
+    <strreplace      class="core\element\text\strreplace"/>
+    <nl2br           class="core\element\text\nl2br"/>
+    <br2nl           class="core\element\text\br2nl"/>
+    <embed           class="core\element\import\import"/>
+    <element         class="core\extension\element\element"/>
+
+    <!-- Math -->
+    <round           class="core\element\math\round"/>
+    <sum             class="core\element\math\sum"/>
+    <calc            class="core\element\math\calc"/>
+
+    <!-- Format -->
+    <date            class="core\element\format\date"/>
+
+    <!-- File Handling -->
+    <filebrowser     class="core\element\ui\filebrowser\filebrowser"/>
+    <files.tree      class="core\element\files\fileTree\fileTree"/>
+
+    <!-- Editors -->
+    <codemirror      class="core\element\ui\codemirror"/>
+    <summernote      class="core\element\ui\control\summernote"/>
+
+    <!-- Containers -->
+    <box             class="core\element\ui\box"/>
+    <container       class="core\element\ui\bootstrap\container"/>
+    <row             class="core\element\ui\bootstrap\row"/>
+    <col             class="core\element\ui\bootstrap\col"/>
+    <column          class="core\element\ui\bootstrap\col"/>
+
+    <!-- Statements -->
+    <if              class="core\element\statement\pmlif"/>
+
+    <!-- Controls -->
+
+    <dropdown        class="core\element\ui\bootstrap\control\dropdown"/>
+    <checkbox        class="core\element\ui\bootstrap\control\checkbox"/>
+    <multiselect     class="core\element\ui\control\multiselect"/>
+    <textfield       class="core\element\ui\bootstrap\control\textfield"/>
+    <toggle.switch   class="core\element\ui\control\toggleSwitch"/>
+    <txtarea         class="core\element\ui\bootstrap\control\txtarea"/>
+
+    <!-- Heepp Elements -->
+    <core.console         class="core\element\core\coreConsole"/>
+    <core.form            class="core\element\core\coreform"/>
+    <core.i               class="core\element\core\corei"/>
+    <core.object          class="core\element\core\coreobject"/>
+    <app.redirect.message class="core\element\core\redirectMessage"/>
+    <core.svg             class="core\element\core\coreSvg"/>
+
+    <!-- UI KIT -->
+    <uk.container    class="core\element\ui\uikit\container"/>
+    <uk.section      class="core\element\ui\uikit\section"/>
+    <uk.grid         class="core\element\ui\uikit\grid"/>
+    <uk.card         class="core\element\ui\uikit\card"/>
+    <uk.navbar       class="core\element\ui\uikit\navbar"/>
+    <uk.upload       class="core\element\ui\uikit\upload"/>
+    <uk.textfield    class="core\element\ui\uikit\textfield"/>
+    <uk.dropdown     class="core\element\ui\uikit\dropdown"/>
+
+    <!-- Data Elements -->
+    <chunk          class="core\element\method\chunk"/>
+    <loop           class="core\element\method\loop"/>
+    <range          class="core\element\method\loop"/>
+</shortcuts>

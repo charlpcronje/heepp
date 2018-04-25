@@ -1,0 +1,12 @@
+<ol 
+    id="breadcrumbs"
+    class="breadcrumb"
+    repeat="breadcrumb">
+    <li class="${breadcrumb.active}">
+        <a 
+            core.event.click.load="${breadcrumb.link}" 
+            href="#${breadcrumb.link}">
+            ${breadcrumb.crumb}
+        </a>
+    </li>
+</ol>

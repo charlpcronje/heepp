@@ -1,0 +1,87 @@
+<!-- DEPENDING ON THE STYLE A DIFFERENT STYLESHEET IS LOADED -->
+<lazyload
+    src="${env.core.element.url}ui/control/css/toggleSwitch-${theme}.css"/>
+
+<!-- COMMON LABEL FOR ALL STYLES -->
+<div class="onoffswitch-label-top">
+    <label for="${id}">${label}</label>
+    <div
+        class="onoffswitch-label-hint"
+        elem.render:if="!empty('${hint}')">${hint}</div>
+</div>
+
+<!-- WINDOWS 8 STYLE -->
+<div
+    class="onoffswitch-win8"
+    elem.render:if="'${theme}' == 'win8'">
+    <input
+        name="${name}"
+        id="${id}"
+        class="onoffswitch-win8-checkbox ${class}"
+        type="checkbox"
+        check="${check}"
+        value="${value}"
+        checked="${checked}"/>
+    <label class="onoffswitch-win8-label">
+        <span class="onoffswitch-win8-inner"></span>
+        <span class="onoffswitch-win8-switch"></span>
+    </label>
+</div>
+
+<!-- WINDOWS 10 STYLE -->
+<div
+    class="onoffswitch-win10"
+    elem.render:if="'${theme}' == 'win10'">
+    <input
+        name="${name}"
+        id="${id}"
+        class="onoffswitch-win10-checkbox ${class}"
+        type="checkbox"
+        check="${check}"
+        value="${value}"
+        checked="${checked}"/>
+    <label
+        class="onoffswitch-win10-label"
+        for="${id}"></label>
+    <label
+        class="onoffswitch-win10-status"
+        id="onoffswitch-win10-status-${id}"></label>
+    <script id="script_${id}">
+        /* Set initial state */
+        if ($("#${id}").attr('check') == $("#${id}").val()) {
+            $("#${id}").prop('checked',true);
+            $("#onoffswitch-win10-status-${id}").html('On')
+        } else {
+            $("#onoffswitch-win10-status-${id}").html('Off');
+        }
+
+        /* Change that On,Off labels on change */
+        $('#${id}').change(function() {
+            if ($(this).prop('checked')) {
+                $("#onoffswitch-win10-status-${id}").html('On');
+            } else {
+                $("#onoffswitch-win10-status-${id}").html('Off');
+            }
+        });
+
+        /* Remove this script from the DOM */
+        $("#script_${id}").remove();
+    </script>
+</div>
+
+<!-- MATERIAL DESIGN STYLE -->
+<div
+    class="onoffswitch-material"
+    elem.render:if="'${theme}' == 'material'">
+    <input
+        name="${name}"
+        id="${id}"
+        class="onoffswitch-material-checkbox ${class}"
+        type="checkbox"
+        check="${check}"
+        value="${value}"
+        checked="${checked}"/>
+    <label
+        class="onoffswitch-material-label"
+        for="${id}">${label}</label>
+</div>

@@ -1,0 +1,1142 @@
+<root>
+    <lib>
+        <includes>
+            <css     src="lib/codemirror.css"           description="Codemirror Base Lib CSS"/>
+            <jscript src="lib/codemirror.js"            description="Codemirror Base Lib javascript"/>
+        </includes>
+    </lib>
+
+    <theme-3024-day>
+        <includes>
+            <css    src="theme/3024-day.css"                description="CodeMirror Theme CSS"/>
+        </includes>
+    </theme-3024-day>
+
+    <theme-3024-night>
+        <includes>
+            <css    src="theme/3024-night.css"              description="CodeMirror Theme CSS"/>
+        </includes>
+    </theme-3024-night>
+
+    <theme-abcdef>
+        <includes>
+            <css    src="theme/abcdef.css"                  description="CodeMirror Theme CSS"/>
+        </includes>
+    </theme-abcdef>
+
+    <theme-ambiance-mobile>
+        <includes>
+            <css    src="theme/ambiance-mobile.css"         description="CodeMirror Theme CSS"/>
+        </includes>
+    </theme-ambiance-mobile>
+
+    <theme-ambiance>
+        <includes>
+            <css    src="theme/ambiance.css"                description="CodeMirror Theme CSS"/>
+        </includes>
+    </theme-ambiance>
+
+    <theme-base16-light>
+        <includes>
+            <css    src="theme/base16-light.css"            description="CodeMirror Theme CSS"/>
+        </includes>
+    </theme-base16-light>
+
+    <theme-bespin>
+        <includes>
+            <css    src="theme/bespin.css"                  description="CodeMirror Theme CSS"/>
+        </includes>
+    </theme-bespin>
+
+    <theme-blackboard>
+        <includes>
+            <css    src="theme/blackboard.css"              description="CodeMirror Theme CSS"/>
+        </includes>
+    </theme-blackboard>
+
+    <theme-cobalt>
+        <includes>
+            <css    src="theme/cobalt.css"                  description="CodeMirror Theme CSS"/>
+        </includes>
+    </theme-cobalt>
+
+    <theme-colorforth>
+        <includes>
+            <css    src="theme/colorforth.css"              description="CodeMirror Theme CSS"/>
+        </includes>
+    </theme-colorforth>
+
+    <theme-dracula>
+        <includes>
+            <css    src="theme/dracula.css"                 description="CodeMirror Theme CSS"/>
+        </includes>
+    </theme-dracula>
+
+    <theme-eclipse>
+        <includes>
+            <css    src="theme/eclipse.css"                 description="CodeMirror Theme CSS"/>
+        </includes>
+    </theme-eclipse>
+
+    <theme-elegant>
+        <includes>
+            <css    src="theme/elegant.css"                 description="CodeMirror Theme CSS"/>
+        </includes>
+    </theme-elegant>
+
+    <theme-erlang-dark>
+        <includes>
+            <css    src="theme/erlang-dark.css"             description="CodeMirror Theme CSS"/>
+        </includes>
+    </theme-erlang-dark>
+
+    <theme-hopscotch>
+        <includes>
+            <css    src="theme/hopscotch.css"               description="CodeMirror Theme CSS"/>
+        </includes>
+    </theme-hopscotch>
+
+    <theme-icecoder>
+        <includes>
+            <css    src="theme/icecoder.css"                description="CodeMirror Theme CSS"/>
+        </includes>
+    </theme-icecoder>
+
+    <theme-isotope>
+        <includes>
+            <css    src="theme/isotope.css"                 description="CodeMirror Theme CSS"/>
+        </includes>
+    </theme-isotope>
+
+    <theme-lesser-dark>
+        <includes>
+            <css    src="theme/lesser-dark.css"             description="CodeMirror Theme CSS"/>
+        </includes>
+    </theme-lesser-dark>
+
+    <theme-liquibyte>
+        <includes>
+            <css    src="theme/liquibyte.css"               description="CodeMirror Theme CSS"/>
+        </includes>
+    </theme-liquibyte>
+
+    <theme-material>
+        <includes>
+            <css    src="theme/material.css"                description="CodeMirror Theme CSS"/>
+        </includes>
+    </theme-material>
+
+    <theme-mbo>
+        <includes>
+            <css    src="theme/mbo.css"                     description="CodeMirror Theme CSS"/>
+        </includes>
+    </theme-mbo>
+
+    <theme-mdn-like>
+        <includes>
+            <css    src="theme/mdn-like.css"                description="CodeMirror Theme CSS"/>
+        </includes>
+    </theme-mdn-like>
+
+    <theme-midnight>
+        <includes>
+            <css    src="theme/midnight.css"                description="CodeMirror Theme CSS"/>
+        </includes>
+    </theme-midnight>
+
+    <theme-monokai>
+        <includes>
+            <css    src="theme/monokai.css"                 description="CodeMirror Theme CSS"/>
+        </includes>
+    </theme-monokai>
+
+    <theme-neat>
+        <includes>
+            <css    src="theme/neat.css"                    description="CodeMirror Theme CSS"/>
+        </includes>
+    </theme-neat>
+
+    <theme-neo>
+        <includes>
+            <css    src="theme/neo.css"                     description="CodeMirror Theme CSS"/>
+        </includes>
+    </theme-neo>
+
+    <theme-night>
+        <includes>
+            <css    src="theme/night.css"                   description="CodeMirror Theme CSS"/>
+        </includes>
+    </theme-night>
+
+    <theme-paraiso-dark>
+        <includes>
+            <css    src="theme/paraiso-dark.css"            description="CodeMirror Theme CSS"/>
+        </includes>
+    </theme-paraiso-dark>
+
+    <theme-paraiso-light>
+        <includes>
+            <css    src="theme/paraiso-light.css"           description="CodeMirror Theme CSS"/>
+        </includes>
+    </theme-paraiso-light>
+
+    <theme-pastel-on-dark>
+        <includes>
+            <css    src="theme/pastel-on-dark.css"          description="CodeMirror Theme CSS"/>
+        </includes>
+    </theme-pastel-on-dark>
+
+    <theme-railscasts>
+        <includes>
+            <css    src="theme/railscasts.css"              description="CodeMirror Theme CSS"/>
+        </includes>
+    </theme-railscasts>
+
+    <theme-rubyblue>
+        <includes>
+            <css    src="theme/rubyblue.css"                description="CodeMirror Theme CSS"/>
+        </includes>
+    </theme-rubyblue>
+
+    <theme-seti>
+        <includes>
+            <css    src="theme/seti.css"                    description="CodeMirror Theme CSS"/>
+        </includes>
+    </theme-seti>
+
+    <theme-solarized>
+        <includes>
+            <css    src="theme/solarized.css"               description="CodeMirror Theme CSS"/>
+        </includes>
+    </theme-solarized>
+
+    <theme-the-matrix>
+        <includes>
+            <css    src="theme/the-matrix.css"              description="CodeMirror Theme CSS"/>
+        </includes>
+    </theme-the-matrix>
+
+    <theme-tomorrow-night-bright>
+        <includes>
+            <css    src="theme/tomorrow-night-bright.css"   description="CodeMirror Theme CSS"/>
+        </includes>
+    </theme-tomorrow-night-bright>
+
+    <theme-tomorrow-night-eighties>
+        <includes>
+            <css    src="theme/tomorrow-night-eighties.css" description="CodeMirror Theme CSS"/>
+        </includes>
+    </theme-tomorrow-night-eighties>
+
+    <theme-ttcn>
+        <includes>
+            <css    src="theme/ttcn.css"                    description="CodeMirror Theme CSS"/>
+        </includes>
+    </theme-ttcn>
+
+    <theme-twilight>
+        <includes>
+            <css    src="theme/twilight.css"                description="CodeMirror Theme CSS"/>
+        </includes>
+    </theme-twilight>
+
+    <theme-vibrant-ink>
+        <includes>
+            <css    src="theme/vibrant-ink.css"             description="CodeMirror Theme CSS"/>
+        </includes>
+    </theme-vibrant-ink>
+
+    <theme-xq-dark>
+        <includes>
+            <css    src="theme/xq-dark.css"                 description="CodeMirror Theme CSS"/>
+        </includes>
+    </theme-xq-dark>
+
+    <theme-xq-light>
+        <includes>
+            <css    src="theme/xq-light.css"                description="CodeMirror Theme CSS"/>
+        </includes>
+    </theme-xq-light>
+
+    <theme-yeti>
+        <includes>
+            <css    src="theme/yeti.css"                    description="CodeMirror Theme CSS"/>
+        </includes>
+    </theme-yeti>
+
+    <theme-zenburn>
+        <includes>
+            <css    src="theme/zenburn.css"                 description="CodeMirror Theme CSS"/>
+        </includes>
+    </theme-zenburn>
+
+    <mode-apl>
+        <includes>
+            <jscript src="mode/apl/apl.js"                  description="CodeMirror Mode Javascript"/>        
+        </includes>
+    </mode-apl>
+
+    <mode-asciiarmor>
+        <includes>
+            <jscript src="mode/asciiarmor/asciiarmor.js"    description="CodeMirror Mode Javascript"/>        
+        </includes>
+    </mode-asciiarmor>
+
+    <mode-asn.1>
+        <includes>
+            <jscript src="asn.1/asn.1.js="                  description="CodeMirror Mode Javascript"/>        
+        </includes>
+    </mode-asn.1>
+
+    <mode-asterisk>
+        <includes>
+            <jscript src="mode/asterisk/asterisk.js"        description="CodeMirror Mode Javascript"/>        
+        </includes>
+    </mode-asterisk>
+
+    <mode-brainfuck>
+        <includes>
+            <jscript src="mode/brainfuck/brainfuck.js"      description="CodeMirror Mode Javascript"/>        
+        </includes>
+    </mode-brainfuck>
+
+    <mode-clike>
+        <includes>
+            <jscript src="mode/clike/clike.js"              description="CodeMirror Mode Javascript"/>        
+        </includes>
+    </mode-clike>
+
+    <mode-clojure>
+        <includes>
+            <jscript src="mode/clojure/clojure.js"          description="CodeMirror Mode Javascript"/>        
+        </includes>
+    </mode-clojure>
+
+    <mode-cmake>
+        <includes>
+            <jscript src="mode/cmake/cmake.js"              description="CodeMirror Mode Javascript"/>        
+        </includes>
+    </mode-cmake>
+
+    <mode-cobol>
+        <includes>
+            <jscript src="mode/cobol/cobol.js"              description="CodeMirror Mode Javascript"/>        
+        </includes>
+    </mode-cobol>
+
+    <mode-coffeescript>
+        <includes>
+            <jscript src="mode/coffeescript/coffeescript.js" description="CodeMirror Mode Javascript"/>
+            <jscript src="addon/lint/coffeescript-lint.js"   description="CodeMirror lint Addon"/>       
+        </includes>
+    </mode-coffeescript>
+
+    <mode-commonlisp>
+        <includes>
+            <jscript src="mode/commonlisp/commonlisp.js"    description="CodeMirror Mode Javascript"/>        
+        </includes>
+    </mode-commonlisp>
+
+    <mode-crystal>
+        <includes>
+            <jscript src="mode/crystal/crystal.js"          description="CodeMirror Mode Javascript"/>        
+        </includes>
+    </mode-crystal>
+
+    <mode-css>
+        <includes>
+            <jscript src="mode/css/css.js"                  description="CodeMirror Mode Javascript"/>
+            <jscript src="addon/hint/css-hint.js"           description="CodeMirror hint Addon"/>
+            <jscript src="addon/lint/css-lint.js"           description="CodeMirror lint Addon"/>     
+        </includes>
+    </mode-css>
+
+    <mode-cypher>
+        <includes>
+            <jscript src="mode/cypher/cypher.js"           description="CodeMirror Mode Javascript"/>        
+        </includes>
+    </mode-cypher>
+
+    <mode-d>
+        <includes>
+            <jscript src="mode/d/d.js"                     description="CodeMirror Mode Javascript"/>        
+        </includes>
+    </mode-d>
+
+    <mode-dart>
+        <includes>
+            <jscript src="mode/dart/dart.js"               description="CodeMirror Mode Javascript"/>        
+        </includes>
+    </mode-dart>
+
+    <mode-diff>
+        <includes>
+            <jscript src="mode/diff/diff.js"               description="CodeMirror Mode Javascript"/>        
+        </includes>
+    </mode-diff>
+
+    <mode-django>
+        <includes>
+            <jscript src="mode/django/django.js"           description="CodeMirror Mode Javascript"/>        
+        </includes>
+    </mode-django>
+
+    <mode-dockerfile>
+        <includes>
+            <jscript src="mode/dockerfile/dockerfile.js"   description="CodeMirror Mode Javascript"/>        
+        </includes>
+    </mode-dockerfile>
+
+    <mode-dtd>
+        <includes>
+            <jscript src="mode/dtd/dtd.js"                 description="CodeMirror Mode Javascript"/>        
+        </includes>
+    </mode-dtd>
+
+    <mode-dylan>
+        <includes>
+            <jscript src="mode/dylan/dylan.js"             description="CodeMirror Mode Javascript"/>        
+        </includes>
+    </mode-dylan>
+
+    <mode-ebnf>
+        <includes>
+            <jscript src="mode/ebnf/ebnf.js"               description="CodeMirror Mode Javascript"/>        
+        </includes>
+    </mode-ebnf>
+
+    <mode-ecl>
+        <includes>
+            <jscript src="mode/ecl/ecl.js"                 description="CodeMirror Mode Javascript"/>        
+        </includes>
+    </mode-ecl>
+
+    <mode-eiffel>
+        <includes>
+            <jscript src="mode/eiffel/eiffel.js"           description="CodeMirror Mode Javascript"/>        
+        </includes>
+    </mode-eiffel>
+
+    <mode-elm>
+        <includes>
+            <jscript src="mode/elm/elm.js"                 description="CodeMirror Mode Javascript"/>        
+        </includes>
+    </mode-elm>
+
+    <mode-factor>
+        <includes>
+            <jscript src="mode/factor/factor.js"           description="CodeMirror Mode Javascript"/>        
+        </includes>
+    </mode-factor>
+
+    <mode-fcl>
+        <includes>
+            <jscript src="mode/fcl/fcl.js"                 description="CodeMirror Mode Javascript"/>        
+        </includes>
+    </mode-fcl>
+
+    <mode-forth>
+        <includes>
+            <jscript src="mode/forth/forth.js"             description="CodeMirror Mode Javascript"/>        
+        </includes>
+    </mode-forth>
+
+    <mode-fortran>
+        <includes>
+            <jscript src="mode/fortran/fortran.js"          description="CodeMirror Mode Javascript"/>        
+        </includes>
+    </mode-fortran>
+
+    <mode-gas>
+        <includes>
+            <jscript src="mode/gas/gas.js"                  description="CodeMirror Mode Javascript"/>        
+        </includes>
+    </mode-gas>
+
+    <mode-gfm>
+        <includes>
+            <jscript src="mode/gfm/gfm.js"                  description="CodeMirror Mode Javascript"/>        
+        </includes>
+    </mode-gfm>
+
+    <mode-gherkin>
+        <includes>
+            <jscript src="mode/gherkin/gherkin.js"          description="CodeMirror Mode Javascript"/>        
+        </includes>
+    </mode-gherkin>
+
+    <mode-go>
+        <includes>
+            <jscript src="mode/go/go.js"                    description="CodeMirror Mode Javascript"/>        
+        </includes>
+    </mode-go>
+
+    <mode-groovy>
+        <includes>
+            <jscript src="mode/groovy/groovy.js"            description="CodeMirror Mode Javascript"/>        
+        </includes>
+    </mode-groovy>
+
+    <mode-haml>
+        <includes>
+            <jscript src="mode/haml/haml.js"                description="CodeMirror Mode Javascript"/>        
+        </includes>
+    </mode-haml>
+
+    <mode-handlebars>
+        <includes>
+            <jscript src="mode/handlebars/handlebars.js"    description="CodeMirror Mode Javascript"/>        
+        </includes>
+    </mode-handlebars>
+
+    <mode-haskell>
+        <includes>
+            <jscript src="mode/haskell/haskell.js"          description="CodeMirror Mode Javascript"/>        
+        </includes>
+    </mode-haskell>
+
+    <mode-haskell-literate>
+        <includes>
+            <jscript src="haskell-literate/haskell-literate.js" description="CodeMirror Mode Javascript"/>        
+        </includes>
+    </mode-haskell-literate>
+
+    <mode-haxe>
+        <includes>
+            <jscript src="mode/haxe/haxe.js"                    description="CodeMirror Mode Javascript"/>        
+        </includes>
+    </mode-haxe>
+
+    <mode-htmlembedded>
+        <includes>
+            <jscript src="mode/htmlembedded/htmlembedded.js"    description="CodeMirror Mode Javascript"/>
+            <jscript src="addon/hint/html-hint.js"              description="CodeMirror hint Addon"/>
+            <jscript src="addon/lint/html-lint.js"              description="CodeMirror lint Addon"/>       
+        </includes>
+    </mode-htmlembedded>
+
+    <mode-htmlmixed>
+        <includes>
+            <jscript src="mode/htmlmixed/htmlmixed.js"          description="CodeMirror Mode Javascript"/>
+            <jscript src="addon/hint/html-hint.js"              description="CodeMirror hint Addon"/>
+            <jscript src="addon/lint/html-lint.js"              description="CodeMirror lint Addon"/>       
+        </includes>
+    </mode-htmlmixed>
+
+    <mode-http>
+        <includes>
+            <jscript src="mode/http/http.js"                    description="CodeMirror Mode Javascript"/>        
+        </includes>
+    </mode-http>
+
+    <mode-idl>
+        <includes>
+            <jscript src="mode/idl/idl.js"                      description="CodeMirror Mode Javascript"/>        
+        </includes>
+    </mode-idl>
+
+    <mode-jade>
+        <includes>
+            <jscript src="mode/jade/jade.js"                    description="CodeMirror Mode Javascript"/>        
+        </includes>
+    </mode-jade>
+
+    <mode-javascript>
+        <includes>
+            <jscript src="mode/javascript/javascript.js"        description="CodeMirror Mode Javascript"/>
+            <jscript src="addon/hint/javascript-hint.js"        description="CodeMirror hint Addon"/>
+            <jscript src="addon/lint/javascript-lint.js"        description="CodeMirror lint Addon"/>
+            <jscript src="addon/lint/json-lint.js"              description="CodeMirror lint Addon"/>
+        </includes>
+    </mode-javascript>
+
+    <mode-jinja2>
+        <includes>
+            <jscript src="mode/jinja2/jinja2.js"                description="CodeMirror Mode Javascript"/>        
+        </includes>
+    </mode-jinja2>
+
+    <mode-jsx>
+        <includes>
+            <jscript src="mode/jsx/jsx.js"                      description="CodeMirror Mode Javascript"/>        
+        </includes>
+    </mode-jsx>
+
+    <mode-julia>
+        <includes>
+            <jscript src="mode/julia/julia.js"                  description="CodeMirror Mode Javascript"/>        
+        </includes>
+    </mode-julia>
+
+    <mode-livescript>
+        <includes>
+            <jscript src="mode/livescript/livescript.js"        description="CodeMirror Mode Javascript"/>        
+        </includes>
+    </mode-livescript>
+
+    <mode-lua>
+        <includes>
+            <jscript src="mode/lua/lua.js"                      description="CodeMirror Mode Javascript"/>        
+        </includes>
+    </mode-lua>
+
+    <mode-markdown>
+        <includes>
+            <jscript src="mode/markdown/markdown.js"            description="CodeMirror Mode Javascript"/>        
+        </includes>
+    </mode-markdown>
+
+    <mode-mathematica>
+        <includes>
+            <jscript src="mode/mathematica/mathematica.js"      description="CodeMirror Mode Javascript"/>        
+        </includes>
+    </mode-mathematica>
+
+    <mode-mbox>
+        <includes>
+            <jscript src="mode/mbox/mbox.js"                    description="CodeMirror Mode Javascript"/>        
+        </includes>         
+    </mode-mbox>
+
+    <mode-mirc>
+        <includes>
+            <jscript src="mode/mirc/mirc.js"                    description="CodeMirror Mode Javascript"/>        
+        </includes>
+    </mode-mirc>
+
+    <mode-mllike>
+        <includes>
+            <jscript src="mode/mllike/mllike.js"                description="CodeMirror Mode Javascript"/>        
+        </includes>
+    </mode-mllike>
+
+    <mode-modelica>
+        <includes>
+            <jscript src="mode/modelica/modelica.js"            description="CodeMirror Mode Javascript"/>        
+        </includes>
+    </mode-modelica>
+
+    <mode-mscgen>
+        <includes>
+            <jscript src="mode/mscgen/mscgen.js"                description="CodeMirror Mode Javascript"/>        
+        </includes>
+    </mode-mscgen>
+
+    <mode-mumps>
+        <includes>
+            <jscript src="mode/mumps/mumps.js"                  description="CodeMirror Mode Javascript"/>        
+        </includes>
+    </mode-mumps>
+
+    <mode-nginx>
+        <includes>
+            <jscript src="mode/nginx/nginx.js"                  description="CodeMirror Mode Javascript"/>        
+        </includes>
+    </mode-nginx>
+
+    <mode-nsis>
+        <includes>
+            <jscript src="mode/nsis/nsis.js"                    description="CodeMirror Mode Javascript"/>        
+        </includes>
+    </mode-nsis>
+
+    <mode-ntriples>
+        <includes>
+            <jscript src="mode/ntriples/ntriples.js"            description="CodeMirror Mode Javascript"/>        
+        </includes>
+    </mode-ntriples>
+
+    <mode-octave>
+        <includes>
+            <jscript src="mode/octave/octave.js"                description="CodeMirror Mode Javascript"/>        
+        </includes>
+    </mode-octave>
+
+    <mode-oz>
+        <includes>
+            <jscript src="mode/oz/oz.js"                        description="CodeMirror Mode Javascript"/>        
+        </includes>
+    </mode-oz>
+
+    <mode-pascal>
+        <includes>
+            <jscript src="mode/pascal/pascal.js"                description="CodeMirror Mode Javascript"/>        
+        </includes>
+    </mode-pascal>
+
+    <mode-pegjs>
+        <includes>
+            <jscript src="mode/pegjs/pegjs.js"                  description="CodeMirror Mode Javascript"/>        
+        </includes>
+    </mode-pegjs>
+
+    <mode-perl>
+        <includes>
+            <jscript src="mode/perl/perl.js"                    description="CodeMirror Mode Javascript"/>        
+        </includes>
+    </mode-perl>
+
+    <mode-php>
+        <includes>
+            <jscript src="mode/php/php.js"                      description="CodeMirror Mode Javascript"/>        
+        </includes>
+    </mode-php>
+
+    <mode-pig>
+        <includes>
+            <jscript src="mode/pig/pig.js"                      description="CodeMirror Mode Javascript"/>        
+        </includes>
+    </mode-pig>
+
+    <mode-powershell>
+        <includes>
+            <jscript src="mode/powershell/powershell.js"        description="CodeMirror Mode Javascript"/>        
+        </includes>
+    </mode-powershell>
+
+    <mode-properties>
+        <includes>
+            <jscript src="mode/properties/properties.js"        description="CodeMirror Mode Javascript"/>        
+        </includes>
+    </mode-properties>
+
+    <mode-protobuf>
+        <includes>
+            <jscript src="mode/protobuf/protobuf.js"            description="CodeMirror Mode Javascript"/>        
+        </includes>
+    </mode-protobuf>
+
+    <mode-puppet>
+        <includes>
+            <jscript src="mode/puppet/puppet.js"                description="CodeMirror Mode Javascript"/>        
+        </includes>
+    </mode-puppet>
+
+    <mode-python>
+        <includes>
+            <jscript src="mode/python/python.js"                description="CodeMirror Mode Javascript"/>        
+        </includes>
+    </mode-python>
+
+    <mode-q>
+        <includes>
+            <jscript src="mode/q/q.js"                          description="CodeMirror Mode Javascript"/>        
+        </includes>
+    </mode-q>
+
+    <mode-r>
+        <includes>
+            <jscript src="mode/r/r.js"                          description="CodeMirror Mode Javascript"/>        
+        </includes>
+    </mode-r>
+
+    <mode-rpm>
+        <includes>
+            <jscript src="mode/rpm/rpm.js"                      description="CodeMirror Mode Javascript"/>        
+        </includes>
+    </mode-rpm>
+
+    <mode-rst>
+        <includes>
+            <jscript src="mode/rst/rst.js"                      description="CodeMirror Mode Javascript"/>        
+        </includes>
+    </mode-rst>
+
+    <mode-ruby>
+        <includes>
+            <jscript src="mode/ruby/ruby.js"                    description="CodeMirror Mode Javascript"/>        
+        </includes>
+    </mode-ruby>
+
+    <mode-sas>
+        <includes>
+            <jscript src="mode/sas/sas.js"                      description="CodeMirror Mode Javascript"/>        
+        </includes>
+    </mode-sas>
+
+    <mode-sass>
+        <includes>
+            <jscript src="mode/sass/sass.js"                    description="CodeMirror Mode Javascript"/>        
+        </includes>
+    </mode-sass>
+
+    <mode-scheme>
+        <includes>
+            <jscript src="mode/scheme/scheme.js"                description="CodeMirror Mode Javascript"/>        
+        </includes>
+    </mode-scheme>
+
+    <mode-shell>
+        <includes>
+            <jscript src="mode/shell/shell.js"                  description="CodeMirror Mode Javascript"/>        
+        </includes>
+    </mode-shell>
+
+    <mode-sieve>
+        <includes>
+            <jscript src="mode/sieve/sieve.js"                  description="CodeMirror Mode Javascript"/>        
+        </includes>
+    </mode-sieve>
+
+    <mode-slim>
+        <includes>
+            <jscript src="mode/slim/slim.js"                    description="CodeMirror Mode Javascript"/>        
+        </includes>
+    </mode-slim>
+
+    <mode-smalltalk>
+        <includes>
+            <jscript src="mode/smalltalk/smalltalk.js"          description="CodeMirror Mode Javascript"/>        
+        </includes>
+    </mode-smalltalk>
+
+    <mode-smarty>
+        <includes>
+            <jscript src="mode/smarty/smarty.js"                description="CodeMirror Mode Javascript"/>        
+        </includes>
+    </mode-smarty>
+
+    <mode-solr>
+        <includes>
+            <jscript src="mode/solr/solr.js"                    description="CodeMirror Mode Javascript"/>        
+        </includes>
+    </mode-solr>
+
+    <mode-soy>
+        <includes>
+            <jscript src="mode/soy/soy.js"                      description="CodeMirror Mode Javascript"/>        
+        </includes>
+    </mode-soy>
+
+    <mode-sparql>
+        <includes>
+            <jscript src="mode/sparql/sparql.js"                description="CodeMirror Mode Javascript"/>        
+        </includes>
+    </mode-sparql>
+
+    <mode-spreadsheet>
+        <includes>
+            <jscript src="mode/spreadsheet/spreadsheet.js"      description="CodeMirror Mode Javascript"/>        
+        </includes>
+    </mode-spreadsheet>
+
+    <mode-sql>
+        <includes>
+            <jscript src="mode/sql/sql.js"                      description="CodeMirror Mode Javascript"/>
+            <jscript src="addon/hint/sql-hint.js"                     description="CodeMirror hint Addon"/>      
+        </includes>
+    </mode-sql>
+
+    <mode-stex>
+        <includes>
+            <jscript src="mode/stex/stex.js"                    description="CodeMirror Mode Javascript"/>        
+        </includes>
+    </mode-stex>
+
+    <mode-stylus>
+        <includes>
+            <jscript src="mode/stylus/stylus.js"                description="CodeMirror Mode Javascript"/>        
+        </includes>
+    </mode-stylus>
+
+    <mode-swift>
+        <includes>
+            <jscript src="mode/swift/swift.js"                  description="CodeMirror Mode Javascript"/>        
+        </includes>
+    </mode-swift>
+
+    <mode-tcl>
+        <includes>
+            <jscript src="mode/tcl/tcl.js"                      description="CodeMirror Mode Javascript"/>        
+        </includes>
+    </mode-tcl>
+
+    <mode-textile>
+        <includes>
+            <jscript src="mode/textile/textile.js"              description="CodeMirror Mode Javascript"/>        
+        </includes>
+    </mode-textile>
+
+    <mode-tiddlywiki>
+        <includes>
+            <jscript src="mode/tiddlywiki/tiddlywiki.js"        description="CodeMirror Mode Javascript"/>        
+        </includes>
+    </mode-tiddlywiki>
+
+    <mode-tiki>
+        <includes>
+            <jscript src="mode/tiki/tiki.js"                    description="CodeMirror Mode Javascript"/>        
+        </includes>
+    </mode-tiki>
+
+    <mode-toml>
+        <includes>
+            <jscript src="mode/toml/toml.js"                    description="CodeMirror Mode Javascript"/>        
+        </includes>
+    </mode-toml>
+
+    <mode-tornado>
+        <includes>
+            <jscript src="mode/tornado/tornado.js"              description="CodeMirror Mode Javascript"/>        
+        </includes>
+    </mode-tornado>
+
+    <mode-troff>
+        <includes>
+            <jscript src="mode/troff/troff.js"                  description="CodeMirror Mode Javascript"/>        
+        </includes>
+    </mode-troff>
+
+    <mode-ttcn>
+        <includes>
+            <jscript src="mode/ttcn/ttcn.js"                    description="CodeMirror Mode Javascript"/>        
+        </includes>
+    </mode-ttcn>
+
+    <mode-ttcn-cfg>
+        <includes>
+            <jscript src="mode/ttcn-cfg/ttcn-cfg.js="           description="CodeMirror Mode Javascript"/>        
+        </includes>
+    </mode-ttcn-cfg>
+
+    <mode-turtle>
+        <includes>
+            <jscript src="mode/turtle/turtle.js"                description="CodeMirror Mode Javascript"/>        
+        </includes>
+    </mode-turtle>
+
+    <mode-twig>
+        <includes>
+            <jscript src="mode/twig/twig.js"                    description="CodeMirror Mode Javascript"/>        
+        </includes>
+    </mode-twig>
+
+    <mode-vb>
+        <includes>
+            <jscript src="mode/vb/vb.js"                        description="CodeMirror Mode Javascript"/>        
+        </includes>
+    </mode-vb>
+
+    <mode-vbscript>
+        <includes>
+            <jscript src="mode/vbscript/vbscript.js"            description="CodeMirror Mode Javascript"/>        
+        </includes>
+    </mode-vbscript>
+
+    <mode-velocity>
+        <includes>
+            <jscript src="mode/velocity/velocity.js"            description="CodeMirror Mode Javascript"/>        
+        </includes>
+    </mode-velocity>
+
+    <mode-verilog>
+        <includes>
+            <jscript src="mode/verilog/verilog.js"              description="CodeMirror Mode Javascript"/>        
+        </includes>
+    </mode-verilog>
+
+    <mode-vhdl>
+        <includes>
+            <jscript src="mode/vhdl/vhdl.js"                    description="CodeMirror Mode Javascript"/>        
+        </includes>
+    </mode-vhdl>
+
+    <mode-vue>
+        <includes>
+            <jscript src="mode/vue/vue.js"                      description="CodeMirror Mode Javascript"/>        
+        </includes>
+    </mode-vue>
+
+    <mode-webidl>
+        <includes>
+            <jscript src="mode/webidl/webidl.js"                description="CodeMirror Mode Javascript"/>        
+        </includes>
+    </mode-webidl>
+
+    <mode-xml>
+        <includes>
+            <jscript src="mode/xml/xml.js"                      description="CodeMirror Mode Javascript"/>
+            <jscript src="addon/hint/xml-hint.js"             description="CodeMirror hint Addon"/>       
+        </includes>
+    </mode-xml>
+
+    <mode-xquery>
+        <includes>
+            <jscript src="mode/xquery/xquery.js"                description="CodeMirror Mode Javascript"/>        
+        </includes>
+    </mode-xquery>
+
+    <mode-yacas>
+        <includes>
+            <jscript src="mode/yacas/yacas.js"                  description="CodeMirror Mode Javascript"/>        
+        </includes>
+    </mode-yacas>
+
+    <mode-yaml>
+        <includes>
+            <jscript src="mode/yaml/yaml.js"                    description="CodeMirror Mode Javascript"/>
+            <jscript src="addon/lint/yaml-lint.js"              description="CodeMirror lint Addon"/>
+        </includes>
+    </mode-yaml>
+
+    <mode-yaml-frontmatter>
+        <includes>
+            <jscript src="yaml-frontmatter/yaml-frontmatter.js"   description="CodeMirror Mode Javascript"/>        
+        </includes>
+    </mode-yaml-frontmatter>
+
+    <mode-z80>
+        <includes>
+            <jscript src="mode/z80/z80.js"                        description="CodeMirror Mode Javascript"/>        
+        </includes>
+    </mode-z80>
+
+    <addon-comment>
+        <includes>
+            <jscript src="comment/comment.js"                     description="CodeMirror comment Addon"/>
+            <jscript src="comment/continuecomment.js"             description="CodeMirror comment Addon"/>
+        </includes>
+    </addon-comment>
+
+    <addon-dialog>
+        <includes>
+            <css     src="addon/dialog/dialog.css"                description="CodeMirror dialog Addon"/>
+            <jscript src="addon/dialog/dialog.js"                 description="CodeMirror dialog Addon"/>
+        </includes>
+    </addon-dialog>
+
+    <addon-display>
+        <includes>
+            <css     src="addon/display/fullscreen.css"           description="CodeMirror display Addon"/>
+            <jscript src="addon/display/autorefresh.js"           description="CodeMirror display Addon"/>
+            <jscript src="addon/display/fullscreen.js"            description="CodeMirror display Addon"/>
+            <jscript src="addon/display/panel.js"                 description="CodeMirror display Addon"/>
+            <jscript src="addon/display/placeholder.js"           description="CodeMirror display Addon"/>
+            <jscript src="addon/display/rulers.js"                description="CodeMirror display Addon"/>
+        </includes>
+    </addon-display>
+
+    <addon-edit>
+        <includes>
+            <jscript src="addon/edit/closebrackets.js"            description="CodeMirror edit Addon"/>
+            <jscript src="addon/edit/closetag.js"                 description="CodeMirror edit Addon"/>
+            <jscript src="addon/edit/continuelist.js"             description="CodeMirror edit Addon"/>
+            <jscript src="addon/edit/matchbrackets.js"            description="CodeMirror edit Addon"/>
+            <jscript src="addon/edit/trailingspace.js"            description="CodeMirror edit Addon"/>
+        </includes>
+    </addon-edit>
+
+    <addon-fold>
+        <includes>
+            <css     src="addon/fold/foldgutter.css"              description="CodeMirror fold Addon"/>
+            <jscript src="addon/fold/brace-fold.js"               description="CodeMirror fold Addon"/>
+            <jscript src="addon/fold/comment-fold.js"             description="CodeMirror fold Addon"/>
+            <jscript src="addon/fold/foldcode.js"                 description="CodeMirror fold Addon"/>
+            <jscript src="addon/fold/foldgutter.js"               description="CodeMirror fold Addon"/>
+            <jscript src="addon/fold/indent-fold.js"              description="CodeMirror fold Addon"/>
+            <jscript src="addon/fold/markdown-fold.js"            description="CodeMirror fold Addon"/>
+            <jscript src="addon/fold/xml-fold.js"                 description="CodeMirror fold Addon"/>
+        </includes>
+    </addon-fold>
+
+    <addon-hint>
+        <includes>
+            <css     src="addon/hint/show-hint.css"               description="CodeMirror hint Addon"/>
+            <jscript src="addon/hint/show-hint.js"                description="CodeMirror hint Addon"/>
+            <jscript src="addon/hint/anyword-hint.js"             description="CodeMirror hint Addon"/>
+             
+        </includes>
+    </addon-hint>
+
+    <addon-lint>
+        <includes>
+            <css     src="addon/lint/lint.css"                    description="CodeMirror lint Addon"/>  
+            <jscript src="addon/lint/lint.js"                     description="CodeMirror lint Addon"/>  
+        </includes>
+    </addon-lint>
+
+    <addon-merge>
+        <includes>
+            <css     src="addon/merge/merge.css"                  description="CodeMirror merge Addon"/>  
+            <jscript src="addon/merge/merge.js"                   description="CodeMirror merge Addon"/>
+        </includes>
+    </addon-merge>
+
+    <addon-mode>
+        <includes>
+            <jscript src="addon/mode/loadmode.js"                 description="CodeMirror mode Addon"/>
+            <jscript src="addon/mode/multiplex.js"                description="CodeMirror mode Addon"/>
+            <jscript src="addon/mode/overlay.js"                  description="CodeMirror mode Addon"/>
+            <jscript src="addon/mode/simple.js"                   description="CodeMirror mode Addon"/>      
+        </includes>
+    </addon-mode>
+
+    <addon-runmode>
+        <includes>
+            <jscript src="addon/runmode/runmode.js"               description="CodeMirror runmode Addon"/>
+            <jscript src="addon/runmode/runmode-standalone.js"    description="CodeMirror runmode Addon"/>
+            <jscript src="addon/runmode/colorize.js"              description="CodeMirror runmode Addon"/>
+            <jscript src="addon/runmode/runmode.node.js"          description="CodeMirror runmode Addon"/>       
+        </includes>
+    </addon-runmode>
+
+    <addon-scroll>
+        <includes>
+            <jscript src="addon/scroll/simplescrollbars.js"       description="CodeMirror scroll Addon"/>
+            <jscript src="addon/scroll/annotatescrollbar.js"      description="CodeMirror scroll Addon"/>
+            <jscript src="addon/scroll/scrollpastend.js"          description="CodeMirror scroll Addon"/>
+            <css     src="addon/scroll/simplescrollbars.css"      description="CodeMirror scroll Addon"/>        
+        </includes>
+    </addon-scroll>
+
+    <addon-search>
+        <includes>
+            <jscript src="addon/search/search.js"                description="CodeMirror search Addon"/>
+            <jscript src="addon/search/searchcursor.js"          description="CodeMirror search Addon"/>
+            <jscript src="addon/search/match-highlighter.js"     description="CodeMirror search Addon"/>
+            <jscript src="addon/search/jump-to-line.js"          description="CodeMirror search Addon"/>
+            <css     src="addon/search/matchesonscrollbar.css"   description="CodeMirror search Addon"/>
+            <jscript src="addon/search/matchesonscrollbar.js"    description="CodeMirror search Addon"/>      
+        </includes>
+    </addon-search>
+
+    <addon-selection>
+        <includes>
+            <jscript src="addon/selection/mark-selection.js"     description="CodeMirror selection Addon"/>
+            <jscript src="addon/selection/active-line.js"        description="CodeMirror selection Addon"/>
+            <jscript src="addon/selection/selection-pointer.js"  description="CodeMirror selection Addon"/>     
+        </includes>
+    </addon-selection>
+
+    <addon-tern>
+        <includes>
+            <css     src="addon/tern/tern.css"                   description="CodeMirror tern Addon"/>
+            <jscript src="addon/tern/tern.js"                    description="CodeMirror tern Addon"/>
+            <jscript src="addon/tern/worker.js"                  description="CodeMirror tern Addon"/>
+                    
+        </includes>
+    </addon-tern>
+
+    <addon-wrap>
+        <includes>
+            <jscript src="addon/wrap/hardwrap.js"                description="CodeMirror wrap Addon"/>   
+        </includes>
+    </addon-wrap>
+
+    <keymap-emacs>
+        <includes>
+            <jscript src="keymap/emacs.js"                      description="CodeMirror emacs Keymap"/>       
+        </includes>
+    </keymap-emacs>
+
+    <keymap-sublime>
+        <includes>
+            <jscript src="keymap/sublime.js"                    description="CodeMirror Sublime-Text Keymap"/>
+        </includes>
+    </keymap-sublime>
+    <keymap-vim>
+        <includes>
+            <jscript src="keymap/vim.js"                        description="CodeMirror VIM Keymap"/>
+        </includes>
+    </keymap-vim>
+</root>

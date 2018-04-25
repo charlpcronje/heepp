@@ -1,0 +1,36 @@
+<root>    
+    <engine>
+        <includes>
+            <jscript 
+                src="engine/js/jquery.validationEngine-en.js"
+                description="Validation Engine Language JS"/>
+            <jscript 
+                src="engine/js/jquery.validationEngine.js"
+                description="Validation Engine Main JS"/>
+        </includes>
+    </engine>
+    
+    <jquery>
+        <includes>
+            <jscript
+                src="jquery/js/jquery.validate.js"
+                description="jQuery Validate JS"/>
+        </includes>
+    </jquery>
+    
+    <maskedinput-3>
+        <includes>
+            <jscript 
+                src="maskedinput/3.1.58/js/jquery.maskedinput.min.js"
+                description="jQuery Masked Input JS"/>
+        </includes>
+    </maskedinput-3>
+    
+    <maskedinput-4>
+        <includes>
+            <jscript 
+                src="maskedinput/4.0.1-25/js/min/jquery.inputmask.bundle.min.js"
+                description="jQuery Masked Input JS"/>
+        </includes>
+    </maskedinput-4>
+</root>

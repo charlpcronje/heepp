@@ -1,0 +1,1169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <base
+        alias="Base Libraries"
+        authentication="false"
+        status="active">
+        <core
+            alias="Base Heepp"
+            authentication="false"
+            status="active"/>
+        <data
+            alias="Heepp UI Data"
+            authentication="false"
+            status="active"/>
+    </base>
+
+    <bi-chart
+        alias="Business Intelegence - Charts"
+        authentication="false"
+        status="active">
+        <chartjs
+            alias="ChartJS"
+            authentication="false"
+            status="active"/>
+        <morris
+            alias="Morris Charts"
+            authentication="false"
+            status="active"/>
+    </bi-chart>
+
+    <ui
+        alias="User Interface Libraries"
+        authentication="false"
+        status="active">
+        <bootstrap
+            alias="Bootstrap UI V3"
+            authentication="false"
+            status="active"/>
+        <bootstrap-4
+            alias="Bootstrap UI V4"
+            authentication="false"
+            status="active"/>
+        <bootflat
+            alias="Bootflat UI"
+            authentication="false"
+            status="active"/>
+        <breakpoints
+            alias="Creates handy events for your responsive design breakpoints"
+            authentication="false"
+            status="active"/>
+        <foundation
+            alias="Foundation UI"
+            authentication="false"
+            status="active"/>
+        <jqueryui
+            alias="JQuery User Interface"
+            authentication="false"
+            status="active"/>
+        <metroui
+            alias="Metro User Interface"
+            authentication="false"
+            status="active"/>
+        <milligram
+            alias="Milligram UI"
+            authentication="false"
+            status="active"/>
+        <uikit
+            alias="uiKit"
+            authentication="false"
+            status="active"/>
+        <w3css
+            alias="W3CSS UI"
+            authentication="false"
+            status="active"/>
+    </ui>
+
+    <helper
+        alias="Helper Libraries"
+        authentication="false"
+        status="active">
+        <autosize
+            alias="Autosize 1.18.17"
+            authentication="false"
+            status="active"/>
+        <cropperjs
+            alias="CropperJS V1.0"
+            authentication="false"
+            status="active"/>
+        <dotObject
+            alias="DOT Object JS Object Helper"
+            authentication="false"
+            status="active"/>
+        <lazyload
+            alias="JS Lazyload"
+            authentication="false"
+            status="active"/>
+        <moment
+            alias="Moment JS"
+            authentication="false"
+            status="active"/>
+        <mousetrap
+            alias="MouseTrap JS"
+            authentication="false"
+            status="active"/>
+        <mutationObserver
+            alias="Mutation Observer"
+            authentication="false"
+            status="active"/>
+        <jquery
+            alias="jQuery"
+            authentication="false"
+            status="active"/>
+        <jquery-1
+            alias="jQuery V1"
+            authentication="false"
+            status="active"/>
+        <jquery-2
+            alias="jQuery V2"
+            authentication="false"
+            status="active"/>
+        <jquery-3
+            alias="jQuery V3"
+            authentication="false"
+            status="active"/>
+        <jqueryEasing
+            alias="jQuery Easing V1.3.2"
+            authentication="false"
+            status="active"/>
+        <jscookie
+            alias="JS Cookie"
+            authentication="false"
+            status="active"/>
+        <vue
+            alias="Vue Js"
+            authentication="false"
+            status="active"/>
+        <w3data
+            alias="W3 Data Object"
+            authentication="false"
+            status="active"/>
+        <workbox
+            alias="Workbox (Sevice Worker"
+            authentication="false"
+            status="active"/>
+    </helper>
+<!--
+    <ide
+        alias="Heepp IDE"
+        authentication="false"
+        status="active">
+        <base
+            alias="Base IDE"
+            authentication="false"
+            status="active"/>
+    </ide>
+-->
+    <ui-alert
+        alias="User Interface Alert Libraries"
+        authentication="false"
+        status="active">
+        <noty
+            alias="Noty Alert Box"
+            authentication="false"
+            status="active"/>
+
+        <toastedjs
+            alias="toastedJS Toasted Notifications"
+            authentication="false"
+            status="active"/>
+    </ui-alert>
+
+    <ui-animation
+        alias="User Interface Animation Libraries"
+        authentication="false"
+        status="active">
+        <animate
+            alias="Animate CSS"
+            authentication="false"
+            status="active"/>
+        <appear
+            alias="jquery appear"
+            authentication="false"
+            status="active"/>
+        <!-- gsa-drag is dependant on gsa-tween -->
+        <gsa-drag
+            alias="GreenSock Draggable Plugin"
+            authentication="false"
+            status="active"/>
+        <gsa-tween
+            alias="GreenSock Teen Animations"
+            authentication="false"
+            status="active"/>
+        <owlCarousel
+            alias="Owl Carousel"
+            authentication="false"
+            status="active"/>
+    </ui-animation>
+
+    <ui-font
+        alias="User Interface Font Libraries"
+        authentication="false"
+        status="active">
+        <openSans
+            alias="Open Sans Font"
+            authentication="false"
+            status="active"/>
+    </ui-font>
+
+    <ui-form
+        alias="User Interface Forms Libraries"
+        authentication="false"
+        status="active">
+        <form2js
+            alias="Form to JS Object"
+            authentication="false"
+            status="active"/>
+    </ui-form>
+
+    <ui-form-control
+        alias="User Interface Form Control Libraries"
+        authentication="false"
+        status="active">
+        <autoComplete
+            alias="AutoComplete Text Field With no Dependencies"
+            authentication="false"
+            status="active"/>
+        <colorPicker
+            alias="Bootstrap Color Picker"
+            authentication="false"
+            status="active"/>
+        <datePicker
+            alias="Bootstrap Date Picker"
+            authentication="false"
+            status="active"/>
+        <selectpicker
+            alias="Bootstrap Select Picker"
+            authentication="false"
+            status="active"/>
+        <jstree
+            alias="JS Tree"
+            authentication="false"
+            status="active"/>
+        <multiselect
+            alias="Multiselect (Duel Listbox)"
+            authentication="false"
+            status="active"/>
+        <tagsinput
+            alias="Tags Input"
+            authentication="false"
+            status="active"/>
+    </ui-form-control>
+
+    <ui-form-editor-codemirror
+        alias="Code Mirror Code Editor"
+        authentication="false"
+        status="active">
+        <!-- Code mirror base -->
+        <lib
+            alias="Basic Lib Includes"
+            authentication="false"
+            status="active"/>
+
+        <!-- Code mirror themes -->
+        <theme-3024-day
+            alias="CodeMirror 3024-day Theme"
+            authentication="false"
+            status="active"/>
+        <theme-3024-night
+            alias="CodeMirror 3024-night Theme"
+            authentication="false"
+            status="active"/>
+        <theme-abcdef
+            alias="CodeMirror ambiance-mobile Theme"
+            authentication="false"
+            status="active"/>
+        <theme-ambiance-mobile
+            alias="CodeMirror ambiance-mobile Theme"
+            authentication="false"
+            status="active"/>
+        <theme-ambiance
+            alias="CodeMirror ambiance Theme"
+            authentication="false"
+            status="active"/>
+        <theme-base16-dark
+            alias="CodeMirror base16-dark Theme"
+            authentication="false"
+            status="active"/>
+        <theme-base16-light
+            alias="CodeMirror base16-light Theme"
+            authentication="false"
+            status="active"/>
+        <theme-bespin
+            alias="CodeMirror bespin Theme"
+            authentication="false"
+            status="active"/>
+        <theme-blackboard
+            alias="CodeMirror blackboard Theme"
+            authentication="false"
+            status="active"/>
+        <theme-cobalt
+            alias="CodeMirror cobalt Theme"
+            authentication="false"
+            status="active"/>
+        <theme-colorforth
+            alias="CodeMirror colorforth Theme"
+            authentication="false"
+            status="active"/>
+        <theme-dracula
+            alias="CodeMirror dracula Theme"
+            authentication="false"
+            status="active"/>
+        <theme-eclipse
+            alias="CodeMirror eclipse Theme"
+            authentication="false"
+            status="active"/>
+        <theme-elegant
+            alias="CodeMirror elegant Theme"
+            authentication="false"
+            status="active"/>
+        <theme-erlang-dark
+            alias="CodeMirror erlang-dark Theme"
+            authentication="false"
+            status="active"/>
+        <theme-hopscotch
+            alias="CodeMirror hopscotch Theme"
+            authentication="false"
+            status="active"/>
+        <theme-icecoder
+            alias="CodeMirror icecoder Theme"
+            authentication="false"
+            status="active"/>
+        <theme-isotope
+            alias="CodeMirror isotope Theme"
+            authentication="false"
+            status="active"/>
+        <theme-lesser-dark
+            alias="CodeMirror lesser-dark Theme"
+            authentication="false"
+            status="active"/>
+        <theme-liquibyte
+            alias="CodeMirror liquibyte Theme"
+            authentication="false"
+            status="active"/>
+        <theme-material
+            alias="CodeMirror material Theme"
+            authentication="false"
+            status="active"/>
+        <theme-mbo
+            alias="CodeMirror mbo Theme"
+            authentication="false"
+            status="active"/>
+        <theme-mdn-like
+            alias="CodeMirror mdn-like Theme"
+            authentication="false"
+            status="active"/>
+        <theme-midnight
+            alias="CodeMirror midnight Theme"
+            authentication="false"
+            status="active"/>
+        <theme-monokai
+            alias="CodeMirror monokai Theme"
+            authentication="false"
+            status="active"/>
+        <theme-neat
+            alias="CodeMirror neat Theme"
+            authentication="false"
+            status="active"/>
+        <theme-neo
+            alias="CodeMirror neo Theme"
+            authentication="false"
+            status="active"/>
+        <theme-night
+            alias="CodeMirror night Theme"
+            authentication="false"
+            status="active"/>
+        <theme-paraiso-dark
+            alias="CodeMirror paraiso-dark Theme"
+            authentication="false"
+            status="active"/>
+        <theme-paraiso-light
+            alias="CodeMirror paraiso-light Theme"
+            authentication="false"
+            status="active"/>
+        <theme-pastel-on-dark
+            alias="CodeMirror pastel-on-dark Theme"
+            authentication="false"
+            status="active"/>
+        <theme-railscasts
+            alias="CodeMirror railscasts Theme"
+            authentication="false"
+            status="active"/>
+        <theme-rubyblue
+            alias="CodeMirror rubyblue Theme"
+            authentication="false"
+            status="active"/>
+        <theme-seti
+            alias="CodeMirror seti Theme"
+            authentication="false"
+            status="active"/>
+        <theme-solarized
+            alias="CodeMirror solarized Theme"
+            authentication="false"
+            status="active"/>
+        <theme-the-matrix
+            alias="CodeMirror the-matrix Theme"
+            authentication="false"
+            status="active"/>
+        <theme-tomorrow-night-bright
+            alias="CodeMirror tomorrow-night-bright Theme"
+            authentication="false"
+            status="active"/>
+        <theme-tomorrow-night-eighties
+            alias="CodeMirror tomorrow-night-eighties Theme"
+            authentication="false"
+            status="active"/>
+        <theme-ttcn
+            alias="CodeMirror ttcn Theme"
+            authentication="false"
+            status="active"/>
+        <theme-twilight
+            alias="CodeMirror twilight Theme"
+            authentication="false"
+            status="active"/>
+        <theme-vibrant-ink
+            alias="CodeMirror vibrant-ink Theme"
+            authentication="false"
+            status="active"/>
+        <theme-xq-dark
+            alias="CodeMirror xq-dark Theme"
+            authentication="false"
+            status="active"/>
+        <theme-xq-light
+            alias="CodeMirror xq-light Theme"
+            authentication="false"
+            status="active"/>
+        <theme-yeti
+            alias="CodeMirror yeti Theme"
+            authentication="false"
+            status="active"/>
+        <theme-zenburn
+            alias="CodeMirror zenburn Theme"
+            authentication="false"
+            status="active"/>
+
+
+        <!-- CodeMirror Modes -->
+        <mode-apl
+            alias="CodeMirror apl Mode"
+            authentication="false"
+            status="active"/>
+        <mode-asciiarmor
+            alias="CodeMirror asciiarmor Mode"
+            authentication="false"
+            status="active"/>
+        <mode-asn.1
+            alias="CodeMirror asn.1 Mode"
+            authentication="false"
+            status="active"/>
+        <mode-asterisk
+            alias="CodeMirror asterisk Mode"
+            authentication="false"
+            status="active"/>
+        <mode-brainfuck
+            alias="CodeMirror brainfuck Mode"
+            authentication="false"
+            status="active"/>
+        <mode-clike
+            alias="CodeMirror clike Mode"
+            authentication="false"
+            status="active"/>
+        <mode-clojure
+            alias="CodeMirror clojure Mode"
+            authentication="false"
+            status="active"/>
+        <mode-cmake
+            alias="CodeMirror cmake Mode"
+            authentication="false"
+            status="active"/>
+        <mode-cobol
+            alias="CodeMirror cobol Mode"
+            authentication="false"
+            status="active"/>
+        <mode-coffeescript
+            alias="CodeMirror coffeescript Mode"
+            authentication="false"
+            status="active"/>
+        <mode-commonlisp
+            alias="CodeMirror commonlisp Mode"
+            authentication="false"
+            status="active"/>
+        <mode-crystal
+            alias="CodeMirror crystal Mode"
+            authentication="false"
+            status="active"/>
+        <mode-css
+            alias="CodeMirror css Mode"
+            authentication="false"
+            status="active"/>
+        <mode-cypher
+            alias="CodeMirror cypher Mode"
+            authentication="false"
+            status="active"/>
+        <mode-d
+            alias="CodeMirror d Mode"
+            authentication="false"
+            status="active"/>
+        <mode-dart
+            alias="CodeMirror dart Mode"
+            authentication="false"
+            status="active"/>
+        <mode-diff
+            alias="CodeMirror diff Mode"
+            authentication="false"
+            status="active"/>
+        <mode-django
+            alias="CodeMirror django Mode"
+            authentication="false"
+            status="active"/>
+        <mode-dockerfile
+            alias="CodeMirror dockerfile Mode"
+            authentication="false"
+            status="active"/>
+        <mode-dtd
+            alias="CodeMirror dtd Mode"
+            authentication="false"
+            status="active"/>
+        <mode-dylan
+            alias="CodeMirror dylan Mode"
+            authentication="false"
+            status="active"/>
+        <mode-ebnf
+            alias="CodeMirror ebnf Mode"
+            authentication="false"
+            status="active"/>
+        <mode-ecl
+            alias="CodeMirror ecl Mode"
+            authentication="false"
+            status="active"/>
+        <mode-eiffel
+            alias="CodeMirror eiffel Mode"
+            authentication="false"
+            status="active"/>
+        <mode-elm
+            alias="CodeMirror elm Mode"
+            authentication="false"
+            status="active"/>
+        <mode-factor
+            alias="CodeMirror factor Mode"
+            authentication="false"
+            status="active"/>
+        <mode-fcl
+            alias="CodeMirror fcl Mode"
+            authentication="false"
+            status="active"/>
+        <mode-forth
+            alias="CodeMirror forth Mode"
+            authentication="false"
+            status="active"/>
+        <mode-fortran
+            alias="CodeMirror fortran Mode"
+            authentication="false"
+            status="active"/>
+        <mode-gas
+            alias="CodeMirror gas Mode"
+            authentication="false"
+            status="active"/>
+        <mode-gfm
+            alias="CodeMirror gfm Mode"
+            authentication="false"
+            status="active"/>
+        <mode-gherkin
+            alias="CodeMirror gherkin Mode"
+            authentication="false"
+            status="active"/>
+        <mode-go
+            alias="CodeMirror go Mode"
+            authentication="false"
+            status="active"/>
+        <mode-groovy
+            alias="CodeMirror groovy Mode"
+            authentication="false"
+            status="active"/>
+        <mode-haml
+            alias="CodeMirror haml Mode"
+            authentication="false"
+            status="active"/>
+        <mode-handlebars
+            alias="CodeMirror handlebars Mode"
+            authentication="false"
+            status="active"/>
+        <mode-haskell
+            alias="CodeMirror haskell Mode"
+            authentication="false"
+            status="active"/>
+        <mode-haskell-literate
+            alias="CodeMirror haskell-literate Mode"
+            authentication="false"
+            status="active"/>
+        <mode-haxe
+            alias="CodeMirror haxe Mode"
+            authentication="false"
+            status="active"/>
+        <mode-htmlembedded
+            alias="CodeMirror htmlembedded Mode"
+            authentication="false"
+            status="active"/>
+        <mode-htmlmixed
+            alias="CodeMirror htmlmixed Mode"
+            authentication="false"
+            status="active"/>
+        <mode-http
+            alias="CodeMirror http Mode"
+            authentication="false"
+            status="active"/>
+        <mode-idl
+            alias="CodeMirror idl Mode"
+            authentication="false"
+            status="active"/>
+        <mode-jade
+            alias="CodeMirror jade Mode"
+            authentication="false"
+            status="active"/>
+        <mode-javascript
+            alias="CodeMirror javascript Mode"
+            authentication="false"
+            status="active"/>
+        <mode-jinja2
+            alias="CodeMirror jinja2 Mode"
+            authentication="false"
+            status="active"/>
+        <mode-jsx
+            alias="CodeMirror jsx Mode"
+            authentication="false"
+            status="active"/>
+        <mode-julia
+            alias="CodeMirror julia Mode"
+            authentication="false"
+            status="active"/>
+        <mode-livescript
+            alias="CodeMirror livescript Mode"
+            authentication="false"
+            status="active"/>
+        <mode-lua
+            alias="CodeMirror lua Mode"
+            authentication="false"
+            status="active"/>
+        <mode-markdown
+            alias="CodeMirror markdown Mode"
+            authentication="false"
+            status="active"/>
+        <mode-mathematica
+            alias="CodeMirror mathematica Mode"
+            authentication="false"
+            status="active"/>
+        <mode-mbox
+            alias="CodeMirror mbox Mode"
+            authentication="false"
+            status="active"/>
+        <mode-mirc
+            alias="CodeMirror mirc Mode"
+            authentication="false"
+            status="active"/>
+        <mode-mllike
+            alias="CodeMirror mllike Mode"
+            authentication="false"
+            status="active"/>
+        <mode-modelica
+            alias="CodeMirror modelica Mode"
+            authentication="false"
+            status="active"/>
+        <mode-mscgen
+            alias="CodeMirror mscgen Mode"
+            authentication="false"
+            status="active"/>
+        <mode-mumps
+            alias="CodeMirror mumps Mode"
+            authentication="false"
+            status="active"/>
+        <mode-nginx
+            alias="CodeMirror nginx Mode"
+            authentication="false"
+            status="active"/>
+        <mode-nsis
+            alias="CodeMirror nsis Mode"
+            authentication="false"
+            status="active"/>
+        <mode-ntriples
+            alias="CodeMirror ntriples Mode"
+            authentication="false"
+            status="active"/>
+        <mode-octave
+            alias="CodeMirror octave Mode"
+            authentication="false"
+            status="active"/>
+        <mode-oz
+            alias="CodeMirror oz Mode"
+            authentication="false"
+            status="active"/>
+        <mode-pascal
+            alias="CodeMirror pascal Mode"
+            authentication="false"
+            status="active"/>
+        <mode-pegjs
+            alias="CodeMirror pegjs Mode"
+            authentication="false"
+            status="active"/>
+        <mode-perl
+            alias="CodeMirror perl Mode"
+            authentication="false"
+            status="active"/>
+        <mode-php
+            alias="CodeMirror php Mode"
+            authentication="false"
+            status="active"/>
+        <mode-pig
+            alias="CodeMirror apl Mode"
+            authentication="false"
+            status="active"/>
+        <mode-powershell
+            alias="CodeMirror powershell Mode"
+            authentication="false"
+            status="active"/>
+        <mode-properties
+            alias="CodeMirror properties Mode"
+            authentication="false"
+            status="active"/>
+        <mode-protobuf
+            alias="CodeMirror protobuf Mode"
+            authentication="false"
+            status="active"/>
+        <mode-puppet
+            alias="CodeMirror puppet Mode"
+            authentication="false"
+            status="active"/>
+        <mode-python
+            alias="CodeMirror python Mode"
+            authentication="false"
+            status="active"/>
+        <mode-q
+            alias="CodeMirror q Mode"
+            authentication="false"
+            status="active"/>
+        <mode-r
+            alias="CodeMirror r Mode"
+            authentication="false"
+            status="active"/>
+        <mode-rpm
+            alias="CodeMirror rpm Mode"
+            authentication="false"
+            status="active"/>
+        <mode-rst
+            alias="CodeMirror rst Mode"
+            authentication="false"
+            status="active"/>
+        <mode-ruby
+            alias="CodeMirror ruby Mode"
+            authentication="false"
+            status="active"/>
+        <mode-sas
+            alias="CodeMirror sas Mode"
+            authentication="false"
+            status="active"/>
+        <mode-sass
+            alias="CodeMirror sass Mode"
+            authentication="false"
+            status="active"/>
+        <mode-scheme
+            alias="CodeMirror scheme Mode"
+            authentication="false"
+            status="active"/>
+        <mode-shell
+            alias="CodeMirror shell Mode"
+            authentication="false"
+            status="active"/>
+        <mode-sieve
+            alias="CodeMirror sieve Mode"
+            authentication="false"
+            status="active"/>
+        <mode-slim
+            alias="CodeMirror slim Mode"
+            authentication="false"
+            status="active"/>
+        <mode-smalltalk
+            alias="CodeMirror smalltalk Mode"
+            authentication="false"
+            status="active"/>
+        <mode-smarty
+            alias="CodeMirror smarty Mode"
+            authentication="false"
+            status="active"/>
+        <mode-solr
+            alias="CodeMirror solr Mode"
+            authentication="false"
+            status="active"/>
+        <mode-soy
+            alias="CodeMirror soy Mode"
+            authentication="false"
+            status="active"/>
+        <mode-sparql
+            alias="CodeMirror sparql Mode"
+            authentication="false"
+            status="active"/>
+        <mode-spreadsheet
+            alias="CodeMirror spreadsheet Mode"
+            authentication="false"
+            status="active"/>
+        <mode-sql
+            alias="CodeMirror sql Mode"
+            authentication="false"
+            status="active"/>
+        <mode-stex
+            alias="CodeMirror stex Mode"
+            authentication="false"
+            status="active"/>
+        <mode-stylus
+            alias="CodeMirror stylus Mode"
+            authentication="false"
+            status="active"/>
+        <mode-swift
+            alias="CodeMirror swift Mode"
+            authentication="false"
+            status="active"/>
+        <mode-tcl
+            alias="CodeMirror tcl Mode"
+            authentication="false"
+            status="active"/>
+        <mode-textile
+            alias="CodeMirror textile Mode"
+            authentication="false"
+            status="active"/>
+        <mode-tiddlywiki
+            alias="CodeMirror tiddlywiki Mode"
+            authentication="false"
+            status="active"/>
+        <mode-tiki
+            alias="CodeMirror tiki Mode"
+            authentication="false"
+            status="active"/>
+        <mode-toml
+            alias="CodeMirror toml Mode"
+            authentication="false"
+            status="active"/>
+        <mode-tornado
+            alias="CodeMirror tornado Mode"
+            authentication="false"
+            status="active"/>
+        <mode-troff
+            alias="CodeMirror troff Mode"
+            authentication="false"
+            status="active"/>
+        <mode-ttcn
+            alias="CodeMirror ttcn Mode"
+            authentication="false"
+            status="active"/>
+        <mode-ttcn-cfg
+            alias="CodeMirror ttcn-cfg Mode"
+            authentication="false"
+            status="active"/>
+        <mode-turtle
+            alias="CodeMirror turtle Mode"
+            authentication="false"
+            status="active"/>
+        <mode-twig
+            alias="CodeMirror twig Mode"
+            authentication="false"
+            status="active"/>
+        <mode-vb
+            alias="CodeMirror vb Mode"
+            authentication="false"
+            status="active"/>
+        <mode-vbscript
+            alias="CodeMirror vbscript Mode"
+            authentication="false"
+            status="active"/>
+        <mode-velocity
+            alias="CodeMirror velocity Mode"
+            authentication="false"
+            status="active"/>
+        <mode-verilog
+            alias="CodeMirror verilog Mode"
+            authentication="false"
+            status="active"/>
+        <mode-vhdl
+            alias="CodeMirror vhdl Mode"
+            authentication="false"
+            status="active"/>
+        <mode-vue
+            alias="CodeMirror vue Mode"
+            authentication="false"
+            status="active"/>
+        <mode-webidl
+            alias="CodeMirror webidl Mode"
+            authentication="false"
+            status="active"/>
+        <mode-xml
+            alias="CodeMirror xml Mode"
+            authentication="false"
+            status="active"/>
+        <mode-xquery
+            alias="CodeMirror xquery Mode"
+            authentication="false"
+            status="active"/>
+        <mode-yacas
+            alias="CodeMirror yacas Mode"
+            authentication="false"
+            status="active"/>
+        <mode-yaml
+            alias="CodeMirror yaml Mode"
+            authentication="false"
+            status="active"/>
+        <mode-yaml-frontmatter
+            alias="CodeMirror yaml-frontmatter Mode"
+            authentication="false"
+            status="active"/>
+        <mode-z80
+            alias="CodeMirror z80 Mode"
+            authentication="false"
+            status="active"/>
+
+        <!-- CodeMirror Addons -->
+        <addon-comment
+            alias="CodemMirror Comment Addon"
+            authentication="false"
+            status="active"/>
+        <addon-dialog
+            alias="CodemMirror Dialog Addon"
+            authentication="false"
+            status="active"/>
+        <addon-display
+            alias="CodemMirror Display Addon"
+            authentication="false"
+            status="active"/>
+        <addon-edit
+            alias="CodemMirror Edit Addon"
+            authentication="false"
+            status="active"/>
+        <addon-fold
+            alias="CodemMirror Fold Addon"
+            authentication="false"
+            status="active"/>
+        <addon-hint
+            alias="CodemMirror Hint Addon"
+            authentication="false"
+            status="active"/>
+        <addon-lint
+            alias="CodemMirror Lint Addon"
+            authentication="false"
+            status="active"/>
+        <addon-merge
+            alias="CodemMirror Merge Addon"
+            authentication="false"
+            status="active"/>
+        <addon-mode
+            alias="CodemMirror Mode Addon"
+            authentication="false"
+            status="active"/>
+        <addon-runmode
+            alias="CodemMirror Run Mode Addon"
+            authentication="false"
+            status="active"/>
+        <addon-scroll
+            alias="CodemMirror Scroll Addon"
+            authentication="false"
+            status="active"/>
+        <addon-search
+            alias="CodemMirror Search Addon"
+            authentication="false"
+            status="active"/>
+        <addon-selection
+            alias="CodemMirror Selection Addon"
+            authentication="false"
+            status="active"/>
+        <addon-tern
+            alias="CodemMirror Tern Addon"
+            authentication="false"
+            status="active"/>
+        <addon-wrap
+            alias="CodemMirror Wrap Addon"
+            authentication="false"
+            status="active"/>
+
+        <!-- CodeMirror Keymap -->
+        <keymap-emacs
+            alias="CodeMirror Emacs Keymap"
+            authentication="false"
+            status="active"/>
+        <keymap-sublime
+            alias="CodeMirror Sublime Keymap"
+            authentication="false"
+            status="active"/>
+        <keymap-vim
+            alias="CodeMirror VIM Keymap"
+            authentication="false"
+            status="active"/>
+    </ui-form-editor-codemirror>
+
+    <ui-form-editor-wysiwig
+        alias="Wysiwig HTML Editor"
+        authentication="false"
+        status="active">
+        <wysihtml5
+            alias="Wysiwig HTML5 Editor"
+            authentication="false"
+            status="active"/>
+
+        <summernote
+            alias="Summernote Simple Wysiwig Editor"
+            authentication="false"
+            status="active"/>
+    </ui-form-editor-wysiwig>
+
+    <ui-form-validate
+        alias="User Interface Form Validation Libraries"
+        authentication="false"
+        status="active">
+        <engine
+            alias="Validation Engine"
+            authentication="false"
+            status="active"/>
+        <jquery
+            alias="jQuery Validate"
+            authentication="false"
+            status="active"/>
+        <maskedinput
+            alias="Masked Input"
+            authentication="false"
+            status="active"/>
+    </ui-form-validate>
+
+    <ui-icon
+        alias="User Interface Icon Libraries"
+        authentication="false"
+        status="active">
+        <canvasIcons
+            alias="Canvas Icons"
+            authentication="false"
+            status="active"/>
+        <devicons
+            alias="Devicons (DEV Icons)"
+            authentication="false"
+            status="active"/>
+        <entypo
+            alias="Entypo Icons"
+            authentication="false"
+            status="active"/>
+        <etline
+            alias="ETLine Icons"
+            authentication="false"
+            status="active"/>
+        <flatIcon
+            alias="Flat Icons"
+            authentication="false"
+            status="active"/>
+        <fontAwesome
+            alias="Font Awesome Icons"
+            authentication="false"
+            status="active"/>
+        <iconic
+            alias="Ion Icons"
+            authentication="false"
+            status="active"/>
+        <ionIcons
+            alias="Ion Icons"
+            authentication="false"
+            status="active"/>
+        <materialIcons
+            alias="Material Icons"
+            authentication="false"
+            status="active"/>
+        <pictoIcons
+            alias="Picto Icons"
+            authentication="false"
+            status="active"/>
+        <summernote
+            alias="Summernotes Icons"
+            authentication="false"
+            status="active"/>
+    </ui-icon>
+
+    <ui-image
+        alias="User Interface Image Libraries"
+        authentication="false"
+        status="active">>
+        <fluidbox
+            alias="Fluidbox Image Lightbox"
+            authentication="false"
+            status="active"/>
+    </ui-image>
+
+    <ui-loader
+        alias="User Interface Loader Libraries"
+        authentication="false"
+        status="active">
+        <spin
+            alias="Spin"
+            authentication="false"
+            status="active"/>
+    </ui-loader>
+
+    <ui-notify
+        alias="User Interface Notification Libraries"
+        authentication="false"
+        status="active">
+        <gritter
+            alias="Gritter"
+            authentication="false"
+            status="active"/>
+    </ui-notify>
+
+    <ui-plugin
+        alias="User Interface Plugins"
+        authentication="false"
+        status="active">
+        <acidDom
+            alias="Acid DOM Iterator"
+            authentication="false"
+            status="active"/>
+        <prettyPhoto
+            alias="Pretty Photo Plugin"
+            authentication="false"
+            status="active"/>
+        <interact
+            alias="Interact JS"
+            authentication="false"
+            status="active"/>
+        <selectorGadget
+            alias="Selector Gadget DOM Inspector"
+            authentication="false"
+            status="active"/>/>
+    </ui-plugin>
+
+    <ui-scroll
+        alias="User Interface Icon Libraries"
+        authentication="false"
+        status="active">
+        <mscrollbar
+            alias="mCustom Scrollbar"
+            authentication="false"
+            status="active"/>
+        <perfectscrollbar
+            alias="Perfect Scrollbar"
+            authentication="false"
+            status="active"/>
+        <nanoscroller
+            alias="Nano Scroller"
+            authentication="false"
+            status="active"/>
+        <nicescroll
+            alias="Nicescroll"
+            authentication="false"
+            status="active"/>
+        <nicescroll-4
+            alias="Nicescroll V4"
+            authentication="false"
+            status="active"/>
+        <scrollto
+            alias="Scrollto"
+            authentication="false"
+            status="active"/>
+        <skrollr
+            alias="Skrollr"
+            authentication="false"
+            status="active"/>
+        <stellar
+            alias="Stellar"
+            authentication="false"
+            status="active"/>
+    </ui-scroll>
+</root>

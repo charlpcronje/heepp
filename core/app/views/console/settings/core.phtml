@@ -1,0 +1,97 @@
+<!-- EXTEND: core.console WITH settings.core AND initiate -->
+<lazyload
+    src="views/console/settings/js/core.js"
+    instantiate="settings.core"
+    extend="console"
+    callback="core.console.settings.core.init"
+    context="window"/>
+<h4>
+    <i uk-icon="icon: settings"/>
+    <span> Heepp Settings</span>
+</h4>
+<core.form
+    id="core-settings-form"
+    method="post"
+    action="Console.Settings/saveSettings/console.settings.core">
+
+    <toggle.switch
+        theme="win10"
+        name="useSockets"
+        id="useSockets"
+        class="toggle-switch"
+        value="On"
+        check="${console.settings.core.useSockets.key_value}"
+        label="Enable Web-Sockets"
+        hint="Not compatible with your browser"/>
+
+    <!--
+    <toggle.switch
+        theme="win10"
+        name="autoSave"
+        id="autoSave"
+        class="toggle-switch"
+        value="On"
+        check="${console.settings.core.autoSave.key_value}"
+        label="Auto save documents"
+        hint=""/>
+
+
+    <toggle.switch
+        theme="win10"
+        name="notSavedWarning"
+        id="notSavedWarning"
+        class="toggle-switch"
+        value="On"
+        check="${console.settings.core.notSavedWarning.key_value}"
+        label="Display warning if unsaved documents are about to close"/>
+        -->
+
+    <toggle.switch
+        theme="win10"
+        name="displayTerminal"
+        id="displayTerminal"
+        class="toggle-switch"
+        value="On"
+        check="${console.settings.core.displayTerminal.key_value}"
+        label="Enable terminal"
+        hint="Use the terminal to run commands direct on the server"/>
+
+    <toggle.switch
+        theme="win10"
+        name="clipBoardLog"
+        id="clipBoardLog"
+        class="toggle-switch"
+        value="On"
+        check="${console.settings.core.clipBoardLog.key_value}"
+        label="Enable clipboard log"
+        hint="Show the history of your clipboard of your current session"/>
+
+    <toggle.switch
+        theme="win10"
+        name="autoIndexNewProject"
+        id="autoIndexNewProject"
+        class="toggle-switch"
+        value="On"
+        check="${console.settings.core.autoIndexNewProject.key_value}"
+        label="Auto index new project"/>
+
+    <toggle.switch
+        theme="win10"
+        name="localFileHistory"
+        id="localFileHistory"
+        class="toggle-switch"
+        value="On"
+        check="${console.settings.core.localFileHistory.key_value}"
+        label="Local file history"/>
+
+    <!--
+    <toggle.switch
+        theme="win10"
+        name="useFileCheckout"
+        id="useFileCheckout"
+        class="toggle-switch"
+        value="On"
+        check="${console.settings.core.useFileCheckout.key_value}"
+        label="Use file checkout"/>
+        -->
+</core.form>

@@ -1,0 +1,44 @@
+<div class="form-group" id="form_group_@{id}">
+    <if notempty="@{label}">
+        <label for="@{id}">@{label}</label>
+    </if>
+    <div class="@{group}" id="form_group">
+        <if notempty="@{prepend|prependicon}">
+            <span class="input-group-addon">
+                <if notempty="@{prependicon}">
+                    <i class="fa fa-@{prependicon} fa-lg"></i>
+                </if>
+                <if notempty="@{prepend}">
+                    @{prepend}
+                </if>
+            </span>
+        </if>
+        <input
+            type="@{type}"
+            class="form-control input-group-@{size} @{class}"
+            style="@{style}"
+            id="@{id}"
+            placeholder="@{placeholder}"
+            readonly="@{readonly}"
+            disabled="@{disabled}"
+            name="@{name}"
+            value="@{value}"
+            mask="@{mask}"
+            required="@{required}"/>
+        <if notempty="@{append|appendicon}">
+            <span class="input-group-addon">
+                <if notempty="@{appendicon}">
+                    <if notempty="@{appendicontooltip}">
+                        <i class="fa fa-@{appendicon} fa-lg pointer appendIcon" rel="@{appendiconrel}" id="@{id}_icon" data-toggle="tooltip" title="@{appendicontooltip}"></i>
+                    </if>
+                    <if empty="@{appendicontooltip}">
+                        <i class="fa fa-@{appendicon} fa-lg" rel="@{appendiconrel}" id="icon_@{id}"></i>
+                    </if>
+                </if>
+                <if notempty="@{append}">
+                    @{append}
+                </if>
+            </span>
+        </if>
+    </div>
+</div>

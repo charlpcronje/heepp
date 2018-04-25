@@ -1,0 +1,59 @@
+/*
+* MEDIA QUERY (FOR CSS media Attribute):
+* OPERATORS:
+* and                  Specifies AND operator
+* not                  Specifies NOT operator
+* ,                    Specifies an OR operator
+* 
+* DEVICES:
+* all                  Default. Suitable for all devices
+* aural                Speech synthesizers
+* braille              Braille feedback devices
+* handheld             Handheld devices (small screen, limited bandwidth)
+* projection           Projectors
+* print                Print preview mode/printed pages
+* screen               Computer screens
+* tty                  Teletypes and similar media using a fixed-pitch character grid
+* tv                   Television type devices (low resolution, limited scroll ability)
+* 
+* VALUES
+* width                Specifies the width of the targeted display area. "min-" and "max-" prefixes can be used. Example: media="screen and (min-width:500px)"
+* height               Specifies the height of the  targeted display area. "min-" and "max-" prefixes can be used. Example: media="screen and (max-height:700px)"
+* device-width         Specifies the width of the target display/paper. "min-" and "max-" prefixes can be used. Example: media="screen and (device-width:500px)"
+* device-height        Specifies the height of the target display/paper. "min-" and "max-" prefixes can be used. Example: media="screen and (device-height:500px)"
+* orientation          Specifies the orientation of the target display/paper. Possible values: "portrait" or "landscape" Example: media="all and (orientation: landscape)"
+* aspect-ratio         Specifies the width/height ratio of the targeted display area. "min-" and "max-" prefixes can be used. Example: media="screen and (aspect-ratio:16/9)"
+* device-aspect-ratio  Specifies the device-width/device-height ratio of the target display/paper. "min-" and "max-" prefixes can be used. Example: media="screen and (aspect-ratio:16/9)"
+* color                Specifies the bits per color of target display. "min-" and "max-" prefixes can be used. Example: media="screen and (color:3)"
+* color-index          Specifies the number of colors the target display can handle. "min-" and "max-" prefixes can be used. Example: media="screen and (min-color-index:256)"
+* monochrome           Specifies the bits per pixel in a monochrome frame buffer. "min-" and "max-" prefixes can be used. Example: media="screen and (monochrome:2)"
+* resolution           Specifies the pixel density (dpi or dpcm) of the target display/paper. "min-" and "max-" prefixes can be used. Example: media="print and (resolution:300dpi)"
+* scan                 Specifies scanning method of a tv display. Possible values are "progressive" and "interlace". Example: media="tv and (scan:interlace)"
+* grid                 Specifies if the output device is grid or bitmap. Possible values are "1" for grid, and "0" otherwise. Example: media="handheld and (grid:1)"
+*/
+
+/*
+* SCRIPT TAG
+* Attributes
+* async="async"        Specifies that the script is executed asynchronously (only for external scripts), the script will be executed while the page continues the parsing. If async is not present and defer is present: The script is executed when the page has finished parsing. If neither async or defer is present: The script is fetched and executed immediately, before the browser continues parsing the page
+* charset="utf-8"      The charset attribute specifies the character encoding used in an external script file. The charset attribute is used when the character encoding in an external script file differs from the encoding in the HTML document. "ISO-8859-1" - Standard encoding for the Latin alphabet. "UTF-8" - Character encoding for Unicode. Compatible with ASCII
+* defer="defer"        Specifies that the script is executed when the page has finished parsing (only for external scripts). In XHTML, attribute minimization is forbidden, and the defer attribute must be defined as <script defer="defer">.
+* type="Media_Type"    Specifies the Media_Type of The Script. text/javascript is the default.
+* src="URL"            Specifies the URL of an external script file. An absolute URL - points to another web site (like src="http://www.example.com/example.js"). A relative URL - points to a file within a web site (like src="/scripts/example.js")
+*/
+
+/*
+* EMBED TAG
+* Attributes
+* height="200"         The height attribute specifies the height of the embedded content, in pixels
+* width="200"          The width attribute specifies the width of the embedded content, in pixels.
+* type="Media_Type"    Specifies the Media_Type of The Script. application/vnd.adobe.flash-movie is for example Flash
+* src="URL"            Specifies the address of the external file to embed. An absolute URL - points to another web site (like href="http://www.example.com/hello.swf"). A relative URL - points to a file within a web site (like href="hello.swf")
+*/
+
+/*
+* FAVICON (.ico)
+* Image Details        Images for favicons should be 16x16 pixels. favicons must use the icon (.ico) file format. The .ico format supports transparency, so you're not limited to creating a square icon
+* Creating Favicon     Create PNG or GIF and then visit http://www.favicon.cc/
+* Uploading Favicon    If you only want 1 Favicon for your domain you can just upload it to your domain root and call the file favicon.ico. If you want one per page, just use this import class     
+*/
