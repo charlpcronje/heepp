@@ -1,11 +1,13 @@
 <?php
-define('HTTP_REFERER',$_SERVER['HTTP_REFERER']) ;
+define('HTTP_REFERER',$_SERVER['HTTP_REFERER']);
 define('ROOT_PATH',dirname(__DIR__.DIRECTORY_SEPARATOR));
+putenv("base.path=".$basePath);
 
 // Bootstrap will load the minimum files fore the Heepp to work.
 include 'core/system/bootstrap.php';
 
 // As soon as bootstrap.php is done all the functionality of Heepp is available.
+use core\extension\helper\Asset;
 use core\Heepp;
 use core\system\handlers\ProjectLoader;
 use core\system\route;
@@ -13,9 +15,9 @@ use core\system\route;
 if (route::exists()) {
     route::invoke(route::getRouteDetails());
 } else {
-    if (input('controller') === 'assets' || input('controller') === 'views' || input('controller') === 'uiConstants.js') {
-        ProjectLoader::loadAsset();
-    } elseif(input('controller') === 'uiConstants.js') {
+    if (Asset::isAsset(input('controller'),input('params'))) {
+        ProjectLoader::loadAsset(input('controller'),input('params'));
+    } elseif (input('controller') === 'uiConstants.js') {
         ProjectLoader::loadJSConstants();
     } elseif (Heepp::data('app.request.allowDirectRouting')) {
         // Check if controller URL Param is set
@@ -23,8 +25,8 @@ if (route::exists()) {
             header('Content-type:text/html; charset=utf-8');
 
             // Reset loaded libraries
-            unset($_SESSION['core']->libraries);
-            $_SESSION['core']->libraries = new stdClass();
+            unset($_SESSION['heepp']->libraries);
+            $_SESSION['heepp']->libraries = new stdClass();
 
             // If the controller is NOT set then load the project
             ProjectLoader::loadProject();
