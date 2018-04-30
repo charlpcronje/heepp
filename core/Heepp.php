@@ -95,10 +95,10 @@ class Heepp {
         $this->appendHtml('head',(new Element)->setElement('script')->add('window.location.reload();')->render());
     }
 
-    public function __destruct () {
+    public function __destruct() {
         if (isset($_SESSION) && isset($this->output)) {
             if (isset($this->output->session)) {
-                $_SESSION['core'] = $this->output->session;
+                $_SESSION['heepp'] = $this->output->session;
             }
         }
     }
