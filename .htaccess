@@ -1,5 +1,12 @@
-RewriteEngine On
+# Example of setting a .env variable in this file
 # setEnv document.root %{DOCUMENT_ROOT}
+
+# Redirect all HTTP traffic to HTTPS
+# RewriteEngine On
+# RewriteCond %{HTTPS} !=on
+# RewriteRule ^.*$ https://%{SERVER_NAME}%{REQUEST_URI} [R,L]
+
+RewriteEngine On
 
 # Remove trailing slash
 RewriteCond %{REQUEST_FILENAME} !-d
