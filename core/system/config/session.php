@@ -24,13 +24,13 @@ if (!isset($_SESSION)) {
 
 // Reset current session
 if (isset($_GET['reset'])) {
-    unset($_SESSION['core']);
+    unset($_SESSION['heepp']);
     unlink(env('project.path').'uiConstants.js');
     header('location: '.$_SERVER['REQUEST_SCHEME'].'://'.$_SERVER['HTTP_HOST']);
 }
 
 // Check if the session exists
-if (!isset($_SESSION['core']->project)) {
-    $_SESSION['core'] = new stdClass();
-    $_SESSION['core']->project = env('project.name');
+if (!isset($_SESSION['heepp']->project)) {
+    $_SESSION['heepp'] = new stdClass();
+    $_SESSION['heepp']->project = env('project.name');
 }
