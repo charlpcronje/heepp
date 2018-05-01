@@ -41,13 +41,13 @@ class ProjectLoader extends Loader {
 
         // Load shortcuts to memory
         if (!sessionSet('shortcuts')) {
-            if (!isset($_SESSION['core'])) {
-                $_SESSION['core'] = new \stdClass();
+            if (!isset($_SESSION['heepp'])) {
+                $_SESSION['heepp'] = new \stdClass();
             }
 
             //if (!sessionSet('shortcuts')) {
             //    session('shortcuts',new \stdClass());
-            //    //$_SESSION['core']->shortcuts = new \stdClass();
+            //    //$_SESSION['heepp']->shortcuts = new \stdClass();
             //}
 
             $xml = loadXML(env('core.shortcuts.path'));
@@ -96,8 +96,13 @@ class ProjectLoader extends Loader {
         return true;
     }
 
-    public static function loadAsset() {
-        $path = env('project.path').input('controller').input('params');
+    public static function loadAsset($controller = null,$params = '') {
+        if ($controller === 'core') {
+            $path = env('core.path').$params;
+        } else {
+            $path = env('project.path').$controller.$params;
+        }
+
         Asset::get($path);
     }
 
