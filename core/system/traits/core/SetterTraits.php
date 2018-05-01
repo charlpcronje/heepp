@@ -62,16 +62,16 @@ trait SetterTraits {
         if (!isset($this->output->constant)) {
             $this->output->constant = (object)get_defined_constants(true)['user'];
         }
-        if (!isset($this->output->session) && !empty($_SESSION)) {
+        if (!isset($this->output->session)) {
             // Encoding and then decoding to json converts a variable to an stdClass object
-            if (!isset($_SESSION['core'])) {
-                $_SESSION['core'] = new \stdClass();
+            if (!isset($_SESSION['heepp'])) {
+                $_SESSION['heepp'] = new \stdClass();
             }
-            $this->output->session = $_SESSION['core'];
+            $this->output->session = $_SESSION['heepp'];
         }
         if (isset($_SESSION)) {
-            $this->output->data->session = $_SESSION['core'];
-            $this->output->session       = $_SESSION['core'];
+            $this->output->data->session = $_SESSION['heepp'];
+            $this->output->session       = $_SESSION['heepp'];
         }
     }
 
