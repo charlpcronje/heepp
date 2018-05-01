@@ -116,6 +116,18 @@ class Asset extends \core\extension\Extension {
         $this->directOutput();
     }
 
+    public static function isAsset($controller = null,$params = null) {
+        $possibleAsset = [
+            'assets',
+            'views',
+            'core'
+        ];
+        if (isset($controller) && in_array($controller,$possibleAsset)) {
+            return true;
+        }
+        return false;
+    }
+
     public static function get($file,$path = null) {
         new self($file,$path = null);
     }
