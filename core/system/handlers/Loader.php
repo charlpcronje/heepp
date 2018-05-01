@@ -8,7 +8,7 @@ class Loader extends Heepp{
     public static $includedFiles   = [];
     public static $coreLastLogId;
     public static $sessionExists   = false;
-    public static $watchNamespace  = 'core';
+    public static $watchNamespace  = 'heepp';
     public static $callingClass;
     public static $locationsToLook = [
         'nameSpaced'        => 'includeByNamespace',
