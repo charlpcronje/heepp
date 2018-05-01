@@ -23,7 +23,7 @@ trait AccessTraits {
             return true;
         }
         if ($this->resetSessionIfNotSingedIn) {
-            unset($_SESSION['core'],$this->output->session);
+            unset($_SESSION['heepp'],$this->output->session);
             $this->refreshPage();
         }
         return false;
