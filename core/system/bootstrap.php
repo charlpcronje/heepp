@@ -62,7 +62,7 @@ include 'core'.DS.'system'.DS.'handlers'.DS.'ShutdownHandler.php';
 
 /* Helper Classes with static init
 |--------------------------------- */
-include env('system.path').'data.php';
+include env('system.path').DS.'data.php';
 include env('system.path').'log.php';
 include env('system.path').'api.php';
 
