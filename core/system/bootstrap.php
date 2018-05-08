@@ -17,7 +17,6 @@ include 'core'.DS.'system'.DS.'helpers'.DS.'html.php';
 /* Load .env before the project
 |------------------------------ */
 include 'core'.DS.'extension'.DS.'parser'.DS.'env'.DS.'init.php';
-
 /* Session Settings
 |------------------ */
 include 'core'.DS.'system'.DS.'config'.DS.'session.php';
