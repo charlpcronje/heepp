@@ -1,7 +1,11 @@
 <?php
 define('HTTP_REFERER',$_SERVER['HTTP_REFERER']);
 define('ROOT_PATH',dirname(__DIR__.DIRECTORY_SEPARATOR));
-putenv("base.path=".$basePath);
+
+/* Setting the Base Path for HeEPP. Use to set in the calling project.
+in the $basePath variable so if this stops working refer to the value
+of $basePath; */
+putenv("base.path=".__DIR__);
 
 // Bootstrap will load the minimum files fore the Heepp to work.
 include 'core/system/bootstrap.php';
