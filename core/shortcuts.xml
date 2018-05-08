@@ -34,6 +34,7 @@
     <strtoupper      class="core\element\text\strtoupper"/>
     <strtolower      class="core\element\text\strtolower"/>
     <formatstring    class="core\element\text\formatstring"/>
+    <format          class="core\element\text\formatstring"/>
     <substr          class="core\element\text\substr"/>
     <strreplace      class="core\element\text\strreplace"/>
     <nl2br           class="core\element\text\nl2br"/>
@@ -80,6 +81,7 @@
     <core.console         class="core\element\core\coreConsole"/>
     <core.form            class="core\element\core\coreform"/>
     <core.i               class="core\element\core\corei"/>
+    <core.icon            class="core\element\core\corei"/>
     <core.object          class="core\element\core\coreobject"/>
     <app.redirect.message class="core\element\core\redirectMessage"/>
     <core.svg             class="core\element\core\coreSvg"/>
