@@ -203,7 +203,63 @@ trait DataTraits {
     | will be deleted from the output singleton as soon as it is retrieved one
     | last time 
     */
-    public function getData($dotName,$default = null,$data = null,$forget = false,$closureArguments = []) {
+    public function getData($dotName,$default = null,$data = null,$forget = false) {
+        $checkResult      = $this->checkForEscapedDots($dotName);
+        if ($checkResult->strEscaped) {
+            $escapedDots      = explode('.',$checkResult->dotName);
+            $dots             = [];
+            foreach($escapedDots as $escapedDot) {
+                $dots[] = str_replace('#$#','.',$escapedDot);
+            }
+        } else {
+            $dots = explode('.',$dotName);
+        }
+
+        if ($data === null) {
+            $data = $this->output->data;
+        }
+        // Repeat until the second last dot
+        while (count($dots) > 1) {
+            $dot = array_shift($dots);
+            $dot  = str_replace('#$#','.',$dot);
+            $array = explode(':',$dot,2);
+            $dot = $array[0];
+            if (count($array) > 1) {
+                $data = $this->getArray($data->{$dot},$array[1]);
+            } else {
+                if (isset($data->{$dot})) {
+                    $data = $data->{$dot};
+                }
+            }
+        }
+        $dot = array_shift($dots);
+        $array = explode(':',$dot,2);
+        $dot = $array[0];
+
+        if (count($array) > 1) {
+            if ($forget) {
+                $response = $this->getArray($data->{$dot},$array[1],$default,true);
+            } else {
+                $response = $this->getArray($data->{$dot},$array[1],$default);
+            }
+            return $response;
+        } elseif(isset($data->{$dot})) {
+            $response = $data->{$dot};
+            if ($forget) {
+                unset($data->{$dot});
+            }
+            if (isClosure($response)) {
+                $closureResponse = $response->__invoke();
+                $this->forget($dotName);
+                $this->setData($dotName,$closureResponse);
+                return $closureResponse;
+            }
+            return $response;
+        }
+        return null;
+    }
+
+    public function getDataNew($dotName,$default = null,$data = null,$forget = false,$closureArguments = []) {
         $checkResult      = $this->checkForEscapedDots($dotName);
         if ($checkResult->strEscaped) {
             $escapedDots      = explode('.',$checkResult->dotName);
@@ -250,7 +306,7 @@ trait DataTraits {
             if ($forget) {
                 unset($data->{$dot});
             }
-            if (is_closure($response)) {
+            if (isClosure($response)) {
                 return $response->__invoke();
             }
             return $response;

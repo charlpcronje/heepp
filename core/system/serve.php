@@ -30,7 +30,7 @@ class serve {
             }
             $data = (object)[];
             if (isset($object->data)) {
-                if (is_closure($object->data)) {
+                if (isClosure($object->data)) {
                     $object->data = $object->data->__invoke();
                 } elseif(is_array($object->data)) {
                     $data = $object->data;
@@ -43,7 +43,7 @@ class serve {
         /* Check for "data" key */
         $data = (object)[];
         if (isset($object->data)) {
-            if (is_closure($object->data)) {
+            if (isClosure($object->data)) {
                 $object->data = $object->data->__invoke();
             } elseif(is_array($object->data)) {
                 $data = $object->data;
