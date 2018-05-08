@@ -23,7 +23,8 @@
             disabled="@{disabled}"
             name="@{name}"
             value="@{value}"
-            mask="@{mask}"
+            data-inputmask="'mask': '@{mask}'"
+            pattern="@{pattern}"
             required="@{required}"/>
         <if notempty="@{append|appendicon}">
             <span class="input-group-addon">

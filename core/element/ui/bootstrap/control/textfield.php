@@ -22,6 +22,8 @@ class textfield extends Element {
     public $prepend;
     public $prependicon;
     public $required;
+    public $pattern;
+    public $mask;
 
     public function __construct() {
         $this->element = __class__;
@@ -29,6 +31,14 @@ class textfield extends Element {
     }
 
     public function render() {
+        if (isset($this->mask)) {
+            if (strlen($this->class) > 0) {
+                $this->class .= ' mask';
+            } else {
+                $this->class = 'mask';
+            }
+        }
+
         if (empty($this->id)) {
             $this->id = 'field'.uniqid();
         }
