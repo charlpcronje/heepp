@@ -6,7 +6,7 @@ function ajaxBeforeSend(elements) {
 function ajaxSuccess(elements) {
     $(elements).each(function(i,element) {
         applyNiceScroll(element);
-        applyUIkitNav(element);
+        applyUIKitNav(element);
         // applyResizeAndDraggable(element);
     });
 
@@ -16,7 +16,7 @@ function ajaxSuccess(elements) {
     }
 
     /* Apply UIKit Nav (Left Sub Nav) */
-    function applyUIkitNav(element) {
+    function applyUIKitNav(element) {
         UIkit.nav($(element).find('.uk-nav'));
     }
 
