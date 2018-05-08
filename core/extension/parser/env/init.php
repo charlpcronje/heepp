@@ -8,4 +8,9 @@ require_once __DIR__.DS.'Loader.php';
 require_once __DIR__.DS.'DotEnv.php';
 
 use core\extension\parser\env\DotEnv;
+
+$origin = realpath(dirname(fileIncludeOrigin()));
+if ($origin != realpath('./')) {
+    (new DotEnv($origin))->load();
+}
 (new DotEnv(realpath('./')))->load();
