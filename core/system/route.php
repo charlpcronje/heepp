@@ -132,11 +132,11 @@ class route extends Heepp {
                         self::$routeOptions->actions->string[] = $action;
                     } elseif(is_array($action)) {
                         self::$routeOptions->actions->object[] = (object)$action;
-                    } elseif(is_closure($action)) {
+                    } elseif(isClosure($action)) {
                         self::$routeOptions->actions->closure[] = $action;
                     }
                 }
-            } elseif(isset($actions) && is_closure($actions)) {
+            } elseif(isset($actions) && isClosure($actions)) {
                 self::$routeOptions->actions->closure[] = $actions;
             } elseif(isset($actions) && is_string($actions)) {
                 self::$routeOptions->actions->string[] = $actions;

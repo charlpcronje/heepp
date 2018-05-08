@@ -54,6 +54,11 @@ function env($key = null,$value = null,$default = null) {
     }
 }
 
+function fileIncludeOrigin(){
+    $traceArray = debug_backtrace();
+    return array_pop($traceArray)['file'];
+}
+
 function pdc($var) {
     $callingClass = getCallingClass();
 
@@ -66,7 +71,7 @@ function pdc($var) {
     print_r($var);
 }
 
-function is_closure($var) {
+function isClosure($var) {
     return is_object($var) && ($var instanceof Closure);
 }
 
@@ -94,7 +99,6 @@ function classProperties(&$object) {
     $ownProps = array_filter($ref->getProperties(), function($property) use ($className) {
         return $property->class == $className; 
     });
-    
     $returnProps = new stdClass();
     foreach($ownProps as $prop) {
         
@@ -120,7 +124,6 @@ function getCallingClass() {
     } else {
         $class = $trace[1]['class'] = 'Static';
     }
-
 
     // +1 to i cos we have to account for calling this function
     for ($i=1,$iMax = count($trace); $i< $iMax; $i++ ) {
