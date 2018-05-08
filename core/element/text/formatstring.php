@@ -13,6 +13,12 @@ class formatstring extends \core\Element  {
     function render() {
         switch($this->type) {
             case 'telephone':
+            case 'tel':
+            case 'cell':
+            case 'mobile':
+                if (strlen((string)$this->child) <= 5) {
+                    return $this->child;
+                }
                 $code = substr($this->child,0,3);
                 $mid = substr($this->child,3,3);
                 $end = substr($this->child,6);
