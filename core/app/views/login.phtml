@@ -11,11 +11,13 @@
                                 height="75"/>
                         </aside>
                         <main>
+                            <!--
                             <h3
                                 id="login-top-headings"
                                 class="uk-card-title">
                                 Welcome
                             </h3>
+                            -->
                         </main>
                         <aside>
                             <image
@@ -61,11 +63,14 @@
                     </core.form>
                 </div>
             </div>
+            <div id="login-right-container" class="uk-flex uk-flex-center uk-flex-middle">
+                <image src="/assets/images/const-1.png"/>
+            </div>
         </section>
     </main>
 </main>
 <script>
-    $(()=>{
+    $(function() {
         $('#login-split-box').css('height','0px').css('border-bottom','0px').css('margin','0px');
         $('#login-top-headings').css('opacity','1').css('height','100px');
         $('#login-split-headings').css('opacity','0');
