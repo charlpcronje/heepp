@@ -1,0 +1,16 @@
+<div
+    class="cc-ws-tab cc-ws-tab-top @{active} @{class}"
+    target="@{target}"
+    style="@{style}">
+    <if value="@{iconType}" equalto="UIKit">
+        <i uk-icon="icon: @{icon}; ratio: .8"/>
+    </if>
+    <if value="@{iconType}" equalto="fontAwesome">
+        <i style="font-size: 13px" class="fa @{icon}"/>
+    </if>
+    <span> @{title}</span>
+    <i
+        class="cc-ws-tab-close"
+        uk-icon="icon: close"
+        target="@{target}"/>
+</div>
