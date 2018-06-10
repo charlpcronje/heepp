@@ -77,7 +77,7 @@
     <toggle.switch   class="core\element\ui\control\toggleSwitch"/>
     <txtarea         class="core\element\ui\bootstrap\control\txtarea"/>
 
-    <!-- Heepp Elements -->
+    <!-- Core Elements -->
     <core.console         class="core\element\core\coreConsole"/>
     <core.form            class="core\element\core\coreform"/>
     <core.i               class="core\element\core\corei"/>
@@ -85,6 +85,9 @@
     <core.object          class="core\element\core\coreobject"/>
     <app.redirect.message class="core\element\core\redirectMessage"/>
     <core.svg             class="core\element\core\coreSvg"/>
+
+    <!-- Core APP Elements -->
+    <app.ws.top.tab       class="core\element\app\wsTopTab"/>
 
     <!-- UI KIT -->
     <uk.container    class="core\element\ui\uikit\container"/>
@@ -94,6 +97,7 @@
     <uk.navbar       class="core\element\ui\uikit\navbar"/>
     <uk.upload       class="core\element\ui\uikit\upload"/>
     <uk.textfield    class="core\element\ui\uikit\textfield"/>
+    <uk.textarea     class="core\element\ui\uikit\textarea"/>
     <uk.dropdown     class="core\element\ui\uikit\dropdown"/>
 
     <!-- Data Elements -->
