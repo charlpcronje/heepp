@@ -32,6 +32,30 @@ class Console extends Controller {
         $this->setHide('.restore-ui-session-button');
     }
 
+    protected function setWSRight($viewOrHtml = null) {
+        $this->setUIElement($viewOrHtml,'#cc-workspace > section.ws-right');
+    }
+
+    protected function setWSLeft($viewOrHtml = null) {
+        $this->setUIElement($viewOrHtml,'#cc-workspace > section.ws-left');
+    }
+
+    protected function setLeftNav($viewOrHtml = null) {
+        $this->setUIElement($viewOrHtml,'#cc > main > nav.left');
+    }
+
+    protected function setLeftAside($viewOrHtml = null) {
+        $this->setUIElement($viewOrHtml,'#cc > main > aside.left');
+    }
+
+    private function setUIElement($viewOrHtml,$uiSelector) {
+        if (strpos($viewOrHtml,'views/') == 0) {
+            $this->setHtml($uiSelector,view::phtml($viewOrHtml));
+        } else {
+            $this->setHtml($uiSelector,$viewOrHtml);
+        }
+    }
+
     public function sessionHistoryExist() {
         if ($this->sessionKeyExist('history')) {
             $this->setCallback('core.console.ui.showRestoreSessionButton',[],'window');
@@ -39,7 +63,7 @@ class Console extends Controller {
     }
 
     public function getFileExplorer($path = null) {
-        pd(env('project.path'));
+        //pd(env('project.path'));
         $this->setData('explorer.path',$path ?? env('project.path'));
         $this->setHtml(data('app.ui.nav.main.left'),view::phtml('views/databases/editConnections.phtml'));
     }
