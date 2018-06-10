@@ -2,6 +2,10 @@ html, body {
   height: 100%;
   color: #666; }
 
+.nicescroll-cursors {
+  border: 1px solid #1e1e1e !important;
+  margin-right: 2px !important; }
+
 #cc {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -536,8 +540,7 @@ html, body {
   grid-gap: 0;
   grid-template-columns: 1fr;
   grid-template-rows: 70px 1fr 30px;
-  grid-template-areas: "cc-header" "cc-main" "cc-footer";
-  /* HEADER GRID */ }
+  grid-template-areas: "cc-header" "cc-main" "cc-footer"; }
   #cc > header {
     z-index: 1;
     box-shadow: rgba(0, 0, 0, 0.22) 0 1px 3px 0, rgba(0, 0, 0, 0.24) 0 1px 12px 0;
@@ -553,20 +556,36 @@ html, body {
       #cc > header > aside.left {
         grid-area: cc-header-left-aside; }
       #cc > header > aside.right {
-        grid-area: cc-header-right-aside; }
+        grid-area: cc-header-right-aside;
+        line-height: 32px;
+        padding-right: 5px; }
     #cc > header > nav {
       background-color: #222; }
       #cc > header > nav.top {
-        grid-area: cc-header-top;
-        background-color: #222; }
-      #cc > header > nav.bottom {
-        grid-area: cc-header-bottom;
         background-color: #222;
+        grid-area: cc-header-top;
         display: grid;
-        grid-gap: 1;
-        grid-template-columns: auto 1fr auto;
+        grid-gap: 0;
+        grid-template-columns: auto 1fr;
         grid-template-rows: 1fr;
-        grid-template-areas: "cc-header-nav-bottom-left-aside cc-header-nav-bottom-main cc-header-nav-bottom-right-aside"; }
+        grid-template-areas: "cc-header-top-file-style-nav cc-header-top-main"; }
+        #cc > header > nav.top > aside.left {
+          grid-area: cc-header-top-file-style-nav; }
+        #cc > header > nav.top > main {
+          height: 35px;
+          grid-area: cc-header-top-main; }
+          #cc > header > nav.top > main .crumb-container {
+            line-height: 35px;
+            float: right;
+            margin-right: 50px; }
+            #cc > header > nav.bottom {
+              grid-area: cc-header-bottom;
+              background-color: #222;
+              display: grid;
+              grid-gap: 1;
+              grid-template-columns: auto 1fr auto;
+              grid-template-rows: 1fr;
+              grid-template-areas: "cc-header-nav-bottom-left-aside cc-header-nav-bottom-main cc-header-nav-bottom-right-aside"; }
         #cc > header > nav.bottom > aside {
           background-color: #1e1e1e; }
           #cc > header > nav.bottom > aside.left {
@@ -603,7 +622,8 @@ html, body {
     #cc > main > nav {
       background-color: #1e1e1e; }
       #cc > main > nav.left {
-        grid-area: cc-main-left-nav; }
+        grid-area: cc-main-left-nav;
+        position: relative; }
       #cc > main > nav.right {
         grid-area: cc-main-right-nav; }
     #cc > main > main {
@@ -613,18 +633,30 @@ html, body {
         height: 100%;
         display: grid;
         grid-gap: 0;
-        grid-template-columns: 50% 50%;
-        grid-template-rows: 1fr;
+        grid-template-columns: 1fr auto;
+        grid-template-rows: calc(100vh - 100px);
         grid-template-areas: "ws-left ws-right"; }
         #cc > main > main #cc-workspace .ws-left {
+          border-right: 1px solid #101010;
           grid-area: ws-left;
-          border-right: 1px solid #101010; }
+          max-height: calc(100vh - 100px);
+          overflow-x: hidden;
+          overflow-y: auto; }
         #cc > main > main #cc-workspace .ws-right {
-          grid-area: ws-right; }
+          grid-area: ws-right;
+          max-height: calc(100vh - 100px);
+          overflow-x: hidden;
+          overflow-y: auto; }
   #cc > footer {
     grid-area: cc-footer;
     background-color: #222;
-    font-size: 12px; }
+    font-size: 12px;
+    padding-top: 5px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 30px; }
 
 #cc > main h1, #cc > main h2, #cc > main h3, #cc > main h4, #cc > main h5, #cc > main h6 {
   font-family: 'Source Sans Pro', sans-serif;
@@ -656,6 +688,11 @@ html, body {
   #cc > header > nav.bottom .uk-breadcrumb li:not(:first-child):before {
     margin-left: 5px;
     margin-right: 5px; }
+  #cc > main #show-hide-right-ws {
+    background-color: #161616 !important;
+    color: #999 !important;
+    width: 30px !important;
+    height: 30px !important; }
   #cc > main aside.left .left-nav-directions {
     margin-top: 10px;
     margin-left: 5px;
@@ -722,34 +759,55 @@ html, body {
     text-transform: inherit; }
     #cc > main aside.right .nav-main-aside.right ul li a span {
       margin-left: 5px; }
+  #cc #cc-workspace * {
+    transition: all 300ms; }
   #cc #cc-workspace .cc-ws-tab {
+    cursor: pointer;
     position: absolute;
     z-index: 1;
     text-align: left;
     display: inline-block;
     height: 30px;
-    padding-left: 5px;
-    padding-right: 5px;
+    padding-left: 10px;
+    padding-right: 15px;
     border-left: 1px solid #151515;
     border-right: 1px solid #151515;
     border-top: 1px solid #151515;
     background-color: transparent;
     color: #999; }
-  #cc #cc-workspace .cc-ws-tab.active {
-    background-color: #2f2f2f; }
+  #cc #cc-workspace .cc-ws-tab span {
+    font-size: 13px; }
   #cc #cc-workspace .cc-ws-tab i.cc-ws-tab-close {
+    background-color: #1e1e1e;
+    position: absolute;
+    top: -1px;
+    bottom: -1px;
+    left: 100%;
     text-align: right;
-    margin-top: 5px;
-    float: right;
-    width: 25px;
-    height: 25px;
-    color: transparent;
-    margin-left: 15px; }
+    padding-top: 5px;
+    padding-right: 10px;
+    padding-left: 3px;
+    width: 0;
+    overflow: hidden;
+    color: #666;
+    opacity: 0;
+    outline: 0; }
   #cc #cc-workspace .cc-ws-tab:hover i.cc-ws-tab-close {
+    border-top: 1px solid #151515;
+    border-right: 1px solid #151515;
+    border-bottom: 1px solid #151515;
+    border-left: 1px solid #1f1f1f;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    opacity: 1;
+    width: 30px;
     color: #999;
     cursor: pointer; }
-  #cc #cc-workspace .cc-ws-tab:hover i.cc-ws-tab-close:hover {
-    color: #fafafa; }
+  #cc #cc-workspace .cc-ws-tab.active {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, .2);
+    background-color: #2f2f2f; }
+  #cc #cc-workspace .cc-ws-tab.active i.cc-ws-tab-close {
+    background-color: #2f2f2f; }
   #cc #cc-workspace .cc-ws-tab-top {
     margin-top: -30px;
     margin-left: -1px; }

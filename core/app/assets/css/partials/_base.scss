@@ -3,6 +3,11 @@ html,body {
     color: $default-color;
 }
 
+.nicescroll-cursors {
+    border: 1px solid $bg-primary !important;
+    margin-right: 2px  !important;
+}
+
 #cc {
     @include box-sizing();
     * {
