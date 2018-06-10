@@ -6,7 +6,7 @@ return [
     ],
     'website' => (object)[
         'name'        => 'core',
-        'title'       => 'core Heepp Console',
-        'description' => 'Custom PHP MVC Framework by FGX Studios'
+        'title'       => 'HeEPP | Hyper eXtensible Element PreProcessor',
+        'description' => 'Custom PHP MVC Framework'
     ]
 ];
