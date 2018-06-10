@@ -2,7 +2,6 @@
     url="${env.project.views.url}console/css/"
     path="${env.project.views.path}console/css/"
     file="settings.scss"/>
-
 <lazyload
     src="views/console/js/settings.js"
     instantiate="settings"
@@ -10,12 +9,12 @@
     callback="core.console.settings.init"
     context="window"/>
 
+<app.ws.top.tab
+    icon="settings"
+    title="Settings"
+    active="yes"
+    target="#cc-workspace .ws-right"/>
 <section id="cc-console-settings">
-    <div class="cc-ws-tab cc-ws-tab-top active">
-        <i uk-icon="icon: settings"/>
-        <span> Settings</span>
-        <i class="cc-ws-tab-close" uk-icon="icon: close"/>
-    </div>
     <nav>
         <import src="views/console/settings/nav.phtml"/>
     </nav>

@@ -20,20 +20,43 @@
             class="left">
             ${nav.header.file}
         </aside>
-        <main id="cc.header.top.main"/>
+        <main id="cc.header.top.main">
+            <import src="views/partials/nav/header/top/main/breadcrumbs.phtml"/>
+        </main>
         <aside
             id="cc.header.top.right"
             class="right"/>
     </nav>
     <nav class="bottom">
         <aside class="left">
-            <import src="views/partials/nav/header/bottom/aside/left/breadcrumbs.phtml"/>
+
         </aside>
         <main>
 
         </main>
         <aside class="right">
+            <!-- Show ws-right -->
+            <a
+                id="show-right-ws"
+                style="display: none; width: 20px; height: 20px; font-size: 13px; background-color: #d5caca; color: #212121; margin-top: 5px; margin-right: 8px;"
+                uk-tooltip="title: Show right column"
+                href="#show-ws-column"
+                class="uk-icon-button">
+                <i class="fa fa-columns"/>
+            </a>
 
+            <!-- Hide ws-right -->
+            <a
+                id="hide-right-ws"
+                style="width: 20px; height: 20px; font-size: 13px; background-color: #d5caca; color: #212121; margin-top: 5px; margin-right: 8px;"
+                uk-tooltip="title: Hide right column"
+                href="#hide-ws-column"
+                class="uk-icon-button">
+                <span class="fa-stack fa-lg">
+                    <i class="fa fa-columns fa-stack-1x"></i>
+                    <i class="fa fa-ban fa-stack-1x text-danger"></i>
+                </span>
+            </a>
         </aside>
     </nav>
     <aside class="right">
@@ -53,7 +76,7 @@
 
     </nav>
     <main>
-        <import src="views/console/workspace.phtml"/>
+        <import src="views/workspace/index.phtml"/>
     </main>
 
     <nav class="right">
