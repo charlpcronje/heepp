@@ -11,7 +11,7 @@ class DotEnv {
     protected $loader;
     public function __construct($path,$file = '.env',$project = null) {
         $this->filePath = $this->getFilePath($path,$file);
-        $this->loader   = new Loader($this->filePath,true);
+        $this->loader   = new Loader($this->filePath,true,$project);
     }
 
     //public static function __callStatic($name,$path = null) {

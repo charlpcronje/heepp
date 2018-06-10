@@ -13,6 +13,7 @@ use core\extension\parser\env\exception\InvalidPathException;
 class Loader {
     protected $filePath;
     protected $immutable;
+    private $cacheResult = true;
     private $cachePath;
     private $envFilemTime;
     private $project;
@@ -25,7 +26,11 @@ class Loader {
             $this->cachePath = __DIR__.DS.'cache'.DS.'env'.DS;
         }
 
-        $this->envFilemTime = filemtime($filePath);
+        if (!isset($_SERVER['envFilemTime'])) {
+            $_SERVER['envFilemTime'] = filemtime($filePath);
+        }
+
+        $this->envFilemTime = $_SERVER['envFilemTime'];
         $this->immutable = $immutable;
     }
 
@@ -41,7 +46,8 @@ class Loader {
     public function load() {
         $this->ensureFileIsReadable();
         $filePath = $this->filePath;
-        if ($this->getCachedValue($filePath)) {
+
+        if ($this->getCachedValue($filePath) && $this->cacheResult) {
             return true;
         }
         $lines = $this->readLinesFromFile($filePath);
@@ -50,7 +56,10 @@ class Loader {
                 $this->setEnvironmentVariable($line);
             }
         }
-        file_put_contents($this->cachePath.'.env-'.$this->envFilemTime,serialize($_ENV));
+
+        if ($this->cacheResult) {
+            file_put_contents($this->cachePath.'.env-'.$this->envFilemTime,serialize($_ENV));
+        }
         return $lines;
     }
 

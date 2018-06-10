@@ -10,7 +10,11 @@ require_once __DIR__.DS.'DotEnv.php';
 use core\extension\parser\env\DotEnv;
 
 $origin = realpath(dirname(fileIncludeOrigin()));
+
 if ($origin != realpath('./')) {
-    (new DotEnv($origin))->load();
+    if (!isset($_SERVER['project_cache'])) {
+        $_SERVER['project_cache'] = array_pop(explode(DIRECTORY_SEPARATOR,$origin));
+    }
+    (new DotEnv($origin,'.env',$_SERVER['project_cache']))->load();
 }
 (new DotEnv(realpath('./')))->load();

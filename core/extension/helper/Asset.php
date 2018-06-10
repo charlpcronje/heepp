@@ -25,7 +25,7 @@ class Asset extends \core\extension\Extension {
         'ogg'  => 'video',
         'ogv'  => 'video'
     ];
-    public $directOutputTypes = ['jpg','png','jpeg','json','js','css','less','scss','mp4','webm','ogg','ogv'];
+    public $directOutputTypes = ['jpg','png','jpeg','json','js','css','less','scss','mp4','webm','ogg','ogv','map'];
     public $searchPaths = [];
     public $info;
 
@@ -107,7 +107,7 @@ class Asset extends \core\extension\Extension {
         }
 
         if($this->rangeServe()) {
-            pd($this->info);
+            $this->directOutput();
             // The ranged serve was a success stop the execution right here.
             exit;
         }
