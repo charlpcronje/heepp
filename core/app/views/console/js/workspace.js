@@ -2,87 +2,47 @@
 
 ui.workspace = class {
     constructor() {
-        this.resizeMove = function (event) {
-            var target = event.target,
-                x = (parseFloat(target.getAttribute('data-x')) || 0),
-                y = (parseFloat(target.getAttribute('data-y')) || 0);
-
-            // update the element's style
-            target.style.width  = event.rect.width + 'px';
-            target.style.height = event.rect.height + 'px';
-
-            // translate when resizing from top or left edges
-            x += event.deltaRect.left;
-            y += event.deltaRect.top;
-
-            target.style.webkitTransform = target.style.transform =
-                'translate(' + x + 'px,' + y + 'px)';
-
-            target.setAttribute('data-x', x);
-            target.setAttribute('data-y', y);
-            // target.textContent = Math.round(event.rect.width) + '\u00D7' + Math.round(event.rect.height);
+        this.ccWorkspace = $("#cc-workspace");
+        this.topWSTabs = ()=> {
+            return $('.cc-ws-tab-top');
         };
-
-        this.resizeDefaults = {
-            // resize from all edges and corners
-            edges: { left: true },
-            // keep the edges inside the parent
-            restrictEdges: {
-                outer: 'parent',
-                endOnly: true,
-            },
-            // minimum size
-            restrictSize: {
-                min: { width: 100, height: 50 },
-            },
-            inertia: true,
+        this.topWSTabCloseIcons = ()=> {
+            return $('.cc-ws-tab-top').find('.cc-ws-tab-close');
         };
+        this.activeOpacity = '1.0';
+        this.fadedOpacity  = '0.1';
+    };
+
+    activateClickedTabAndFadeOther() {
+        this.topWSTabs().each((i,tab)=>{
+            if ($(tab).hasClass('tab-clicked')) {
+                $(tab).removeClass('tab-clicked');
+                $(tab).addClass('active');
+                $($(tab).attr('target')).children().css('opacity',this.activeOpacity);
+            } else {
+                $(tab).removeClass('active');
+                $($(tab).attr('target')).children().css('opacity',this.fadedOpacity);
+            }
+        });
+        $('.cc-ws-tab').css('opacity',1.0);
     }
 
-    makeDraggable() {
-        interact('.drag')
-        .draggable({
-            onmove: window.dragMoveListener,
-            restrict: {
-                restriction: 'parent',
-                elementRect: { top: 0, left: 0, bottom: 1, right: 1 }
-            },
-        })
-        .on('resizemove', function (event) {
-            var target = event.target,
-                x = (parseFloat(target.getAttribute('data-x')) || 0),
-                y = (parseFloat(target.getAttribute('data-y')) || 0);
-
-            // update the element's style
-            target.style.width  = event.rect.width + 'px';
-            target.style.height = event.rect.height + 'px';
-
-            // translate when resizing from top or left edges
-            x += event.deltaRect.left;
-            y += event.deltaRect.top;
-
-            target.style.webkitTransform = target.style.transform =
-                'translate(' + x + 'px,' + y + 'px)';
-
-            target.setAttribute('data-x', x);
-            target.setAttribute('data-y', y);
-            target.textContent = Math.round(event.rect.width) + '\u00D7' + Math.round(event.rect.height);
+    initWorkspaceTopTabs() {
+        this.ccWorkspace.on('click','.cc-ws-tab-top',(event)=>{
+            if (!$(event.currentTarget).hasClass('active')) {
+                $(event.currentTarget).addClass('tab-clicked');
+                this.activateClickedTabAndFadeOther();
+            }
+        });
+        this.ccWorkspace.on('click','.cc-ws-tab-close',(event)=>{
+            let target = $(event.currentTarget).attr('target');
+            $(target).children().remove();
+            let tab = $(event.currentTarget).parent('.cc-ws-tab');
+            $(tab).remove();
         });
     }
 
-    makeResizeable() {
-        interact('.ws-right')
-        .resizable($.extend({},this.resizeDefaults,{edges: { left: true, right: false}}))
-        .on('resizemove',this.resizeMove);
-
-        interact('.ws-left')
-        .resizable($.extend({},this.resizeDefaults,{edges:{right: true, left: false}}))
-        .on('resizemove',this.resizeMove);
-    }
-
     init() {
-        // this.makeDraggable();
-        //  this.makeResizeable();
-
+        this.initWorkspaceTopTabs();
     }
 };
