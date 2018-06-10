@@ -12,9 +12,8 @@ settings.core = class {
     }
 
     init() {
-        var self = this;
-        $(document).ready(function() {
-            self.submitToggles();
+        $(()=>{
+            this.submitToggles();
         });
     }
 };
