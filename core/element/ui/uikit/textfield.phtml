@@ -1,4 +1,4 @@
-<div class="uk-margin">
+<div class="@{margin}">
     <label class="uk-form-label" for="@{id}">@{label}</label>
     <div class="uk-form-controls uk-inline" style="width:100%">
         <if notempty="@{icon}">
@@ -14,6 +14,7 @@
                 uk-tooltip="@{icontipposition}"></a>
         </if>
         <input
+            style="@{style}"
             class="uk-input @{class}@{size}"
             id="@{id}"
             name="@{name}"

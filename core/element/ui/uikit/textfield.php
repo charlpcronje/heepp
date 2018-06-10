@@ -8,6 +8,7 @@ class textfield extends uikit {
     public $name;
     public $class;
     public $style;
+    public $margin = 'uk-margin';
     public $label;
     public $type = 'text';
     public $placeholder;
