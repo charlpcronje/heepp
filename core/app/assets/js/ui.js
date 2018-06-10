@@ -3,42 +3,22 @@
 class ui {
     constructor() {
         this.workspace = {};
-
-        this.elem = {
-            win : $(window),
-            // cc "console container"
-            cc  : $('#cc'),
-            // ws "workspace"
-            ws  : $('#cc-workspace')
+        this.ws              = $('#cc-workspace');
+        this.wsLeft          = this.ws.find('section.ws-left');
+        this.wsRight         = this.ws.find('section.ws-right');
+        this.showRightWSIcon = $('#show-right-ws');
+        this.hideRightWSIcon = $('#hide-right-ws');
+        this.wsRightState    = 'visible';
+        this.wsWidth = ()=>{
+            return this.ws.width();
         };
-        this.win = {
-            height : window.core.console.windowHeight,
-            width  : window.core.console.windowWidth
+        this.wsLeftWidth  = ()=>{
+            return this.wsLeft.width();
         };
-        this.cc = {
-            height : this.elem.cc.innerHeight(),
-            width  : this.elem.cc.innerWidth()
-        };
-        this.ws = {
-            height : this.elem.ws.height(),
-            width  : this.elem.ws.innerWidth()
-        };
-        this.ws.credits = {
-            height : this.elem.ws.find('.ws-left-credit').height(),
-            width  : this.elem.ws.find('.ws-left-credit').width(),
-            top    : parseInt(this.elem.ws.find('.ws-left-credit').css('margin-top'))+$('.ws-left-credit').height()+35,
-            left   : parseInt(this.elem.ws.find('.ws-left-credit').css('margin-left'))
+        this.wsRightWidth = ()=>{
+            return this.wsRight.width();
         };
     }
-
-    resize() {
-        // Resize UI when window resize
-        $(window).resize(function () {
-
-        });
-        $(window).resize();
-    }
-
 
     showRestoreSessionButton() {
         $('.restore-ui-session-button').show();
@@ -51,13 +31,59 @@ class ui {
         core.get.route('Console/sessionHistoryExist');
     }
 
-    init() {
-        const ui = this;
-        $(() => {
-            ui.resize(ui);
-            this.checkIfSessionExists();
+    toggleRightWS(toggleClass = 'hidden',setState = undefined) {
+        if (setState != undefined) {
+            this.wsRight.removeClass(toggleClass);
+            this.wsRight.addClass(setState);
+        } else {
+            /* CSS 'hidden' class will hide ws-right */
+            this.wsRight.toggleClass(toggleClass);
+        }
+
+        /* Checking the state of ws-right and setting class property */
+        if(this.wsRight.hasClass('hidden')) {
+            this.wsRightState = 'hidden';
+
+            /* Adding icon to top-right nav, when clicked the
+             * ws-right will be back */
+            this.showRightWSIcon.show();
+            this.hideRightWSIcon.hide();
+        } else {
+            this.wsRightState = 'visible';
+            this.showRightWSIcon.hide();
+            this.hideRightWSIcon.show();
+        }
+        $('.nice-scroll').getNiceScroll().resize();
+    }
+
+
+    hideRightWS() {
+        this.wsRight.hide();
+        this.showRightWSIcon.show();
+    }
+
+    showRightWS() {
+        this.wsRight.show();
+        this.showRightWSIcon.hide();
+    }
+
+    initHideRightWSIcon() {
+        this.hideRightWSIcon.click(()=>{
+            this.toggleRightWS('hidden','hidden');
         });
+
+        this.showRightWSIcon.click(()=>{
+            this.toggleRightWS('hidden','visible');
+        });
+    }
+
+    init() {
+        this.checkIfSessionExists();
+        this.initHideRightWSIcon();
     }
 }
 
-core.console.ui = new ui();
+$(()=>{
+    core.console.ui = new ui();
+});
+
