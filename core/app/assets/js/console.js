@@ -22,12 +22,12 @@ class Console {
             // If there is no instance, create one for us.
             consoleInstance = this;
         }
-        this.time = new Date();
 
         // Property for each part of the app
         this.sessionExists = false;
         this.console       = {};
         this.settings      = {};
+        this.projects      = {};
         this.shortcuts     = {};
         this.login         = {};
         this.dashboard     = {};
