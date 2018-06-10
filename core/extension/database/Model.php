@@ -106,7 +106,7 @@ class Model extends Extension implements \Iterator {
                 return self::mold($model,$dataSet,$params);
             }
 
-            if (is_array($setAndParams) && is_string($setAndParams[0]) && is_array($setAndParams[1])) {
+            if (is_array($setAndParams) && is_string($setAndParams[0]) && (isset($setAndParams[1]) && is_array($setAndParams[1]))) {
                 return self::mold($model,$setAndParams[0],$setAndParams[1]);
             }
 
