@@ -185,6 +185,5 @@ return [
         'heepp-file-png' => 'file-png',
         'heepp-file-pdf' => 'file-pdf',
         'heepp-file-app' => 'file-app'
-
     ],
 ];
