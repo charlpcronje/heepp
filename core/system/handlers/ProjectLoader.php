@@ -91,6 +91,10 @@ class ProjectLoader extends Loader {
                 include env('project.controllers.path').$include.DS.$include.'.php';
                 return true;
             }
+            if (file_exists(env('project.elements.path').$include.'.php')) {
+                include env('project.elements.path').$include.'.php';
+                return true;
+            }
             return false;
         }
         return true;
