@@ -51,10 +51,12 @@ class app extends Heepp {
             }
 
         }
-        // self::$appConfig = array_replace_recursive(self::$appConfig,$projectConfig);
-        // foreach($appConfig as $key => $setting) {
-        //     Heepp::data('app.'.$key,$setting);
-        // }
+        /*
+        self::$appConfig = array_replace_recursive(self::$appConfig,$projectConfig);
+        foreach($appConfig as $key => $setting) {
+            Heepp::data('app.'.$key,$setting);
+        }
+        */
     }
 
 }
