@@ -1,27 +1,26 @@
 <database 
     connection="fgx" 
-    name="project"
-    alias="Projects"
-    single="Project"
-    many="Projects"
+    name="projectTask"
+    alias="Project Tasks"
+    single="Project Task"
+    many="Project Tasks"
     public="false">
     <table 
-        name="projects"
+        name="project_tasks"
         key="id">
         <columns>
-            <parent_id           alias="Parent Project ID"/>
-            <project_status_id   alias="Project Status"/>
-            <company_id          alias="Company ID"/>
-            <user_id             alias="User ID"/>
-            <project_color       alias="Project Color"/>
-            <project_avatar      alias="Avatar"/>
-            <project_name        alias="Project Name"/>
-            <project_description alias="Project Description"/>
-            <project_start_date  alias="Project Start Date"/>
-            <project_end_date    alias="Project End Date"/>
-            <created_at          alias="Date and Time Record Added"/>
-            <updated_at          alias="Date and Time Records was Updated"/>
-            <status_id           alias="Status"/>
+            <project_id             alias="Project ID"/>
+            <parent_project_task_id alias="Parent Project Task ID"/>
+            <project_task_type_id   alias="Project Task Type ID"/>
+            <project_task_status_id alias="Project Task Status ID"/>
+            <task_heading           alias="Task Heading"/>
+            <task_description       alias="Task Description"/>
+            <task_start_date        alias="Task Start Date"/>
+            <task_due_date          alias="Task Due Date"/>
+            <created_at             alias="Date and Time Record Added"/>
+            <updated_at             alias="Date and Time Records was Updated"/>
+            <status_id              alias="Status"/>
+            <user_id                alias="User ID"/>
         </columns>
     </table>
     <join 
@@ -36,7 +35,7 @@
     <join
         table="users"
         type="inner"
-        left="projects.user_id"
+        left="project_tasks.user_id"
         right="users.id">
         <columns>
             <first_name alias="User First Name"/>
@@ -45,12 +44,12 @@
         </columns>
     </join>
     <join
-        table="project_statuses"
+        table="project_task_statuses"
         type="inner"
-        left="projects.project_status_id"
-        right="project_statuses.id">
+        left="project_tasks.project_task_status_id"
+        right="project_task_statuses.id">
         <columns>
-            <project_status alias="Project Status"/>
+            <project_task_status alias="Project Task Status"/>
         </columns>
     </join>
 </database>
