@@ -13,6 +13,7 @@ include 'core'.DS.'system'.DS.'helpers'.DS.'storage.php';
 include 'core'.DS.'system'.DS.'helpers'.DS.'request.php';
 include 'core'.DS.'system'.DS.'helpers'.DS.'datetime.php';
 include 'core'.DS.'system'.DS.'helpers'.DS.'html.php';
+include 'core'.DS.'system'.DS.'helpers'.DS.'css.php';
 
 /* Load .env before the project
 |------------------------------ */
@@ -75,10 +76,10 @@ app::init();
 
 /* Database Connections
 |---------------------- */
-if (Heepp::dataKeyExists('app.db_include."'.env('domain').'"')) {
-    include env('project.config.path').'database'.DS.Heepp::data('app.db_include."'.env('domain').'"');
-} elseif(Heepp::dataKeyExists('app.db_include') && Heepp::dataKeyExists('app.db_include.default')) {
-    include env('project.config.path').'database'.DS.Heepp::data('app.db_include.default');
+if (Heepp::dataKeyExists('app.db.include."'.env('domain').'"')) {
+    include env('project.config.path').'database'.DS.Heepp::data('app.db.include."'.env('domain').'"');
+} elseif(Heepp::dataKeyExists('app.db.include') && Heepp::dataKeyExists('app.db.include.default')) {
+    include env('project.config.path').'database'.DS.Heepp::data('app.db.include.default');
 } elseif(file_exists(env('project.config.path').'database'.DS.'database.php')) {
     include env('project.config.path').'database'.DS.'database.php';
 }
