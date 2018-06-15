@@ -27,7 +27,7 @@ class Data extends Extension {
     }
 
     public function getShopBrands() {
-        $allBrands = (new Model('/sc/shopBrands'))->loadDataSet('all')->runDataSet()->results;
+        $allBrands = (new Model('shopBrands'))->loadDataSet('all')->runDataSet()->results;
         $brands = [];
         foreach($allBrands as $brand) {
             $brands[$brand->id] = $brand;
@@ -36,13 +36,13 @@ class Data extends Extension {
     }
 
     public function getShopCategories() {
-        $categoriesArray = (new Model('/sc/shopCategory'))->loadDataSet('all')->runDataSet()->results;
+        $categoriesArray = (new Model('shopCategory'))->loadDataSet('all')->runDataSet()->results;
         $categories = [];
         foreach($categoriesArray as $category) {
             $categories[$category->id] = $category;
         }
 
-        $subCategories = (new Model('/sc/shopSubCategory'))->loadDataSet('all')->runDataSet()->results;
+        $subCategories = (new Model('shopSubCategory'))->loadDataSet('all')->runDataSet()->results;
 
         foreach($subCategories as $subCategory) {
             @$categories[$subCategory->shop_category_id]->sub_categories[$subCategory->id] = $subCategory;
@@ -52,7 +52,7 @@ class Data extends Extension {
 
     public function saveShopCategoriesAndBrands($shopId,$categories = [],$subCategories = [],array $brands = []) {
         // Delete and add shop shop categories
-        $model = new Model('/sc/shopShopCategory');
+        $model = new Model('shopShopCategory');
         $model->delete([
             'shop_id' => $shopId
         ]);
@@ -65,7 +65,7 @@ class Data extends Extension {
         }
 
         // Delete and add shop shop sub categories
-        $model = new Model('/sc/shopShopSubCategory');
+        $model = new Model('shopShopSubCategory');
         $model->delete([
             'shop_id' => $shopId
         ]);
@@ -78,7 +78,7 @@ class Data extends Extension {
         //}
 
         // Delete and add shop brands
-        $model = new Model('/sc/shopBrand');
+        $model = new Model('shopBrand');
         $model->delete([
             'shop_id' => $shopId
         ]);
@@ -92,21 +92,21 @@ class Data extends Extension {
     }
 
     public function addShoppingCardToShop($shopId,$shoppingCardId) {
-        return (new Model('/sc/shopShoppingCard'))->insert([
+        return (new Model('shopShoppingCard'))->insert([
             'shop_id' => $shopId,
             'shopping_card_id' => $shoppingCardId
         ]);
     }
 
     public function removeShoppingCardFromShop($shopId,$shoppingCardId) {
-        return (new Model('/sc/shopShoppingCard'))->delete([
+        return (new Model('shopShoppingCard'))->delete([
             'shop_id' => $shopId,
             'shopping_card_id' => $shoppingCardId
         ]);
     }
 
     public function getTradingHourTimes() {
-        $times =  (new Model('/sc/tradingHourTime'))->loadDataSet('all')->runDataSet()->results;
+        $times =  (new Model('tradingHourTime'))->loadDataSet('all')->runDataSet()->results;
         $tradingHourTimes = [];
         foreach($times as $time) {
             $tradingHourTimes[$time->id] = $time;
@@ -115,7 +115,7 @@ class Data extends Extension {
     }
 
     public function getPublicHolidays() {
-        $holidays = (new Model('/sc/publicHoliday'))->loadDataSet('all')->runDataSet()->results;
+        $holidays = (new Model('publicHoliday'))->loadDataSet('all')->runDataSet()->results;
         $publicHolidays = [];
         foreach($holidays as $holiday) {
             $dates = json_decode($holiday->dates);
@@ -130,7 +130,7 @@ class Data extends Extension {
     }
 
     public function updateNormalTradingHours($openTimeIds,$closeTimeIds) {
-        $model = new Model('/sc/shopTradingHour');
+        $model = new Model('shopTradingHour');
         foreach($openTimeIds as $key => $value) {
             $model->update([
                 'id' => $key,
@@ -141,7 +141,7 @@ class Data extends Extension {
     }
 
     public function updateHolidayTradingHours($shopId,$publicHolidayIds,$openTimeIds,$closeTimeIds) {
-        $model = new Model('/sc/shopTradingHour');
+        $model = new Model('shopTradingHour');
         foreach($publicHolidayIds as $holidayId => $holidayDay) {
             $model->delete([
                 'shop_id' => $shopId,
@@ -164,13 +164,13 @@ class Data extends Extension {
     }
 
     public function deleteSpecialTradingHour($tradingHourId) {
-        return (new Model('/sc/shopTradingHour'))->delete([
+        return (new Model('shopTradingHour'))->delete([
             'id' => $tradingHourId
         ]);
     }
 
     public function addSpecialTradingHours() {
-        return (new Model('/sc/shopTradingHour'))->insert([
+        return (new Model('shopTradingHour'))->insert([
             'shop_id' => $this->session('shop.id'),
             'trading_hour_type_id' => 2,
             'day' => $this->input('day'),
@@ -183,7 +183,7 @@ class Data extends Extension {
     }
 
     public function addShopContact() {
-        return (new Model('/sc/shopContact'))->insert([
+        return (new Model('shopContact'))->insert([
             'shop_id' => $this->session('shop.id'),
             'contact_title_id' => $this->input('contact_title_id'),
             'shop_contact_type_id' => $this->input('shop_contact_type_id'),
@@ -199,17 +199,17 @@ class Data extends Extension {
     }
 
     public function deleteShopContact($contactId) {
-        return (new Model('/sc/shopContact'))->delete([
+        return (new Model('shopContact'))->delete([
             'id' => $contactId
         ]);
     }
 
     public function getShopProductRanges() {
-        return (new Model('/sc/productRange'))->loadDataSet('byShopId')->shopId($this->session('shop.id'))->runDataSet()->results;
+        return (new Model('productRange'))->loadDataSet('byShopId')->shopId($this->session('shop.id'))->runDataSet()->results;
     }
 
     public function getProductRangeById($rangeId) {
-        return current((new Model('/sc/productRange'))->getRecord($rangeId));
+        return current((new Model('productRange'))->getRecord($rangeId));
     }
 
     public function getProductCountByRange() {
@@ -223,17 +223,17 @@ class Data extends Extension {
     }
 
     public function getProductCountByRangeId($rangeId) {
-        $model = new Model('/sc/product');
+        $model = new Model('product');
         $model->loadDataSet('byRangeId')->rangeId($rangeId)->countDataSet();
         return $model->results[0]['count'];
     }
 
     public function getProductsByRangeId($rangeId) {
-        return (new Model('/sc/product'))->loadDataSet('byRangeId')->rangeId($rangeId)->runDataSet()->results;
+        return (new Model('product'))->loadDataSet('byRangeId')->rangeId($rangeId)->runDataSet()->results;
     }
 
     public function addProductToRange() {
-        (new Model('/sc/product'))->insert([
+        (new Model('product'))->insert([
             'product_range_id' => $this->input('product_range_id'),
             'title' => $this->input('title'),
             'description' => $this->input('description'),
@@ -249,7 +249,7 @@ class Data extends Extension {
     }
 
     public function updateProductRange($productRangeId) {
-        return (new Model('/sc/productRange'))->update([
+        return (new Model('productRange'))->update([
             'id' => $productRangeId,
             'name' => $this->input('name'),
             'description' => $this->input('description'),
@@ -259,7 +259,7 @@ class Data extends Extension {
     }
 
     public function addProductRange() {
-        $model = new Model('/sc/productRange');
+        $model = new Model('productRange');
         $model->insert([
             'client_id' => $this->session('mall.client_id'),
             'shop_id' => $this->session('shop.id'),
@@ -273,17 +273,17 @@ class Data extends Extension {
     }
 
     public function deleteProduct($productId) {
-        return (new Model('/sc/product'))->delete([
+        return (new Model('product'))->delete([
             'id' => $productId
         ]);
     }
 
     public function getProductDetailsById($productId) {
-        return (object)(new Model('/sc/product'))->getRecord($productId);
+        return (object)(new Model('product'))->getRecord($productId);
     }
 
     public function updateProduct($productId) {
-        (new Model('/sc/product'))->update([
+        (new Model('product'))->update([
             'id' => $productId,
             'title' => $this->input('title'),
             'description' => $this->input('description'),
@@ -307,16 +307,16 @@ class Data extends Extension {
     }
 
     public function saveGallery() {
-        $model = new Model('/sc/gallery');
+        $model = new Model('gallery');
         return $model->update($this->input());
     }
 
     public function addGallery() {
 
-        $model = new Model('/sc/gallery');
+        $model = new Model('gallery');
         $lastInsertId = $model->insert($this->input());
 
-        $model = new Model('/sc/shopGallery');
+        $model = new Model('shopGallery');
         $model->insert([
             'shop_id'    => $this->input('shop_id'),
             'gallery_id' => $lastInsertId
@@ -327,35 +327,35 @@ class Data extends Extension {
     // Marketing Zone
     // **********************        MALL         **************************
     public function getMallModelMold($mallId) {
-        return Model::mold('/sc/mall')->find($mallId);
+        return Model::mold('mall')->find($mallId);
     }
 
     public function getMallVenues($mallId) {
-        return (new Model('/sc/venue'))->loadDataSet('byMallId')->mallId($mallId)->runDataSet()->results;
+        return (new Model('venue'))->loadDataSet('byMallId')->mallId($mallId)->runDataSet()->results;
     }
 
     public function getMallgiftcards($mallId) {
-        return (new Model('/sc/giftcard'))->loadDataSet('byMallId')->mallId($mallId)->runDataSet()->results;
+        return (new Model('giftcard'))->loadDataSet('byMallId')->mallId($mallId)->runDataSet()->results;
     }
 
     public function getMallParkades($mallId) {
-        return (new Model('/sc/parkade'))->loadDataSet('byMallId')->mallId($mallId)->runDataSet()->results;
+        return (new Model('parkade'))->loadDataSet('byMallId')->mallId($mallId)->runDataSet()->results;
     }
 
     public function getMallParkadeDetails($parkadeId) {
-        return (new Model('/sc/parkadeDetails'))->loadDataSet('byParkadeId')->parkadeId($parkadeId)->runDataSet()->results;
+        return (new Model('parkadeDetails'))->loadDataSet('byParkadeId')->parkadeId($parkadeId)->runDataSet()->results;
     }
 
     public function getMallTradingHours($mallId) {
-        return (new Model('/sc/tradingHour'))->loadDataSet('byMallId')->mallId($mallId)->runDataSet()->results;
+        return (new Model('tradingHour'))->loadDataSet('byMallId')->mallId($mallId)->runDataSet()->results;
     }
 
     public function getMallClassifications() {
-        return (new Model('/sc/mallClassification'))->loadDataSet('all')->runDataSet()->results;
+        return (new Model('mallClassification'))->loadDataSet('all')->runDataSet()->results;
     }
 
     public function saveBasicMallInfo() {
-        return (new Model('/sc/mall'))->update([
+        return (new Model('mall'))->update([
             'id'                     => $this->getData('mz.mall.id'),
             'name'                   => $this->input('name'),
             'mall_classification_id' => $this->input('mall_classification_id'),
@@ -365,7 +365,7 @@ class Data extends Extension {
     }
 
     public function saveDetailedMallInfo() {
-        $model = Model::mold('/sc/mall')->find($this->getData('mz.mall.id'));
+        $model = Model::mold('mall')->find($this->getData('mz.mall.id'));
         foreach($this->input() as $key => $value) {
             $model->$key = $value;
         }
@@ -374,74 +374,79 @@ class Data extends Extension {
     }
 
     public function saveMallFeatures($mallId,$features) {
-        return Model::mold('/sc/mall')->find($mallId)->set('special_features',$features)->save();
+        return Model::mold('mall')->find($mallId)->set('special_features',$features)->save();
     }
 
     public function getAllEventsByMall($mallId) {
-        return (new Model('/sc/event'))->loadDataSet('byMallId')->mallId($mallId)->runDataSet()->results;
+        return (new Model('event'))->loadDataSet('byMallId')->mallId($mallId)->runDataSet()->results;
     }
 
     public function getMallLandlords($mallId) {
-        return (new Model('/sc/landlord'))->loadDataSet('byMallId')->mallId($mallId)->runDataSet()->results;
+        $model = new Model('landlord');
+        $model->loadDataSet('byMallId')->mallId($mallId)->runDataSet();
+        if ($model->gotResults()) {
+            return $model->results;
+        }
+        return (new Model('landlord'))->loadDataSet('byMallId')->mallId($mallId)->runDataSet()->results;
     }
 
     public function getAllExhibitionsByMall($mallId) {
-        return (new Model('/sc/exhibition'))->loadDataSet('byMallId')->mallId($mallId)->runDataSet()->results;
+        return (new Model('exhibition'))->loadDataSet('byMallId')->mallId($mallId)->runDataSet()->results;
     }
 
     public function getAllCompetitionsByMall($mallId) {
-        return (new Model('/sc/competition'))->loadDataSet('byMallId')->mallId($mallId)->runDataSet()->results;
+        return (new Model('competition'))->loadDataSet('byMallId')->mallId($mallId)->runDataSet()->results;
     }
 
     public function getAllJobsByMall($mallId) {
-        return (new Model('/sc/job'))->loadDataSet('byMallId')->mallId($mallId)->runDataSet()->results;
+        return (new Model('job'))->loadDataSet('byMallId')->mallId($mallId)->runDataSet()->results;
     }
 
 
     // **********************        CLIENT       **************************
     public function getClientByAPIKey() {
-        return Model::mold('/sc/client')->byAPIKey(['apiKey'=>$this->getData('app.api.cms.auth.key')])->get()->current();
+        return Model::mold('client')->byAPIKey(['apiKey'=>$this->getData('app.api.cms.auth.key')])->get()->current();
     }
 
     public function getMallsByClientId($clientId) {
-        return Model::mold('/sc/mall')->byClientId(['clientId'=>$clientId])->run();
+        return Model::mold('mall')->byClientId(['clientId'=>$clientId])->run();
     }
 
     public function getClientDetails($clientId) {
-        return (object)(new Model('/sc/client'))->getRecord($clientId);
+        return (object)(new Model('client'))->getRecord($clientId);
     }
 
 
 
     // **********************        EVENTS       **************************
     public function getEventById($eventId) {
-        return (object)(new Model('/sc/event'))->getRecord($eventId);
+        return (object)(new Model('event'))->getRecord($eventId);
     }
 
 
     // **********************        JOBS       **************************
     public function getJobById($jobId) {
-        return (object)(new Model('/sc/job'))->getRecord($jobId);
+        return (object)(new Model('job'))->getRecord($jobId);
     }
 
     public function getJobCategories($clientId) {
-        return (new Model('/sc/jobCategory'))->loadDataSet('byClientId')->clientId($clientId)->runDataSet()->results;
+        return (new Model('jobCategory'))->loadDataSet('byClientId')->clientId($clientId)->runDataSet()->results;
     }
 
     public function getJobSubCategories($clientId) {
-        return (new Model('/sc/jobSubCategory'))->loadDataSet('byClientId')->clientId($clientId)->runDataSet()->results;
+        return (new Model('jobSubCategory'))->loadDataSet('byClientId')->clientId($clientId)->runDataSet()->results;
     }
 
     public function deleteJobById($jobId) {
-        return (new Model('/sc/job'))->delete([
+        return (new Model('job'))->delete([
             'id' => $jobId
         ]);
     }
 
     // **********************        MOVIES       **************************
     public function getCinemaDetails($clientId) {
-        $data = Model::mold('/sc/cinema')->byClientId(['clientId'=>$clientId])->get();
-        //$data = (new Model('/sc/cinema'))->loadDataSet('byClientId')->clientId($clientId)->runDataSet()->results;
+        $data = Model::mold('cinema')->byClientId(['clientId'=>$clientId])->get();
+        //$data = (new Model('cinema'))->loadDataSet('byClientId')->clientId($clientId)->runDataSet()->results;
         if (count($data) > 0) {
             return $data;
         } else {
@@ -450,15 +455,15 @@ class Data extends Extension {
     }
 
     public function getMovies() {
-        return (new Model('/sc/movie'))->loadDataSet('current')->runDataSet()->results;
+        return (new Model('movie'))->loadDataSet('current')->runDataSet()->results;
     }
 
     public function getMovieDetailsById($movieId) {
-        return (object)(new Model('/sc/movie'))->getRecord($movieId);
+        return (object)(new Model('movie'))->getRecord($movieId);
     }
 
     public function saveCinema($cinemaId) {
-        return (new Model('/sc/cinema'))->update([
+        return (new Model('cinema'))->update([
             'id'        => $cinemaId,
             'name'      => $this->input('name'),
             'company'   => $this->input('company'),
@@ -473,28 +478,28 @@ class Data extends Extension {
 
     // **********************        SHOPS       **************************
     public function getShopsByCategoryId($mallId,$categoryId) {
-        return (new Model('/sc/shop'))->loadDataSet('byMallAndCategoryId')->mallId($mallId)->categoryId($categoryId)->runDataSet()->results;
+        return (new Model('shop'))->loadDataSet('byMallAndCategoryId')->mallId($mallId)->categoryId($categoryId)->runDataSet()->results;
     }
 
     public function getShopsByBrandId($mallId,$brandId) {
-        return (new Model('/sc/shop'))->loadDataSet('byMallAndBrandId')->mallId($mallId)->brandId($brandId)->runDataSet()->results;
+        return (new Model('shop'))->loadDataSet('byMallAndBrandId')->mallId($mallId)->brandId($brandId)->runDataSet()->results;
     }
 
     public function getShopsByMallId($mallId) {
-        return (new Model('/sc/shop'))->loadDataSet('byMallId')->mallId($mallId)->runDataSet()->results;
+        return (new Model('shop'))->loadDataSet('byMallId')->mallId($mallId)->runDataSet()->results;
     }
 
     public function getShopsCanRegisterByMallId($mallId) {
-        return (new Model('/sc/shop'))->loadDataSet('canRegisterByMallId')->mallId($mallId)->runDataSet()->results;
+        return (new Model('shop'))->loadDataSet('canRegisterByMallId')->mallId($mallId)->runDataSet()->results;
     }
 
     public function getShopById($shopId) {
-        return Model::mold('/sc/shop')->find($shopId)->current();
+        return Model::mold('shop')->find($shopId)->current();
     }
 
     // **********************        CHAIN SHOPS       **************************
     public function getAllChainShops() {
-        $shops = Model::mold('/sc/chainShop')->all();
+        $shops = Model::mold('chainShop')->all();
         $allShops = $shops->getAll();
         // Remove items with no logo
         foreach($allShops as $shopKey => $shopValue) {
@@ -514,20 +519,20 @@ class Data extends Extension {
     }
 
     public function getChainShopModelMold($chainShopId) {
-        return Model::mold('/sc/chainShop')->find($chainShopId);
+        return Model::mold('chainShop')->find($chainShopId);
     }
 
     // **********************        MEMOS       **************************
     public function getMemosByMallId($mallId) {
-        return (new Model('/sc/shopCommunication'))->loadDataSet('byMallId')->mallId($mallId)->runDataSet()->results;
+        return (new Model('shopCommunication'))->loadDataSet('byMallId')->mallId($mallId)->runDataSet()->results;
     }
 
     public function getMemosToCollection($mallId,$collection = 'all') {
-        return (new Model('/sc/shopCommunication'))->loadDataSet('byMallIdAndCollection')->mallId($mallId)->collection($collection)->runDataSet()->results;
+        return (new Model('shopCommunication'))->loadDataSet('byMallIdAndCollection')->mallId($mallId)->collection($collection)->runDataSet()->results;
     }
 
     public function getMemosForCategory($mallId,$collection = 'all') {
-        $model = new Model('/sc/shopCommunication');
+        $model = new Model('shopCommunication');
         $model->loadDataSet('byMallIdForCategory')->mallId($mallId)->collection($collection)->runDataSet();
         $results = $model->results;
         if (!empty($results[0]->id)) {
@@ -538,7 +543,7 @@ class Data extends Extension {
     }
 
     public function getMemosForBrand($mallId,$collection = 'all') {
-        $model = new Model('/sc/shopCommunication');
+        $model = new Model('shopCommunication');
         $model->loadDataSet('byMallIdForBrand')->mallId($mallId)->collection($collection)->runDataSet();
         $results = $model->results;
         if (!empty($results[0]->id)) {
@@ -549,7 +554,7 @@ class Data extends Extension {
     }
 
     public function addMemoToShops($shopIds,$collection,$collectionDesc,$collectionId = null) {
-        $lastInsertId = (new Model('/sc/shopCommunication'))->insert([
+        $lastInsertId = (new Model('shopCommunication'))->insert([
             'mall_id'                => $this->getData('mz.mall.id'),
             'collection'             => $collection,
             'collection_description' => $collectionDesc,
@@ -562,7 +567,7 @@ class Data extends Extension {
             'updated_at'             => CURRENT_TIMESTAMP
         ]);
 
-        $model = new Model('/sc/shopCommunications');
+        $model = new Model('shopCommunications');
         $count = 0;
         foreach($shopIds as $shopId) {
             $model->insert([
@@ -578,7 +583,7 @@ class Data extends Extension {
             $count++;
         }
 
-        (new Model('/sc/shopCommunication'))->update([
+        (new Model('shopCommunication'))->update([
             'id'         => $lastInsertId,
             'shop_count' => $count
         ]);
@@ -586,15 +591,15 @@ class Data extends Extension {
     }
 
     public function getMemosByMemoId($memoId) {
-        return (new Model('/sc/shopCommunications'))->loadDataSet('byCommunicationId')->commId($memoId)->runDataSet()->results;
+        return (new Model('shopCommunications'))->loadDataSet('byCommunicationId')->commId($memoId)->runDataSet()->results;
     }
 
     public function deleteMemoById($memoId) {
-        (new Model('/sc/shopCommunication'))->delete([
+        (new Model('shopCommunication'))->delete([
             'id' => $memoId
         ]);
 
-        return (new Model('/sc/shopCommunications'))->delete([
+        return (new Model('shopCommunications'))->delete([
             'shop_communication_id' => $memoId
         ]);
     }
@@ -602,17 +607,17 @@ class Data extends Extension {
 
     // **********************        TURNOVER       **************************
     public function getTurnoverMallIdAndYear($mallId,$year) {
-        return (new Model('/sc/shop'))->loadDataSet('byMallAndTurnoverYear')->mallId($mallId)->year($year)->runDataSet()->results;
+        return (new Model('shop'))->loadDataSet('byMallAndTurnoverYear')->mallId($mallId)->year($year)->runDataSet()->results;
     }
 
     public function getTurnoverMallIdMonthAndYear($mallId,$year,$month) {
-        return (new Model('/sc/shop'))->loadDataSet('byMallAndTurnoverMonthAndYear')->mallId($mallId)->year($year)->month($month)->runDataSet()->results;
+        return (new Model('shop'))->loadDataSet('byMallAndTurnoverMonthAndYear')->mallId($mallId)->year($year)->month($month)->runDataSet()->results;
     }
 
 
     // ***************        COMMUNICATION CREDITS       **************************
     public function getMallSMSCredits($mallId) {
-        $smsCreditMold = Model::mold('/sc/clientCommCredits')->byTypeAndMallId([
+        $smsCreditMold = Model::mold('clientCommCredits')->byTypeAndMallId([
             'mallId' => $mallId,
             'commType' => 1
         ]);
@@ -620,7 +625,7 @@ class Data extends Extension {
     }
 
     public function getMallEmailCredits($mallId) {
-        $emailCreditMold = Model::mold('/sc/clientCommCredits')->byTypeAndMallId([
+        $emailCreditMold = Model::mold('clientCommCredits')->byTypeAndMallId([
             'mallId' => $mallId,
             'commType' => 2
         ]);
@@ -628,7 +633,7 @@ class Data extends Extension {
     }
 
     public function getCommunicationMallContactLists($mallId) {
-        return $contactListMold = Model::mold('/sc/clientCommLists')->byMallId([
+        return $contactListMold = Model::mold('clientCommLists')->byMallId([
             'mallId' => $mallId
         ])->getAll();
     }
