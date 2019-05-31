@@ -4,8 +4,8 @@ return (object)[
         'bookmarks' => (object)[
 			'online' => [
 				(object)[
-					'name' => 'CMS Centred',
-					'url'  => 'https://cmscentred.com',
+					'name' => 'HeEPP',
+					'url'  => 'https://HeEPP.info',
 				],
 				(object)[
 					'name' => 'Hetzner Console H',
