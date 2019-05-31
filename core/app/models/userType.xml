@@ -1,5 +1,5 @@
 <database 
-    connection="fgx"
+    connection="heepp"
     name="userType" 
     alias="User Types"
     single="UserType"

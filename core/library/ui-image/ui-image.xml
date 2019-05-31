@@ -9,4 +9,11 @@
                 description="Fluidbox Image Lightbox"/>
         </includes>
     </fluidbox>
+    <holder>
+        <includes>
+            <jscript
+                src="holder/js/holder.min.js"
+                description="Holder - Image Placeholder JS"/>
+        </includes>
+    </holder>
 </root>

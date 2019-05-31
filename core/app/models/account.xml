@@ -1,0 +1,105 @@
+<database
+    connection="heepp"
+    name="account"
+    alias="Account"
+    single="Account"
+    many="Accounts"
+    public="false">
+    <table
+        name="accounts"
+        key="id">
+        <columns>
+            <foreign_table   alias="Foreign Table"/>
+            <foreign_id      alias="Foreign ID"/>
+            <bank_id         alias="Bank ID"/>
+            <account_type_id alias="Account Type ID"/>
+            <account_name    alias="Account Name"/>
+            <account_number  alias="Account Number"/>
+            <branch_code     alias="Branch Code"/>
+            <branch_name     alias="Branch Name"/>
+            <created_at      alias="Date and Time"/>
+            <updated_at      alias="Date and Time Updated"/>
+            <user_id         alias="User ID"/>
+            <status_id       alias="Status ID"/>
+        </columns>
+    </table>
+    <join
+        table="banks"
+        type="inner"
+        left="accounts.bank_id"
+        right="banks.id">
+        <columns>
+            <bank alias="Bank"/>
+        </columns>
+    </join>
+    <join
+        table="account_types"
+        type="inner"
+        left="accounts.account_type_id"
+        right="account_types.id">
+        <columns>
+            <account_type alias="Account Type"/>
+        </columns>
+    </join>
+    <join
+        table="users"
+        type="inner"
+        left="accounts.user_id"
+        right="users.id">
+        <columns>
+            <first_name alias="First Name"/>
+            <last_name alias="Last Name"/>
+        </columns>
+    </join>
+    <join
+        table="statuses"
+        type="inner"
+        left="accounts.status_id"
+        right="statuses.id">
+        <columns>
+            <status alias="Status"/>
+        </columns>
+    </join>
+</database>
+<datasets>
+    <all>
+        <order>
+            <bank_id order="ASC"/>
+        </order>
+    </all>
+
+    <active>
+        <filter>
+            <status_id equal="1"/>
+        </filter>
+        <order>
+            <bank_id order="ASC"/>
+        </order>
+    </active>
+
+    <deleted>
+        <filter>
+            <status_id equal="4"/>
+        </filter>
+        <order>
+            <bank_id order="ASC"/>
+        </order>
+    </deleted>
+
+    <byCompanyId>
+        <filter>
+            <status_id equal="1"/>
+            <foreign_table equal="companies"/>
+            <foreign_id equal="{companyId}"/>
+        </filter>
+        <order>
+            <bank_id order="ASC"/>
+        </order>
+    </byCompanyId>
+
+    <byId>
+        <filter>
+            <id equal="{id}"/>
+        </filter>
+    </byId>
+</datasets>

@@ -1,5 +1,5 @@
 <database 
-    connection="fgx"
+    connection="heepp"
     name="userPermission" 
     alias="User Permissions"
     single="UserPermission"

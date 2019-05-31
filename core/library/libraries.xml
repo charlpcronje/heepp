@@ -1051,6 +1051,10 @@
             alias="Flat Icons"
             authentication="false"
             status="active"/>
+		<fileTypes
+			alias="Flat Icons File Types"
+			authentication="false"
+            status="active"/>
         <fontAwesome
             alias="Font Awesome Icons"
             authentication="false"
@@ -1083,6 +1087,11 @@
         status="active">>
         <fluidbox
             alias="Fluidbox Image Lightbox"
+            authentication="false"
+            status="active"/>
+
+        <holder
+            alias="Image Placeholder JS"
             authentication="false"
             status="active"/>
     </ui-image>

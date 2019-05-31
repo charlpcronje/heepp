@@ -31,7 +31,15 @@
         </includes>        
     </etline>
     
-    <flatIcon>
+    <fileTypes>
+        <includes>
+            <css     
+                src="fileTypes/font/flaticon.css"
+                description="Flat Icons File Types"/>
+        </includes>
+    </fileTypes>
+	
+	<flatIcon>
         <includes>
             <css     
                 src="flatIcon/flaticon.css"
@@ -69,6 +77,14 @@
                 description="Font Awesome Icons"/>
         </includes>
     </fontAwesome-5>
+	
+	<heeppIcons>
+		<includes>
+			<css     
+                src="heeppIcons/style.css"
+                description="HeEPP Icons"/>
+		</includes>
+	</heeppIcons>
     
     <iconic>
         <includes>

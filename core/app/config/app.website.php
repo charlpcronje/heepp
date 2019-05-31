@@ -6,8 +6,9 @@ return [
 
     /* Site Config
     |------------- */
-    'author.company' => 'FGX Studios',
+    'author.company' => 'HeEPP',
     'author.name'    => 'Charl Cronje',
-    'author.email'   => 'charl@fgx.co.za',
-    'generator'      => 'core - Heepp: Hyper eXtensible Element PreProcessor'
+    'author.email'   => 'charl@HeEPP.info',
+    'author.logo'    => 'fgx_logo_white.png',
+    'generator'      => 'HeEPP: Hyper eXtensible Element PreProcessor',
 ];

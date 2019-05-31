@@ -1,0 +1,12 @@
+<div class="uk-card uk-card-default uk-card-body @{class}" id="@{id}" style="@{style}">
+    <if notempty="@{heading}">
+        <h3 class="uk-card-title uk-margin-remove-bottom">@{heading}</h3>
+    </if>
+    <if notempty="@{subheading}">
+        <small>@{subheading}</small>
+    </if>
+
+    <if notempty="@{child}">
+        @{child}
+    </if>
+</div>

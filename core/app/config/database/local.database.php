@@ -4,11 +4,11 @@ class Connection {
 
     public function __construct($connection = null) {
         switch($connection) {
-            case 'fgx':
-                $this->connection = $this->fgx();
+            case 'console':
+                $this->connection = $this->console();
             break;
             default:
-                $this->connection = $this->fgx();
+                $this->connection = $this->console();
             break;
         }
     }
@@ -19,24 +19,19 @@ class Connection {
 
     public function getConnections() {
         $connections[] = (object)[
-            'name'  =>'fgx',
-            'alias' =>'FGX Heepp / Console'];
+            'name'  =>'console',
+            'alias' =>'console / Console'
+        ];
         return $connections;
     }
 
-    private function fgx() {
+    private function console() {
         return (object)[
             'host'     => '127.0.0.1',
             'username' => 'root',
             'password' => '',
-            'database' => 'fgx'
+            'database' => 'console'
         ];
 
-        /* return (object)[
-            'host'     => 'dedi73.cpt1.host-h.net',
-            'username' => 'corefdaavr_1',
-            'password' => '0K4N72NEkVFbY1NrBM2i',
-            'database' => 'corefdaavr_db1'
-        ]; */
     }
 }

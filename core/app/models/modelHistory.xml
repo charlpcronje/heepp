@@ -1,5 +1,5 @@
 <database 
-    connection="fgx"
+    connection="heepp"
     name="modelHistory" 
     alias="Database Model History"
     single="ModelHistory">

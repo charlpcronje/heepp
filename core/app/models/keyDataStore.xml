@@ -1,5 +1,5 @@
 <database
-    connection="fgx"
+    connection="heepp"
     name="keyDataStore"
     alias="Key Data Store"
     single="KeyDataStore"

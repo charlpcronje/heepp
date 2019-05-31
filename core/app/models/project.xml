@@ -1,5 +1,5 @@
 <database 
-    connection="fgx" 
+    connection="heepp" 
     name="project"
     alias="Projects"
     single="Project"
@@ -52,6 +52,18 @@
         <columns>
             <project_status alias="Project Status"/>
         </columns>
+    </join>
+    <join
+        table="project_members"
+        type="inner"
+        left="projects.id"
+        right="project_members.project_id">
+        <columns>
+            <status_id alias="Project Status"/>
+        </columns>
+        <filter>
+            <status_id equals="1"/>
+        </filter>
     </join>
 </database>
 <datasets>

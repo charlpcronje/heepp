@@ -1,5 +1,5 @@
 <database 
-    connection="fgx" 
+    connection="heepp" 
     name="apiRequestLog" 
     alias="API Request Log"
     single="APIRequestLog"

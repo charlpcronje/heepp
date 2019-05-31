@@ -1,5 +1,5 @@
 <database 
-    connection="cms"
+    connection="heepp"
     name="company"
     alias="Companies"
     single="Company"

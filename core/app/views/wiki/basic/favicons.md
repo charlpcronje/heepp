@@ -1,7 +1,7 @@
 # Website that generates Favicons
 > This website will also generate your favicon manifests for mobile
 
-** https://realfavicongenerator.net/ **
+*https://realfavicongenerator.net/*
 
 ### Example of generated code for html `<head>`
 

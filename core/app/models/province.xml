@@ -1,0 +1,47 @@
+<database
+    connection="heepp"
+    name="projectTask"
+    alias="Provinces"
+    single="Province"
+    many="Provinces"
+    public="false">
+    <table
+        name="provinces"
+        key="id">
+        <columns>
+            <code           alias="Code"/>
+            <lat            alias="Latitude"/>
+            <long           alias="Longitude"/>
+            <province       alias="Province"/>
+            <created_at     alias="Date and Time"/>
+            <updated_at     alias="Date and Time Updated"/>
+            <status_id      alias="Status ID"/>
+            <user_id        alias="User ID"/>
+        </columns>
+    </table>
+    <join
+        table="statuses"
+        type="inner"
+        left="provinces.status_id"
+        right="statuses.id">
+        <columns>
+            <status alias="Status"/>
+        </columns>
+    </join>
+</database>
+<datasets>
+    <all>
+        <order>
+            <id order="ASC"/>
+        </order>
+    </all>
+
+    <active>
+        <filter>
+            <status_id equal="1"/>
+        </filter>
+        <order>
+            <id order="ASC"/>
+        </order>
+    </active>
+</datasets>

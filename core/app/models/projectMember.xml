@@ -1,5 +1,5 @@
 <database 
-    connection="fgx" 
+    connection="heepp" 
     name="projectMember"
     alias="Project Members"
     single="Project Member"
