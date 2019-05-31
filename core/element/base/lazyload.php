@@ -88,7 +88,7 @@ class lazyload extends \core\Element {
         }
 
         /* Some 3rd party js scripts does not have an extension, for example the
-         * google maps API: https://maps.googleapis.com/maps/api/js?key=AIzaSyCWJgTfPMcIH9ZpasUX66Bl6GA6HwnWw6U,
+         * google maps API: https://maps.googleapis.com/maps/api/js?key=,
          * In this case i'm assuming it is of type 'js'
          */
         if (!isset($this->fileInfo->extension)) {
