@@ -4,11 +4,11 @@ class Connection {
 
     public function __construct($connection = null) {
         switch($connection) {
-            case 'console':
-                $this->connection = $this->console();
+            case 'heepp':
+                $this->connection = $this->heepp();
             break;
             default:
-                $this->connection = $this->console();
+                $this->connection = $this->heepp();
             break;
         }
     }
@@ -19,19 +19,17 @@ class Connection {
 
     public function getConnections() {
         $connections[] = (object)[
-            'name'  =>'console',
-            'alias' =>'console / Console'
-        ];
+            'name'  =>'heepp',
+            'alias' =>'Heepp / Console'];
         return $connections;
     }
 
-    private function console() {
+    private function heepp() {
         return (object)[
-            'host'     => '127.0.0.1',
-            'username' => 'root',
-            'password' => '',
-            'database' => 'console'
+            'host'     => 'localhost',
+            'username' => 'heepp',
+            'password' => 'Pl@tinum1',
+            'database' => 'heepp'
         ];
-
     }
 }

@@ -5,7 +5,7 @@ return [
     'driver'       => 'smtp',
     'host'         => 'localhost',
     'port'         => 587,
-    'from.address' => '',
+    'from.address' => 'noreply@netwiki.xyz',
     'from.alias'   => 'Admin',
     'encryption'   => 'tls',
 

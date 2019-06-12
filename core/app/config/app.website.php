@@ -6,9 +6,8 @@ return [
 
     /* Site Config
     |------------- */
-    'author.company' => 'HeEPP',
+    'author.company' => 'webAlly',
     'author.name'    => 'Charl Cronje',
-    'author.email'   => 'charl@HeEPP.info',
-    'author.logo'    => 'fgx_logo_white.png',
-    'generator'      => 'HeEPP: Hyper eXtensible Element PreProcessor',
+    'author.email'   => 'charl@webally.co.za',
+    'generator'      => 'Heepp: Hyper eXtensible Element PreProcessor'
 ];
