@@ -5,7 +5,7 @@ return [
     'driver'       => 'smtp',
     'host'         => 'localhost',
     'port'         => 587,
-    'from.address' => 'noreply@fgx.co.za',
+    'from.address' => 'noreply@webally.co.za',
     'from.alias'   => 'Admin',
     'encryption'   => 'tls',
 

@@ -7,6 +7,6 @@ return [
     'website' => (object)[
         'name'        => 'core',
         'title'       => 'core Heepp Console',
-        'description' => 'Custom PHP MVC Framework by FGX Studios'
+        'description' => 'Custom PHP MVC Framework by webAlly (Charl Cronje)'
     ]
 ];
