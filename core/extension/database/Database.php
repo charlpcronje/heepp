@@ -194,7 +194,11 @@ class Database {
     }
     
     public function fetch_all() {
-        return $this->result_set->fetch_all(MYSQLI_ASSOC);
+    	$rows = [];
+        while ($row = $this->result_set->fetch_assoc()) {
+    		$rows[] = $row;
+	}
+        return $rows;
     }
     
     public function toObject($dataObj,$primaryKey = null) {
