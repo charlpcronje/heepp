@@ -38,8 +38,8 @@
                 description="Flat Icons File Types"/>
         </includes>
     </fileTypes>
-	
-	<flatIcon>
+
+    <flatIcon>
         <includes>
             <css     
                 src="flatIcon/flaticon.css"
@@ -77,8 +77,8 @@
                 description="Font Awesome Icons"/>
         </includes>
     </fontAwesome-5>
-	
-	<heeppIcons>
+    
+    <heeppIcons>
 		<includes>
 			<css     
                 src="heeppIcons/style.css"

@@ -1051,7 +1051,7 @@
             alias="Flat Icons"
             authentication="false"
             status="active"/>
-		<fileTypes
+        <fileTypes
 			alias="Flat Icons File Types"
 			authentication="false"
             status="active"/>

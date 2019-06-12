@@ -1123,7 +1123,7 @@ core.api = class {
             success   : false,
             type      : reqType,
             endPoint  : reqEndpoint,
-            userAgent : 'fgxJSCore',
+            userAgent : 'heeppJSCore',
             headers   : {
                 authorization : '',
                 accept        : 'application/json'
