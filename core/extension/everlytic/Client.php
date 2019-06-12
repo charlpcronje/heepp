@@ -5,7 +5,7 @@ use core\extension\Extension;
 use core\extension\database\Model;
 
 class Client extends Extension {
-    private $apiURL = 'http://comms.fgx-mailers.com/api/2.0/';
+    private $apiURL = 'http://comms.webally-mailers.com/api/2.0/';
     protected $success   = false;
     protected $type      = 'get';
     protected $endPoint  = null;
@@ -26,7 +26,7 @@ class Client extends Extension {
     
     function __construct($type,$endPoint,$headers = null,$params = null) {
         parent::__construct();
-        $this->headers['Authorization'] = 'Basic '.base64_encode('charl@fgx:25MrFxpft2Brp2aF1tBLffkixCJyYXmU_9');
+        $this->headers['Authorization'] = 'Basic '.base64_encode('');
         $this->type = $type;
         
         if(!isset($endPoint) || empty($endPoint)) {
@@ -143,6 +143,6 @@ $headers[] = 'Content-Type: application/json';
 curl_setopt($cSession, CURLOPT_HTTPHEADER, $headers);
 $result = curl_exec($cSession);
 curl_close($cSession);
-    http://comms.fgx-mailers.com 
+    http://comms.webally-mailers.com 
 }
 */
