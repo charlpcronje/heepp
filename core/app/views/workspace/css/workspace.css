@@ -5,7 +5,7 @@
   grid-template-columns: 1fr auto;
   grid-template-rows: 1fr;
   grid-template-areas: "ws-left ws-right"; }
-  #cc main main #cc-workspace .font-fgx {
+  #cc main main #cc-workspace .font-heepp {
     font-family: 'Montserrat Subrayada', sans-serif; }
   #cc main main #cc-workspace .ws-left {
     background-size: cover;
@@ -20,10 +20,8 @@
         #cc main main #cc-workspace .ws-left .ws-left-credit .core-heading small {
           font-family: 'Montserrat Subrayada', sans-serif; }
       #cc main main #cc-workspace .ws-left .ws-left-credit .core-sub-heading {
-        font-family: 'BN Machine', 'Wire One', 'Tulpen One', 'Steppes TT', 'Six Caps', 'Rondalo', 'Ostrich Sans', 'Libre Barcode 128 Text', 'Open Sans', sans-serif;
-        font-size: 75px;
-        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
-        text-decoration: underline; }
+        font-family: 'Libre Barcode 128 Text', cursive;
+        font-size: 50px; }
     #cc main main #cc-workspace .ws-left .welcome-statement {
       padding-top: 50px;
       padding-left: 30px; }
