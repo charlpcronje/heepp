@@ -10,7 +10,7 @@ define('LOCAL_IP_ADDRESSES',serialize([
 // Define current project
 if (!empty($_GET['project'])) {
     define('PROJECT',$_GET['project']);
-} elseif(strpos($_GET['controller'],'=') !== false) {
+} elseif(isset($_GET['controller']) && strpos($_GET['controller'],'=') !== false) {
     $projectAndController = explode('=',$_GET['controller']);
     define('PROJECT',$projectAndController[0]);
     $_GET['controller'] = $projectAndController[1];
