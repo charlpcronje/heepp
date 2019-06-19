@@ -4,7 +4,7 @@
 // Define local IP addresses in [], serializing because php < 7 don't support arrays in a constant,
 // Remember to un-serialize when using as an array
 define('LOCAL_IP_ADDRESSES',serialize([
-    '192.168.1.35'
+    '127.0.0.1'
 ]));
 
 // Define current project
