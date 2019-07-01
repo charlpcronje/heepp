@@ -13,7 +13,8 @@ $origin = realpath(dirname(fileIncludeOrigin()));
 
 if ($origin != realpath('./')) {
     if (!isset($_SERVER['project_cache'])) {
-        $_SERVER['project_cache'] = array_pop(explode(DIRECTORY_SEPARATOR,$origin));
+        $exp = explode(DIRECTORY_SEPARATOR,$origin);
+        $_SERVER['project_cache'] = array_pop($exp);
     }
     (new DotEnv($origin,'.env',$_SERVER['project_cache']))->load();
 }
