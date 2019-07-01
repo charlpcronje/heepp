@@ -1,8 +1,8 @@
 <?php
 
 // Super Globals
-if (isset ($_SERVER['HTTP_REFERER'])) {
-    define('HTTP_REFERER',$_SERVER['HTTP_REFERER']) ;
+if (isset($_SERVER['HTTP_REFERER']) && !defined('HTTP_REFERER')) {
+    define('HTTP_REFERER',$_SERVER['HTTP_REFERER']);
 }
 
 // PHP Version
