@@ -1,5 +1,5 @@
 <?php
-define('HTTP_REFERER',$_SERVER['HTTP_REFERER']);
+? $_SERVER['HTTP_REFERER'] : define('HTTP_REFERER',$_SERVER['HTTP_REFERER']);
 define('ROOT_PATH',dirname(__DIR__.DIRECTORY_SEPARATOR));
 
 /* Setting the Base Path for HeEPP. Use to set in the calling project.
