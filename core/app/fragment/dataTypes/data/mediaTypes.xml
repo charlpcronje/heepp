@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<root>
-    <screen 
-        description="Computer, Laptop Screen"/>
-    <print
-        description="Print Media"/>
-    <projector
-        description="Projector"/> 
-</root>

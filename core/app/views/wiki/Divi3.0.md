@@ -1,1 +1,0 @@
-https://www.elegantthemes.com/blog/theme-releases/divi-3

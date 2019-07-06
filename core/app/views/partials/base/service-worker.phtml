@@ -1,9 +1,0 @@
-<script>
-    // Check that service workers are registered
-    if ('serviceWorker' in navigator) {
-        // Use the window load event to keep the page load performance
-        window.addEventListener('load', () => {
-            navigator.serviceWorker.register('${env.project.assets.url}js/sw.js');
-        });
-    }
-</script>
