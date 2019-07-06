@@ -1,0 +1,27 @@
+html,body {
+    height: 100%;
+    color: $default-color;
+}
+
+.nicescroll-cursors {
+    border: 1px solid $bg-primary !important;
+    margin-right: 2px  !important;
+}
+
+#cc {
+    @include box-sizing();
+    * {
+        @include box-sizing();
+    }
+    @include setProps('padding','');
+    @include setProps('padding','-top');
+    @include setProps('padding','-left');
+    @include setProps('padding','-right');
+    @include setProps('padding','-bottom');
+
+    @include setProps('margin','');
+    @include setProps('margin','-top');
+    @include setProps('margin','-left');
+    @include setProps('margin','-right');
+    @include setProps('margin','-bottom');
+}

@@ -1,0 +1,110 @@
+<database 
+    connection="heepp" 
+    name="projectTask"
+    alias="Project Tasks"
+    single="Project Task"
+    many="Project Tasks"
+    public="false">
+    <table 
+        name="project_tasks"
+        key="id">
+        <columns>
+            <project_id             alias="Project ID"/>
+            <parent_project_task_id alias="Parent Project Task ID"/>
+            <project_task_type_id   alias="Project Task Type ID"/>
+            <project_task_status_id alias="Project Task Status ID"/>
+            <task_heading           alias="Task Heading"/>
+            <task_description       alias="Task Description"/>
+            <task_start_date        alias="Task Start Date"/>
+            <task_due_date          alias="Task Due Date"/>
+            <created_at             alias="Date and Time Record Added"/>
+            <updated_at             alias="Date and Time Records was Updated"/>
+            <status_id              alias="Status"/>
+            <user_id                alias="User ID"/>
+        </columns>
+    </table>
+    <join 
+        table="companies" 
+        type="inner" 
+        left="projects.company_id"
+        right="companies.id">
+        <columns>
+            <company_name alias="Company Name"/>
+        </columns>
+    </join>
+    <join
+        table="users"
+        type="inner"
+        left="project_tasks.user_id"
+        right="users.id">
+        <columns>
+            <first_name alias="User First Name"/>
+            <last_name  alias="User Last Name"/>
+            <email      alias="User E-Mail"/>
+        </columns>
+    </join>
+    <join
+        table="project_task_statuses"
+        type="inner"
+        left="project_tasks.project_task_status_id"
+        right="project_task_statuses.id">
+        <columns>
+            <project_task_status alias="Project Task Status"/>
+        </columns>
+    </join>
+</database>
+<datasets>
+    <all
+        alias="Select all projects"
+        description="Select projects and order by `project_name` ASC">
+        <order>
+            <project_name order="ASC"/>
+        </order>
+    </all>
+
+    <activeMain
+        alias="Select active projects that has parent_id = 0"
+        description="Select projects where `project_status_id` > 0 and order by `project_name` ASC">
+        <filter>
+            <parent_id equals="0"/>
+            <project_status_id greaterthan="0"/>
+        </filter>
+        <order>
+            <project_name order="ASC"/>
+        </order>
+    </activeMain>
+
+    <activeChild
+        alias="Select active projects where parent_id = ${parentId}"
+        description="Select projects where `project_status_id` > 0 and order by `project_name` ASC">
+        <filter>
+            <parent_id equals="${parentId}"/>
+            <project_status_id greaterthan="0"/>
+        </filter>
+        <order>
+            <project_name order="ASC"/>
+        </order>
+    </activeChild>
+
+    <deleted
+        alias="Select deleted projects"
+        description="Select projects where `project_status_id` = -1 and order by `project_name` ASC">
+        <filter>
+            <project_status_id smallerthan="1"/>
+        </filter>
+        <order>
+            <project_name order="ASC"/>
+        </order>
+    </deleted>
+
+    <likeProjectName
+        alias="Select projects project name is like"
+        description="Select projects where `project_name` LIKE '%${projectName}%'">
+        <filter>
+            <project_name like="${projectName}"/>
+        </filter>
+        <order>
+            <project_name order="ASC"/>
+        </order>
+    </likeProjectName>
+</datasets>

@@ -1,0 +1,25 @@
+<database 
+    connection="heepp"
+    name="statuses"
+    alias="Status"
+    single="Status"
+    many="Statuses"
+    public="false">
+    <table
+        key="id"
+        name="statuses">
+        <columns>
+            <status
+                alias="Status"/>
+        </columns>
+    </table>
+</database>
+<datasets>
+    <all
+        alias="Select all statuses"
+        description="Select all `statuses` ORDER BY `id` ASC">
+        <order>
+            <id order="ASC"/>
+        </order>
+    </all>
+</datasets>

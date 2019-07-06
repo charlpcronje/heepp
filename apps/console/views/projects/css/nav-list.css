@@ -1,0 +1,18 @@
+#project-nav-list-container {
+  width: 250px; }
+  #project-nav-list-container .projects-icon-nav {
+    width: 100%;
+    position: absolute;
+    top: -27px;
+    z-index: 10;
+    padding-left: 10px; }
+    #project-nav-list-container .projects-icon-nav li a i {
+      font-size: 18px; }
+
+#project-list-nav {
+  width: 250px; }
+
+#project-filter-form .uk-margin:first-child {
+  margin-top: 0px !important; }
+  #project-filter-form input {
+    border: 1px solid #292929; }

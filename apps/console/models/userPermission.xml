@@ -1,0 +1,58 @@
+<database 
+    connection="heepp"
+    name="userPermission" 
+    alias="User Permissions"
+    single="UserPermission"
+    many="UserPermissions"
+    public="false">
+    <table name="user_permissions" key="id">
+        <columns>
+            <user_id    alias="User Id"/>
+            <type       alias="Type"/>
+            <controller alias="Module"/>
+            <method     alias="Function"/>
+        </columns>
+    </table>
+</database>
+<datasets>
+    <byUserId
+        alias="Select user permission by user id"
+        description="Select user permissin where `user_id` = ${userId} and ORDER BY `controller` ASC and `method` ASC">
+        <filter>
+            <user_id    equal="${userId}"/>
+        </filter>
+        <order>
+            <controller order="ASC"/>
+            <method     order="ASC"/>
+        </order>
+    </byUserId>
+
+    <byUserAndController
+        alias="Select user permission by user id and controller"
+        description="Select user permission where user `id` = ${userId}, `type` = controller and `controller` = ${controller} and ORDER BY `controller` ASC and `method` ASC">
+        <filter>
+            <user_id    equal="${userId}"/>
+            <type       equal="controller"/>
+            <controller equal="${controller}"/>
+        </filter>
+        <order>
+            <controller order="ASC"/>
+            <method     order="ASC"/>
+        </order>
+    </byUserAndController>
+
+    <byUserControllerAndMethod
+        alias="Select user permission by user id, controller and method"
+        description="Select user permission where user `id` = ${userId}, `type` = method, `controller` = ${controller} and `method` = ${method} and ORDER BY `controller` ASC and `method` ASC">
+        <filter>
+            <user_id    equal="${userId}"/>
+            <type       equal="method"/>
+            <controller equal="${controller}"/>
+            <method     equal="${method}"/>
+        </filter>
+        <order>
+            <controller order="ASC"/>
+            <method     order="ASC"/>
+        </order>
+    </byUserControllerAndMethod>
+</datasets>

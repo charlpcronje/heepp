@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <!-- 
+        #################### Base Data Type ####################
+        These are data types not part of any standard and is specific to a FusedObject.
+        
+        There are no specific restrictions and are only limited to the actual 
+        restrictions. These data types can extend other data types for their
+        restrictions
+    -->
+    
+    <base
+        restrictions="pattern,whiteSpace"/>
+</root>

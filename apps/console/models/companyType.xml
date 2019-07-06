@@ -1,0 +1,42 @@
+<database
+    w>
+    <table
+        name="company_types"
+        key="id">
+        <columns>
+            <company_type alias="Company Type"/>
+            <created_at   alias="Date and Time"/>
+            <updated_at   alias="Date and Time Updated"/>
+            <status_id    alias="Status ID"/>
+            <user_id      alias="User ID"/>
+        </columns>
+    </table>
+    <join
+        table="statuses"
+        type="inner"
+        left="company_types.status_id"
+        right="statuses.id">
+        <columns>
+            <status alias="Status"/>
+        </columns>
+    </join>
+</database>
+<datasets>
+    <all>
+        <order>
+            <company_type order="ASC"/>
+        </order>
+        <filter>
+            <status_id equal="1"/>
+        </filter>
+    </all>
+
+    <active>
+        <filter>
+            <status_id equal="1"/>
+        </filter>
+        <order>
+            <company_type order="ASC"/>
+        </order>
+    </active>
+</datasets>

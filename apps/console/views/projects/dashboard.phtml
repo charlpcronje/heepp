@@ -1,0 +1,77 @@
+<lazyload
+    src="/views/projects/js/projects.js"
+    instantiate="projects"
+    extend="console"
+    callback="core.console.projects.init"
+    context="window"/>
+
+<lazyload
+    src="/views/projects/css/dashboard.scss"/>
+
+<app.ws.top.tab
+    icon="album"
+    title="Projects | Dashboard"
+    active="yes"
+    target="#cc-workspace > section.ws-left"/>
+
+<div id="projects-dashboard">
+    <div id="page-heading" class="uk-flex uk-flex-left padding-left-10">
+        <div class="uk-width-2-3">
+            <h2
+                class="margin-bottom-5"
+                id="dashboard-project-name">Projects</h2>
+            <span
+                class="uk-text-muted uk-text-upper uk-text-small"
+                id="dashboard-project-company-name">
+                ${app.website.author.company_name}
+            </span>
+        </div>
+        <div class="uk-width-1-3 margin-top-15">
+            <div
+                id="general-project-options-nav"
+                class="projects-icon-nav">
+                <ul
+                    class="uk-subnav uk-flex uk-flex-center uk-child-width-1-5 uk-grid uk-grid-stack">
+                    <li>
+                        <a href="#Project/history">
+                            <i
+                                uk-tooltip="title: Projects Types"
+                                class="fa fa-book fa-fw"/>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#Project/new">
+                            <i
+                                uk-tooltip="title: Task Types"
+                                class="fa fa-certificate fa-fw"/>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#Project/share">
+                            <i
+                                uk-tooltip="title: Clients / Organizations"
+                                class="fa fa-building fa-fw"/>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#Project/group/parentProject/project">
+                            <i
+                                uk-tooltip="title: Project Assistance"
+                                class="fa fa-info-circle fa-fw"/>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#Project/close">
+                            <i
+                                uk-tooltip="title: Project / Member Chat"
+                                class="fa fa-comments-o fa-fw"/>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="project-dashboard-content">
+        Last Accessed Projects and Tasks
+    </div>
+</div>
