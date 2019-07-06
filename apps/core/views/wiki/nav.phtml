@@ -1,0 +1,3844 @@
+<css src="/views/wiki/css/wiki-nav.scss"/>
+<ul id="wiki-nav"
+    class="uk-nav-default uk-nav-parent-icon uk-padding-remove uk-nav" uk-nav="mode: click">
+    <!--|| PROJECT DASHBOARD -->
+    <li class="uk-nav-header uk-padding-remove">
+        <a id="dashboard-button" href="#ProductDashboard" core.event.click.load="ProductDashboard">
+            <image
+                height="20"
+                src="/assets/images/HeEPP-small.png"/>
+            <span> Hyper eXtensible Element PreProcessor</span>
+        </a>
+    </li>
+    <!-- DASHBOARD ||-->
+
+    <!--|| ASSETS-LIBS-JS-CSS -->
+    <li class="uk-nav-divider"/>
+    <li class="uk-nav-header margin-top-0">Assets</li>
+    <li class="uk-nav-divider"/>
+    <li class="uk-parent uk-open">
+        <a href="#">
+            <span
+                class="uk-margin-small-right"
+                uk-icon="icon: thumbnails"/>
+            <span> Libraries, JS & CSS</span>
+        </a>
+        <ul class="uk-nav-sub">
+            <li>
+                <a
+                    href="#Products/Products"
+                    core.event.click.load="Products">
+                    <span
+                        class="uk-margin-small-right"
+                        uk-icon="icon: list"/>
+                    <span> Libraries</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/updateProducts"
+                    core.event.click.load="Products/updateProducts">
+                    <span
+                        class="uk-margin-small-right"
+                        uk-icon="icon: code"/>
+                    <span> Javascript</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Backups/archiveCatalogue"
+                    core.event.click.load="Backups/archiveCatalogue">
+                    <span
+                        class="uk-margin-small-right"
+                        uk-icon="icon: hashtag"/>
+                    <span> CSS, SCSS, LESS</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Export/products"
+                    core.event.click.load="Export/products">
+                    <span
+                        class="uk-margin-small-right"
+                        uk-icon="icon: uikit"/>
+                    <span> Fonts & Icon Sets</span>
+                </a>
+            </li>
+        </ul>
+    </li>
+    <!-- ASSETS-LIBS-JS-CSS ||-->
+
+    <!--|| ASSETS-MULTIMEDIA -->
+    <li class="uk-parent">
+        <a href="#">
+            <span
+                class="uk-margin-small-right"
+                uk-icon="icon: youtube"/>
+            <span> Multimedia</span>
+        </a>
+        <ul class="uk-nav-sub">
+            <li>
+                <a
+                    href="#Suppliers"
+                    core.event.click.load="Suppliers">
+                    <span
+                        class="uk-margin-small-right"
+                        uk-icon="icon: image"/>
+                    <span> Images</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#ProductCategories"
+                    core.event.click.load="ProductCategories">
+                    <span
+                        class="uk-margin-small-right"
+                        uk-icon="icon: video-camera"/>
+                    <span> Video</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#ProductSubCategories"
+                    core.event.click.load="ProductSubCategories">
+                    <span
+                        class="uk-margin-small-right"
+                        uk-icon="icon: soundcloud"/>
+                    <span> Music / Sound</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#ProductRanges"
+                    core.event.click.load="ProductRanges">
+                    <span
+                        class="uk-margin-small-right"
+                        uk-icon="icon: file"/>
+                    <span> Documents</span>
+                </a>
+            </li>
+        </ul>
+    </li>
+    <!-- ASSETS-MULTIMEDIA ||-->
+
+    <!--|| ASSETS-3RD-PARTY-SERVICES -->
+    <li class="uk-parent">
+        <a
+            href="#">
+            <span
+                class="uk-margin-small-right"
+                uk-icon="icon: server"/>
+            <span> Web-Services</span>
+        </a>
+        <ul class="uk-nav-sub">
+            <li>
+                <a
+                    href="#ProductImages/missingImages"
+                    core.event.click.load="Images/missingImages/supplier/supplier_image/suppliers/empty_supplier.png/empty_supplier.png">
+                    <span
+                        class="uk-margin-small-right"
+                        uk-icon="icon: google"/>
+                    <span> Google</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#ProductImages/missingImages"
+                    core.event.click.load="Images/missingImages/productCategory/category_image/product_categories/empty_category.png/empty_category.png">
+                    <span
+                        class="uk-margin-small-right"
+                        uk-icon="icon: pagekit"/>
+                    <span> Amazon</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#ProductImages/missingImages"
+                    core.event.click.load="Images/missingImages/productSubCategory/subcategory_image/product_categories/empty_category.png/empty_category.png">
+                    <span
+                        class="uk-margin-small-right"
+                        uk-icon="icon: facebook"/>
+                    <span> Social Media</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#ProductImages/missingImages"
+                    core.event.click.load="Images/missingImages/productRange/range_image/products/empty_product.png/product-unavailable.jpg">
+                    <span
+                        class="uk-margin-small-right"
+                        uk-icon="icon: link"/>
+                    <span> Client Side API</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#ProductImages/missingImages"
+                    core.event.click.load="Images/missingImages/product/product_image/products/empty_product.png/product-unavailable.jpg">
+                    <span
+                        class="uk-margin-small-right"
+                        uk-icon="icon: server"/>
+                    <span> Server Side API</span>
+                </a>
+            </li>
+        </ul>
+    </li>
+    <!-- ASSETS-3RD-PARTY-SERVICES ||-->
+
+    <!--|| CONFIG -->
+    <li class="uk-nav-divider"/>
+    <li class="uk-nav-header margin-top-0">ENV SETTINGS & CONFIG</li>
+    <li class="uk-nav-divider"/>
+    <li class="uk-parent">
+        <a
+            href="#">
+            <span
+                class="uk-margin-small-right"
+                uk-icon="icon: database"/>
+            <span> Database Connections</span>
+        </a>
+        <ul class="uk-nav-sub">
+            <li>
+                <a
+                    href="#Products/viewCatalogueBackups"
+                    core.event.click.load="Products/viewCatalogueBackups">
+                    <span
+                        class="uk-margin-small-right"
+                        uk-icon="icon: location"/>
+                    <span> Connections Location</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewCatalogueBackups"
+                    core.event.click.load="Products/viewCatalogueBackups">
+                    <span
+                        class="uk-margin-small-right"
+                        uk-icon="icon: info"/>
+                    <span> Connection Properties</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewCatalogueBackups"
+                    core.event.click.load="Products/viewCatalogueBackups">
+                    <span
+                        class="uk-margin-small-right"
+                        uk-icon="icon: link"/>
+                    <span> Dev Connections</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewCatalogueBackups"
+                    core.event.click.load="Products/viewCatalogueBackups">
+                    <span
+                        class="uk-margin-small-right"
+                        uk-icon="icon: link"/>
+                    <span> Stage Connections</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#"
+                    core.event.click.load="Products/viewImageBackups">
+                    <span
+                        class="uk-margin-small-right"
+                        uk-icon="icon: link"/>
+                    <span> Live Connections</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#"
+                    core.event.click.load="Products/viewImageBackups">
+                    <span
+                        class="uk-margin-small-right"
+                        uk-icon="icon: plus"/>
+                    <span> Add More Connections</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#"
+                    core.event.click.load="Products/viewImageBackups">
+                    <span
+                        class="uk-margin-small-right"
+                        uk-icon="icon: shrink"/>
+                    <span> Use Other Projects Connections</span>
+                </a>
+            </li>
+        </ul>
+    </li>
+    <li class="uk-parent">
+        <a href="#">
+            <span
+                class="uk-margin-small-right"
+                uk-icon="icon: database"/>
+            <span> Caching</span>
+        </a>
+        <ul class="uk-nav-sub">
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i uk-icon="icon: refresh" class="uk-margin-small-right"/>
+                    <span> MemCache</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i uk-icon="icon: bolt" class="uk-margin-small-right"/>
+                    <span> MemCache Admin</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i uk-icon="icon: star" class="uk-margin-small-right"/>
+                    <span> Redis</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i uk-icon="icon: folder" class="uk-margin-small-right"/>
+                    <span> Session Caching</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i uk-icon="icon: file" class="uk-margin-small-right"/>
+                    <span> File Caching</span>
+                </a>
+            </li>
+        </ul>
+    </li>
+    <li>
+        <a href="#">
+            <span
+                class="uk-margin-small-right"
+                uk-icon="icon: code"/>
+            <span> HeEPP Fallbacks</span>
+        </a>
+    </li>
+    <li class="uk-parent">
+        <a href="#">
+            <span
+                class="uk-margin-small-right"
+                uk-icon="icon: mail"/>
+            <span> E-Mail Config</span>
+        </a>
+        <ul class="uk-nav-sub">
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i uk-icon="icon: nut" class="uk-margin-small-right"/>
+                    <span> E-Mail Ports</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i uk-icon="icon: server" class="uk-margin-small-right"/>
+                    <span> E-Mail Host</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i uk-icon="icon: file-edit" class="uk-margin-small-right"/>
+                    <span> HeEPP E-Mail Drivers</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i uk-icon="icon: unlock" class="uk-margin-small-right"/>
+                    <span> E-Mail SMTP Authentication</span>
+                </a>
+            </li>
+        </ul>
+    </li>
+    <li>
+        <a
+            href="#Products/viewImageBackups"
+            core.event.click.load="Products/viewImageBackups">
+            <span
+                class="uk-margin-small-right"
+                uk-icon="icon: settings"/>
+            <span> PHP Settings & Info</span>
+        </a>
+    </li>
+    <li>
+        <a
+            href="#Products/viewImageBackups"
+            core.event.click.load="Products/viewImageBackups">
+            <span
+                class="uk-margin-small-right"
+                uk-icon="icon: history"/>
+            <span> File & DB Logs</span>
+        </a>
+    </li>
+    <li class="uk-parent">
+        <a href="#">
+            <span
+                class="uk-margin-small-right"
+                uk-icon="icon: world"/>
+            <span> App Requests & Routing</span>
+        </a>
+        <ul class="uk-nav-sub">
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i uk-icon="icon: forward" class="uk-margin-small-right"/>
+                    <span> Direct Routing</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i uk-icon="icon: xing" class="uk-margin-small-right"/>
+                    <span> Route Types</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i uk-icon="icon: check" class="uk-margin-small-right"/>
+                    <span> Default Route Type</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i uk-icon="icon: file" class="uk-margin-small-right"/>
+                    <span> Routes File</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i uk-icon="icon: chevron-left" class="uk-margin-small-right"/>
+                    <span> Route Prefix</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i uk-icon="icon: arrow-left" class="uk-margin-small-right"/>
+                    <span> Route Before</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i uk-icon="icon:  arrow-right" class="uk-margin-small-right"/>
+                    <span> Route After</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i uk-icon="icon: info" class="uk-margin-small-right"/>
+                    <span> Allowed Verbs (Methods)</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i uk-icon="icon: check" class="uk-margin-small-right"/>
+                    <span> Default Verb / Method</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i uk-icon="icon: code" class="uk-margin-small-right"/>
+                    <span> Content Output Type</span>
+                </a>
+            </li>
+        </ul>
+    </li>
+    <li>
+        <a
+            href="#Products/viewImageBackups"
+            core.event.click.load="Products/viewImageBackups">
+            <span
+                class="uk-margin-small-right"
+                uk-icon="icon: settings"/>
+            <span> Local (Lang, Date), Debug, Encryption</span>
+        </a>
+    </li>
+    <li>
+        <a
+            href="#Products/viewImageBackups"
+            core.event.click.load="Products/viewImageBackups">
+            <span
+                class="uk-margin-small-right"
+                uk-icon="icon: heart"/>
+            <span> Website (Name, Title Etc)</span>
+        </a>
+    </li>
+    <li>
+        <a
+            href="#Products/viewImageBackups"
+            core.event.click.load="Products/viewImageBackups">
+            <span
+                class="uk-margin-small-right"
+                uk-icon="icon: expand"/>
+            <span> Stored API Calls</span>
+        </a>
+    </li>
+    <li>
+        <a
+            href="#Products/viewImageBackups"
+            core.event.click.load="Products/viewImageBackups">
+            <span
+                class="uk-margin-small-right"
+                uk-icon="icon: flickr"/>
+            <span> Custom Config</span>
+        </a>
+    </li>
+    <!-- CONFIG ||-->
+
+    <!--|| CONTROLLERS, METHODS, PERMISSIONS -->
+    <li class="uk-nav-divider"/>
+    <li class="uk-nav-header margin-top-0">CONTROLLERS & METHODS</li>
+    <li class="uk-nav-divider"/>
+    <li class="uk-parent">
+        <a href="#">
+            <span
+                class="uk-margin-small-right"
+                uk-icon="icon: album"/>
+            <span> Controllers</span>
+        </a>
+        <ul class="uk-nav-sub">
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i uk-icon="icon: folder" class="uk-margin-small-right"/>
+                    <span> Project Controllers</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i uk-icon="icon: copy" class="uk-margin-small-right"/>
+                    <span> Project Inheritance</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i uk-icon="icon: file" class="uk-margin-small-right"/>
+                    <span> Basic Controller</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i uk-icon="icon: push" class="uk-margin-small-right"/>
+                    <span> Extend Controller Class</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i uk-icon="icon: file-edit" class="uk-margin-small-right"/>
+                    <span> New Base Controller Class</span>
+                </a>
+            </li>
+        </ul>
+    </li>
+    <li class="uk-parent">
+        <a href="#">
+            <span
+                class="uk-margin-small-right"
+                uk-icon="icon: folder"/>
+            <span> Controller Context</span>
+        </a>
+        <ul class="uk-nav-sub">
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i uk-icon="icon: sign-out" class="uk-margin-small-right"/>
+                    <span>Static, Public, Private, Protected</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i uk-icon="icon: cog" class="uk-margin-small-right"/>
+                    <span> Abstract Controllers?</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i uk-icon="icon: push" class="uk-margin-small-right"/>
+                    <span> Extending Controllers / Projects</span>
+                </a>
+            </li>
+        </ul>
+    </li>
+    <li class="uk-parent">
+        <a href="#">
+            <span
+                class="uk-margin-small-right"
+                uk-icon="icon: image"/>
+            <span> Render Output</span>
+        </a>
+        <ul class="uk-nav-sub">
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i uk-icon="icon: minus" class="uk-margin-small-right"/>
+                    <span> Output Singleton</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i uk-icon="icon: world" class="uk-margin-small-right"/>
+                    <span> Ajax and HTTP Access</span>
+                </a>
+            </li>
+        </ul>
+    </li>
+    <li class="uk-parent">
+        <a href="#">
+            <span
+                class="uk-margin-small-right"
+                uk-icon="icon: unlock"/>
+            <span> Authentication</span>
+        </a>
+        <ul class="uk-nav-sub">
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i uk-icon="icon: album" class="uk-margin-small-right"/>
+                    <span> Controller Authentication</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i uk-icon="icon: file" class="uk-margin-small-right"/>
+                    <span> Method Authentication</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i uk-icon="icon: user" class="uk-margin-small-right"/>
+                    <span> User Permissions</span>
+                </a>
+            </li>
+        </ul>
+    </li>
+    <li>
+        <a
+            href="#Products/viewImageBackups"
+            core.event.click.load="Products/viewImageBackups">
+            <i uk-icon="icon: future" class="uk-margin-small-right"/>
+            <span> Maintenance Mode</span>
+        </a>
+    </li>
+    <!-- CONTROLLERS, METHODS, PERMISSIONS ||-->
+
+    <!--|| LOGS -->
+    <li class="uk-nav-divider"/>
+    <li class="uk-nav-header margin-top-0">EVENT LOGS</li>
+    <li class="uk-nav-divider"/>
+    <li class="uk-parent">
+        <a href="#">
+            <span
+                class="uk-margin-small-right"
+                uk-icon="icon: clock"/>
+            <span> General Logs</span>
+        </a>
+        <ul class="uk-nav-sub">
+            <li>
+                <a href="#">
+                    <span
+                        class="uk-margin-small-right"
+                        uk-icon="icon: download"/>
+                    <span> HeEPP Logs</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span
+                        class="uk-margin-small-right"
+                        uk-icon="icon: warning"/>
+                    <span> Error Logs</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span
+                        class="uk-margin-small-right"
+                        uk-icon="icon: info"/>
+                    <span> Info Logs</span>
+                </a>
+            </li>
+        </ul>
+    </li>
+    <li class="uk-parent">
+        <a href="#">
+            <span
+                class="uk-margin-small-right"
+                uk-icon="icon: database"/>
+            <span> Data Logs</span>
+        </a>
+        <ul class="uk-nav-sub">
+            <li>
+                <a href="#">
+                    <span
+                        class="uk-margin-small-right"
+                        uk-icon="icon: server"/>
+                    <span> Database Logs</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span
+                        class="uk-margin-small-right"
+                        uk-icon="icon: hashtag"/>
+                    <span> Data Model Logs</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span
+                        class="uk-margin-small-right"
+                        uk-icon="icon: plus-circle"/>
+                    <span> Database CRUD Logs</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span
+                        class="uk-margin-small-right"
+                        uk-icon="icon: world"/>
+                    <span> External Request Logs (API)</span>
+                </a>
+            </li>
+        </ul>
+    </li>
+    <li class="uk-parent">
+        <a href="#">
+            <span
+                class="uk-margin-small-right"
+                uk-icon="icon: grid"/>
+            <span> Create Detailed Logs</span>
+        </a>
+        <ul class="uk-nav-sub">
+            <li>
+                <a href="#">
+                    <span
+                        class="uk-margin-small-right"
+                        uk-icon="icon: more-vertical"/>
+                    <span> Class Specific Logs</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span
+                        class="uk-margin-small-right"
+                        uk-icon="icon: mail"/>
+                    <span> E-Mail Logs</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span
+                        class="uk-margin-small-right"
+                        uk-icon="icon: server"/>
+                    <span> Server Logs</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span
+                        class="uk-margin-small-right"
+                        uk-icon="icon: users"/>
+                    <span> User Logs</span>
+                </a>
+            </li>
+        </ul>
+    </li>
+    <!-- EVENT LOGGING ||-->
+
+    <!--|| DATA MODELS -->
+    <li class="uk-nav-divider"/>
+    <li class="uk-nav-header margin-top-0">DATA MODELS</li>
+    <li class="uk-nav-divider"/>
+    <li class="uk-parent">
+        <a href="#">
+            <i class="uk-margin-small-right" uk-icon="icon: check"/>
+            <span> Accessible Models</span>
+        </a>
+        <ul class="uk-nav-sub">
+            <li>
+                <a
+                    href="#Products/viewCatalogueBackups"
+                    core.event.click.load="Products/viewCatalogueBackups">
+                    <i class="uk-margin-small-right"  uk-icon="icon: star"/>
+                    <span> HeEPP Models</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right"  uk-icon="icon: nut"/>
+                    <span> Project Models</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right"  uk-icon="icon: world"/>
+                    <span> Public Models</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right"  uk-icon="icon: nut"/>
+                    <span> Other Project Models</span>
+                </a>
+            </li>
+        </ul>
+    </li>
+    <li class="uk-parent">
+        <a href="#">
+            <i class="uk-margin-small-right" uk-icon="icon: move"/>
+            <span> Model Molds</span>
+        </a>
+        <ul class="uk-nav-sub">
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right"  uk-icon="icon: plus"/>
+                    <span> Mold New Model</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right"  uk-icon="icon: thumbnails"/>
+                    <span> Model Collections</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right"  uk-icon="icon: link"/>
+                    <span> Model Relationships</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right"  uk-icon="icon: flickr"/>
+                    <span> Model Items</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right"  uk-icon="icon: hashtag"/>
+                    <span> Test Model</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right"  uk-icon="icon: check"/>
+                    <span> Model Exist?</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right"  uk-icon="icon: play"/>
+                    <span> Generate Model Req</span>
+                </a>
+            </li>
+        </ul>
+    </li>
+    <li class="uk-parent">
+        <a href="#">
+            <i class="uk-margin-small-right" uk-icon="icon: gitter"/>
+            <span> Data Filters & Prepared Statements</span>
+        </a>
+        <ul class="uk-nav-sub">
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right"  uk-icon="icon: image"/>
+                    <span> Model Filters?</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right"  uk-icon="icon: image"/>
+                    <span> Model Datasets</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right"  uk-icon="icon: image"/>
+                    <span> Model Expressions</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right"  uk-icon="icon: image"/>
+                    <span> Model Triggers</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right"  uk-icon="icon: image"/>
+                    <span> Model Connections?</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right"  uk-icon="icon: image"/>
+                    <span> Data Count Request</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right"  uk-icon="icon: image"/>
+                    <span> Specific Record Request</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right"  uk-icon="icon: image"/>
+                    <span> First Record Request</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right"  uk-icon="icon: image"/>
+                    <span> Last Record Request</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right"  uk-icon="icon: image"/>
+                    <span> Data Validation</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right"  uk-icon="icon: image"/>
+                    <span> Required Model Data</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right"  uk-icon="icon: image"/>
+                    <span> Default Model Data</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right"  uk-icon="icon: image"/>
+                    <span> Object Lookups</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right"  uk-icon="icon: image"/>
+                    <span> First or New Request</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right"  uk-icon="icon: image"/>
+                    <span> Group & Order Data </span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right"  uk-icon="icon: image"/>
+                    <span> Request Limit and Pagination </span>
+                </a>
+            </li>
+        </ul>
+    </li>
+    <li class="uk-parent">
+        <a href="#">
+            <i class="uk-margin-small-right" uk-icon="icon: yelp"/>
+            <span> Model CRUD</span>
+        </a>
+        <ul class="uk-nav-sub">
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right"  uk-icon="icon: image"/>
+                    <span> Model / Query Explain</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right"  uk-icon="icon: image"/>
+                    <span> Model Insert Record</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right"  uk-icon="icon: image"/>
+                    <span> Model Save Record</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right"  uk-icon="icon: image"/>
+                    <span> View Modified Records</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right"  uk-icon="icon: image"/>
+                    <span> Rollback Updates / Deletes</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right"  uk-icon="icon: image"/>
+                    <span> Data Type Validation</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right"  uk-icon="icon: image"/>
+                    <span> Last Inserted Record & ID</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right"  uk-icon="icon: image"/>
+                    <span> Get Record Update Count</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right"  uk-icon="icon: image"/>
+                    <span> Delete Records</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right"  uk-icon="icon: image"/>
+                    <span> Multi-Key Declarations</span>
+                </a>
+            </li>
+        </ul>
+    </li>
+    <li class="uk-parent">
+        <a href="#">
+            <i class="uk-margin-small-right" uk-icon="icon: gitter"/>
+            <span> Model Special Functions</span>
+        </a>
+        <ul class="uk-nav-sub">
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right"  uk-icon="icon: image"/>
+                    <span> Model & Field Aliasing</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right"  uk-icon="icon: image"/>
+                    <span> Model Got Results?</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right"  uk-icon="icon: image"/>
+                    <span> Pre-defined Dates, Durations & Times </span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right"  uk-icon="icon: image"/>
+                    <span> Return (Json,array,count or object) </span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right"  uk-icon="icon: image"/>
+                    <span> Get Data Averages</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right"  uk-icon="icon: image"/>
+                    <span> Transpose Model Data</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right"  uk-icon="icon: image"/>
+                    <span> Model History</span>
+                </a>
+            </li>
+        </ul>
+    </li>
+    <!-- DATA MODELS ||-->
+
+    <!--|| ROUTES -->
+    <li class="uk-nav-divider"/>
+    <li class="uk-nav-header margin-top-0">ROUTES & REDIRECTS</li>
+    <li class="uk-nav-divider"/>
+    <li>
+        <a
+            href="#Products/viewCatalogueBackups"
+            core.event.click.load="Products/viewCatalogueBackups">
+            <i class="uk-margin-small-right" uk-icon="icon: forward"/>
+            <span> Route Types (Web,API,Core)</span>
+        </a>
+        <a
+            href="#Products/viewImageBackups"
+            core.event.click.load="Products/viewImageBackups">
+            <i class="uk-margin-small-right" uk-icon="icon: world"/>
+            <span> Request Methods</span>
+        </a>
+        <a
+            href="#Products/viewImageBackups"
+            core.event.click.load="Products/viewImageBackups">
+            <i class="uk-margin-small-right" uk-icon="icon: check"/>
+            <span> Allowed Request Methods</span>
+        </a>
+        <a
+            href="#Products/viewImageBackups"
+            core.event.click.load="Products/viewImageBackups">
+            <i class="uk-margin-small-right" uk-icon="icon: thumbnails"/>
+            <span> Route Groups</span>
+        </a>
+        <a
+            href="#Products/viewImageBackups"
+            core.event.click.load="Products/viewImageBackups">
+            <i class="uk-margin-small-right" uk-icon="icon: comments"/>
+            <span> Pre and Post Processing</span>
+        </a>
+        <a
+            href="#Products/viewImageBackups"
+            core.event.click.load="Products/viewImageBackups">
+            <i class="uk-margin-small-right" uk-icon="icon: social"/>
+            <span> Multiple Calls 1 Route</span>
+        </a>
+        <a
+            href="#Products/viewImageBackups"
+            core.event.click.load="Products/viewImageBackups">
+            <i class="uk-margin-small-right" uk-icon="icon: question"/>
+            <span> Route Wildcards</span>
+        </a>
+        <a
+            href="#Products/viewImageBackups"
+            core.event.click.load="Products/viewImageBackups">
+            <i class="uk-margin-small-right" uk-icon="icon: forward"/>
+            <span> Route Redirect</span>
+        </a>
+        <a
+            href="#Products/viewImageBackups"
+            core.event.click.load="Products/viewImageBackups">
+            <i class="uk-margin-small-right" uk-icon="icon: warning"/>
+            <span> Route Errors & 404</span>
+        </a>
+        <a
+            href="#Products/viewImageBackups"
+            core.event.click.load="Products/viewImageBackups">
+            <i class="uk-margin-small-right" uk-icon="icon: pull"/>
+            <span> Route Between Projects</span>
+        </a>
+        <a
+            href="#Products/viewImageBackups"
+            core.event.click.load="Products/viewImageBackups">
+            <i class="uk-margin-small-right" uk-icon="icon: code"/>
+            <span> Route to View</span>
+        </a>
+        <a
+            href="#Products/viewImageBackups"
+            core.event.click.load="Products/viewImageBackups">
+            <i class="uk-margin-small-right" uk-icon="icon: hashtag"/>
+            <span> Route to Model Data</span>
+        </a>
+        <a
+            href="#Products/viewImageBackups"
+            core.event.click.load="Products/viewImageBackups">
+            <i class="uk-margin-small-right" uk-icon="icon: rss"/>
+            <span> Route to API Call</span>
+        </a>
+        <a
+            href="#Products/viewImageBackups"
+            core.event.click.load="Products/viewImageBackups">
+            <i class="uk-margin-small-right" uk-icon="icon: ban"/>
+            <span> Route Closures</span>
+        </a>
+    </li>
+    <!-- ROUTES ||-->
+
+    <!--|| SESSIONS -->
+    <li class="uk-nav-divider"/>
+    <li class="uk-nav-header margin-top-0">SESSIONS</li>
+    <li class="uk-nav-divider"/>
+    <li class="uk-parent">
+        <a href="#">
+            <i class="uk-margin-small-right" uk-icon="icon: clock"/>
+            <span> Project Sessions</span>
+        </a>
+        <ul class="uk-nav-sub">
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: shrink"/>
+                    <span> Shortcuts in Sessions</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: file"/>
+                    <span> Constants in Sessions</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: folder"/>
+                    <span> Sessions Between Projects</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: close"/>
+                    <span> Reset Sessions</span>
+                </a>
+            </li>
+        </ul>
+    </li>
+    <li class="uk-parent">
+        <a href="#">
+            <i class="uk-margin-small-right" uk-icon="icon: server"/>
+            <span> Session Storage</span>
+        </a>
+        <ul class="uk-nav-sub">
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: database"/>
+                    <span> Database Sessions</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: check"/>
+                    <span> PHP Sessions </span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: close"/>
+                    <span> Forget Session</span>
+                </a>
+            </li>
+        </ul>
+    </li>
+    <li class="uk-parent">
+        <a href="#">
+            <i class="uk-margin-small-right" uk-icon="icon: info"/>
+            <span> Other Session Functions</span>
+        </a>
+        <ul class="uk-nav-sub">
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: bolt"/>
+                    <span> Cache to Sessions</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: happy"/>
+                    <span> Objects to Sessions</span>
+                </a>
+            </li>
+        </ul>
+    </li>
+    <li class="uk-parent">
+        <a href="#">
+            <i class="uk-margin-small-right" uk-icon="icon: lifesaver"/>
+            <span> Sessions & Env Variables (.env)</span>
+        </a>
+        <ul class="uk-nav-sub">
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: star"/>
+                    <span> Env & Sessions</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: database"/>
+                    <span> Route to Model Data</span>
+                </a>
+            </li>
+        </ul>
+    </li>
+    <li class="uk-parent">
+        <a href="#">
+            <i class="uk-margin-small-right" uk-icon="icon: download"/>
+            <span> Set & Get Session Data</span>
+        </a>
+        <ul class="uk-nav-sub">
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: pull"/>
+                    <span> Set Session Key, Value Pair</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: push"/>
+                    <span> Get Session Key, Value Pair</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: info"/>
+                    <span> Session Key Exist?</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: receiver"/>
+                    <span> Session Static Access</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: bookmark"/>
+                    <span> Session Dynamic Access</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: more"/>
+                    <span> Sessions Via DotData</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: code"/>
+                    <span> Sessions in Views</span>
+                </a>
+            </li>
+        </ul>
+    </li>
+    <!-- SESSIONS ||-->
+
+    <!--|| UPLOADS -->
+    <li class="uk-nav-divider"/>
+    <li class="uk-nav-header margin-top-0">UPLOADS & STORAGE</li>
+    <li class="uk-nav-divider"/>
+    <li class="uk-parent">
+        <a href="#">
+            <i class="uk-margin-small-right" uk-icon="icon: upload"/>
+            <span> Upload File Types</span>
+        </a>
+        <ul class="uk-nav-sub">
+            <li>
+                <a
+                    href="#Products/viewCatalogueBackups"
+                    core.event.click.load="Products/viewCatalogueBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: image"/>
+                    <span> Image</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewCatalogueBackups"
+                    core.event.click.load="Products/viewCatalogueBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: play"/>
+                    <span> Audio</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewCatalogueBackups"
+                    core.event.click.load="Products/viewCatalogueBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: youtube"/>
+                    <span> Video</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewCatalogueBackups"
+                    core.event.click.load="Products/viewCatalogueBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: album"/>
+                    <span> Archive</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewCatalogueBackups"
+                    core.event.click.load="Products/viewCatalogueBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: dribbble"/>
+                    <span> Torrent</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewCatalogueBackups"
+                    core.event.click.load="Products/viewCatalogueBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: facebook"/>
+                    <span> Font</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewCatalogueBackups"
+                    core.event.click.load="Products/viewCatalogueBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: dribbble"/>
+                    <span> Cad</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewCatalogueBackups"
+                    core.event.click.load="Products/viewCatalogueBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: uikit"/>
+                    <span> Vector</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewCatalogueBackups"
+                    core.event.click.load="Products/viewCatalogueBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: album"/>
+                    <span> xing</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewCatalogueBackups"
+                    core.event.click.load="Products/viewCatalogueBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: code"/>
+                    <span> Web Markup</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewCatalogueBackups"
+                    core.event.click.load="Products/viewCatalogueBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: database"/>
+                    <span> Data</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewCatalogueBackups"
+                    core.event.click.load="Products/viewCatalogueBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: file"/>
+                    <span> Document</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewCatalogueBackups"
+                    core.event.click.load="Products/viewCatalogueBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: lock"/>
+                    <span> Secure pdf</span>
+                </a>
+            </li>
+        </ul>
+    </li>
+    <li class="uk-parent">
+        <a href="#">
+            <i class="uk-margin-small-right" uk-icon="icon: database"/>
+            <span> Upload Storage</span>
+        </a>
+        <ul class="uk-nav-sub">
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: location"/>
+                    <span> Upload Location</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: info"/>
+                    <span> File,Post & Memory Limits</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: phone-landscape"/>
+                    <span> Upload TMP Names</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: move"/>
+                    <span> Overwriting Files</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: check"/>
+                    <span> Validate File Types</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: shrink"/>
+                    <span> Upload & Resize Image</span>
+                </a>
+            </li>
+        </ul>
+    </li>
+    <!-- UPLOADS ||-->
+
+    <!--|| VIEWS-LAYOUTS-PARTIALS-BINDINGS -->
+    <li class="uk-nav-divider"/>
+    <li class="uk-nav-header margin-top-0">Views, Layouts & Partials</li>
+    <li class="uk-nav-divider"/>
+    <li class="uk-parent">
+        <a href="#">
+            <i class="uk-margin-small-right" uk-icon="icon: code"/>
+            <span> Views basic</span>
+        </a>
+        <ul class="uk-nav-sub">
+            <li>
+                <a
+                    href="#Products/viewCatalogueBackups"
+                    core.event.click.load="Products/viewCatalogueBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: location"/>
+                    <span> View Locations</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewCatalogueBackups"
+                    core.event.click.load="Products/viewCatalogueBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: plus"/>
+                    <span> Create Views</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: image"/>
+                    <span> Meta Data, Links</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewCatalogueBackups"
+                    core.event.click.load="Products/viewCatalogueBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: pull"/>
+                    <span> Import Views</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewCatalogueBackups"
+                    core.event.click.load="Products/viewCatalogueBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: link"/>
+                    <span> Link Assets</span>
+                </a>
+            </li>
+        </ul>
+    </li>
+    <li class="uk-parent">
+        <a href="#">
+            <i class="uk-margin-small-right" uk-icon="icon: thumbnails"/>
+            <span> Layouts (Templates)</span>
+        </a>
+        <ul class="uk-nav-sub">
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: location"/>
+                    <span> Layout Locations</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: link"/>
+                    <span> Layout Bindings</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: expand"/>
+                    <span> Extend a Layout</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: warning"/>
+                    <span> Conditional Extending of Layout</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: album"/>
+                    <span> Nesting Layouts</span>
+                </a>
+            </li>
+        </ul>
+    </li>
+    <li class="uk-parent">
+        <a href="#">
+            <i class="uk-margin-small-right" uk-icon="icon: code"/>
+            <span> View Partials</span>
+        </a>
+        <ul class="uk-nav-sub">
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: location"/>
+                    <span> Partials Locations</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: expand"/>
+                    <span> Extend Layout With Partials</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: album"/>
+                    <span> Nesting of Partials</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: pull"/>
+                    <span> Importing Partials</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: warning"/>
+                    <span> Conditional Importing of Partials</span>
+                </a>
+            </li>
+        </ul>
+    </li>
+    <li class="uk-parent">
+        <a href="#">
+            <i class="uk-margin-small-right" uk-icon="icon: search"/>
+            <span> View Partials</span>
+        </a>
+        <ul class="uk-nav-sub">
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: lifesaver"/>
+                    <span> Logic & Custom Elements</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: cog"/>
+                    <span> Custom HTML Elements</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: refresh"/>
+                    <span> Bind and Re-use HTML Elements</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: bolt"/>
+                    <span> Dynamic Data in Views</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: future"/>
+                    <span> Repeats in Views</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: warning"/>
+                    <span> Conditional Statements</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: file"/>
+                    <span> Access Controllers From View</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: hashtag"/>
+                    <span> Access Models From View</span>
+                </a>
+            </li>
+        </ul>
+    </li>
+    <li class="uk-parent">
+        <a href="#">
+            <i class="uk-margin-small-right" uk-icon="icon: link"/>
+            <span> Linking & Adding Scripts</span>
+        </a>
+        <ul class="uk-nav-sub">
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: upload"/>
+                    <span> Script and CSS Hoisting</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: star"/>
+                    <span> Core UI JS Framework</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: calendar"/>
+                    <span> Call Events on Views</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: check"/>
+                    <span> View and Markup Validation</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: location"/>
+                    <span> Paths and URL's in Views</span>
+                </a>
+            </li>
+        </ul>
+    </li>
+    <li class="uk-parent">
+        <a href="#">
+            <i class="uk-margin-small-right" uk-icon="icon: reply"/>
+            <span> View Pre-Processors</span>
+        </a>
+        <ul class="uk-nav-sub">
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: file-edit"/>
+                    <span> SCSS Compiling</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: file-edit"/>
+                    <span> LESS Compiling</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: shrink"/>
+                    <span> Minify CSS,JS,HTML</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: pull"/>
+                    <span> Combining JS,CSS</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: code"/>
+                    <span> Markdown Processor</span>
+                </a>
+            </li>
+        </ul>
+    </li>
+    <li class="uk-parent">
+        <a href="#">
+            <i class="uk-margin-small-right" uk-icon="icon: database"/>
+            <span> View Security</span>
+        </a>
+        <ul class="uk-nav-sub">
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: image"/>
+                    <span> Output Encryption</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: image"/>
+                    <span> Obfuscate Output</span>
+                </a>
+            </li>
+        </ul>
+    </li>
+    <li class="uk-parent">
+        <a href="#">
+            <i class="uk-margin-small-right" uk-icon="icon: bolt"/>
+            <span> View Caching</span>
+        </a>
+        <ul class="uk-nav-sub">
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: phone-landscape"/>
+                    <span> Use Libraries in Views</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: phone"/>
+                    <span> Cache Partials</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: code"/>
+                    <span> Cache Views</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: uikit"/>
+                    <span> Cache Layouts</span>
+                </a>
+            </li>
+        </ul>
+    </li>
+    <li class="uk-parent">
+        <a href="#">
+            <i class="uk-margin-small-right" uk-icon="icon: code"/>
+            <span> Other View Features</span>
+        </a>
+        <ul class="uk-nav-sub">
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: mail"/>
+                    <span> E-Mail Tempate Views</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: info"/>
+                    <span> Notifications</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: folder"/>
+                    <span> Views from Other Projects</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: lock"/>
+                    <span> Use Auth on View Elements</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: code"/>
+                    <span> Inline CSS & JS</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: link"/>
+                    <span> View Shorcuts</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: foursquare"/>
+                    <span> View Fragments</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: pagekit"/>
+                    <span> Mime Types</span>
+                </a>
+            </li>
+        </ul>
+    </li>
+    <!--|| VIEWS-LAYOUTS-PARTIALS-BINDINGS -->
+
+    <!--|| THE CORE -->
+    <li class="uk-nav-divider"/>
+    <li class="uk-nav-header margin-top-0">The HeEPP</li>
+    <li class="uk-nav-divider"/>
+    <li>
+        <a
+            href="#Products/viewCatalogueBackups"
+            core.event.click.load="Products/viewCatalogueBackups">
+            <i class="uk-margin-small-right" uk-icon="icon: tripadvisor"/>
+            <span> HeEPP Bootstrap</span>
+        </a>
+    </li>
+    <li>
+        <a
+            href="#Products/viewImageBackups"
+            core.event.click.load="Products/viewImageBackups">
+            <i class="uk-margin-small-right" uk-icon="icon: forward"/>
+            <span> HeEPP Workflow</span>
+        </a>
+    </li>
+    <li>
+        <a
+            href="#Products/viewImageBackups"
+            core.event.click.load="Products/viewImageBackups">
+            <i class="uk-margin-small-right" uk-icon="icon: settings"/>
+            <span> HeEPP Config</span>
+        </a>
+    </li>
+    <li>
+        <a
+            href="#Products/viewImageBackups"
+            core.event.click.load="Products/viewImageBackups">
+            <i class="uk-margin-small-right" uk-icon="icon: location"/>
+            <span> HeEPP Constants & Paths</span>
+        </a>
+    </li>
+    <li>
+        <a
+            href="#Products/viewImageBackups"
+            core.event.click.load="Products/viewImageBackups">
+            <i class="uk-margin-small-right" uk-icon="icon: server"/>
+            <span> HeEPP & Server</span>
+        </a>
+    </li>
+    <li>
+        <a
+            href="#Products/viewImageBackups"
+            core.event.click.load="Products/viewImageBackups">
+            <i class="uk-margin-small-right" uk-icon="icon: user"/>
+            <span> HeEPP To UI to Client</span>
+        </a>
+    </li>
+    <li>
+        <a
+            href="#Products/viewImageBackups"
+            core.event.click.load="Products/viewImageBackups">
+            <i class="uk-margin-small-right" uk-icon="icon: check"/>
+            <span> HeEPP Helpers</span>
+        </a>
+    </li>
+    <li>
+        <a
+            href="#Products/viewImageBackups"
+            core.event.click.load="Products/viewImageBackups">
+            <i class="uk-margin-small-right" uk-icon="icon: plus"/>
+            <span> HeEPP Traits</span>
+        </a>
+    </li>
+    <li>
+        <a
+            href="#Products/viewImageBackups"
+            core.event.click.load="Products/viewImageBackups">
+            <i class="uk-margin-small-right" uk-icon="icon: world"/>
+            <span> HeEPP API and Requests Handling</span>
+        </a>
+    </li>
+    <li>
+        <a
+            href="#Products/viewImageBackups"
+            core.event.click.load="Products/viewImageBackups">
+            <i class="uk-margin-small-right" uk-icon="icon: more"/>
+            <span> HeEPP DotData Handling</span>
+        </a>
+    </li>
+    <li>
+        <a
+            href="#Products/viewImageBackups"
+            core.event.click.load="Products/viewImageBackups">
+            <i class="uk-margin-small-right" uk-icon="icon: world"/>
+            <span> HeEPP Environment Vars</span>
+        </a>
+    </li>
+    <li>
+        <a
+            href="#Products/viewImageBackups"
+            core.event.click.load="Products/viewImageBackups">
+            <i class="uk-margin-small-right" uk-icon="icon: image"/>
+            <span> HeEPP Render and Serve</span>
+        </a>
+    </li>
+    <li>
+        <a
+            href="#Products/viewImageBackups"
+            core.event.click.load="Products/viewImageBackups">
+            <i class="uk-margin-small-right" uk-icon="icon: git-branch"/>
+            <span> HeEPP Routing</span>
+        </a>
+    </li>
+    <li>
+        <a
+            href="#Products/viewImageBackups"
+            core.event.click.load="Products/viewImageBackups">
+            <i class="uk-margin-small-right" uk-icon="icon: thumbnails"/>
+            <span> Core Elements</span>
+        </a>
+    </li>
+    <li>
+        <a
+            href="#Products/viewImageBackups"
+            core.event.click.load="Products/viewImageBackups">
+            <i class="uk-margin-small-right" uk-icon="icon: list"/>
+            <span> Core Libraries</span>
+        </a>
+    </li>
+    <li>
+        <a
+            href="#Products/viewImageBackups"
+            core.event.click.load="Products/viewImageBackups">
+            <i class="uk-margin-small-right" uk-icon="icon: code"/>
+            <span> HeEPP Output</span>
+        </a>
+    </li>
+    <li>
+        <a
+            href="#Products/viewImageBackups"
+            core.event.click.load="Products/viewImageBackups">
+            <i class="uk-margin-small-right" uk-icon="icon: minus"/>
+            <span> HeEPP Singleton</span>
+        </a>
+    </li>
+    <li>
+        <a
+            href="#Products/viewImageBackups"
+            core.event.click.load="Products/viewImageBackups">
+            <i class="uk-margin-small-right" uk-icon="icon: play"/>
+            <span> HeEPP Autoloader</span>
+        </a>
+    </li>
+    <li>
+        <a
+            href="#Products/viewImageBackups"
+            core.event.click.load="Products/viewImageBackups">
+            <i class="uk-margin-small-right" uk-icon="icon: tag"/>
+            <span> Namespacing</span>
+        </a>
+    </li>
+    <li>
+        <a
+            href="#Products/viewImageBackups"
+            core.event.click.load="Products/viewImageBackups">
+            <i class="uk-margin-small-right" uk-icon="icon: bolt"/>
+            <span> Caching</span>
+        </a>
+    </li>
+    <li>
+        <a
+            href="#Products/viewImageBackups"
+            core.event.click.load="Products/viewImageBackups">
+            <i class="uk-margin-small-right" uk-icon="icon: dribbble"/>
+            <span> Design Patterns</span>
+        </a>
+    </li>
+    <li>
+        <a
+            href="#Products/viewImageBackups"
+            core.event.click.load="Products/viewImageBackups">
+            <i class="uk-margin-small-right" uk-icon="icon: info"/>
+            <span> Core Idea?</span>
+        </a>
+    </li>
+    <!--|| THE CORE -->
+
+    <!--|| THE CORE - EXTENSIONS -->
+    <li class="uk-nav-divider"/>
+    <li class="uk-nav-header margin-top-0">HeEPP - Extensions</li>
+    <li class="uk-nav-divider"/>
+    <li>
+        <a
+            href="#Products/viewCatalogueBackups"
+            core.event.click.load="Products/viewCatalogueBackups">
+            <i class="uk-margin-small-right" uk-icon="icon: world"/>
+            <span> API - RestClient</span>
+        </a>
+    </li>
+    <li>
+        <a
+            href="#Products/viewImageBackups"
+            core.event.click.load="Products/viewImageBackups">
+            <i class="uk-margin-small-right" uk-icon="icon: xing"/>
+            <span> Amazon Web-Services</span>
+        </a>
+    </li>
+    <li class="uk-parent">
+        <a href="#">
+            <i class="uk-margin-small-right" uk-icon="icon: xing"/>
+            <span> Caching</span>
+        </a>
+        <ul class="uk-nav-sub">
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: bolt"/>
+                    <span> Caching Abstraction</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: move"/>
+                    <span> MemCache Caching</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: move"/>
+                    <span> MemCache Loader</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: move"/>
+                    <span> MemCache API</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: move"/>
+                    <span> MemCache Via Sockets</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: clock"/>
+                    <span> Session Cache</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: clock"/>
+                    <span> Session Cache API</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: clock"/>
+                    <span> File Caching</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: clock"/>
+                    <span> File Cache API</span>
+                </a>
+            </li>
+        </ul>
+    </li>
+    <li class="uk-parent">
+        <a href="#">
+            <i class="uk-margin-small-right" uk-icon="icon: cart"/>
+            <span> Shopping Centred</span>
+        </a>
+        <ul class="uk-nav-sub">
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: search"/>
+                    <span> Basic API-Client</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: world"/>
+                    <span> Marketing API-Client Extending Basic Client</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: world"/>
+                    <span> Tenant API-Client Extending Basic Client</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: database"/>
+                    <span> Data Extension Send and Receive Non API Data</span>
+                </a>
+            </li>
+        </ul>
+    </li>
+    <li class="uk-parent">
+        <a href="#">
+            <i class="uk-margin-small-right" uk-icon="icon: receiver"/>
+            <span> Communication</span>
+        </a>
+        <ul class="uk-nav-sub">
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: mail"/>
+                    <span> Mail Wrapper</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: hashtag"/>
+                    <span> Everlytics</span>
+                </a>
+            </li>
+        </ul>
+    </li>
+    <li class="uk-parent">
+        <a href="#">
+            <i class="uk-margin-small-right" uk-icon="icon: database"/>
+            <span> Data Extensions</span>
+        </a>
+        <ul class="uk-nav-sub">
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: server"/>
+                    <span> MySQL Connector</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: hashtag"/>
+                    <span> Database Models</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: thumbnails"/>
+                    <span> Model Collections</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: grid"/>
+                    <span> Model Molders (Molds)</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: flickr"/>
+                    <span> Model Items</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: more"/>
+                    <span> DotData</span>
+                </a>
+            </li>
+        </ul>
+    </li>
+    <li class="uk-parent">
+        <a href="#">
+            <i class="uk-margin-small-right" uk-icon="icon: file"/>
+            <span> Document Extensions</span>
+        </a>
+        <ul class="uk-nav-sub">
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: table"/>
+                    <span> Excel Writer</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: code"/>
+                    <span> HTML to PDF Converter</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: strikethrough"/>
+                    <span> PDF to Text With RCO</span>
+                </a>
+            </li>
+        </ul>
+    </li>
+    <li class="uk-parent">
+        <a href="#">
+            <i class="uk-margin-small-right" uk-icon="icon: nut"/>
+            <span> Element Extensions</span>
+        </a>
+        <ul class="uk-nav-sub">
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: strikethrough"/>
+                    <span> Element Encoding & Decoding</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon:  quote-right"/>
+                    <span> Element Properties for All Mime Types</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: pull"/>
+                    <span> Element Imports for All Mime Types</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: info"/>
+                    <span> Imports Helpers for All Mime Types</span>
+                </a>
+            </li>
+        </ul>4
+    </li>
+    <li class="uk-parent">
+        <a href="#">
+            <i class="uk-margin-small-right" uk-icon="icon: file"/>
+            <span> File Extensions</span>
+        </a>
+        <ul class="uk-nav-sub">
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: forward"/>
+                    <span> FTP Manager</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: xing"/>
+                    <span> SFTP Manager</span>
+                </a>
+            </li>
+        </ul>
+    </li>
+    <li class="uk-parent">
+        <a href="#">
+            <i class="uk-margin-small-right" uk-icon="icon: yelp"/>
+            <span> Graphics Extensions</span>
+        </a>
+        <ul class="uk-nav-sub">
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: image"/>
+                    <span> Image Resize</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: image"/>
+                    <span> Import Photoshop Image</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: image"/>
+                    <span> Add One Image t Another</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: image"/>
+                    <span> Crop Image</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: image"/>
+                    <span> Basic Image Effects</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: hashtag"/>
+                    <span> barcode Recognition</span>
+                </a>
+            </li>
+        </ul>
+    </li>
+    <li class="uk-parent">
+        <a href="#">
+            <i class="uk-margin-small-right" uk-icon="icon: info"/>
+            <span> Helper Extensions</span>
+        </a>
+        <ul class="uk-nav-sub">
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: file"/>
+                    <span> Format PDF</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: shrink"/>
+                    <span> JS Shrink</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: phone"/>
+                    <span> Mobile Detect</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: play-circle"/>
+                    <span> RSA Processor</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: upload"/>
+                    <span> Upload Handler</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: shrink"/>
+                    <span> File ZIP and UNZIP</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: question"/>
+                    <span> Anonymous Objects</span>
+                </a>
+            </li>
+        </ul>
+    </li>
+    <li class="uk-parent">
+        <a href="#">
+            <i class="uk-margin-small-right" uk-icon="icon: play"/>
+            <span> Parsers</span>
+        </a>
+        <ul class="uk-nav-sub">
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: happy"/>
+                    <span> Array2Object</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: happy"/>
+                    <span> PHP 2 JOSN 2 XML 2 Array 2 String Changer</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: code"/>
+                    <span> CSS to Inline</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: table"/>
+                    <span> CSV Processor</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: world"/>
+                    <span> .env File Processor</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: settings"/>
+                    <span> .ini File Processor</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: check"/>
+                    <span> HTML Code Beautifier and Minifier</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: play"/>
+                    <span> JSON Processor</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: play-circle"/>
+                    <span> Stream Parser (For Large Files)</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: code"/>
+                    <span> Markdown to HTML</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: check"/>
+                    <span> Snappy PDF</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: code"/>
+                    <span> Code Syntax Highlighter</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: world"/>
+                    <span> Parse Domain</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: location"/>
+                    <span> Parse URL</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: hashtag"/>
+                    <span> Parse URI</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: youtube"/>
+                    <span> Video Converter (Compressor)</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: happy"/>
+                    <span> XML Objects to PHP Objects</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: shrink"/>
+                    <span> Fused Objects</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: database"/>
+                    <span> XML Data Type Parser</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: code"/>
+                    <span> XML Data to Array Parser (Large Files)</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: image"/>
+                    <span> Fast XML Parser</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: happy"/>
+                    <span> XML2AndFromArray</span>
+                </a>
+            </li>
+        </ul>
+    </li>
+    <li class="uk-parent">
+        <a href="#">
+            <i class="uk-margin-small-right" uk-icon="icon: lock"/>
+            <span> Security Extensions</span>
+        </a>
+        <ul class="uk-nav-sub">
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: move"/>
+                    <span> Bit Masking</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: minus"/>
+                    <span> PHP Socket Server</span>
+                </a>
+            </li>
+        </ul>
+    </li>
+    <li class="uk-parent">
+        <a href="#">
+            <i class="uk-margin-small-right" uk-icon="icon: image"/>
+            <span> User Interface (UI)</span>
+        </a>
+        <ul class="uk-nav-sub">
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: happy"/>
+                    <span> Formatted Object Parser</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: location"/>
+                    <span> SimpleXMLXPath</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: check"/>
+                    <span> Tidy (Format HTML Code)</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: star"/>
+                    <span> HeEPP View Parser</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: code"/>
+                    <span> LESS to CSS Compiler</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: code"/>
+                    <span> SCSS to CSS Compiler</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: info"/>
+                    <span> Smart Optimizer (Caching)</span>
+                </a>
+            </li>
+        </ul>
+    </li>
+    <!--|| THE CORE - EXTENSIONS -->
+
+    <!--|| THE CORE - LIBRARIES AND DEPENDENCIES -->
+    <li class="uk-nav-divider"/>
+    <li class="uk-nav-header margin-top-0">Libraries and Dependencies</li>
+    <li class="uk-nav-divider"/>
+    <li class="uk-parent">
+        <a href="#">
+            <i class="uk-margin-small-right" uk-icon="icon: list"/>
+            <span> HeEPP Libraries</span>
+        </a>
+        <ul class="uk-nav-sub">
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: star"/>
+                    <span> HeEPP API</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: star"/>
+                    <span> Core APP</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: star"/>
+                    <span> Core Confirm</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: star"/>
+                    <span> Core Date</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: star"/>
+                    <span> Core Click Events</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: star"/>
+                    <span> Core Events</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: star"/>
+                    <span> Core Document Ready</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: star"/>
+                    <span> Core Forms</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: star"/>
+                    <span> Core HTML</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: star"/>
+                    <span> Core Loader</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: star"/>
+                    <span> Core Notifications</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: star"/>
+                    <span> Core Off-Canvas</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: star"/>
+                    <span> Core Value</span>
+                </a>
+            </li>
+        </ul>
+    </li>
+    <li class="uk-parent">
+        <a href="#">
+            <i class="uk-margin-small-right" uk-icon="icon: code"/>
+            <span> PHP JS</span>
+        </a>
+        <ul class="uk-nav-sub">
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: plus"/>
+                    <span> Math JS</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: minus"/>
+                    <span> Base PHP JS</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: pencil"/>
+                    <span> PHP String JS</span>
+                </a>
+            </li>
+        </ul>
+    </li>
+    <li class="uk-parent">
+        <a href="#">
+            <i class="uk-margin-small-right" uk-icon="icon: gitter"/>
+            <span> Charts & Graphs</span>
+        </a>
+        <ul class="uk-nav-sub">
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: italic"/>
+                    <span> ChartsJS</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: bold"/>
+                    <span> Morris Charts</span>
+                </a>
+            </li>
+        </ul>
+    </li>
+    <li class="uk-parent">
+        <a href="#">
+            <i class="uk-margin-small-right" uk-icon="icon: info"/>
+            <span> Helper Libraries</span>
+        </a>
+        <ul class="uk-nav-sub">
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: forward"/>
+                    <span> ajaxChimp</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: expand"/>
+                    <span> autosize</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: shrink"/>
+                    <span> cropperjs</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: more"/>
+                    <span> dotObject</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: location"/>
+                    <span> easypin</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: bell"/>
+                    <span> JQuery1,2,3</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: bell"/>
+                    <span> JQuery Easing</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: code"/>
+                    <span> JS Cookie</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: clock"/>
+                    <span> LazyLoad</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: future"/>
+                    <span> Moment JS</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: ban"/>
+                    <span> MouseTrap (Create Shorcut Keys)</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: nut"/>
+                    <span> VUE JS</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: world"/>
+                    <span> W3Data</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: world"/>
+                    <span> WayPoints JS</span>
+                </a>
+            </li>
+        </ul>
+    </li>
+    <li class="uk-parent">
+        <a href="#">
+            <i class="uk-margin-small-right" uk-icon="icon: image"/>
+            <span> User Interface Libraries</span>
+        </a>
+        <ul class="uk-nav-sub">
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: paint-bucket"/>
+                    <span> BootFlat</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: paint-bucket"/>
+                    <span> Bootstrap</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: paint-bucket"/>
+                    <span> Breakpoints</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: paint-bucket"/>
+                    <span> Foundation</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: paint-bucket"/>
+                    <span> JQuery UI</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: paint-bucket"/>
+                    <span> MetroUI</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: paint-bucket"/>
+                    <span> Milligram UI</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: paint-bucket"/>
+                    <span> UIKit</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: paint-bucket"/>
+                    <span> W3CSS</span>
+                </a>
+            </li>
+        </ul>
+    </li>
+    <li class="uk-parent">
+        <a href="#">
+            <i class="uk-margin-small-right" uk-icon="icon: database"/>
+            <span> Alert Libraries</span>
+        </a>
+        <ul class="uk-nav-sub">
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: warning"/>
+                    <span> Noty</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: warning"/>
+                    <span> Gritter Notifications</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: star"/>
+                    <span> Core Confirm</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: star"/>
+                    <span> Core Notify</span>
+                </a>
+            </li>
+        </ul>
+    </li>
+    <li class="uk-parent">
+        <a href="#">
+            <i class="uk-margin-small-right" uk-icon="icon: database"/>
+            <span> Animation Libraries</span>
+        </a>
+        <ul class="uk-nav-sub">
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: heart"/>
+                    <span> AnimateJS</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: move"/>
+                    <span> AppearJS</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: image"/>
+                    <span> OWLCarrousel</span>
+                </a>
+            </li>
+        </ul>
+    </li>
+    <li class="uk-parent">
+        <a href="#">
+            <i class="uk-margin-small-right" uk-icon="icon: menu"/>
+            <span> UI Form Libraries</span>
+        </a>
+        <ul class="uk-nav-sub">
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: menu"/>
+                    <span> Form2JS JS</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: bookmark"/>
+                    <span> UI Form Builder Library</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: menu"/>
+                    <span> autoComplete JS</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: menu"/>
+                    <span> Bootstrap Forms</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: ban"/>
+                    <span> Bootstrap Switch</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: album"/>
+                    <span> jsTree</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: move"/>
+                    <span> MultiSelect</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: move"/>
+                    <span> tagsInput JS</span>
+                </a>
+            </li>
+        </ul>
+    </li>
+    <li class="uk-parent">
+        <a href="#">
+            <i class="uk-margin-small-right" uk-icon="icon: pencil"/>
+            <span> Rich Text & Code Editors</span>
+        </a>
+        <ul class="uk-nav-sub">
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: file-edit"/>
+                    <span> CodeMirror</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: file-edit"/>
+                    <span> SummerNote</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: file-edit"/>
+                    <span> WysiHTML5</span>
+                </a>
+            </li>
+        </ul>
+    </li>
+    <li class="uk-parent">
+        <a href="#">
+            <i class="uk-margin-small-right" uk-icon="icon: minus-circle"/>
+            <span> Form Validation Libraries</span>
+        </a>
+        <ul class="uk-nav-sub">
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: check"/>
+                    <span> Engine JS</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: check"/>
+                    <span> JQuery Validate</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: hashtag"/>
+                    <span> Masked Input JS</span>
+                </a>
+            </li>
+        </ul>
+    </li>
+    <li class="uk-parent">
+        <a href="#">
+            <i class="uk-margin-small-right" uk-icon="icon: image"/>
+            <span> Font/SVG Icon Libraries</span>
+        </a>
+        <ul class="uk-nav-sub">
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: info"/>
+                    <span> canvasIcons</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: info"/>
+                    <span> Devicons</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: info"/>
+                    <span> Entypo</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: info"/>
+                    <span> etLine</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: info"/>
+                    <span> flatIcon</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: info"/>
+                    <span> iconic</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: info"/>
+                    <span> iconIcons</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: info"/>
+                    <span> materialIcons</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: image"/>
+                    <span> pictoIconsinfo
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: image"/>
+                    <span> SummerNote Iconsinfo
+                </a>
+            </li>
+        </ul>
+    </li>
+    <li class="uk-parent">
+        <a href="#">
+            <i class="uk-margin-small-right" uk-icon="icon: database"/>
+            <span> Image and Loader Libraries</span>
+        </a>
+        <ul class="uk-nav-sub">
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: image"/>
+                    <span> Fluidbox</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: refresh"/>
+                    <span> Spin Loader JS</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: image"/>
+                    <span> Pretty Photo JS</span>
+                </a>
+            </li>
+        </ul>
+    </li>
+    <li class="uk-parent">
+        <a href="#">
+            <i class="uk-margin-small-right" uk-icon="icon: arrow-down"/>
+            <span> UI Scroll Libraries</span>
+        </a>
+        <ul class="uk-nav-sub">
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: triangle-up"/>
+                    <span> mScrollbar</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: triangle-right"/>
+                    <span> NonoScroller</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: triangle-down"/>
+                    <span> NiceScroll</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: triangle-left"/>
+                    <span> ParalaxScroll</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: triangle-up"/>
+                    <span> PerfectScroller</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: triangle-right"/>
+                    <span> scrollTo</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: triangle-down"/>
+                    <span> Skrollr</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: triangle-left"/>
+                    <span> Stellar</span>
+                </a>
+            </li>
+        </ul>
+    </li>
+    <li class="uk-parent">
+        <a href="#">
+            <i class="uk-margin-small-right" uk-icon="icon: list"/>
+            <span> Library Base Functions</span>
+        </a>
+        <ul class="uk-nav-sub">
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: album"/>
+                    <span> Autoload Library Dependencies</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: world"/>
+                    <span> Use CDN if Available</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: shrink"/>
+                    <span> Combine & Minify Libraries</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: more"/>
+                    <span> Order of Execution</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: italic"/>
+                    <span> Only load Once Libraries</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewImageBackups"
+                    core.event.click.load="Products/viewImageBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: upload"/>
+                    <span> Script and CSS Hoisting</span>
+                </a>
+            </li>
+            <li>
+                <a
+                    href="#Products/viewCatalogueBackups"
+                    core.event.click.load="Products/viewCatalogueBackups">
+                    <i class="uk-margin-small-right" uk-icon="icon: star"/>
+                    <span> Base Library (Core)</span>
+                </a>
+            </li>
+        </ul>
+    </li>
+    <!--|| THE CORE - LIBRARIES AND DEPENDENCIES -->
+</ul>

@@ -1,0 +1,110 @@
+<database
+    connection="heepp"
+    name="keyDataStore"
+    alias="Key Data Store"
+    single="KeyDataStore"
+    many="KeyDataStores"
+    public="false">
+    <table
+        name="key_data_store"
+        key="id">
+        <columns>
+            <user_id          alias="User id"/>
+            <key_store        alias="Key store"/>
+            <key_index        alias="Key index"/>
+            <key_value        alias="Key value"/>
+            <key_label        alias="Key label"/>
+            <key_detail       alias="Key description"/>
+            <key_order        alias="Key ordering"/>
+            <key_action       alias="Key action"/>
+            <key_authority    alias="The permission needed to approve key (User Type)"/>
+            <key_authed_by    alias="This key needs approval from key authority (User Type)"/>
+            <key_state        alias="Data key state (On,Off)"/>
+            <created_at       alias="Date and time record was added"/>
+            <updated_at       alias="Date and time records was updated"/>
+            <deleted_at       alias="Deleted at"/>
+            <actioned_by      alias="Action by"/>
+        </columns>
+    </table>
+    <join
+        table="users"
+        type="left"
+        left="key_data_store.user_id"
+        right="users.id">
+        <columns>
+            <first_name as="user_full_name"/>
+            <last_name as="user_full_name"/>
+        </columns>
+    </join>
+</database>
+<datasets>
+    <all
+        alias="Select all data key value sets"
+        description="Select all data key value sets and ORDER BY `user_id`,`data_store` ASC">
+        <order>
+            <user_id order="ASC"/>
+            <key_order order="ASC"/>
+        </order>
+    </all>
+
+    <active
+        alias="Select active data keys"
+        description="Select data keys where `key_status` = 'On' and ORDER BY by `user_id`,`data_store` ASC">
+        <filter>
+            <key_status equal="On"/>
+        </filter>
+        <order>
+            <user_id order="ASC"/>
+            <key_order order="ASC"/>
+        </order>
+    </active>
+
+    <onByUser
+        alias="Select data keys by user and key status"
+        description="Select data keys where `key_status` = 'On' and user_id = ${userId}">
+        <filter>
+            <key_status equal="On"/>
+            <user_id equal="${userId}"/>
+        </filter>
+        <order>
+            <key_order order="ASC"/>
+        </order>
+    </onByUser>
+
+    <byUser
+        alias="Select data keys by user"
+        description="Select data keys WHERE user_id = ${userId}">
+        <filter>
+            <user_id equal="${userId}"/>
+        </filter>
+        <order>
+            <user_id order="ASC"/>
+            <key_order order="ASC"/>
+        </order>
+    </byUser>
+
+    <byStoreAndUser
+        alias="Select data keys by user and data store"
+        description="Select data keys WHERE `user_id` = ${userId} AND `data_store` = ${store}">
+        <filter>
+            <key_store equal="${store}"/>
+            <user_id equal="${userId}"/>
+        </filter>
+        <order>
+            <key_order order="ASC"/>
+        </order>
+    </byStoreAndUser>
+
+    <byStoreKeyAndUser
+        alias="Select data keys by user, data store and key"
+        description="Select data keys WHERE `user_id` = ${userId}, `key_store` = ${store} AND data_key = ${key}">
+        <filter>
+            <user_id equal="${userId}"/>
+            <key_store equal="${store}"/>
+            <data_key equal="${key}"/>
+        </filter>
+        <order>
+            <key_order order="ASC"/>
+        </order>
+    </byStoreKeyAndUser>
+</datasets>

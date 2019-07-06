@@ -1,0 +1,28 @@
+<database 
+    connection="heepp"
+    name="company"
+    alias="Companies"
+    single="Company"
+    many="Companies"
+    public="false">
+    <table 
+        name="companies"
+        key="id">
+        <columns>
+            <company_name alias="Company Name"/>
+            <vat_number   alias="VAT Number"/>
+            <created_at   alias="Created At"/>
+            <updated_at   alias="Updated At"/>
+            <user_id      alias="User ID"/>
+        </columns>
+    </table>
+</database>
+<datasets>
+    <all
+        alias="Select all companies"
+        description="Select companies and order by `company_name` ASC">
+        <order>
+            <company_name order="ASC"/>
+        </order>
+    </all>
+</datasets>
