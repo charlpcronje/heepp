@@ -1,9 +1,11 @@
 <?php
 namespace core\system\handlers;
+use core\extension\parser\env\DotEnv;
 use core\Heepp;
 use core\Output;
 use core\system\route;
 use core\extension\helper\Asset;
+use stdClass;
 
 class ProjectLoader extends Loader {
     public static $projectList = [];
@@ -27,7 +29,7 @@ class ProjectLoader extends Loader {
             if ($exp[0] !== 'core' && file_exists($path)) {
                 self::$includedFiles[] = $include;
                 if (!in_array($path,self::$includedFiles)) {
-                    new \core\extension\parser\env\DotEnv($projectPath,'.env',$exp[0]);
+                    new DotEnv($projectPath,'.env',$exp[0]);
                     include $path;
                     self::$includedFiles[] = $path;
                     class_alias($exp[1],$include);
@@ -42,7 +44,7 @@ class ProjectLoader extends Loader {
         // Load shortcuts to memory
         if (!sessionSet('shortcuts')) {
             if (!isset($_SESSION['heepp'])) {
-                $_SESSION['heepp'] = new \stdClass();
+                $_SESSION['heepp'] = new stdClass();
             }
 
             //if (!sessionSet('shortcuts')) {
@@ -111,12 +113,13 @@ class ProjectLoader extends Loader {
     }
 
     public static function getCallingClass() {
-        $Bugtrace = debug_backtrace();
-        foreach($Bugtrace as $trace) {
+        $bugTrace = debug_backtrace();
+        foreach($bugTrace as $trace) {
             if ($trace['function'] == 'autoLoad') {
                 return $trace['args'][0];
             }
         }
+        return 'Unknown';
     }
 
     public static function loadProject() {
