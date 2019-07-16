@@ -23,19 +23,4 @@ class import extends Element {
         }
         return view::mold($this->src,$this->path);
     }
-
-    //public function render() {
-    //    if (!isset($this->path)) {
-    //        $this->path = env('project.path');
-    //    }
-    //    if (isset($this->cache)) {
-    //        if (cache::exists($this->cache)) {
-    //            return cache::get($this->cache);
-    //        }
-    //        $html = view::mold($this->src,$this->path);
-    //        cache::set($this->cache,$html);
-    //        return $html;
-    //    }
-    //    return view::mold($this->src,$this->path);
-    //}
 }
