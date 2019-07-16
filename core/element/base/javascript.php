@@ -30,7 +30,7 @@ class javascript extends Element {
             $this->addAttr('async','async');
         }
 
-        // basically if this attribute is set in any way it will be (lazyloaded)
+        // basically if this attribute is set in any way it will be "lazy loaded"
         if (isset($this->defer)) {
             $this->addAttr('defer','defer');
         }
