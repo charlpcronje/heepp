@@ -68,6 +68,10 @@
             alias="uiKit"
             authentication="false"
             status="active"/>
+        <uikit-316
+            alias="uiKit"
+            authentication="false"
+            status="active"/>
         <w3css
             alias="W3CSS UI"
             authentication="false"

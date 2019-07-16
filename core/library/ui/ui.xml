@@ -83,6 +83,14 @@
         </includes>
     </uikit>
 
+    <uikit-316>
+        <includes>
+            <css     src="uikit316/css/uikit.min.css"                     description="uiKit UI CSS"/>
+            <jscript src="uikit316/js/uikit.min.js"                       description="uiKit UI Main JS"/>
+            <jscript src="uikit316/js/uikit-icons.min.js"                 description="uiKit Ui Icons"/>
+        </includes>
+    </uikit-316>
+
     <w3css>
         <includes>
             <css    src="w3css/css/w3css.css"                           descrtiption="W3CSS Stylesheet Include"/>
