@@ -18,15 +18,16 @@
     <import           class="core\element\base\import"/>
     <bind             class="core\element\base\bind"/>
     <lazyload         class="core\element\base\lazyload"/>
-    <javascript       class="core\element\base\javascript"/>
     <jscript          class="core\element\base\javascript"/>
+    <javascript       class="core\element\base\javascript"/>
+    <js               class="core\element\base\javascript"/>
     <stylesheet       class="core\element\base\stylesheet"/>
     <css              class="core\element\base\stylesheet"/>
     <invoke           class="core\element\base\invoke"/>
     <json.encode      class="core\element\base\jsonEncode"/>
     <text.render.node class="core\element\base\textNode"/>
     <lib              class="core\library"/>
-    <core-library  class="core\library"/>
+    <core-library     class="core\library"/>
 
     <!-- Strings -->
     <ucfirst         class="core\element\text\ucfirst"/>
