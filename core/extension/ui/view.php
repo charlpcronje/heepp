@@ -333,7 +333,6 @@ class view extends Heepp {
     }
 
     private function createObjects($tagName,$xhtml) {
-
         // Deals with php name spacing
         // This is to stop the dotSyntax to break
         $tagName = str_replace(['-','.'],['\\','_'],$tagName);
@@ -352,6 +351,7 @@ class view extends Heepp {
 
                 $this->session('isElement.'.$tagName,true);
             }
+
         } else {
             $object = new Element($tagName);
         }
