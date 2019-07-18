@@ -9,6 +9,7 @@ class stylesheet extends Element {
     public $src;
     public $recompile = false;
     public $href;
+    public $media;
 
     public function __construct() {
         $this->element = __class__;
