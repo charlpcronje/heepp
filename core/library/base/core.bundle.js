@@ -54,7 +54,9 @@ var core = {
             return obj;
         else
             return this.strToDot(obj[is[0]],is.slice(1), value);
-    }
+    },
+    select : document.querySelector,
+    selectAll
 };
 
 $(document).ready(function() {
