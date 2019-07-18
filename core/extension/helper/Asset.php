@@ -9,23 +9,32 @@ class Asset extends \core\extension\Extension {
     public $realpath;
     private $found = false;
     public $possibleSearchPaths = [
-        'jpg'  => 'images',
-        'png'  => 'images',
-        'jpeg' => 'images',
+        'jpg'   => 'images',
+        'png'   => 'images',
+        'jpeg'  => 'images',
+        'webp'  => 'images',
+        'svg'   => 'images',
 
-        'json' => 'js',
-        'js'   => 'js',
+        'json'  => 'js',
+        'js'    => 'js',
 
-        'css'  => 'css',
-        'less' => 'css',
-        'scss' => 'css',
+        'css'   => 'css',
+        'less'  => 'css',
+        'scss'  => 'css',
 
-        'mp4'  => 'video',
-        'webm' => 'video',
-        'ogg'  => 'video',
-        'ogv'  => 'video'
+        'mp4'   => 'video',
+        'webm'  => 'video',
+        'ogg'   => 'video',
+        'ogv'   => 'video',
+
+        'eot'   => 'font',
+        'svg'   => 'font',
+        'ttf'   => 'font',
+        'woff'  => 'font',
+        'woff2' => 'font',
+        'otf'   => 'font'
     ];
-    public $directOutputTypes = ['jpg','png','jpeg','json','js','css','less','scss','mp4','webm','ogg','ogv','map'];
+    public $directOutputTypes = ['jpg','png','jpeg','webp','svg','json','js','css','less','scss','mp4','webm','ogg','ogv','map','eot','ttf','woff','woff2','otf'];
     public $searchPaths = [];
     public $info;
 
@@ -163,8 +172,8 @@ class Asset extends \core\extension\Extension {
         $fp     = fopen($this->info->fullname, 'rb');
         $size   = $this->info->filesize; // File size
         $length = $this->info->filesize; // Content length
-        $start  = 0;                    // Start byte
-        $end    = $size - 1;            // End byte
+        $start  = 0;                     // Start byte
+        $end    = $size - 1;             // End byte
         // Now that we've gotten so far without errors we send the accept range header
         /* At the moment we only support single ranges.
          * Multiple ranges requires some more work to ensure it works correctly
@@ -200,7 +209,7 @@ class Asset extends \core\extension\Extension {
             // If the range starts with an '-' we start from the beginning
             // If not, we forward the file pointer
             // And make sure to get the end byte if spesified
-            if ($range0 == '-') {
+            if ($range == '-') {
 
                 // The n-number of the last bytes is requested
                 $c_start = $size - substr($range, 1);
