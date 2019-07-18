@@ -1,9 +1,23 @@
 <root>
     <form2js>
         <includes>
-            <jscript src="form2js/js/form2js.min.js"                    description="Bootflat Javascript"/>
-            <jscript src="form2js/js/js2form.min.js"                    description="Bootflat Javascript"/>
-            <jscript src="form2js/js/jquery.toObject.js"                description="Bootflat Javascript"/> 
+            <jscript 
+                src="form2js/js/form2js.min.js"                    
+                description="Bootflat Javascript"/>
+            <jscript 
+                src="form2js/js/js2form.min.js"                    
+                description="Bootflat Javascript"/>
+            <jscript 
+                src="form2js/js/jquery.toObject.js"                
+                description="Bootflat Javascript"/> 
         </includes>
     </form2js>
+
+    <classie>
+        <includes>
+            <jscript 
+                src="classie/js/classie.min.js"
+                description="Classie Forms JS Include"/>
+        </includes>
+    </classie>
 </root>

@@ -218,6 +218,10 @@
             alias="Form to JS Object"
             authentication="false"
             status="active"/>
+        <classie
+            alias="Classie"
+            authentication="false"
+            status="active"/>
     </ui-form>
 
     <ui-form-control
@@ -1143,9 +1147,13 @@
     </ui-plugin>
 
     <ui-scroll
-        alias="User Interface Icon Libraries"
+        alias="User Interface Scroll Libraries"
         authentication="false"
         status="active">
+        <jarallax
+            alias="Jarallax Parlax Scrolling"
+            authentication="false"
+            status="active"/>
         <mscrollbar
             alias="mCustom Scrollbar"
             authentication="false"
@@ -1174,9 +1182,27 @@
             alias="Skrollr"
             authentication="false"
             status="active"/>
+        <smoothScroll
+            alias="Smooth Scroll"
+            authentication="false"
+            status="active"/>
         <stellar
             alias="Stellar"
             authentication="false"
             status="active"/>
+        <uiToTop
+            alias="UIToTop"
+            authentication="false"
+            status="active"/>
     </ui-scroll>
+
+    <ui-slide 
+        alias="User Interface Slider and Slides Libraries"
+        authentication="false"
+        status="active">
+        <responsiveSlides
+            alias="Responsive Slides"
+            authentication="false"
+            status="active"/>
+    </ui-slide>
 </root>

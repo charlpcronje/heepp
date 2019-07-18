@@ -1,0 +1,9 @@
+<root>
+    <responsiveSlides>
+        <includes>
+            <jscript 
+                src="responsiveSlides/js/responsiveSlides.min.js"
+                description="Jarallax Paralax JS Include"/>
+        </includes>
+    </responsiveSlides>
+</root>

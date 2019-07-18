@@ -1,4 +1,12 @@
 <root>
+    <jarallax>
+        <includes>
+            <jscript 
+                src="jarallax/js/jarallax.min.js"
+                description="Jarallax Paralax JS Include"/>
+        </includes>
+    </jarallax>
+
     <mscrollbar>
         <includes>
             <css     
@@ -99,6 +107,14 @@
         </includes>
     </skrollr>
 
+    <smoothscroll>
+        <includes>
+            <jscript 
+                src="smoothScroll/js/smoothScroll.min.js"
+                description="SmoothScroll JS Include"/>
+        </includes>
+    </smoothscroll>
+
     <stellar>
         <includes>
             <jscript 
@@ -106,4 +122,12 @@
                 description="Stellar JS Include"/>
         </includes>
     </stellar>
+
+    <uiToTop>
+        <includes>
+            <jscript
+                src="uiToTop/js/uiToTop.min.js"
+                description="UiToTop JS Include"/>
+        </includes>
+    </uiToTop>
 </root>
