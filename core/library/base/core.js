@@ -53,8 +53,15 @@ var core = {
         else
             return this.strToDot(obj[is[0]],is.slice(1), value);
     },
-    select : document.querySelector,
-    selectAll : document.querySelectorAll
+    select : {
+        id : document.getElementById.bind(document),
+        class : document.getElementsByClassName.bind(document),
+        tag : document.getElementsByTagName.bind(document),
+        query : document.querySelector.bind(document),
+        queryAll : document.querySelectorAll.bind(document),
+        tagNS : document.getElementsByTagNameNS.bind(document)
+    },
+    sel : this.select
 };
 
 $(document).ready(function() {
