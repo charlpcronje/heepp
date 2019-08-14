@@ -3,72 +3,76 @@
 /*global $,document */
 /*jshint -W043 */
 /*jslint browser: true*/
-'use strict';
-const log = console.log;
+(function () {
+    'use strict';
+    const log = console.log;
 
-window.console.log = log;
+    window.console.log = log;
 
-var core = {
-    CONSTANTS : UI_CONSTANTS,
-    ZIP_HTML : false,
-    ELEMENTS : {},
-    UISelectors : new Array('body'),
-    addUISelector : function(selector) {
-        this.UISelectors.push(selector);
-    },
-    clearUISelectors : function() {
-        this.UISelectors = [];
-    },
-    applyCoreClasses : function(elem) {
-        $.each(elem.attributes,function() {
-            if (typeof this !== "undefined") {
-                if (this.name.substr(0, 5) == 'core.') {
-                    var attrName = this.name;
-                    var attrValue = this.value;
-                    $(elem).removeAttr(attrName);
-                    eval(attrName+'(elem,attrValue)');
+    var core = {
+        CONSTANTS : UI_CONSTANTS,
+        ZIP_HTML : false,
+        ELEMENTS : {},
+        UISelectors : new Array('body'),
+        addUISelector : function(selector) {
+            this.UISelectors.push(selector);
+        },
+        clearUISelectors : function() {
+            this.UISelectors = [];
+        },
+        applyCoreClasses : function(elem) {
+            $.each(elem.attributes,function() {
+                if (typeof this !== "undefined") {
+                    if (this.name.substr(0, 5) == 'core.') {
+                        var attrName = this.name;
+                        var attrValue = this.value;
+                        $(elem).removeAttr(attrName);
+                        eval(attrName+'(elem,attrValue)');
+                    }
                 }
-            }
-        });
-    },
-    getUISelectors : function() {
-        return this.UISelectors;
-    },
-    ajaxSuccess : function(uiSelectors) {
-        self = this;
-        $(self.UISelectors).each(function(i,selector) {
-            $(selector+' *').each(function(i,elem) {
-                self.applyCoreClasses(elem);
             });
-        });
-    },
-    // Support function for setVar and setCallback, this function set dot notation from string and can also set
-    // a value of an object property. Ex: var test = 'core.app.dashboard.prop'; setOrGetVar(window,test,50);
-    // The example will make core.app.dashboard.prop = 50;
-    strToDot : function(obj,is, value) {
-        if (typeof is == 'string')
-            return this.strToDot(obj,is.split('.'), value);
-        else if (is.length==1 && value!==undefined)
-            return obj[is[0]] = value;
-        else if (is.length==0)
-            return obj;
-        else
-            return this.strToDot(obj[is[0]],is.slice(1), value);
-    },
-    select : {
-        id       : document.getElementById.bind(document),
-        class    : document.getElementsByClassName.bind(document),
-        tag      : document.getElementsByTagName.bind(document),
-        query    : document.querySelector.bind(document),
-        queryAll : document.querySelectorAll.bind(document),
-        tagNS    : document.getElementsByTagNameNS.bind(document)
-    },
-    sel : this.select
-};
+        },
+        getUISelectors : function() {
+            return this.UISelectors;
+        },
+        ajaxSuccess : function(uiSelectors) {
+            self = this;
+            $(self.UISelectors).each(function(i,selector) {
+                $(selector+' *').each(function(i,elem) {
+                    self.applyCoreClasses(elem);
+                });
+            });
+        },
+        // Support function for setVar and setCallback, this function set dot notation from string and can also set
+        // a value of an object property. Ex: var test = 'core.app.dashboard.prop'; setOrGetVar(window,test,50);
+        // The example will make core.app.dashboard.prop = 50;
+        strToDot : function(obj,is, value) {
+            if (typeof is == 'string')
+                return this.strToDot(obj,is.split('.'), value);
+            else if (is.length==1 && value!==undefined) {
+                obj[is[0]] = value;
+                return obj[is[0]];
+            } else if (is.length==0) {
+                return obj;
+            } else {
+                return this.strToDot(obj[is[0]],is.slice(1), value);
+            }
+        },
+        select : {
+            id       : document.getElementById.bind(document),
+            class    : document.getElementsByClassName.bind(document),
+            tag      : document.getElementsByTagName.bind(document),
+            query    : document.querySelector.bind(document),
+            queryAll : document.querySelectorAll.bind(document),
+            tagNS    : document.getElementsByTagNameNS.bind(document)
+        },
+        sel : this.select
+    };
 
-$(document).ready(function() {
-    core.ajaxSuccess();
-});
+    $(document).ready(function() {
+        core.ajaxSuccess();
+    });
+})();
 
 //----------Heepp Loader Object----------
 
@@ -199,9 +203,8 @@ core.loader = class {
 };
 //----------core Ajax----------
 
-'use strict';
-
 function ajaxSuccessEvents(objs) {
+    'use strict';
     if (typeof objs == 'number') {
         return false;
     }
@@ -209,50 +212,54 @@ function ajaxSuccessEvents(objs) {
         switch(obj) {
             case 'notify':
                 var notify = new core.notify();
-                notify.init(args['type'],args['message']);
+                notify.init(args.type,args.message);
             break;
             case 'redirect':
                 $.ajax({
-                    url : args['url'],
-                    type : args['method']
+                    url : args.url,
+                    type : args.method
                 });
             break;
             case 'html':
                 var html = new core.html();
                 $(args).each(function (i,arg) {
-                    html.init(arg['method'],arg['target'],arg['html']);
-                    core.addUISelector(arg['target']);
+                    html.init(arg.method,arg.target,arg.html);
+                    core.addUISelector(arg.target);
                 });
             break;
             case 'value':
                 var value = new core.value();
                 $(args).each(function (i,arg) {
-                    value.init(arg['target'],arg['value']);
+                    value.init(arg.target,arg.value);
                 });
             break;
             case 'offcanvas':
                 var offcanvas = new core.offcanvas();
                 $(args).each(function (i,arg) {
-                    offcanvas.init(arg['heading'],arg['body'],arg['width']);
+                    offcanvas.init(arg.heading,arg.body,arg.width);
                     core.addUISelector('#' + offcanvas.uniqueId);
                 });
             break;
             case 'click':
                 $(args).each(function (i,arg) {
-                    $(arg['selector']).click();
+                    $(arg.selector).click();
                 });
                 break;
             case 'var':
                 $(args).each(function (i,arg) {
-                    core.strToDot(eval(arg['context']),arg['variable'],arg['value']);
+                    core.strToDot(eval(arg.context),arg.variable,arg.value);
                 });
             break;
             case 'callback':
                 $(args).each(function (i,arg) {
                     // Gets the actual function object from the dot notation string inside arg['callback']
-                    let callback = arg['callback'].split('.').reduce((o,i) => o[i],window);
+                    var callback = arg.callback.split('.').reduce(function(o,i) {
+                        return o[i];
+                    },window);
                     // Gets the actual context object from the dot notation string inside arg['context']
-                    let context = arg['context'].split('.').reduce((o,i) => o[i],window);
+                    var context = arg.context.split('.').reduce(function(o,i) {
+                        return o[i];
+                    },window);
                     callback.call(context,arg['arguments']);
                     /* So basically call must look like:
                      * callback = core.app.dashboard.setPanelWith (function)
@@ -262,42 +269,42 @@ function ajaxSuccessEvents(objs) {
             case 'console':
                 $(args).each(function (i,arg) {
                     console.log({
-                        description : arg['description'],
-                        data        : arg['data']
-                    })
+                        description : arg.description,
+                        data        : arg.data
+                    });
                 });
             break;
             case 'class':
                 $(args).each(function (i,arg) {
-                    if (arg['method'] == 'add') {
-                        $(arg['target']).addClass(arg['class']);
-                    } else if (arg['method'] == 'remove') {
-                        $(arg['target']).removeClass(arg['class']);
+                    if (arg.method == 'add') {
+                        $(arg.target).addClass(arg.class);
+                    } else if (arg.method == 'remove') {
+                        $(arg.target).removeClass(arg.class);
                     }
                 });
             break;
             case 'style':
                 $(args).each(function (i,arg) {
-                    $(arg['target']).css(arg['style'],arg['value']);
+                    $(arg.target).css(arg.style,arg.value);
                 });
             break;
             case 'attr':
                 $(args).each(function (i,arg) {
-                    $(arg['target']).attr(arg['attr'],arg['value']);
+                    $(arg.target).attr(arg.attr,arg.value);
                 });
             break;
             case 'confirm':
-                let confirm = new core.confirm();
-                confirm.init(args['heading'],args['message'],args['action']);
+                var confirm = new core.confirm();
+                confirm.init(args.heading,args.message,args.action);
             break;
             case 'hide':
                 $(args).each(function (i,arg) {
-                    $(arg['target']).hide();
+                    $(arg.target).hide();
                 });
             break;
             case 'show':
                 $(args).each(function (i,arg) {
-                    $(arg['target']).show();
+                    $(arg.target).show();
                 });
             break;
             default:
@@ -1123,9 +1130,10 @@ core.get = class {
 
 //----------Heepp API Object----------
 
-'use strict';
+
 
 core.api = class {
+    'use strict';
     constructor(reqType = 'get',reqEndpoint = 'Controller/session',options = {}) {
         /* Set request default */
         this.request = {

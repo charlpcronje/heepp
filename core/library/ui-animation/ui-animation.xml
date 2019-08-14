@@ -15,6 +15,14 @@
         </includes>
     </appear>
 
+    <easing>
+        <includes>
+            <jscript
+                src="appear/js/jquery.appear.js"
+                description="jquery appear"/>
+        </includes>
+    </easing>
+
     <gsa-drag>
         <includes>
             <jscript

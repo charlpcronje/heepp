@@ -1,6 +1,7 @@
-'use strict';
+
 
 core.api = class {
+    'use strict';
     constructor(reqType = 'get',reqEndpoint = 'Controller/session',options = {}) {
         /* Set request default */
         this.request = {
