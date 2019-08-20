@@ -13,7 +13,7 @@ use core\extension\parser\env\exception\InvalidPathException;
 class Loader {
     protected $filePath;
     protected $immutable;
-    private $cacheResult = true;
+    private $cacheResult = false;
     private $cachePath;
     private $envFilemTime;
     private $project;
