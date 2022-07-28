@@ -1,4 +1,20 @@
 <?php
+ini_set('allow_url_fopen',1);
+
+// Ignores the user's attempt to stop te script
+ignore_user_abort(true);
+
+// Set Max Execution Time (0 = no time limit)
+set_time_limit(0);
+
+//E_ERROR | E_WARNING | E_PARSE | E_NOTICE
+ini_set('display_errors',E_ALL ^ ~E_DEPRECATED);
+
+// Report all errors
+error_reporting(E_ALL ^ ~E_DEPRECATED);
+
+
+
 if (isset($_SERVER['HTTP_REFERER']) && !defined('HTTP_REFERER')) {
     define('HTTP_REFERER',$_SERVER['HTTP_REFERER']);
 }

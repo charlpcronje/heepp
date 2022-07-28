@@ -10,8 +10,9 @@ function colorDarken($rgb,$darker=2) {
     if(strlen($rgb) != 6) return $hash.'000000';
     $darker = ($darker > 1) ? $darker : 1;
     list($R16,$G16,$B16) = str_split($rgb,2);
-    $R = sprintf("%02X", floor(hexdec($R16)/$darker));
-    $G = sprintf("%02X", floor(hexdec($G16)/$darker));
-    $B = sprintf("%02X", floor(hexdec($B16)/$darker));
+    // Added @ to beginnning of lines because of a deprecation in PHP 7.4 on the hexdec function
+    @$R = sprintf("%02X", floor(hexdec($R16)/$darker));
+    @$G = sprintf("%02X", floor(hexdec($G16)/$darker));
+    @$B = sprintf("%02X", floor(hexdec($B16)/$darker));
     return $hash.$R.$G.$B;
 }

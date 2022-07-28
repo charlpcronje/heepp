@@ -46,6 +46,7 @@ include 'core'.DS.'system'.DS.'handlers'.DS.'ProjectLoader.php';
 /* Server Settings
 |----------------- */
 session('constants',(object)get_defined_constants(true)['user']);
+
 include 'core'.DS.'system'.DS.'config'.DS.'server.php';
 
 /* Startup Handler

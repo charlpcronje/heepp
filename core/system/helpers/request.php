@@ -365,7 +365,7 @@ function slugify($string,$maxlen = 0) {
 function myStrSplit($string) {
     $return_array = array();
     for ($i = 0,$iMax = strlen($string); $i < $iMax; $i++) {
-        $return_array[$i] = $string{$i};
+        $return_array[$i] = $string[$i];
     }
     return $return_array;
 }
