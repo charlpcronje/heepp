@@ -2191,7 +2191,9 @@ class Compiler {
         foreach($args as $arg) {
             list($key,$value) = $arg;
 
-            $key = $key[1];
+            if (is_array($key)) {
+                $key = $key[1];
+            }
 
             if (empty($key)) {
                 $posArgs[] = $value;

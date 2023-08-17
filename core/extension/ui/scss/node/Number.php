@@ -65,7 +65,7 @@ class Number extends Node implements \ArrayAccess {
         return new Number($dimension, $units);
     }
 
-    public function offsetExists($offset) {
+    public function offsetExists($offset):bool {
         if ($offset === -3) {
             return $this->sourceColumn !== null;
         }
@@ -82,7 +82,7 @@ class Number extends Node implements \ArrayAccess {
         return false;
     }
 
-    public function offsetGet($offset) {
+    public function offsetGet($offset):mixed {
         switch ($offset) {
             case -3:
                 return $this->sourceColumn;
@@ -99,7 +99,7 @@ class Number extends Node implements \ArrayAccess {
         }
     }
 
-    public function offsetSet($offset, $value) {
+    public function offsetSet($offset, $value):void {
         if ($offset === 1) {
             $this->dimension = $value;
         } elseif ($offset === 2) {
@@ -113,7 +113,7 @@ class Number extends Node implements \ArrayAccess {
         }
     }
 
-    public function offsetUnset($offset) {
+    public function offsetUnset($offset):void {
         if ($offset === 1) {
             $this->dimension = null;
         } elseif ($offset === 2) {

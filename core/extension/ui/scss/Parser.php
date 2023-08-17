@@ -33,7 +33,7 @@ class Parser {
     private          $sourceIndex;
     private          $sourcePositions;
     private          $charset;
-    private          $count;
+    private          $count = 0;
     private          $env;
     private          $inParens;
     private          $eatWhiteDefault;
@@ -425,12 +425,12 @@ class Parser {
         return $block;
     }
 
-    protected function peek($regex,&$out,$from = null) {
+    protected function peek($regex,&$out,$from = null,$flags = 0) {
         if (!isset($from)) {
             $from = $this->count;
         }
         $r      = '/'.$regex.'/'.$this->patternModifiers;
-        $result = preg_match($r,$this->buffer,$out,null,$from);
+        $result = preg_match($r,$this->buffer,$out,$flags,$from);
         return $result;
     }
 
@@ -467,7 +467,7 @@ class Parser {
             $eatWhitespace = $this->eatWhiteDefault;
         }
         $r = '/'.$regex.'/'.$this->patternModifiers;
-        if (preg_match($r,$this->buffer,$out,null,$this->count)) {
+        if (preg_match($r,$this->buffer,$out,0,$this->count)) {
             $this->count += strlen($out[0]);
             if ($eatWhitespace) {
                 $this->whitespace();
@@ -494,7 +494,7 @@ class Parser {
 
     protected function whitespace() {
         $gotWhite = false;
-        while(preg_match(static::$whitePattern,$this->buffer,$m,null,$this->count)) {
+        while(preg_match(static::$whitePattern,$this->buffer,$m,0,$this->count)) {
             if (isset($m[1]) && empty($this->commentsSeen[$this->count])) {
                 $this->appendComment([Type::T_COMMENT,$m[1]]);
                 $this->commentsSeen[$this->count] = true;
@@ -1102,7 +1102,7 @@ class Parser {
             return false;
         }
         // match comment hack
-        if (preg_match(static::$whitePattern,$this->buffer,$m,null,$this->count)) {
+        if (preg_match(static::$whitePattern,$this->buffer,$m,0,$this->count)) {
             if (!empty($m[0])) {
                 $parts[]     = $m[0];
                 $this->count += strlen($m[0]);

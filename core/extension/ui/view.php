@@ -761,7 +761,7 @@ class view extends Heepp {
                         } elseif (strpos($value,'/') === 0) {
                             $srcFileName = str_replace(DS,'/',env('project.url').substr($value,1));
                             // Checks if a relative src is used and changes the src to the current projects url. strtolower because http and https is always in lc
-                        } elseif (strpos(strtolower($value),env('request.scheme'),0) === false) {
+                        } elseif (strpos(strtolower($value),env('request.scheme'),0) === false && env('base.path') != null) {
                             $srcFileName = str_replace(env('base.path'),'',env('project.path')).str_replace('/',DS,$value);
                         }
 
@@ -888,7 +888,7 @@ class view extends Heepp {
         $propertyMatches = $this->replacePropertyParameters($string);
         if (count($propertyMatches) > 0) {
             foreach ($propertyMatches as $match) {
-                $string = str_replace('@{'.$match.'}',$this->element->getProperty($match), $string);
+                $string = str_replace('@{'.$match.'}',$this->element->getProperty($match)??'', $string);
             }
         }
         $matches = $this->replaceParameters($string);

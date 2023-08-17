@@ -21,10 +21,11 @@ if (isset($_SERVER['HTTP_REFERER']) && !defined('HTTP_REFERER')) {
 define('ROOT_PATH',dirname(__DIR__.DIRECTORY_SEPARATOR));
 
 /* Setting the Base Path for HeEPP. Use to set in the calling project.
-in the $basePath variable so if this stops working refer to the value of: */
+in the $basePath variable so if this stops working refer to the value of. */
 $basePath ?? '/core/app/';
 
 putenv("base.path=".__DIR__);
+
 
 // Bootstrap autoloads only the files for HeEPP to Instantiate and the auto loads any other classes as they are requested.
 include 'core/system/bootstrap.php';

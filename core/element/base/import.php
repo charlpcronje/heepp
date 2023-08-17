@@ -11,7 +11,7 @@ class import extends Element {
 
     public function render() {
         $this->path = env('project.path');
-        $removeSrcAttrPresets = str_replace(env('base.path'),'',$this->path);
+        $removeSrcAttrPresets = str_replace(env('document.root'),'',$this->path);
         $this->src = str_replace($removeSrcAttrPresets,'',$this->src);
         if (isset($this->cache)) {
             if (cache::exists($this->cache)) {

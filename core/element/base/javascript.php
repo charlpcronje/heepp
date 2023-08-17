@@ -20,7 +20,7 @@ class javascript extends Element {
             $this->defer = 'defer';
         }
 
-        if (strpos($this->src,'/app') === 0) {
+        if ($this->src != null && strpos($this->src,'/app') === 0) {
             $this->src = str_replace(env('project.url'),env('core.url'),$this->src);
         }
         $this->jscript();

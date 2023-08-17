@@ -34,7 +34,11 @@ function data($dotName,$value = null,$data = null) {
 }
 
 function urlExists($file) {
-    $file_headers = @get_headers($file);
+    $file_headers = [];
+    if ($file) {
+        $file_headers = @get_headers($file);
+    }
+
     if(!$file_headers || $file_headers[0] == 'HTTP/1.1 404 Not Found' || $file_headers[0] == 'HTTP/1.1 403') {
         return false;
     }
