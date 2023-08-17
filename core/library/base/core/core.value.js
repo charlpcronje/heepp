@@ -1,9 +1,11 @@
 'use strict';
 
 core.value = class {
-    constructor() {
-        this.target = null;
-        this.value       = null;
+    target = null;
+    value = null;
+
+    constructor({target,value} = options) {
+        Object.assign(this,options);
     }
     
     setValue() {

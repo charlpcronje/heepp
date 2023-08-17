@@ -33,10 +33,11 @@
         getUISelectors : function() {
             return this.UISelectors;
         },
-        ajaxSuccess : function(uiSelectors) {
-            self = this;
-            $(self.UISelectors).each(function(i,selector) {
-                $(selector+' *').each(function(i,elem) {
+        ajaxSuccess: function(uiSelectors) {
+            var self = this;
+            var selectors = this.select.queryAll(self.UISelectors);
+            selectors.forEach(function(selector) {
+                Array.from(selector.querySelectorAll('*')).forEach(function(elem) {
                     self.applyCoreClasses(elem);
                 });
             });
