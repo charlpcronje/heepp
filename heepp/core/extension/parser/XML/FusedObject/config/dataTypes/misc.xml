@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <!-- 
+        #################### MISCELLANEOUS  Data Types ####################
+        Other miscellaneous data types are boolean, base64Binary, hexBinary, 
+        float, double, anyURI, QName, and NOTATION.
+
+
+        Legal values for boolean are true, false, 1 (which indicates true), 
+        and 0 (which indicates false).
+
+        Restrictions that can be used with the other data types:
+        - enum          a Boolean data type cannot use this constraint
+        - length        a Boolean data type cannot use this constraint
+        - maxLength     a Boolean data type cannot use this constraint
+        - minLength     a Boolean data type cannot use this constraint
+        - pattern
+        - whiteSpace
+    -->
+    <boolean 
+        alias="bool"
+        extends="base"
+        defaultValue="{FALSE}"/>
+
+    <!-- Base64-encoded binary data -->
+    <base64Binary 
+        alias="base64"
+        extends="string"/>
+
+    <!-- hexadecimal-encoded binary data -->
+    <hexBinary 
+        alias="hex"
+        extends="string"/>
+
+    <!-- 
+        The anyURI data type is used to specify a URI 
+        Example: http://www.w3schools.com/images/smiley.gif
+        Note: If a URI has spaces, replace them with %20.
+
+        This datatype corresponds normatively to the XLink href attribute. Its 
+        value space includes the URIs defined by RFCs 2396 and 2732, but its 
+        lexical space doesn't require the character escapes needed to include 
+        non-ASCII characters in a URIs.
+
+        The Recommendation states that "it is impractical for processors to 
+        check that a value is a context-appropriate URI reference," thus 
+        freeing schema processors from having to validate the correctness of the URI.
+    -->
+    <anyURI 
+        alias="uri,url"
+        extends="string"/>
+</root>

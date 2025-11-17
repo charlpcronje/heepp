@@ -1,0 +1,51 @@
+<API
+    alias="API"
+    icon="code"
+    status="active"
+    auth="true">
+    <methods>
+        <index
+            alias="Administration Index"
+            status="active"
+            auth="true"/>
+
+        <login
+            alias="Administration Login"
+            status="active"
+            auth="true"/>
+    </methods>
+</API>
+
+<Dashboard
+    alias="Dashboard"
+    icon="bolt"
+    status="active"
+    auth="true">
+    <methods>
+        <index
+            alias="Dashboard Index"
+            status="active"
+            auth="true"/>
+    </methods>
+</Dashboard>
+
+<Upload
+    alias="Upload Images / Documents"
+    icon="upload"
+    status="active"
+    auth="true">
+
+</Upload>
+
+<User
+    alias="User"
+    icon="user"
+    status="active"
+    auth="false">
+    <methods>
+        <getUserDetails
+            alias="Get User Details"
+            status="active"
+            auth="true"/>
+    </methods>
+</User>

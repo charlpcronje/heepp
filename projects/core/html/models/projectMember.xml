@@ -1,0 +1,52 @@
+<database 
+    connection="heepp" 
+    name="projectMember"
+    alias="Project Members"
+    single="Project Member"
+    many="Project Members"
+    public="false">
+    <table 
+        name="project_members"
+        key="id">
+        <columns>
+            <project_id         alias="project_id"/>
+            <member_id          alias="member_user_id"/>
+            <created_at         alias="Date and Time Record Added"/>
+            <updated_at         alias="Date and Time Records was Updated"/>
+            <status_id          alias="Status"/>
+            <user_id            alias="user_id"/>
+        </columns>
+    </table>
+    <join
+        table="users"
+        type="inner"
+        left="project_members.member_id"
+        right="users.id">
+        <columns>
+            <first_name alias="Member First Name"/>
+            <last_name  alias="Member Last Name"/>
+            <email      alias="Member E-Mail"/>
+        </columns>
+    </join>
+</database>
+<datasets>
+    <active
+        alias="Select all project Members"
+        description="Select all Member by Project">
+        <filter>
+            <status_id equal="1"/>
+        </filter>
+        <order>
+            <first_name order="ASC"/>
+        </order>
+    </active>
+
+    <byUser
+        alias="Select project Member where member_id = ${userId}"
+        description="Select Member by member_id">
+        <filter>
+            <member_id equals="${userId}"/>
+            <status_id equal="1"/>
+        </filter>
+    </byUser>
+</datasets>

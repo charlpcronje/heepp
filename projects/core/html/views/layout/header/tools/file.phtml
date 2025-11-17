@@ -1,0 +1,100 @@
+<nav
+    class="file-style-nav uk-navbar-container uk-padding-remove"
+    uk-navbar="mode: click">
+    <ul class="uk-navbar-nav uk-background-secondary">
+        <li>
+            <a href="#">
+                <u>F</u><span>ile</span>
+            </a>
+            <div class="uk-navbar-dropdown">
+                <ul
+                    class="uk-nav uk-navbar-dropdown-nav"
+                    foreach="barItems as item">
+                    <li>
+                        <a href="#">
+                            <i uk-icon="icon: plus"/>
+                            <span class="uk-margin-small-left"> New File</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-file-o fa-fw"/>
+                            <span class="uk-margin-small-left"> Open File</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-folder-open-o fa-fw"/>
+                            <span class="uk-margin-small-left"> Open Folder</span>
+                        </a>
+                    </li>
+                    <li class="uk-nav-divider"></li>
+                    <li>
+                        <a
+                            href="#console/settings"
+                            core.event.click.load="Console.Settings/index">
+                            <i uk-icon="icon: settings"/>
+                            <span class="uk-margin-small-left"> Settings</span>
+                        </a>
+                    </li>
+                    <li class="uk-nav-divider"></li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-cogs fa-fw"/>
+                            <span class="uk-margin-small-left"> Config</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-i-cursor fa-fw"/>
+                            <span class="uk-margin-small-left"> Snippets</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-adjust fa-fw"/>
+                            <span class="uk-margin-small-left"> Stylesheet</span>
+                        </a>
+                    </li>
+                    <li class="uk-nav-divider"></li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-save fa-fw"/>
+                            <span class="uk-margin-small-left"> Save</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-files-o fa-fw"/>
+                            <span class="uk-margin-small-left"> Save As</span>
+                        </a>
+                    </li>
+                    <li class="uk-nav-divider"></li>
+                    <li class="restore-ui-session-button" style="display: none">
+                        <a href="#console/history"
+                           core.event.click.load="Console/loadHistory">
+                            <i class="fa fa-history fa-fw"/>
+                            <span class="uk-margin-small-left"> Restore UI Session</span>
+                        </a>
+                    </li>
+                    <!--
+                    <li>
+                        <a href="User/lockScreen">
+                            <i class="fa fa-lock fa-fw"/>
+                            <span class="uk-margin-small-left"> Lock Screen</span>
+                        </a>
+                    </li>
+                    -->
+                    <li>
+                        <a
+                            href="User/signOut"
+                            core.event.click.load="User/signOut">
+                            <i class="fa fa-sign-out fa-fw"/>
+                            <span class="uk-margin-small-left"> Sign-Out</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </li>
+    </ul>
+</nav>

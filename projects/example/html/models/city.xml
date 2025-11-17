@@ -1,0 +1,50 @@
+<database 
+    connection="heepp" 
+    name="city" 
+    alias="Cities" 
+    single="City"
+    many="Cities"
+    public="false">
+    <table 
+        name="cities" 
+        key="id">
+        <columns>
+            <country_id
+                alias="Country ID"
+                lookup="country"/>
+            <region_id
+                alias="Region ID"
+                lookup="region"/>
+            <name
+                alias="City Name"/>
+            <gps_lat
+                alias="GPS Latitude"/>
+            <gps_long
+                alias="GPS Longitude"/>
+            <created_at           
+                alias="Date and Time Record Added"/>
+            <updated_at           
+                alias="Date and Time Records was Updated"/>
+        </columns>
+    </table>
+</database>
+<datasets>
+    <all
+        alias="Select All Regions"
+        description="Select all regions and order by `name` ASC">
+        <order>
+            <name order="ASC"/>
+        </order>
+    </all>
+
+    <byCode
+        alias="Select Region by Region Code"
+        description="Select region where code = ${code} order by `name` ASC">
+        <filter>
+            <code equals="${code}"/>
+        </filter>
+        <order>
+            <name order="ASC"/>
+        </order>
+    </byCode>
+</datasets>

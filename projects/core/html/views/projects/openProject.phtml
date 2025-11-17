@@ -1,0 +1,53 @@
+<lazyload
+    src="/views/projects/css/openProject.scss"/>
+
+<lazyload
+    src="/views/projects/js/project.js"
+    instantiate="projects.project"
+    extend="console"
+    callback="core.console.projects.project.init"
+    context="window"/>
+
+<header class="uk-flex">
+    <aside class="sub-project-list">
+        <div class="uk-card uk-card-default uk-card-body">
+            <h3 class="uk-card-title">Sub-Projects</h3>
+            <ul
+                class="uk-nav-default uk-nav"
+                uk-nav="mode: click"
+                foreach="subProjects as subProject">
+                <li
+                    class="uk-parent margin-bottom-10 margin-left-5 listed-main-project"
+                    core.event.click.load="Project/openProject/${subProject.id}">
+                    <a href="#" >
+                        <div class="uk-flex uk-flex-left">
+                            <div>
+                                <image
+                                    class="uk-border-circle"
+                                    src="${subProject.project_avatar}"
+                                    height="32"
+                                    alt="${subProject.project_avatar}"/>
+                            </div>
+                            <div class="margin-left-10">
+                                <!--
+                                <div
+                                    class="project-list-project-name"
+                                    style="color: ${app.project.color.${project.project_color}.text}"> ${project.project_name}</div>
+                                <div class="project-list-company-name"> ${project.company_name} - ${project.task_count}</div>
+                                -->
+                                <div class="project-list-project-name"> ${subProject.project_name}</div>
+                                <div class="project-list-company-name"> <span>${subProject.company_name}: ${subProject.task_count|'0'} Tasks</span> <span> - </span> <small>${subProject.project_status}</small></div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </aside>
+</header>
+<main>
+
+</main>
+<footer>
+
+</footer>

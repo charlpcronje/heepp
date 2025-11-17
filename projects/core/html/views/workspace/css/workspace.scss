@@ -1,0 +1,76 @@
+@import "../../../assets/css/partials/variables";
+#cc {
+    main main {
+        #cc-workspace {
+            height: 100%;
+            display: grid;
+            grid-gap: 0;
+            grid-template-columns: 1fr auto;
+            grid-template-rows: 1fr;
+            grid-template-areas: "ws-left ws-right";
+            .font-heepp {
+                font-family: 'Montserrat Subrayada', sans-serif;
+            }
+            .ws-left {
+              background-size: cover;
+              background: url(../../../assets/images/HeEPP-dark.png) no-repeat center center;
+                .ws-left-credit {
+                    text-align: center;
+                    padding-top: 50px;
+                    .core-heading {
+                        color: $color-secondary;
+                        font-size: 45px;
+                        small {
+                            font-family: 'Montserrat Subrayada', sans-serif;
+                        }
+                    }
+                    .core-sub-heading {
+                        font-family:'BN Machine', 'Wire One', 'Tulpen One', 'Steppes TT', 'Six Caps', 'Rondalo', 'Ostrich Sans', 'Libre Barcode 128 Text', 'Open Sans', sans-serif;
+                        font-size: 75px;
+                        text-shadow: 1px 1px 1px rgba(0,0,0,0.6);
+                        text-decoration: underline;
+                    }
+                }
+                .welcome-statement {
+                    padding-top: 50px;
+                    padding-left: 30px;
+                }
+                .ws-svg-box {
+                    opacity: 0;
+                    position: absolute;
+                    top: 220px;
+                    left: 90px;
+                    #core.svg {
+
+                    }
+                }
+                grid-area: ws-left;
+                #core-svg {
+                    .drop-shadow {
+                        &.small {
+                            filter: drop-shadow(10px -2px 5px #ddd);
+                        }
+                        &.large {
+                            filter: drop-shadow(10px -2px 25px #ddd);
+                        }
+                    }
+
+                }
+            }
+            .ws-right {
+                grid-area: ws-right;
+                &.hidden {
+                    display: none;
+                }
+            }
+            .fonts {
+                /*
+                font-family: 'Overpass Mono', monospace;
+                font-family: 'Montserrat Subrayada', sans-serif;
+                font-family: 'Montserrat Alternates', sans-serif;
+                font-family: 'Montserrat', sans-serif;
+                */
+            }
+        }
+    }
+}

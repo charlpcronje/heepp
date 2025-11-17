@@ -1,0 +1,26 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+        <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+        <title>${app.website.title}</title>
+    </head>
+    <body style="background-image: url(${env.project.assets.url}images/banners/2018/feb/banner4.jpg);">
+        <!--
+        <printr>${session.request.post}</printr>
+        <h1 style="text-align: center">Page "${app.request.error.route}" not found</h1>
+        <h3 style="text-align: center">Message: ${app.request.error.message}</h3>
+        -->
+        <div style="margin-top:100px">
+            <h1 style="text-align:center">The Page You Requested Does Not Exists.</h1>
+            <h2  style="text-align:center">Page / Item Requested: ${session.request.previous}</h2>
+            <div style="margin-top: 100px; text-align: center">
+                <span>Please click</span>
+                <strong>
+                    <a onclick="window.location = '${HOST}'"> HERE </a>
+                </strong>
+                <span> Go Back</span>
+            </div>
+        </div>
+    </body>
+</html>
