@@ -1,0 +1,45 @@
+<database
+    connection="heepp"
+    name="bank"
+    alias="Banks"
+    single="Bank"
+    many="Banks"
+    public="false">
+    <table
+        name="banks"
+        key="id">
+        <columns>
+            <bank          alias="Bank"/>
+            <branch_code   alias="Branch Code"/>
+            <created_at    alias="Date and Time"/>
+            <updated_at    alias="Date and Time Updated"/>
+            <status_id     alias="Status ID"/>
+            <user_id       alias="User ID"/>
+        </columns>
+    </table>
+    <join
+        table="statuses"
+        type="inner"
+        left="banks.status_id"
+        right="statuses.id">
+        <columns>
+            <status alias="Status"/>
+        </columns>
+    </join>
+</database>
+<datasets>
+    <all>
+        <order>
+            <bank order="ASC"/>
+        </order>
+    </all>
+
+    <active>
+        <filter>
+            <status_id equal="1"/>
+        </filter>
+        <order>
+            <bank order="ASC"/>
+        </order>
+    </active>
+</datasets>

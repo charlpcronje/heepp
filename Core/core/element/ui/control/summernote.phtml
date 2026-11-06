@@ -1,0 +1,24 @@
+<core-library
+    library="ui-form-editor-wysiwig"        
+    section="summernote"/>
+<if notempty="${label}">
+    <label for="${uniqueId}">${label}</label>
+</if>
+<div 
+    style="font-size: 14px; ${style}">
+    <textarea 
+        id="${uniqueId}" 
+        name="${name}">
+        ${value}
+    </textarea>
+</div>
+<script>
+    <if notempty="${height}">
+        $("#${uniqueId}").summernote({
+            height: ${height}
+        });
+    </if>
+    <if empty="${height}">
+        $("#${uniqueId}").summernote(); 
+    </if>
+</script>

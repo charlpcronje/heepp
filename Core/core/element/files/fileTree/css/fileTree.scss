@@ -1,0 +1,80 @@
+// Background Colors
+$bg-default: #222;
+$bg-primary: #1e1e1e;
+$bg-secondary: #161616;
+$bg-hover: #030303;
+
+// Colors
+$color-default: #666;
+$color-primary: #999;
+$color-hover: #FAFAFA;
+$default-color: $color-default !default;
+
+#element-file-tree {
+    max-height: 100%;
+    & > ul {
+        &:first-child {
+            & > li {
+                width: 100%;
+                &:first-child {
+                    & > a {
+                        &:first-child {
+                            padding-left: 5px;
+                            padding-top: 3px;
+                            padding-bottom: 3px;
+                            width: 100%;
+                            display: block;
+                            background-color: $bg-default;
+                            color: lighten($color-default,5%);
+                            font-size: 13px;
+                            font-weight: bold;
+                            text-transform: uppercase;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    ul {
+        list-style-type: none;
+        padding-left: 10px;
+        li {
+            a {
+                width: 100%;
+                height: 100%;
+                display: block;
+                background-color: $bg-primary;
+                line-height: 21px;
+                color: lighten($color-default,15%);
+                text-decoration: none;
+                &:hover {
+                    background-color: lighten($bg-primary,15%) !important;
+                }
+                i {
+                    margin-right: 5px;
+                    &:before {
+                        font-size: 12px;
+                    }
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+    .element-file-tree {
+        padding-left: 0 !important;
+        width: 100%;
+        padding-top: 0;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1.5;
+        -webkit-text-size-adjust: 100%;
+        -ms-text-size-adjust: 100%;
+        color: #666;
+        .pft-directory.open {
+            & > a > i {
+                transform: rotate(45deg);
+            }
+        }
+    }
+}

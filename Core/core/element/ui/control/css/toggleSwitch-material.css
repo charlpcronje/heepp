@@ -1,0 +1,44 @@
+.onoffswitch-label-top {
+    margin-top: 15px;
+    margin-bottom: 3px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #666;
+}
+
+.onoffswitch-material {
+    position: relative; width: 47px;
+    -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
+}
+.onoffswitch-material-checkbox {
+    display: none;
+}
+.onoffswitch-material-label {
+    display: block; overflow: hidden; cursor: pointer;
+    height: 6px; padding: 0; line-height: 6px;
+    border: 0 solid #FFFFFF; border-radius: 24px;
+    background-color: #000000;
+}
+.onoffswitch-material-label:before {
+    content: "";
+    display: block; width: 24px; margin: -9px;
+    background: #949494;
+    position: absolute; top: 0; bottom: 0;
+    right: 37px;
+    border-radius: 24px;
+    box-shadow: 0 6px 12px 0 #757575;
+}
+.onoffswitch-material-checkbox:checked + .onoffswitch-material-label {
+    background-color: #4D4D4D;
+}
+.onoffswitch-material-checkbox:checked + .onoffswitch-material-label, .onoffswitch-material-checkbox:checked + .onoffswitch-material-label:before {
+    border-color: #4D4D4D;
+}
+.onoffswitch-material-checkbox:checked + .onoffswitch-material-label .onoffswitch-material-inner {
+    margin-left: 0;
+}
+.onoffswitch-material-checkbox:checked + .onoffswitch-material-label:before {
+    right: 0;
+    background-color: #FFFFFF;
+    box-shadow: 3px 6px 18px 0 rgba(0, 0, 0, 0.2);
+}

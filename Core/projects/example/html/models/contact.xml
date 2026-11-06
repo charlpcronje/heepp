@@ -1,0 +1,87 @@
+<database
+    connection="heepp"
+    name="contact"
+    alias="Contact"
+    single="Contact"
+    many="Contacts"
+    public="false">
+    <table
+        name="contacts"
+        key="id">
+        <columns>
+            <foreign_id         alias="Foreign ID"/>
+            <foreign_table      alias="Foreign Table"/>
+            <contact_first_name alias="Contact First Name"/>
+            <contact_last_name  alias="Contact Last Name"/>
+            <contact_email      alias="Contact Email"/>
+            <contact_tel        alias="Contact Telephone"/>
+            <contact_mobile     alias="Contact Mobile"/>
+            <contact_fax        alias="Contact Fax"/>
+            <created_at         alias="Date and Time"/>
+            <updated_at         alias="Date and Time Updated"/>
+            <user_id            alias="User ID"/>
+            <status_id          alias="Status ID"/>
+        </columns>
+    </table>
+    <join
+        table="users"
+        type="inner"
+        left="contacts.user_id"
+        right="users.id">
+        <columns>
+            <first_name alias="First Name"/>
+            <last_name alias="Last Name"/>
+        </columns>
+    </join>
+    <join
+        table="statuses"
+        type="inner"
+        left="contacts.status_id"
+        right="statuses.id">
+        <columns>
+            <status alias="Status"/>
+        </columns>
+    </join>
+</database>
+<datasets>
+    <all>
+        <order>
+            <contact_first_name order="ASC"/>
+        </order>
+    </all>
+
+    <active>
+        <filter>
+            <status_id equal="1"/>
+        </filter>
+        <order>
+            <contact_first_name order="ASC"/>
+        </order>
+    </active>
+
+    <deleted>
+        <filter>
+            <status_id equal="4"/>
+        </filter>
+        <order>
+            <contact_first_name order="ASC"/>
+        </order>
+    </deleted>
+
+    <byCompanyId>
+        <filter>
+            <status_id equal="1"/>
+            <foreign_table equal="companies"/>
+            <foreign_id equal="{companyId}"/>
+        </filter>
+        <order>
+            <contact_first_name order="ASC"/>
+        </order>
+    </byCompanyId>
+
+    <byId>
+        <filter>
+            <id equal="{id}"/>
+        </filter>
+    </byId>
+</datasets>

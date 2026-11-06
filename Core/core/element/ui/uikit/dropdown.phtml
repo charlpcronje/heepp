@@ -1,0 +1,24 @@
+<div class="uk-margin">
+    <label class="uk-form-label" for="@{id}">@{label}</label>
+    <div class="uk-form-controls">
+        <select
+            class="uk-select @{class}"
+            id="@{id}"
+            select="@{select}"
+            name="@{name}"
+            readonly="@{readonly}"
+            disabled="@{disabled}"
+            required="@{required}">
+            @{child}
+        </select>
+
+        <script id="script_@{id}">
+            var element = document.getElementById('@{id}');
+            if ('@{select}' != ''){
+                element.value = '@{select}';
+            }
+            var child = document.getElementById("script_@{id}");
+            child.parentNode.removeChild(child);
+        </script>
+    </div>
+</div>

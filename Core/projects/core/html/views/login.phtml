@@ -1,0 +1,80 @@
+<css src="//assets/css/login.scss"/>
+<main>
+    <main>
+        <section id="cc-workspace">
+            <div id="login-form-container" class="uk-flex uk-flex-center uk-flex-middle">
+                <div class="uk-card uk-card-secondary uk-card-body uk-animation-scale-up uk-transform-origin-top-center">
+                    <div class="login-form-header">
+                        <aside>
+                            <image
+                                src="/assets/images/HeEPP-small.png"
+                                height="75"/>
+                        </aside>
+                        <main>
+                            <!--
+                            <h3
+                                id="login-top-headings"
+                                class="uk-card-title">
+                                Welcome
+                            </h3>
+                            -->
+                        </main>
+                        <aside>
+                        <!--
+                            <image
+                                src="/assets/images/HeEPP-small.png"
+                                height="75"/>
+                        </aside>
+                        -->
+                    </div>
+
+                    <div id="login-split-box" style="border-radius: 10px; text-align:center; transition: all 1.3s cubic-bezier(0.25, 0.8, 0.25, 1) 2s; overflow: hidden; border-bottom: 40px solid #222; height: 100px; background-color: #FFF">
+                        <h3
+                            class="uk-card-title"
+                            id="login-slit-headings">
+                            <span style="color: #222"> <h1 style="color: #000; margin-top: 15px">core, Loading...</h1></span>
+                        </h3>
+                    </div>
+                    <core.form method="post" action="User/login" id="cc-login-form">
+                        <uk.textfield
+                            label="E-Mail Address"
+                            type="email"
+                            name="email"
+                            placeholder="E-Mail Address"
+                            required="true"
+                            icon="mail"
+                            data-lpignore="true"
+                            value=""/>
+
+                        <uk.textfield
+                            label="Password"
+                            type="password"
+                            name="password"
+                            placeholder="Password"
+                            required="true"
+                            icon="lock"
+                            data-lpignore="true"
+                            value=""/>
+
+                        <button
+                            class="uk-button uk-button-primary"
+                            type="submit"
+                            uk-icon="sign-in">
+                            Login
+                        </button>
+                    </core.form>
+                </div>
+            </div>
+            <div id="login-right-container" class="uk-flex uk-flex-center uk-flex-middle">
+                <image src="/assets/images/const-1.png"/>
+            </div>
+        </section>
+    </main>
+</main>
+<script>
+    $(function() {
+        $('#login-split-box').css('height','0px').css('border-bottom','0px').css('margin','0px');
+        $('#login-top-headings').css('opacity','1').css('height','100px');
+        $('#login-split-headings').css('opacity','0');
+    });
+</script>

@@ -1,0 +1,67 @@
+<database 
+    connection="heepp" 
+    name="apiRequestLog" 
+    alias="API Request Log"
+    single="APIRequestLog"
+    many="APIRequestLogs"
+    public="false">
+    <table 
+        name="api_request_log" 
+        key="id">
+        <columns>
+            <endpoint     alias="Endpoint"/>
+            <type         alias="Request Type (Verb)"/>
+            <params       alias="Request Paramaters"/>
+            <zone         alias="Centred Zone"/>
+            <user_agent   alias="User Agent"/>
+            <headers      alias="Headers"/>
+            <response     alias="Response"/>
+            <success      alias="Success"/>
+            <error        alias="Error Message"/>
+            <start_time   alias="Start Time"/>
+            <end_time     alias="End Time"/>
+            <request_time alias="Request Time"/>
+            <created_at   alias="Created At"/>
+            <updated_at   alias="Updated At"/>
+        </columns>
+    </table>
+</database>
+<datasets>
+    <all
+        alias="Select all logs"
+        description="Select logs and order `created_at` DESC">
+        <order>
+            <created_at order="DESC"/>
+        </order>
+    </all>
+
+    <byType
+        alias="Select logs by type (Verb)"
+        description="Select logs where `type` = ${type} and order by `created_at` DESC">
+        <filter>
+            <type equal="${type}"/>
+        </filter>
+        <order>
+            <created_at order="DESC"/>
+        </order>
+    </byType>
+
+    <endpoint
+        alias="Select logs by endpoint"
+        description="Select logs where `endpoint` = ${endpoint} and order by `created_at` DESC">
+        <filter>
+            <endpoint equal="${endpoint}"/>
+        </filter>
+        <order>
+            <created_at order="DESC"/>
+        </order>
+    </endpoint>
+
+    <byId
+        alias="Select log by id"
+        description="Select log where `id` = ${id}">
+        <filter>
+            <id equal="${id}"/>
+        </filter>
+    </byId>
+</datasets>

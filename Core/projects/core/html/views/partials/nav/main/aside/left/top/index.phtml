@@ -1,0 +1,23 @@
+<div
+    class="nav-main-aside left uk-navbar-nav uk-thumbnav-vertical">
+    <ul class="uk-navbar-nav uk-thumbnav-vertical">
+        <li class="left-menu-item uk-text-center">
+            <a
+                class="left-menu-a"
+                href="#"
+                uk-icon="icon: copy"
+                uk-tooltip="title: File / Project Explorer"
+                core.event.click.load="Console/getFileExplorer">
+            </a>
+        </li>
+        <li class="left-menu-item uk-text-center">
+            <a
+                class="left-menu-a"
+                href="#Console/globalSearch/${env.project}"
+                uk-icon="icon: search"
+                uk-tooltip="title: Search"
+                core.event.click.load="Console/globalSearch/${env.project}">
+            </a>
+        </li>
+    </ul>
+</div>

@@ -1,0 +1,17 @@
+<div class="form-group floating-label">
+    <textarea 
+        name="${name}" 
+        id="${id}" 
+        class="form-control" 
+        rows="${rows}"
+        readonly="${readonly}"
+        disabled="${disabled}"
+        placeholder="${placeholder}"
+        required="${required}">
+        ${value}
+    </textarea>
+    <label for="textarea1">${label}</label>
+    <if if="'${help}' !== ''">
+        <p class="help-block">${help}</p>
+    </if>
+</div>

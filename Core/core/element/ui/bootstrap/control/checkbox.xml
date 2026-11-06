@@ -1,0 +1,27 @@
+<div class="form-group">
+    <label for="${id}">
+        <input 
+            name="${name}" 
+            id="${id}" 
+            class="${class}" 
+            style="${style}"
+            type="checkbox"
+            disabled="${disabled}"
+            readonly="${readonly}"
+            required="${required}"
+            value="${value}"
+            checked="${checked}"
+            check="${check}"
+            rel="${rel}"/>
+        <span> ${label}</span>
+    </label>
+
+    <if notempty="${id}">
+        <script id="script_${id}">
+            if ($("#${id}").attr('check') == $("#${id}").val()) {
+                $("#${id}").prop('checked',true);
+            }
+            $("#script_${id}").remove();
+        </script>
+    </if>
+</div>

@@ -1,0 +1,23 @@
+<button
+    style="display: none; border: 1px solid #DDD; margin-top: 2px;"
+    id="top-right-restore-ui-session-button"
+    core.event.click.load="Console/loadHistory"
+    class="restore-ui-session-button uk-button uk-button-secondary uk-button-small">
+    <i class="fa fa-history"></i>
+    <span> Restore Prev UI Session</span>
+</button>
+<a href="#User/notifications">
+    <image
+        alt="Notifications"
+        src="/assets/images/notification.png"
+        height="25"
+        uk-tooltip="title: Notifications"/>
+</a>
+<a href="#User/myProfile">
+    <image
+        alt="My Profile"
+        src="/assets/images/user.png"
+        height="25"
+        uk-tooltip="title: My Profile"
+        core.event.click.load="User/myProfile"/>
+</a>

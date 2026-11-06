@@ -1,0 +1,29 @@
+#cc > main > main #cc-workspace .ws-right > #cc-console-settings {
+  height: 100%;
+  display: grid;
+  grid-gap: 0;
+  grid-template-columns: 200px 1fr;
+  grid-template-rows: 1fr;
+  align-items: start;
+  grid-template-areas: "cc-console-settings-nav cc-console-settings-main"; }
+  #cc > main > main #cc-workspace .ws-right > #cc-console-settings > nav {
+    grid-area: cc-console-settings-nav;
+    background-color: #1e1e1e;
+    height: 100%; }
+    #cc > main > main #cc-workspace .ws-right > #cc-console-settings > nav li {
+      padding-left: 10px;
+      padding-right: 10px;
+      height: 45px;
+      line-height: 35px; }
+      #cc > main > main #cc-workspace .ws-right > #cc-console-settings > nav li.uk-nav-header {
+        background-color: #222;
+        color: #fafafa; }
+      #cc > main > main #cc-workspace .ws-right > #cc-console-settings > nav li:hover {
+        background-color: #030303; }
+      #cc > main > main #cc-workspace .ws-right > #cc-console-settings > nav li.active {
+        background-color: #030303; }
+  #cc > main > main #cc-workspace .ws-right > #cc-console-settings > main {
+    height: 100%;
+    grid-area: cc-console-settings-main;
+    padding: 10px;
+    background-color: #151515; }

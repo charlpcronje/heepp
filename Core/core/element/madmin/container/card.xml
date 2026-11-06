@@ -1,0 +1,14 @@
+<div 
+    id="${id}"
+    class="card style-${cardstyle} ${class} ${bordered} ${outlined}"
+    style="${style}">
+    <if notempty="${heading}">
+        <div class="card-head style-${headingstyle} card-head-${headingsize}">
+            <header>${heading}</header>
+        </div>
+    </if>
+    
+    <div class="card-body style-${bodystyle}">
+        ${children}
+    </div>
+</div>

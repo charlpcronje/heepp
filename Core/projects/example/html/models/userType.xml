@@ -1,0 +1,38 @@
+<database 
+    connection="heepp"
+    name="userType" 
+    alias="User Types"
+    single="UserType"
+    many="UserTypes"
+    public="false">
+    <table 
+        name="user_types" 
+        key="id">
+        <columns>
+            <user_type   alias="User Type"/>
+            <created_at  alias="Date and Time Record Added"/>
+            <updated_at  alias="Date and Time Records was Updated"/>
+            <status_id   alias="Status"/>
+        </columns>
+    </table>
+</database>
+<datasets>
+    <all
+        alias="Select all user types"
+        description="Select all users and order by id ASC">
+        <order>
+            <id order="ASC"/>
+        </order>
+    </all>
+
+    <active
+        alias="Select all active users"
+        description="Select all users where status_id='1' and order by id ASC">
+        <filter>
+            <status_id equal="1"/>
+        </filter>
+        <order>
+            <id order="ASC"/>
+        </order>
+    </active>
+</datasets>

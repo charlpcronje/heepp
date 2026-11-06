@@ -1,0 +1,33 @@
+<if notempty="${app.redirect.message.message">
+    <div style="@{style}" class="@{class}" id="app-static-message-box">
+        <if value="${app.redirect.message.type}" equalto="success">
+            <div class="alert alert-success alert-dismissible redirect-message" data-timeout="${app.redirect.message.timeout}" role="alert">
+                ${app.redirect.message.message}
+            </div>
+        </if>
+        <if value="${app.redirect.message.type}" equalto="info">
+            <div class="alert alert-info alert-dismissible redirect-message" data-timeout="${app.redirect.message.timeout}" role="alert">
+                ${app.redirect.message.message}
+            </div>
+        </if>
+        <if value="${app.redirect.message.type}" equalto="warning">
+            <div class="alert alert-warning alert-dismissible redirect-message" data-timeout="${app.redirect.message.timeout}" role="alert">
+                ${app.redirect.message.message}
+            </div>
+        </if>
+        <if value="${app.redirect.message.type}" equalto="error">
+            <div class="alert alert-danger alert-dismissible redirect-message" data-timeout="${app.redirect.message.timeout}" role="alert">
+                ${app.redirect.message.message}
+            </div>
+        </if>
+    </div>
+    <script>
+        $('.redirect-message').each(function(i,elem) {
+            if (parseInt($(elem).data('timeout')) > 0) {
+                setTimeout(function () {
+                    $(elem).remove();
+                },$(elem).data('timeout'));
+            }
+        });
+    </script>
+</if>

@@ -1,0 +1,172 @@
+<lazyload
+    src="/views/projects/css/nav-list.scss"/>
+<!--
+<app.ws.top.tab
+    icon="album"
+    title="Projects | List"
+    active="yes"
+    target="#cc > main > nav.left"/>
+-->
+<div id="project-nav-list-container">
+    <core.form
+        id="project-filter-form"
+        action="Project/filter"
+        style="width: 100%"
+        class="uk-search uk-search-default">
+        <span data-uk-search-icon></span>
+        <uk.textfield
+            margin="none"
+            class="uk-search-input search-field uk-box-shadow-medium"
+            style="border: none; background-color: #181818; box-shadow: 0 2px 2px rgba(0,0,0,.1);"
+            type="search"
+            placeholder="Filter / Search Projects"/>
+    </core.form>
+    <div class="projects-icon-nav">
+        <ul class="uk-subnav uk-flex uk-flex-center uk-child-width-1-5 uk-grid uk-grid-stack">
+            <li>
+                <a href="#Project/new">
+                    <i
+                        uk-tooltip="title: Add Project"
+                        class="fa fa-plus"/>
+                </a>
+            </li>
+            <li>
+                <a href="#Project/history">
+                    <i
+                        uk-tooltip="title: Projects Members"
+                        class="fa fa-user-plus"/>
+                </a>
+            </li>
+            <li>
+                <a href="#Project/group/parentProject/project">
+                    <i
+                        uk-tooltip="title: Project Milestones"
+                        class="fa fa-trophy"/>
+                </a>
+            </li>
+            <li>
+                <a href="#Project/share">
+                    <i
+                        uk-tooltip="title: Project Progress"
+                        class="fa fa-line-chart "/>
+                </a>
+            </li>
+            <li>
+                <a href="#Project/close">
+                    <i
+                        uk-tooltip="title: Project Settings"
+                        class="fa fa-gears"/>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <!--
+    <div>
+        <h5 style="margin: 0" class="padding-left-15">ACTIVE PROJECTS</h5>
+    </div>
+    -->
+    <div
+        id="project-list-nav"
+        class="padding-left-5 padding-right-15 margin-top-15">
+        <ul
+            class="uk-nav-default uk-nav"
+            uk-nav="mode: click"
+            foreach="projects as project">
+            <li
+                class="uk-parent margin-bottom-10 margin-left-5 listed-main-project"
+                core.event.click.load="Project/openProject/${project.id}">
+                <a href="#" >
+                    <div class="uk-flex uk-flex-left">
+                        <div>
+                            <image
+                                class="uk-border-circle"
+                                src="${project.project_avatar}"
+                                height="32"
+                                alt="${project.project_avatar}"/>
+                        </div>
+                        <div class="margin-left-10">
+                            <!--
+                            <div
+                                class="project-list-project-name"
+                                style="color: ${app.project.color.${project.project_color}.text}"> ${project.project_name}</div>
+                            <div class="project-list-company-name"> ${project.company_name} - ${project.task_count}</div>
+                            -->
+                            <div class="project-list-project-name"> ${project.project_name}</div>
+                            <div class="project-list-company-name"> <span>${project.company_name}: ${project.task_count|'0'} Tasks</span> <span> - </span> <small>${project.project_status}</small></div>
+                        </div>
+                    </div>
+                </a>
+                <!--
+                <ul class="uk-nav-sub">
+                    <li>
+                        <a
+                            href="#Products/Products"
+                            core.event.click.load="Products">
+                        <span
+                            class="uk-margin-small-right"/>
+                            <core.svg
+                                fill="#00A0FC"
+                                path="${env.project.assets.path}"
+                                file="assets/images/icons/project/feature.svg"/>
+                            <span> Feature</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="#Products/updateProducts"
+                            core.event.click.load="Products/updateProducts">
+                        <span
+                            class="uk-margin-small-right"/>
+                            <core.svg
+                                fill="red"
+                                path="${env.project.assets.path}"
+                                file="assets/images/icons/project/bug.svg"/>
+                            <span> Bug</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="#Products/updateProducts"
+                            core.event.click.load="Products/updateProducts">
+                        <span
+                            class="uk-margin-small-right"/>
+                            <core.svg
+                                fill="#FEAB7D"
+                                path="${env.project.assets.path}"
+                                file="assets/images/icons/project/chore.svg"/>
+                            <span> Chore</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="#Products/updateProducts"
+                            core.event.click.load="Products/updateProducts">
+                        <span
+                            class="uk-margin-small-right"/>
+                            <core.svg
+                                fill="#7286E9"
+                                path="${env.project.assets.path}"
+                                file="assets/images/icons/project/epic.svg"/>
+                            <span> Epic</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="#Products/updateProducts"
+                            core.event.click.load="Products/updateProducts">
+                        <span
+                            class="uk-margin-small-right"/>
+                            <core.svg
+                                fill="#70C471"
+                                path="${env.project.assets.path}"
+                                file="assets/images/icons/project/note.svg"/>
+                            <span> Notes</span>
+                        </a>
+                    </li>
+                </ul>
+                -->
+            </li>
+        </ul>
+    </div>
+</div>
+

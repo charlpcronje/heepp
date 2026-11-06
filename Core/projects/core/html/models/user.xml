@@ -1,0 +1,108 @@
+<database 
+    connection="heepp"
+    name="user" 
+    alias="Users"
+    single="Users"
+    many="Userss"
+    public="false">
+    <table 
+        name="users" 
+        key="id">
+        <columns>
+            <company_id     alias="Company ID"/>
+            <user_type_id   alias="User Type ID"/>
+            <first_name     alias="First Name"/>
+            <last_name      alias="Last Name"/>
+            <email          alias="E-Mail Address"/>
+            <password       alias="Password"/>
+            <avatar         alias="User Avatar Image"/>
+            <created_at     alias="Date and Time Record Added"/>
+            <updated_at     alias="Date and Time Records was Updated"/>
+            <user_id        alias="User That did the last update"/>
+        </columns>
+    </table>
+    <join
+        table="companies"
+        type="left"
+        left="users.company_id"
+        right="companies.id">
+        <columns>
+            <company_name alias="Company Name"/>
+        </columns>
+    </join>
+    <join
+        table="user_types"
+        type="left"
+        left="users.user_type_id"
+        right="user_types.id">
+        <columns>
+            <user_type alias="User Type"/>
+        </columns>
+    </join>
+    <join
+        table="statuses"
+        type="left"
+        left="users.status_id"
+        right="statuses.id">
+        <columns>
+            <status alias="User Status"/>
+        </columns>
+    </join>
+</database>
+<datasets>
+    <all
+        alias="Select all users"
+        description="Select users and order by `id` ASC">
+        <order>
+            <id order="ASC"/>
+        </order>
+    </all>
+
+    <active
+        alias="Select active users"
+        description="Select users where `status_id` = 1 and order by `first_name` ASC">
+        <filter>
+            <status_id equal="1"/>
+        </filter>
+        <order>
+            <first_name order="ASC"/>
+        </order>
+    </active>
+
+    <deleted
+        alias="Select deleted users"
+        description="Select users where `status_id` = 4 and order by `first_name` ASC">
+        <filter>
+            <status_id equal="4"/>
+        </filter>
+        <order>
+            <first_name order="ASC"/>
+        </order>
+    </deleted>
+
+    <byEmailAddress
+        alias="Select user by email address"
+        description="Select user where `status_id` = 1 and `email` = ${email}">
+        <filter>
+            <status_id equal="1"/>
+            <email equal="${email}"/>
+        </filter>
+    </byEmailAddress>
+
+    <byEmailAndPassword
+        alias="Select user by email and password"
+        description="Select user where `email` = ${email} and `password` = ${password}">
+        <filter>
+            <email equal="${email}"/>
+            <password equal="${password}"/>
+        </filter>
+    </byEmailAndPassword>
+
+    <byId
+        alias="Select user by id"
+        description="Select user where `id` = ${id}">
+        <filter>
+            <id equal="${id}"/>
+        </filter>
+    </byId>
+</datasets>

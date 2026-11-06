@@ -1,0 +1,14 @@
+**/logs
+**/nbproject
+**/sessions
+**/molds
+**/storage
+**/uiConstants.js
+**/projects/*/uploads
+**/.idea
+**/codealike.json
+**/core/extension/parser/env/cache/*
+**/.env
+**/desktop.ini
+**/.vscode/*
+**/.todo

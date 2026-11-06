@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <!-- 
+        #################### DATE Data Types ####################
+        Restrictions that can be used with Date data types:
+        - enumeration (enum)
+            2015-01-01,2016-01-01,2017-01-01        - The only acceptable values are: 
+                                                      2015-01-01 or 2016-01-01 or 2017-01-01
+        - maxExclusive
+        - maxInclusive
+        - minExclusive
+        - minInclusive
+        - pattern
+        - whiteSpace
+
+
+        Date and time data types are used for values that contain date and time.
+        The date is specified in the following form "YYYY-MM-DD" where:
+        - YYYY indicates the year
+        - MM indicates the month
+        - DD indicates the day
+        Note: All components are required!
+
+        Time Zones:
+        - To specify a time zone, you can either enter a date in UTC time by 
+          adding a "Z" behind the date - like this: 
+          2002-09-24Z
+        - or you can specify an offset from the UTC time by adding a positive 
+          or negative time behind the date - like this:
+          2002-09-24-06:00 or 2002-09-24+06:00
+
+
+        - An element in your document might look like this: 2002-09-24
+    -->
+    <date
+        defaultValue="{CURRENT_DATE}"
+        extends="base"
+        restrictions="enum,maxExclusive,maxInclusive,minExclusive,minInclusive"/>
+
+
+    <!-- Defines a part of a date - the day (DD) -->
+    <gDay 
+        alias="day"
+        extends="date"
+        defaultValue="{CURRENT_DAY}"/>
+
+    <!-- Defines a part of a date - the month (MM) -->
+    <gMonth 
+        alias="month"
+        extends="date"
+        defaultValue="{CURRENT_MONTH}"/>
+
+    <!-- Defines a part of a date - the month and day (MM-DD) -->
+    <gMonthDay 
+        alias="monthDay"
+        extends="date"
+        defaultValue="{CURRENT_MONTH_DAY}"/>
+
+    <!-- Defines a part of a date - the year (YYYY) -->
+    <gYear 
+        alias="year"
+        extends="date"
+        defaultValue="{CURRENT_YEAR}"/>
+
+    <!-- Defines a part of a date - the year and month (YYYY-MM) -->
+    <gYearMonth 
+        alias="yearMonth"
+        extends="date"
+        defaultValue="{CURRENT_YEAR_MONTH}"/>
+
+    <!-- 
+        #################### TIME Data Types ####################
+        The time data type is used to specify a time.
+        The time is specified in the following form "hh:mm:ss" where:
+        - hh indicates the hour
+        - mm indicates the minute
+        - ss indicates the second
+        Note: All components are required!
+
+        Time Zones:
+        - To specify a time zone, you can either enter a time in UTC time by 
+          adding a "Z" behind the time - like this:
+          09:30:10Z
+        - or you can specify an offset from the UTC time by adding a positive or 
+          negative time behind the time - like this:
+          09:30:10-06:00 or 09:30:10+06:00
+
+
+        - An element in your document might look like this: 
+          09:00:00 or 09:30:10.5
+    -->
+    <time
+        defaultValue="{CURRENT_TIME}"
+        extends="date"/>
+    
+    <hour
+        defaultValue="{CURRENT_HOUR}"
+        extends="date"/>
+    
+    <hourMinute
+        defaultValue="{CURRENT_HOUR_MINUTE}"
+        extends="date"/>
+    
+    <minute
+        defaultValue="{CURRENT_MINUTE}"
+        extends="date"/>
+    
+    <minuteSecond
+        defaultValue="{CURRENT_MINUTE_SECOND}"
+        extends="date"/>
+    
+    <second
+        defaultValue="{CURRENT_SECOND}"
+        extends="date"/>
+
+
+    <!-- 
+        #################### DATETIME Data Types ####################
+        The dateTime data type is used to specify a date and a time.
+        The dateTime is specified in the following form "YYYY-MM-DDThh:mm:ss" where:
+        - YYYY indicates the year
+        - MM indicates the month
+        - DD indicates the day
+        - T indicates the start of the required time section
+        - hh indicates the hour
+        - mm indicates the minute
+        - ss indicates the second
+        Note: All components are required!
+
+        Time Zones:
+        - To specify a time zone, you can either enter a dateTime in UTC time by 
+          adding a "Z" behind the time - like this:
+          2002-05-30T09:30:10Z
+        - or you can specify an offset from the UTC time by adding a positive or
+          negative time behind the time - like this:
+          2002-05-30T09:30:10-06:00 or 2002-05-30T09:30:10+06:00
+
+
+        - An element in your document might look like this: 
+          2002-05-30T09:00:00 or 2002-05-30T09:30:10.5
+        - For this implementation it is preferred to leave out the T like this:
+          2002-05-30 09:00:00 or 2002-05-30 09:30:10.5
+    -->
+    <dateTime 
+        alias="dateT"
+        extends="date"
+        defaultValue="{CURRENT_DATETIME}"/>
+
+
+    <!-- 
+        #################### DURATION Data Types ####################
+        The duration data type is used to specify a time interval.
+        The time interval is specified in the following form "PnYnMnDTnHnMnS" where:
+        - P indicates the period (required)
+        - nY indicates the number of years
+        - nM indicates the number of months
+        - nD indicates the number of days
+        - T indicates the start of a time section (required if you are going to 
+          specify hours, minutes, or seconds)
+        - nH indicates the number of hours
+        - nM indicates the number of minutes
+        - nS indicates the number of seconds
+
+        An element in your document might look like this:
+          P5Y
+          The example above indicates a period of five years.
+        Or it might look like this:
+          P5Y2M10D
+          The example above indicates a period of five years, two months, and 10 days.
+        Or it might look like this:
+          P5Y2M10DT15H
+          The example above indicates a period of five years, two months, 10 days, 
+          and 15 hours.
+        For this implementation it is preferred to leave out the T like this:
+          P5Y2M10D15H
+        Negative Duration
+        To specify a negative duration, enter a minus sign before the P:
+          -P10D
+          The example above indicates a period of minus 10 days.
+    -->
+    <duration
+        alias="dur"
+        extends="date"/>
+</root>

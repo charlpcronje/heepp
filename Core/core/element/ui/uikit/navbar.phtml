@@ -1,0 +1,67 @@
+<nav
+    class="uk-navbar-container @{class}"
+    uk-navbar="mode: @{mode}">
+    <div class="uk-navbar-left">
+        <!-- Image or Text Logo -->
+        <if isset="@{imagelogo}">
+            <a
+                class="uk-navbar-item uk-logo"
+                href="#">
+                <image
+                    height="@{imagelogoheight}"
+                    width="@{imagelogowidth}"
+                    src="@{imagelogo}"/>
+            </a>
+        </if>
+        <if isset="@{textlogo}">
+            <a
+                class="uk-navbar-item uk-logo"
+                href="#">
+                @{textlogo}
+            </a>
+        </if>
+
+        <ul class="uk-navbar-nav">
+            <li class="uk-active">
+                <a href="#Dashboard" core.event.click.load="Dashboard">Dashboard</a>
+            </li>
+            <li>
+                <a href="#Product-Catelogue" core.event.click.load="Products">Product Catalogue</a>
+            </li>
+            <li>
+                <a href= "#Product-Images" core.event.click.load="Products/images">Product Images</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="uk-navbar-center">
+        <ul class="uk-navbar-nav">
+
+        </ul>
+    </div>
+
+    <div class="uk-navbar-right">
+        <ul class="uk-navbar-nav">
+            <li>
+                <a
+                    core.event.click.load="User/signOut"
+                    href="#upload-images"
+                    style="height: @{height}; font-size: 13px">
+                    SIGN-OUT
+                </a>
+            </li>
+            <li style="margin-right: -60px">
+                <a
+                    href="#User"
+                    class="uk-icon-light"
+                    uk-icon="icon: user"
+                    title="My Profile"
+                    style="color: #FFF"
+                    uk-tooltip="true"
+                    core.event.click.load="User">
+
+                </a>
+            </li>
+        </ul>
+    </div>
+</nav>

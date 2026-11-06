@@ -1,0 +1,34 @@
+<core-library
+    library="ui-form-control"        
+    section="multiselect"/>
+
+<div class="form-group ${class}">
+    <if notempty="${label}">
+        <label for="${id}">${label}</label>
+    </if>
+    <select 
+        multiple="multiple" 
+        id="${id}" 
+        name="${name}">
+        ${children}
+    </select>
+    
+    <script id="script_${id}">
+        $('#${id}').multiSelect({
+            'keepOrder' : true,
+            'selectableOptgroup' : true,
+            'afterInit' : function() {
+                $(".ms-selectable").css('width','calc(50% - 20px)');
+                $(".ms-selection").css('width','calc(50% - 20px)');
+                $(".ms-list").css('width','100%');
+            }
+        });
+        
+        $('#${id}').multiSelect('select',${select});
+        
+        $('#${id}').multiSelect('refresh');
+
+        //var child = document.getElementById("script_${id}");
+        //child.parentNode.removeChild(child);
+    </script>
+</div>

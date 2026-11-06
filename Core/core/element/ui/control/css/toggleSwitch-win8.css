@@ -1,0 +1,54 @@
+.onoffswitch-label-top {
+    margin-top: 15px;
+    margin-bottom: 3px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #666;
+}
+
+.onoffswitch-win8 {
+    position: relative; width: 78px;
+    -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
+}
+.onoffswitch-win8-checkbox {
+    display: none;
+}
+.onoffswitch-win8-label {
+    display: block; overflow: hidden; cursor: pointer;
+    border: 2px solid #FFFFFF; border-radius: 0;
+}
+.onoffswitch-win8-inner {
+    display: block; width: 200%; margin-left: -100%;
+    transition: margin 0.3s ease-in 0s;
+}
+.onoffswitch-win8-inner:before, .onoffswitch-win8-inner:after {
+    display: block; float: left; width: 50%; height: 29px; padding: 0; line-height: 25px;
+    font-size: 14px; color: white; font-family: Trebuchet, Arial, sans-serif; font-weight: bold;
+    box-sizing: border-box;
+    border: 2px solid transparent;
+    background-clip: padding-box;
+}
+.onoffswitch-win8-inner:before {
+    content: "ON";
+    padding-left: 13px;
+    background-color: #222222; color: #FFFFFF;
+}
+.onoffswitch-win8-inner:after {
+    content: "OFF";
+    padding-right: 13px;
+    background-color: #616161; color: #333333;
+    text-align: right;
+}
+.onoffswitch-win8-switch {
+    display: block; width: 23px; margin: 0;
+    background: #000000;
+    position: absolute; top: 0; bottom: 0;
+    right: 55px;
+    transition: all 0.3s ease-in 0s;
+}
+.onoffswitch-win8-checkbox:checked + .onoffswitch-win8-label .onoffswitch-win8-inner {
+    margin-left: 0;
+}
+.onoffswitch-win8-checkbox:checked + .onoffswitch-win8-label .onoffswitch-win8-switch {
+    right: 0;
+}
